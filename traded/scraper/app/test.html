@@ -1,0 +1,301 @@
+<div class="section_heading">
+  <span class="section_anchor" id="skaters_advanced_link" data-label="NHL Possession Metrics (Even Strength)"></span>
+  <h2>NHL Possession Metrics (Even Strength)</h2>
+  <div class="section_heading_text">
+    <ul>
+    </ul>
+  </div>
+</div>
+<div class="placeholder"></div>
+
+<div class="table_outer_container">
+  <div class="overthrow table_container" id="div_skaters_advanced">
+    <table class="row_summable sortable stats_table" id="skaters_advanced" data-cols-to-freeze=1>
+      <caption>Advanced NHL career statistics</caption>
+      <colgroup>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+        <col>
+      </colgroup>
+      <thead>
+
+        <tr class="over_header">
+          <th aria-label="" data-stat="" colspan="4" class=" over_header center"></th>
+          <th></th>
+          <th></th>
+          <th aria-label="" data-stat="header_corsi_ev" colspan="4" class=" over_header center">Corsi (EV)</th>
+          <th aria-label="" data-stat="header_fenwick_ev" colspan="4" class=" over_header center">Fenwick (EV)</th>
+          <th aria-label="" data-stat="header_pdo_ev" colspan="3" class=" over_header center">PDO (EV)</th>
+          <th aria-label="" data-stat="header_zone_starts_ev" colspan="2" class=" over_header center">Zone Starts (EV)</th>
+        </tr>
+
+
+
+        <tr>
+          <th aria-label="Season" data-stat="season" scope="col" class=" poptip sort_default_asc left">Season</th>
+          <th aria-label="Age" data-stat="age" scope="col" class=" poptip sort_default_asc center">Age</th>
+          <th aria-label="Team" data-stat="team_name" scope="col" class=" poptip sort_default_asc left">Team</th>
+          <th aria-label="Lg" data-stat="lg_id" scope="col" class=" poptip sort_default_asc left">Lg</th>
+          <th aria-label="Games Played" data-stat="games_played" scope="col" class=" poptip center" data-tip="Games Played" data-over-header="Ice Time">GP</th>
+          <th aria-label="TOI at Even StrengthTime on Ice (in Minutes)" data-stat="toi_pbp_ev" scope="col" class=" poptip right" data-tip="TOI at Even Strength<br />Time on Ice (in Minutes)">TOI</th>
+          <th aria-label="Corsi For at Even StrengthShots + Blocks + Misses" data-stat="corsi_for_ev" scope="col" class=" poptip center" data-tip="Corsi For at Even Strength<br />Shots + Blocks + Misses" data-over-header="Corsi (EV)">CF</th>
+          <th aria-label="Corsi Against at Even StrengthShots + Blocks + Misses" data-stat="corsi_against_ev" scope="col" class=" poptip center" data-tip="Corsi Against at Even Strength<br />Shots + Blocks + Misses" data-over-header="Corsi (EV)">CA</th>
+          <th aria-label="Corsi For % at Even StrengthCF / (CF + CA)Above 50% means the team was controlling thepuck more often than not with this player on theice in this situation." data-stat="corsi_pct_ev" scope="col" class=" poptip center" data-tip="Corsi For % at Even Strength<br />CF / (CF + CA)<br>Above 50% means the team was controlling the<br>puck more often than not with this player on the<br>ice in this situation."
+            data-over-header="Corsi (EV)">CF%</th>
+          <th aria-label="Relative Corsi For % at Even StrengthCF% - CFoff%On-Ice Corsi For % - Off-Ice Corsi For %" data-stat="corsi_rel_pct_ev" scope="col" class=" poptip right" data-tip="Relative Corsi For % at Even Strength<br />CF% - CFoff%<br>On-Ice Corsi For % - Off-Ice Corsi For %"
+            data-over-header="Corsi (EV)">CF% rel</th>
+          <th aria-label="Fenwick For at Even StrengthShots + Misses" data-stat="fenwick_for_ev" scope="col" class=" poptip center" data-tip="Fenwick For at Even Strength<br />Shots + Misses" data-over-header="Fenwick (EV)">FF</th>
+          <th aria-label="Fenwick Against at Even StrengthShots + Misses" data-stat="fenwick_against_ev" scope="col" class=" poptip center" data-tip="Fenwick Against at Even Strength<br />Shots + Misses" data-over-header="Fenwick (EV)">FA</th>
+          <th aria-label="Fenwick For % at Even StrengthFF / (FF + FA)Above 50% means the team was controlling thepuck more often than not with this player on theice in this situation." data-stat="fenwick_pct_ev" scope="col" class=" poptip center" data-tip="Fenwick For % at Even Strength<br />FF / (FF + FA)<br>Above 50% means the team was controlling the<br>puck more often than not with this player on the<br>ice in this situation."
+            data-over-header="Fenwick (EV)">FF%</th>
+          <th aria-label="Relative Fenwick For % at Even StrengthFF% - FFoff%On-Ice Fenwick For % - Off-Ice Fenwick For %" data-stat="fenwick_rel_pct_ev" scope="col" class=" poptip right" data-tip="Relative Fenwick For % at Even Strength<br />FF% - FFoff%<br>On-Ice Fenwick For % - Off-Ice Fenwick For %"
+            data-over-header="Fenwick (EV)">FF% rel</th>
+          <th aria-label="Team On-Ice Shooting Percentage at Even StrengthShooting % while this player/team was on the ice" data-stat="on_ice_shot_pct_ev" scope="col" class=" poptip right" data-tip="Team On-Ice Shooting Percentage at Even Strength<br />Shooting % while this player/team was on the ice"
+            data-over-header="PDO (EV)">oiSH%</th>
+          <th aria-label="Team On-Ice Save Percentage at Even StrengthSave % while this player/team was on the ice" data-stat="on_ice_sv_pct_ev" scope="col" class=" poptip right" data-tip="Team On-Ice Save Percentage at Even Strength<br />Save % while this player/team was on the ice"
+            data-over-header="PDO (EV)">oiSV%</th>
+          <th aria-label="PDO at Even StrengthShooting % + Save %" data-stat="pdo_ev" scope="col" class=" poptip right" data-tip="PDO at Even Strength<br />Shooting % + Save %" data-over-header="PDO (EV)">PDO</th>
+          <th aria-label="Offensive Zone Start % at Even StrengthOffensive Zone Faceoffs / (Offensive Zone Faceoffs + Defensive Zone Faceoffs),that took place while on the ice" data-stat="zs_offense_pct_ev" scope="col" class=" poptip right" data-tip="Offensive Zone Start % at Even Strength<br />Offensive Zone Faceoffs / (Offensive Zone Faceoffs + Defensive Zone Faceoffs),<br />that took place while on the ice"
+            data-over-header="Zone Starts (EV)">oZS%</th>
+          <th aria-label="Defensive Zone Start % at Even StrengthDefensive Zone Faceoffs / (Offensive Zone Faceoffs + Defensive Zone Faceoffs),that took place while on the ice" data-stat="zs_defense_pct_ev" scope="col" class=" poptip right" data-tip="Defensive Zone Start % at Even Strength<br />Defensive Zone Faceoffs / (Offensive Zone Faceoffs + Defensive Zone Faceoffs),<br />that took place while on the ice"
+            data-over-header="Zone Starts (EV)">dZS%</th>
+        </tr>
+
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" class="left " data-stat="season">2009-10</th>
+          <td class="center " data-stat="age">20</td>
+          <td class="left " data-stat="team_id"><a href="/teams/NYI/2010.html" title="New York Islanders">NYI</a></td>
+          <td class="left " data-stat="lg_id"><a href="/leagues/NHL_2010.html">NHL</a></td>
+          <td class="right " data-stat="games_played">5</td>
+          <td class="right " data-stat="toi_pbp">45.9</td>
+          <td class="right " data-stat="corsi_for">48</td>
+          <td class="right " data-stat="corsi_against">40</td>
+          <td class="right " data-stat="corsi_pct">54.5</td>
+          <td class="right " data-stat="corsi_rel_pct">7.7</td>
+          <td class="right " data-stat="fenwick_for">38</td>
+          <td class="right " data-stat="fenwick_against">30</td>
+          <td class="right " data-stat="fenwick_pct">55.9</td>
+          <td class="right " data-stat="fenwick_rel_pct">5.9</td>
+          <td class="right " data-stat="on_ice_shot_pct">3.7</td>
+          <td class="right " data-stat="on_ice_sv_pct">91.3</td>
+          <td class="right " data-stat="pdo">95.0</td>
+          <td class="right " data-stat="zs_offense_pct">43.2</td>
+          <td class="right " data-stat="zs_defense_pct">56.8</td>
+        </tr>
+        <tr>
+          <th scope="row" class="left " data-stat="season">2010-11</th>
+          <td class="center " data-stat="age">21</td>
+          <td class="left " data-stat="team_id"><a href="/teams/NYI/2011.html" title="New York Islanders">NYI</a></td>
+          <td class="left " data-stat="lg_id"><a href="/leagues/NHL_2011.html">NHL</a></td>
+          <td class="right " data-stat="games_played">68</td>
+          <td class="right " data-stat="toi_pbp">666.6</td>
+          <td class="right " data-stat="corsi_for">506</td>
+          <td class="right " data-stat="corsi_against">746</td>
+          <td class="right " data-stat="corsi_pct">40.4</td>
+          <td class="right " data-stat="corsi_rel_pct">-10.3</td>
+          <td class="right " data-stat="fenwick_for">353</td>
+          <td class="right " data-stat="fenwick_against">550</td>
+          <td class="right " data-stat="fenwick_pct">39.1</td>
+          <td class="right " data-stat="fenwick_rel_pct">-11.7</td>
+          <td class="right " data-stat="on_ice_shot_pct">7.6</td>
+          <td class="right " data-stat="on_ice_sv_pct">91.6</td>
+          <td class="right " data-stat="pdo">99.2</td>
+          <td class="right " data-stat="zs_offense_pct">45.4</td>
+          <td class="right " data-stat="zs_defense_pct">54.6</td>
+        </tr>
+        <tr>
+          <th scope="row" class="left " data-stat="season">2011-12</th>
+          <td class="center " data-stat="age">22</td>
+          <td class="left " data-stat="team_id"><a href="/teams/NYI/2012.html" title="New York Islanders">NYI</a></td>
+          <td class="left " data-stat="lg_id"><a href="/leagues/NHL_2012.html">NHL</a></td>
+          <td class="right " data-stat="games_played">80</td>
+          <td class="right " data-stat="toi_pbp">840.2</td>
+          <td class="right " data-stat="corsi_for">675</td>
+          <td class="right " data-stat="corsi_against">794</td>
+          <td class="right " data-stat="corsi_pct">45.9</td>
+          <td class="right " data-stat="corsi_rel_pct">-3.5</td>
+          <td class="right " data-stat="fenwick_for">517</td>
+          <td class="right " data-stat="fenwick_against">551</td>
+          <td class="right " data-stat="fenwick_pct">48.4</td>
+          <td class="right " data-stat="fenwick_rel_pct">-1.8</td>
+          <td class="right " data-stat="on_ice_shot_pct">3.5</td>
+          <td class="right " data-stat="on_ice_sv_pct">92.3</td>
+          <td class="right " data-stat="pdo">95.8</td>
+          <td class="right " data-stat="zs_offense_pct">43.6</td>
+          <td class="right " data-stat="zs_defense_pct">56.4</td>
+        </tr>
+        <tr>
+          <th scope="row" class="left " data-stat="season">2012-13</th>
+          <td class="center " data-stat="age">23</td>
+          <td class="left " data-stat="team_id"><a href="/teams/NYI/2013.html" title="New York Islanders">NYI</a></td>
+          <td class="left " data-stat="lg_id"><a href="/leagues/NHL_2013.html">NHL</a></td>
+          <td class="right " data-stat="games_played">48</td>
+          <td class="right " data-stat="toi_pbp">484.3</td>
+          <td class="right " data-stat="corsi_for">388</td>
+          <td class="right " data-stat="corsi_against">431</td>
+          <td class="right " data-stat="corsi_pct">47.4</td>
+          <td class="right " data-stat="corsi_rel_pct">-4.7</td>
+          <td class="right " data-stat="fenwick_for">289</td>
+          <td class="right " data-stat="fenwick_against">303</td>
+          <td class="right " data-stat="fenwick_pct">48.8</td>
+          <td class="right " data-stat="fenwick_rel_pct">-3.9</td>
+          <td class="right " data-stat="on_ice_shot_pct">8.5</td>
+          <td class="right " data-stat="on_ice_sv_pct">90.7</td>
+          <td class="right " data-stat="pdo">99.2</td>
+          <td class="right " data-stat="zs_offense_pct">44.0</td>
+          <td class="right " data-stat="zs_defense_pct">56.0</td>
+        </tr>
+        <tr>
+          <th scope="row" class="left " data-stat="season">2013-14</th>
+          <td class="center " data-stat="age">24</td>
+          <td class="left " data-stat="team_id"><a href="/teams/NYI/2014.html" title="New York Islanders">NYI</a></td>
+          <td class="left " data-stat="lg_id"><a href="/leagues/NHL_2014.html">NHL</a></td>
+          <td class="right " data-stat="games_played">79</td>
+          <td class="right " data-stat="toi_pbp">857.5</td>
+          <td class="right " data-stat="corsi_for">693</td>
+          <td class="right " data-stat="corsi_against">857</td>
+          <td class="right " data-stat="corsi_pct">44.7</td>
+          <td class="right " data-stat="corsi_rel_pct">-7.3</td>
+          <td class="right " data-stat="fenwick_for">517</td>
+          <td class="right " data-stat="fenwick_against">609</td>
+          <td class="right " data-stat="fenwick_pct">45.9</td>
+          <td class="right " data-stat="fenwick_rel_pct">-5.4</td>
+          <td class="right " data-stat="on_ice_shot_pct">6.2</td>
+          <td class="right " data-stat="on_ice_sv_pct">91.4</td>
+          <td class="right " data-stat="pdo">97.6</td>
+          <td class="right " data-stat="zs_offense_pct">45.2</td>
+          <td class="right " data-stat="zs_defense_pct">54.8</td>
+        </tr>
+        <tr>
+          <th scope="row" class="left " data-stat="season">2014-15</th>
+          <td class="center " data-stat="age">25</td>
+          <td class="left " data-stat="team_id"><a href="/teams/NYI/2015.html" title="New York Islanders">NYI</a></td>
+          <td class="left " data-stat="lg_id"><a href="/leagues/NHL_2015.html">NHL</a></td>
+          <td class="right " data-stat="games_played">78</td>
+          <td class="right " data-stat="toi_pbp">854.5</td>
+          <td class="right " data-stat="corsi_for">743</td>
+          <td class="right " data-stat="corsi_against">712</td>
+          <td class="right " data-stat="corsi_pct">51.1</td>
+          <td class="right " data-stat="corsi_rel_pct">-2.6</td>
+          <td class="right " data-stat="fenwick_for">560</td>
+          <td class="right " data-stat="fenwick_against">498</td>
+          <td class="right " data-stat="fenwick_pct">52.9</td>
+          <td class="right " data-stat="fenwick_rel_pct">-1.9</td>
+          <td class="right " data-stat="on_ice_shot_pct">6.4</td>
+          <td class="right " data-stat="on_ice_sv_pct">91.4</td>
+          <td class="right " data-stat="pdo">97.8</td>
+          <td class="right " data-stat="zs_offense_pct">45.1</td>
+          <td class="right " data-stat="zs_defense_pct">54.9</td>
+        </tr>
+        <tr>
+          <th scope="row" class="left " data-stat="season">2015-16</th>
+          <td class="center " data-stat="age">26</td>
+          <td class="left " data-stat="team_id"><a href="/teams/NYI/2016.html" title="New York Islanders">NYI</a></td>
+          <td class="left " data-stat="lg_id"><a href="/leagues/NHL_2016.html">NHL</a></td>
+          <td class="right " data-stat="games_played">80</td>
+          <td class="right " data-stat="toi_pbp">833.6</td>
+          <td class="right " data-stat="corsi_for">708</td>
+          <td class="right " data-stat="corsi_against">726</td>
+          <td class="right " data-stat="corsi_pct">49.4</td>
+          <td class="right " data-stat="corsi_rel_pct">0.0</td>
+          <td class="right " data-stat="fenwick_for">511</td>
+          <td class="right " data-stat="fenwick_against">529</td>
+          <td class="right " data-stat="fenwick_pct">49.1</td>
+          <td class="right " data-stat="fenwick_rel_pct">-0.4</td>
+          <td class="right " data-stat="on_ice_shot_pct">10.2</td>
+          <td class="right " data-stat="on_ice_sv_pct">91.3</td>
+          <td class="right " data-stat="pdo">101.5</td>
+          <td class="right " data-stat="zs_offense_pct">41.2</td>
+          <td class="right " data-stat="zs_defense_pct">58.8</td>
+        </tr>
+        <tr>
+          <th scope="row" class="left " data-stat="season">2016-17</th>
+          <td class="center " data-stat="age">27</td>
+          <td class="left " data-stat="team_id"><a href="/teams/TOR/2017.html" title="Toronto Maple Leafs">TOR</a></td>
+          <td class="left " data-stat="lg_id"><a href="/leagues/NHL_2017.html">NHL</a></td>
+          <td class="right " data-stat="games_played">82</td>
+          <td class="right " data-stat="toi_pbp">697.0</td>
+          <td class="right " data-stat="corsi_for">590</td>
+          <td class="right " data-stat="corsi_against">640</td>
+          <td class="right " data-stat="corsi_pct">48.0</td>
+          <td class="right " data-stat="corsi_rel_pct">-3.1</td>
+          <td class="right " data-stat="fenwick_for">440</td>
+          <td class="right " data-stat="fenwick_against">466</td>
+          <td class="right " data-stat="fenwick_pct">48.6</td>
+          <td class="right " data-stat="fenwick_rel_pct">-1.6</td>
+          <td class="right " data-stat="on_ice_shot_pct">6.6</td>
+          <td class="right " data-stat="on_ice_sv_pct">94.0</td>
+          <td class="right " data-stat="pdo">100.6</td>
+          <td class="right " data-stat="zs_offense_pct">32.8</td>
+          <td class="right " data-stat="zs_defense_pct">67.2</td>
+        </tr>
+
+      </tbody>
+      <tfoot>
+        <tr class="bold_text">
+          <th scope="row" class="left " data-stat="season">7 yrs</th>
+          <td class="center " data-stat="age"></td>
+          <td class="left " data-stat="team_id">NYI</td>
+          <td class="left " data-stat="lg_id">NHL</td>
+          <td class="right " data-stat="games_played">438</td>
+          <td class="right " data-stat="toi_pbp">4582.5</td>
+          <td class="right " data-stat="corsi_for">3761</td>
+          <td class="right " data-stat="corsi_against">4306</td>
+          <td class="right " data-stat="corsi_pct">46.6</td>
+          <td class="right " data-stat="corsi_rel_pct">-4.6</td>
+          <td class="right " data-stat="fenwick_for">2785</td>
+          <td class="right " data-stat="fenwick_against">3070</td>
+          <td class="right " data-stat="fenwick_pct">47.6</td>
+          <td class="right " data-stat="fenwick_rel_pct">-4.1</td>
+          <td class="right " data-stat="on_ice_shot_pct">6.8</td>
+          <td class="right " data-stat="on_ice_sv_pct">91.5</td>
+          <td class="right " data-stat="pdo">98.4</td>
+          <td class="right " data-stat="zs_offense_pct">44.1</td>
+          <td class="right " data-stat="zs_defense_pct">55.9</td>
+        </tr>
+        <tr class="bold">
+          <th scope="row" class="left " data-stat="season">Career</th>
+          <td class="center " data-stat="age"></td>
+          <td class="left " data-stat="team_id"></td>
+          <td class="left " data-stat="lg_id">NHL</td>
+          <td class="right " data-stat="games_played">520</td>
+          <td class="right " data-stat="toi_pbp">5279.4</td>
+          <td class="right " data-stat="corsi_for">4351</td>
+          <td class="right " data-stat="corsi_against">4946</td>
+          <td class="right " data-stat="corsi_pct">46.8</td>
+          <td class="right " data-stat="corsi_rel_pct">-4.4</td>
+          <td class="right " data-stat="fenwick_for">3225</td>
+          <td class="right " data-stat="fenwick_against">3536</td>
+          <td class="right " data-stat="fenwick_pct">47.7</td>
+          <td class="right " data-stat="fenwick_rel_pct">-3.6</td>
+          <td class="right " data-stat="on_ice_shot_pct">6.8</td>
+          <td class="right " data-stat="on_ice_sv_pct">91.8</td>
+          <td class="right " data-stat="pdo">98.7</td>
+          <td class="right " data-stat="zs_offense_pct">42.7</td>
+          <td class="right " data-stat="zs_defense_pct">57.3</td>
+        </tr>
+
+      </tfoot>
+
+    </table>
+
+  </div>
+</div>

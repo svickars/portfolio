@@ -1,0 +1,1 @@
+var tabletojson=require("tabletojson"),json2csv=require("json2csv"),url="http://en.wikipedia.org/wiki/List_of_countries_by_credit_rating";tabletojson.convertUrl("http://www.hockey-reference.com/players/h/hamrlro01.html",{stripHtmlFromCells:!0,useFirstRowForHeadings:!0},function(e){console.log(e[8][0])});

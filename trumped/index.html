@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js no-svg">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Trumped: 100 Days of Tweets* &#8211; *By Sam Vickars.</title>
+
+    <meta name="description" content="Information artist, graphic designer, story teller." />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@samvickars">
+    <meta name="twitter:title" content="Trumped: 100 Days of Tweets*">
+    <meta name="twitter:description" content="A visual story investigating @realDonaldTrump's first 100 days in tweets.">
+    <meta name="twitter:creator" content="@samvickars">
+    <meta name="twitter:image" content="http://www.samvickars.is/trumped/img/GloriousApprehensiveGermanspaniel.gif">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="Trumped: 100 Days of Tweets*" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://www.samvickars.is/trumped/" />
+    <meta property="og:image" content="http://www.samvickars.is/trumped/img/GloriousApprehensiveGermanspaniel.gif" />
+    <meta property="og:description" content="A visual story investigating @realDonaldTrump's first 100 days in tweets." />
+    <meta property="og:site_name" content="Sam Vickars" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/1.17.0/d3-annotation.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Rubik:300,400,400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass:400,400i|Roboto+Slab" rel="stylesheet">
+    <script src="https://use.fontawesome.com/7b1b96119e.js"></script>
+
+    <script src="http://samvickars.is/js/modernizr.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="js/d3-tip.js"></script>
+
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+      ga('create', 'UA-72865926-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+  </head>
+
+  <body>
+    <progress value="0"></progress>
+    <div class="color-strip"></div>
+    <header>
+      <div class="cd-logo">
+        <a href="http://2017.samvickars.is">
+							Sam Vickars*
+						</a>
+      </div>
+
+      <nav class="cd-main-nav-wrapper">
+        <ul class="cd-main-nav" id="mainnav">
+          <li>
+            <a href="#0" class="cd-subnav-trigger"><span id="menulink">Menu</span></a>
+
+            <ul class="mainnavlinks" id="navlinks">
+              <li class="go-back"><a id="menulink" href="#0">Menu</a></li>
+              <li id="slidermenu"><a href="http://2017.samvickars.is/">Work</a></li>
+              <li id="slidermenu"><a href="http://samvickars.is/tellingstories">About</a></li>
+              <li id="slidermenu"><a href="http://samvickars.is/readytochat">Contact &nbsp;</a></li>
+              <li id="slidermenu"><a href="#0" class="placeholder">Placeholder</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- .cd-main-nav -->
+      </nav>
+      <!-- .cd-main-nav-wrapper -->
+
+      <a href="#0" class="cd-nav-trigger"><span></span></a>
+
+    </header>
+
+    <div class="bg-viz" id="bg-viz"></div>
+
+    <div class="title">
+      <div class="project-intro">
+        <div class="sub-headline">
+          <span class="sub-headline-h2"><a href="https://twitter.com/realDonaldTrump">@realDonaldTrump</a></span></br><span class="sub-headline-h2">January 20&mdash;April 29, 2017</span>
+        </div>
+        <div class="headline">
+          <span class="headline-h1">#Trumped</span>
+        </div>
+        <div class="sub-headline">
+          <span class="sub-headline-h2">100 days of tweets</span>
+        </div>
+        <div class="sub">
+          <p></p>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="project-info">
+      <div class="meta">
+
+        <div class="lineBlock lineBlock-tohide-xs">
+          <label>Editorial</label>
+          <span class="value">Trump's 100 Days of Tweets</span>
+        </div>
+
+        <div class="lineBlock lineBlock-tohide-sm lineBlock-tohide-xs">
+          <label>Category</label>
+          <span class="value"><a href="http://2017.samvickars.is/portfolio_category/data-visualization/" rel="tag">Data Visualization</a><a href="http://2017.samvickars.is/portfolio_category/interactive/" rel="tag">Interactive</a><a href="http://2017.samvickars.is/portfolio_category/social/" rel="tag">Social</a></span>
+        </div>
+
+        <div class="lineBlock lineBlock-tohide-sm lineBlock-tohide-xs">
+          <label>Date</label>
+          <span class="value">June 2017</span>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container-fluid">
+
+      <div class="row">
+        <div class="hidden-xs col-sm-2 col-md-3"></div>
+        <div class="col-xs-12 col-sm-8 col-md-6">
+          <div class="row textbox">
+            <p><span class="firstcharacter">W</span>hen Donald Trump took office on January 20<sup>th</sup>, 2017, he was already known for his tweeting &mdash; Slate even called him the <a href="http://www.slate.com/articles/technology/future_tense/2016/02/donald_trump_is_the_best_at_twitter_here_s_why.html">best</a>.
+              Known for his strong interjections and his 140-character feuds with everyone from Rosie O&rsquo;Donnell to Mac Miller, the now-president always makes the most of his quickly typed messages and his 32.7 million followers, a following which,
+              as the
+              <a href="https://www.nytimes.com/interactive/2017/04/28/us/politics/donald-trump-twitter-100-days-of-tweets.html?action=click&contentCollection=Politics&module=RelatedCoverage&region=EndOfArticle&pgtype=article">New York Times</a> pointed
+              out, is 1.7 times larger than that of the official <a href="https://twitter.com/POTUS">@POTUS</a> twitter.</p>
+            <p>In April, both the <a href="https://www.washingtonpost.com/news/politics/wp/2017/04/28/the-first-100-days-of-president-realdonaldtrump/?utm_term=.0ed263cb8cd5">Washington Post</a> and the <a href="https://www.nytimes.com/interactive/2017/04/28/us/politics/donald-trump-twitter-100-days-of-tweets.html?action=click&contentCollection=Politics&module=RelatedCoverage&region=EndOfArticle&pgtype=article">New York Times</a>              dove into the President&rsquo;s tweets over his first 100 days, cataloging and categorizing each, tracking his retweets, emojis, and busiest times, and discussing his repeated yells of &ldquo;FAKE NEWS!&rdquo; But I wanted to dive a little
+              deeper into the <a href="https://twitter.com/realDonaldTrump">@realDonaldTrump</a>&rsquo;s tweets, chirps, and occasional misfires over his first 100 days in office.</p>
+            <p>This essay visualizes all <strong>501</strong> Trump tweets between January 20<sup>th</sup> and April 29<sup>th</sup> to find out what he was saying, how he was saying it, and when he was talking about it. We'll also look at the source of
+              his messages and the tw-entiment (ha, get it?). It works best on Chrome on your desktop, but I won't fault you for scrolling through it on your mobile. We're going to look at this from plenty of different angles, and as such, this essay
+              isn't meant as a full exploration of each, but rather a short and sweet investigation to serve as a jumping off point for a couple of future projects. Full credits are at the end of the article, but I make use of data from the <a href="http://www.trumptwitterarchive.com/archive">Trump Twitter Archive</a>.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div id="startit"></div>
+      </div>
+
+      <div class="row">
+        <div class="hidden-xs col-sm-2 col-md-3"></div>
+        <div class="col-xs-12 col-sm-8 col-md-6">
+          <div class="row textbox">
+            <h6>Section 1</h6>
+            <h3>What He Talked About...</h3>
+            <h4>And how he talked about it</h4>
+          </div>
+          <div class="row textbox" style="margin: 100px 0 300px 0">
+            <h5>Topics</h5>
+            <p>In the <strong>100</strong> days following his inauguration, <a href="https://twitter.com/realDonaldTrump">@realDonaldTrump</a> tweeted exactly <strong>50</strong> times about the <span class="inline-legend legend-media">media</span>, <strong>46</strong>              times about <span class="inline-legend legend-foreignAffairs">foreign affairs</span>,
+              <strong>41</strong> times about <span class="inline-legend legend-jobs">jobs</span>, and <strong>35</strong> times regarding <span class="inline-legend legend-fakeNews">fake news</span>.</p>
+            <p>He also posted about his <span class="inline-legend legend-immigrationBan">immigration ban</span> and <span class="inline-legend legend-makingAmericaGreatAgain">Making America Great Again</span> (33 times each), <span class="inline-legend legend-healthcare">healthcare</span>              and <span class="inline-legend legend-unofficialBusiness">unofficial business</span> (28 times each), the <span class="inline-legend legend-democraticParty">democratic party</span> (27), <span class="inline-legend legend-foreignLeader">foreign leaders</span>              (24), <span class="inline-legend legend-russia">Russia</span> (20), the <span class="inline-legend legend-election">2016 election</span> (12), his own <span class="inline-legend legend-republicanParty">republican party</span> (11), and of
+              course, <span class="inline-legend legend-officialBusiness">official &ldquo;Presidential&rdquo; business</span> (139). More on this later.</p>
+            <p class="notes">These topics are based on a combination of my research and the themes distilled by the New York Times, the Washington Post, CNN, and the Slate.</p>
+          </div>
+          <div class="row textbox" id="commonwords" style="margin: 100px 0 300px 0">
+            <h5>Popular Words</h5>
+            <p>The President liked to mention his own name. In fact, in a tie with <span class="inline-legend legend-white">media</span>, he mentioned <span class="inline-legend legend-white">Trump</span> <strong>27</strong> times. Together, they account
+              for just about 1% all the words he posted on Twitter (including emoji and hashtags). He also likes the words <span class="inline-legend legend-white">People</span> (26), <span class="inline-legend legend-white">President</span> (25),
+              <span class="inline-legend legend-white">me</span> (24), <span class="inline-legend legend-white">Whitehouse</span> (23), <span class="inline-legend legend-white">Great</span> (23), <span class="inline-legend legend-white">FAKE</span> (22),
+              <span class="inline-legend legend-white">America</span> (21), and <span class="inline-legend legend-white">Election</span> (21) (let it go!).</p>
+          </div>
+          <div class="row textbox" id="sentiment" style="margin: 100px 0 300px 0">
+            <h5>Sentiment</h5>
+            <p>You know the saying, &ldquo;never tweet angry?&rdquo; Well, neither do I, but it's still a good idea. And it's a truth that is perhaps most important for the leader of the free world. Donald Trump&rsquo;s angriest (read most negative) tweets
+              were presumably seen by well over the 32.7 million people who follow him &mdash; and there were a few of these tweets. For this &ldquo;twentiment&rdquo; analysis I ran each tweet through a natural language processor in Python to determine
+              it's score on the polarity scale, with -1 being the most negative and +1 being the most positive. The tweets in the background are coloured according to this scale, with the angriest being darker and the happiest lighter.</p>
+            <p>In general, and unsurprisingly, the more strongly a tweet aligned to one end of the spectrum or the other, the more subjective &mdash; or, the more influenced by his personal feelings &mdash; his message was.</p>
+          </div>
+          <div class="row textbox" id="tweetbox1" style="margin-top: -25px">
+            <div class="tweetbox tweetbox-desc col-xs-12 col-sm-4">
+              <div>
+                <div class="tweet-pol-meta"><span class="tweet-pol-meta-pol" id="pol1">-1.0 polarity</span> <span class="tweet-pol-meta-sub" id="sub1">1.0 Subjectivity</span></div>
+                <div>
+                  <p>The most negative tweet was just two weeks into his tenure as president. This tweet about Iran and some sort of terrible deal clocked in at -1.</p>
+                </div>
+              </div>
+            </div>
+            <div class="tweetbox tweetbox-tweet col-xs-12 col-sm-8">
+              <p>
+                <blockquote class="twitter-tweet" data-lang="en">
+                  <p lang="en" dir="ltr">Iran has been formally PUT ON NOTICE for firing a ballistic missile.Should have been thankful for the terrible deal the U.S. made with them!</p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/827118012784373760">February 2, 2017</a></blockquote>
+                <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </p>
+            </div>
+          </div>
+
+          <div class="row textbox" id="tweetbox2" style="margin-top: -25px">
+            <div class="tweetbox tweetbox-desc col-xs-12 col-sm-4">
+              <div>
+                <div class="tweet-pol-meta"><span class="tweet-pol-meta-pol" id="pol2">-1.0 polarity</span> <span class="tweet-pol-meta-sub" id="sub2">1.0 Subjectivity</span></div>
+                <div>
+                  <p>Equally as negative, this tweet came in a day later &mdash; the same day a federal judge in Boston <a href="http://www.cnn.com/2017/02/03/politics/federal-judge-declines-to-renew-restraining-order-on-trump-travel-ban/">declined to renew the temporary restraining order</a>.</p>
+                </div>
+              </div>
+            </div>
+            <div class="tweetbox tweetbox-tweet col-xs-12 col-sm-8">
+              <p>
+                <blockquote class="twitter-tweet" data-lang="en">
+                  <p lang="en" dir="ltr">We must keep &quot;evil&quot; out of our country!</p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/827655062835052544">February 3, 2017</a></blockquote>
+                <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </p>
+            </div>
+          </div>
+
+          <div class="row textbox" id="tweetbox3" style="margin-top: -25px">
+            <div class="tweetbox tweetbox-desc col-xs-12 col-sm-4">
+              <div>
+                <div class="tweet-pol-meta"><span class="tweet-pol-meta-pol" id="pol3">0.0 polarity</span> <span class="tweet-pol-meta-sub" id="sub3">0.0 Subjectivity</span></div>
+                <div>
+                  <p>A good chunk of his most neutral tweets was written similarly to this one, almost as though it wasn't actually written by him. In fact, most of these were sent as <strong>ads</strong> or from an <strong>iPhone</strong>, whereas his most
+                    negative and most positive tweets were sent from an <strong>Android</strong> device. But more on that in a bit.</p>
+                </div>
+              </div>
+            </div>
+            <div class="tweetbox tweetbox-tweet col-xs-12 col-sm-8">
+              <p>
+                <blockquote class="twitter-tweet" data-cards="hidden" data-lang="en">
+                  <p lang="en" dir="ltr">Today, I signed an Executive Order @ the U.S. Dept. of <a href="https://twitter.com/Interior">@Interior</a>: &#39;Review of Designations Under the Antiquities Act&#39; <a href="https://t.co/590ZX7cUV9">https://t.co/590ZX7cUV9</a>
+                    <a href="https://t.co/wpqghLqqiF">pic.twitter.com/wpqghLqqiF</a>
+                  </p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/857295731929034753">April 26, 2017</a></blockquote>
+                <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </p>
+            </div>
+          </div>
+
+          <div class="row textbox" id="tweetbox4" style="margin-top: -25px">
+            <div class="tweetbox tweetbox-desc col-xs-12 col-sm-4">
+              <div>
+                <div class="tweet-pol-meta"><span class="tweet-pol-meta-pol" id="pol4">.77 polarity</span> <span class="tweet-pol-meta-sub" id="sub4">.75 Subjectivity</span></div>
+                <div>
+                  <p>While not his most positive tweet, this tweet score pretty high in both polarity and subjectivity, somewhat of a surprise coming from an <strong>iPhone</strong>. This healthcare tweet came after some bad press.</p>
+                </div>
+              </div>
+            </div>
+            <div class="tweetbox tweetbox-tweet col-xs-12 col-sm-8">
+              <p>
+                <blockquote class="twitter-tweet" data-lang="en">
+                  <p lang="en" dir="ltr">Despite what you hear in the press, healthcare is coming along great. We are talking to many groups and it will end in a beautiful picture!</p>&mdash; Donald J. Trump (@realDonaldTrump) <a href="https://twitter.com/realDonaldTrump/status/839883804315684864">March 9, 2017</a></blockquote>
+                <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+              </p>
+            </div>
+          </div>
+
+          <div class="row textbox" id="grammar" style="margin: 100px 0 300px 0">
+            <h5>Grammar</h5>
+            <p>To borrow a line from Polly Higgins of AM New York, Donald Trump may not be a &ldquo;polished politician,&rdquo; but he is a longtime English speaker. This fact, however, is far from obvious when we look at his Twitter account. The background
+              now is showing all 9000 words he's tweeted since January 20<sup>th</sup>, coloured by their part of speech (or POS). While it's been pointed out many times that his grammar and spelling are less than impeccable, he seems to have cleaned
+              it up a bit since becoming President, and unfortunately, we're only looking at his tweets in a very specific timespan, so those will have to wait.</p>
+            <p><span class="inline-legend legend-JJ">adjectives</span> <span class="inline-legend legend-RB">adverbs</span> <span class="inline-legend legend-UH">interjections</span> <span class="inline-legend legend-NN">nouns</span>
+              <span class="inline-legend legend-PRP">pronouns</span> <span class="inline-legend legend-NNP">proper nouns</span> <span class="inline-legend legend-VB">verbs</span> <span class="inline-legend legend-WP">WH-words</span> <span class="inline-legend legend-WEB">links</span>              and
+              <span class="inline-legend legend-other">others</span>
+          </div>
+
+
+
+
+          <div class="row textbox" id="section2" style="margin-top: 400px; margin-bottom: 400px">
+            <h6>Section 2</h6>
+            <h3>When is he tweting?</h3>
+            <h4>A keyboard that never sleeps</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="s2-left">
+        <div class="s2-left-inner">
+          <div id="section2chart">
+            <div class="s2-h1">The Timing of the Tweets</div>
+          </div>
+          <div class="graph2-title graph-title">His <span id="tweetNumberTitle"></span> tweet as president</div>
+          <div id="section2tweet">
+          </div>
+        </div>
+      </div>
+      <div class="s2-right">
+        <div class="s2-textbox" style="margin-top: 250px">
+          <h2>Work hard, tweet hard?</h2>
+          <p style="margin-bottom: 50px">This chart shows the distribution of Trump's tweets over his first 100 days, coloured by the main topic. Below his tweets are significant events that happened during his first 100 days, from his inauguration to his immigration ban to his order
+            to investigate steel imports. Go ahead and click on a tweet to take a look, filter by category, or hover over an event to see more.</p>
+        </div>
+        <div class="s2-textbox">
+          <p id="s2-day1">His first tweet, coming mere hours before his inaugural address, was on his first day in office. It was followed by 500 more, coming in fairly consistently over his first 100 days. He tweeted just about once per day from January 20<sup>th</sup>            through Aril 29<sup>th</sup></p>
+        </div>
+        <div class="s2-textbox">
+          <p id="s2-day100">The last tweet of his first 100 days was posted on 9 pm on his final day, in reply to a comment made by Fox Business Network anchor Lou Dobbs. In the time between his first and last tweet, he only missed one day of tweeting. From 5:46 pm on
+            April 14
+            <sup>th</sup> until 9:41 am two days later &mdash; exactly one day, 15 hours, and 55 minutes,&mdash; @realDonaldTrump was Twitter silent, a rare occurrence for the high-profile celebrity.</p>
+        </div>
+        <div class="s2-textbox">
+          <p id="s2-percent10">The first 10% of his tweets were sent in the first week of his presidency. That's 50 tweets in 7 days.</p>
+        </div>
+        <div class="s2-textbox">
+          <p id="s2-percent25">A quarter of them was posted by the 20-day mark. That's 125 in less than three weeks, a rate of 6.25 tweets <em>per day</em>.</p>
+        </div>
+        <div class="s2-textbox">
+          <p id="s2-percent75">By the 75-day mark, he had slowed down to about five tweets per day, or 375 total.</p>
+        </div>
+        <div class="s2-textbox" style="margin-top: 250px;">
+          <h2>Some key tweets</h2>
+          <p>Comparing the timing of some major events with the timing of some popular tweets, we can make a connection between the two. It seems that Trump often takes to Twitter to back himself up, defend himself, vent his frustrations, or maybe just to
+            get some attention.</p>
+        </div>
+        <div class="s2-textbox">
+          <p id="s2-keytweet1">The day after Donald Trump was sworn in as President, millions of people took to the streets all over the world &mdash; some 500,000 in D.C. alone &mdash; as part of the International Women's March. The Donald promptly took to Twitter, scorning
+            the protesters and asking why the didn't vote, only to follow it up with a much calmer <a id="s2-keytweet15">tweet, this time expressing his appreciation for their right to march.</a></p>
+        </div>
+        <div class="s2-textbox">
+          <p id="s2-keytweet2">A week later, a raid was launched against Al-Qaeda in Yemen, a risky and costly mission that led to the death of one American and a number of civilian casualties. The event was discussed at length by the media, and seemingly in response, Trump
+            sent out a tweet saying we cannot allow the horrors in the Middle East to continue.</p>
+        </div>
+        <div class="s2-textbox">
+          <p id="s2-keytweet3">Only three days later, it was reported that Trump had a heated phone conversation with Australian Prime Minister Malcolm Turnbull about the refugee resettlement deal. Immediately following the conversation, he sent out the following: &ldquo;Call
+            it what you want, it is about keeping bad people (with bad intentions) out of country!&rdquo;</p>
+        </div>
+        <div class="s2-textbox">
+          <p id="s2-keytweet4">Later that week, we saw a series of messages, posted following the temporary block of Trump&rsquo;s immigration ban by a judge in the district court of Western Washington. Trump went on to question the <a id="s2-keytweet45">&ldquo;so-called&rdquo; judge&rsquo;s qualifications</a>            and <a id="s2-keytweet46">call it a &ldquo;terrible decision.&rdquo;</a></p>
+        </div>
+        <div class="s2-textbox">
+          <p id="s2-keytweet5">Skipping ahead to the final week of his first 100 days, Trump sends out beautifully-composed and wonderfully-timed tweet discussing/defending his first-100-days accomplishments.</p>
+        </div>
+
+        <div class="s2-textbox" id="timings" style="margin-top: 250px;">
+          <h2>No rest for the wicked?</h2>
+          <p>It turns out Donald Trump&rsquo;s a pretty early riser (as perhaps Presidents should be). He regularly tweets around the 6 am mark, and occasionally tweets late into the night. Interestingly, there are a few trends when it comes to two things:
+            one, what he's tweeting about, and two, what device he&rsquo;s using. Take a look...</p>
+        </div>
+
+        <div class="s2-textbox" id="timings-election">
+          <p>As noted above, he tweeted about the 2016 election twelve times in his first 100 days, and eleven of those tweets came in the AM. 5 of those came from an Android device, which many believe is his personal mobile.</p>
+        </div>
+
+        <div class="s2-textbox" id="timings-muslimban">
+          <p>Whether it was to defend it, promote it, or complain about judges being unfair, when it comes to his immigration ban, Trump took to Twitter <em>a lot</em>. 33 times in his first 100 days to be exact. And only five of the 33 came after February
+            21
+            <sup>st</sup>.</p>
+        </div>
+
+        <div class="s2-textbox" id="timings-fakenews">
+          <p>As was the case with the 2016 election, Trump generally tweeted about what he dubbed #FakeNews in the mornings. And up until March 15<sup>th</sup>, generally on his personal Android device.</p>
+        </div>
+
+        <div class="s2-textbox" id="sources" style="margin-top: 250px;">
+          <h2>iPhone vs Android</h2>
+          <p>@realDonaldTrump&rsquo;s account tweets from two different devices. One is an iPhone and one an Android, and as many have pointed out before me, it's often obvious which one is the real Donald. <a href="http://varianceexplained.org/r/trump-tweets/">David Robinson</a>            did a comprehensive language analysis, confirming that Trump's angrier tweets, AKA his Android tweets, are coming from the real him.</p>
+        </div>
+
+        <div class="s2-textbox" id="endS2" style="margin-top: 250px;">
+          <p>Highlighted now are the 167 tweets sent from his Android device, all but one of which were posted before March 8<sup>th</sup>. Click through the filters above the graph to see some trends in particular topics when it comes to what device he's
+            tweeting from, and we'll see, it's <em>almost</em> as though someone took his Android away.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="temporary_spacer"></div>
+
+    <div class="container" id="footnotes">
+      <div class="row">
+        <div class="col-xs-12 col-sm-2 col-md-2"></div>
+        <div class="col-xs-12 col-sm-8 col-md-8">
+          <p class="footnotes">Created with
+            <font color="e00000">&hearts;</font> by Sam Vickars. This project is (obviously) not endorsed by Donald Trump or his administration and is not affiliated with Twitter.</br>
+            Tweet data was provided by <a href="http://www.trumptwitterarchive.com/archive">the Trump Twitter Archive</a> by Brendan Brown. Inspiration was drawn from posts by Philip Bump of the <a href="https://www.washingtonpost.com/news/politics/wp/2017/04/28/the-first-100-days-of-president-realdonaldtrump/?utm_term=.e34ed8c598b9">Washinton Post</a>,
+            Danielle Rindler, also of the <a href="https://www.washingtonpost.com/graphics/politics/100-days-of-trump-tweets/?utm_term=.fb979221548a">Washington Post</a>, and Alicia Parlapiano and Larry Buchanan of the <a href="https://www.nytimes.com/interactive/2017/04/28/us/politics/donald-trump-twitter-100-days-of-tweets.html?action=click&contentCollection=Politics&module=RelatedCoverage&region=EndOfArticle&pgtype=article">New York Times</a>.
+            Categories and topics are based on my research and those themes distilled by the above articles, while dates and descriptions of major events were sourced from Nick O&rsquo;Malley&rsquo;s article in the <a href="http://www.smh.com.au/world/the-first-100-days-of-us-president-donald-trump-a-timeline-20170425-gvru05.html">Sydney Morning Herald</a>.</p>
+          <p class="footnotes">If you've got any suggestions, corrections, or additions, get in touch <a href="http://samvickars.is/readytochat">here</a>, <a href="mailto:samvickars@gmail.com">here</a>, or <a href="http://twitter.com/samvickars">here</a>.</p>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-left ">Like this?
+        <a href="http://twitter.com/home?status=@samvickars bit.ly/2schsne ">Let me know</a>.
+      </div>
+      <div class="footer-right ">
+        <a href="http://sam-vickars.squarespace.com/ ">Archive</a>&nbsp;&nbsp;//&nbsp;
+
+        <a href="https://twitter.com/samvickars ">Twitter</a>
+
+        <a href="https://www.behance.net/sam-i-am ">Behance</a>
+
+        <a href="http://typographyturnsmeon.com ">Tumblr</a>
+
+        <a href="https://github.com/svickars ">Github</a>
+      </div>
+    </footer>
+
+
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa " crossorigin="anonymous "></script>
+    <script src="js/jquery.textfill.min.js "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/1.17.0/d3-annotation.min.js"></script>
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js "></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js "></script>
+
+    <script src="js/main.js "></script>
+    <script src="http://samvickars.is/js/progress.js "></script>
+  </body>
+
+</html>

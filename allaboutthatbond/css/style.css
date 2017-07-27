@@ -215,6 +215,7 @@ footer a:hover {
 
 .tile {
   min-height: 100vw;
+  height: auto;
   display: flex;
   align-items: center;
   padding: 25px;
@@ -223,7 +224,7 @@ footer a:hover {
 @media (min-width: 768px) {
   .tile {
     height: auto;
-    min-height: 50vw; } }
+    min-height: 100vw; } }
 
 @media (max-width: 768px) {
   .tile {

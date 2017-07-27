@@ -1,0 +1,1 @@
+var url="http://www.hockey-reference.com/players/h/hamrlro01.html",fs=require("fs"),cheerio=require("cheerio"),content=fs.readFileSync(url),result=[],$=cheerio.load(content);$("tbody").find("tr").each(function(e,r){result.push($(r).find("td").eq(0).html().split("<br>")[2].trim())});
