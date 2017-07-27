@@ -1337,6 +1337,210 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/playingball\/img\/BarChartSizes-03.jpg": {
+		"ft": 16384,
+		"iS": 562430,
+		"oA": 0,
+		"oAP": "\/playingball\/img\/BarChartSizes-03.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/playingball\/img\/BarChartSizes-04.jpg": {
+		"ft": 16384,
+		"iS": 659730,
+		"oA": 0,
+		"oAP": "\/playingball\/img\/BarChartSizes-04.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/playingball\/img\/field_overlay-07.jpg": {
+		"ft": 16384,
+		"iS": 584681,
+		"oA": 0,
+		"oAP": "\/playingball\/img\/field_overlay-07.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/playingball\/img\/hits-01.jpg": {
+		"ft": 16384,
+		"iS": 1279394,
+		"oA": 0,
+		"oAP": "\/playingball\/img\/hits-01.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/playingball\/img\/hits-02.jpg": {
+		"ft": 16384,
+		"iS": 1321435,
+		"oA": 0,
+		"oAP": "\/playingball\/img\/hits-02.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/playingball\/img\/hits-03.jpg": {
+		"ft": 16384,
+		"iS": 1298960,
+		"oA": 0,
+		"oAP": "\/playingball\/img\/hits-03.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/playingball\/img\/hits-04.jpg": {
+		"ft": 16384,
+		"iS": 1216760,
+		"oA": 0,
+		"oAP": "\/playingball\/img\/hits-04.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/playingball\/img\/hits-05.jpg": {
+		"ft": 16384,
+		"iS": 1165068,
+		"oA": 0,
+		"oAP": "\/playingball\/img\/hits-05.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/playingball\/img\/hits-06.jpg": {
+		"ft": 16384,
+		"iS": 1225650,
+		"oA": 0,
+		"oAP": "\/playingball\/img\/hits-06.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/playingball\/img\/notebook1.JPG": {
+		"ft": 16384,
+		"iS": 1843660,
+		"oA": 0,
+		"oAP": "\/playingball\/img\/notebook1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/playingball\/img\/notebook2copy.jpeg": {
+		"ft": 16384,
+		"iS": 1980593,
+		"oA": 0,
+		"oAP": "\/playingball\/img\/notebook2copy.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/playingball\/img\/notebook3.JPG": {
+		"ft": 16384,
+		"iS": 1931097,
+		"oA": 0,
+		"oAP": "\/playingball\/img\/notebook3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/playingball\/img\/numbers1.png": {
+		"ft": 32768,
+		"iS": 1909898,
+		"oA": 0,
+		"oAP": "\/playingball\/img\/numbers1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/playingball\/img\/numbers3.png": {
+		"ft": 32768,
+		"iS": 676578,
+		"oA": 0,
+		"oAP": "\/playingball\/img\/numbers3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/playingball\/img\/numbers4.png": {
+		"ft": 32768,
+		"iS": 59785,
+		"oA": 0,
+		"oAP": "\/playingball\/img\/numbers4.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/playingball\/img\/numbers5.png": {
+		"ft": 32768,
+		"iS": 188558,
+		"oA": 0,
+		"oAP": "\/playingball\/img\/numbers5.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/playingball\/img\/OutfieldHeights-05.jpg": {
+		"ft": 16384,
+		"iS": 813503,
+		"oA": 0,
+		"oAP": "\/playingball\/img\/OutfieldHeights-05.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/playingball\/img\/OutfieldHeights-15.jpg": {
+		"ft": 16384,
+		"iS": 418051,
+		"oA": 0,
+		"oAP": "\/playingball\/img\/OutfieldHeights-15.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/playingball\/img\/OutfieldHeights-23.jpg": {
+		"ft": 16384,
+		"iS": 500919,
+		"oA": 0,
+		"oAP": "\/playingball\/img\/OutfieldHeights-23.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/playingball\/img\/OutfieldHeights-29.jpg": {
+		"ft": 16384,
+		"iS": 514834,
+		"oA": 0,
+		"oAP": "\/playingball\/img\/OutfieldHeights-29.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/playingball\/index.html": {
 		"ft": 8192,
 		"oA": 2,
