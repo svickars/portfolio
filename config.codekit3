@@ -872,7 +872,7 @@
 		},
 	"\/competitive\/img\/all_large.jpg": {
 		"ft": 16384,
-		"iS": 16606,
+		"iS": 1917158,
 		"oA": 0,
 		"oAP": "\/competitive\/img\/all_large.jpg",
 		"oF": 0,
@@ -882,7 +882,7 @@
 		},
 	"\/competitive\/img\/all_small.jpg": {
 		"ft": 16384,
-		"iS": 16607,
+		"iS": 620636,
 		"oA": 0,
 		"oAP": "\/competitive\/img\/all_small.jpg",
 		"oF": 0,
@@ -892,7 +892,7 @@
 		},
 	"\/competitive\/img\/all_zoom2.png": {
 		"ft": 32768,
-		"iS": 16607,
+		"iS": 2850461,
 		"oA": 0,
 		"oAP": "\/competitive\/img\/all_zoom2.png",
 		"oF": 0,
@@ -901,9 +901,31 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/competitive\/img\/bombers-riders.png": {
+		"ft": 32768,
+		"iS": 914066,
+		"oA": 0,
+		"oAP": "\/competitive\/img\/bombers-riders.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/competitive\/img\/celtics-lakers.png": {
+		"ft": 32768,
+		"iS": 1938370,
+		"oA": 0,
+		"oAP": "\/competitive\/img\/celtics-lakers.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/competitive\/img\/cleveland-zoom5-01.png": {
 		"ft": 32768,
-		"iS": 16607,
+		"iS": 1344408,
 		"oA": 0,
 		"oAP": "\/competitive\/img\/cleveland-zoom5-01.png",
 		"oF": 0,
@@ -912,9 +934,20 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/competitive\/img\/giants_dodgers.png": {
+		"ft": 32768,
+		"iS": 2108059,
+		"oA": 0,
+		"oAP": "\/competitive\/img\/giants_dodgers.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/competitive\/img\/i-b-bears-packers.png": {
 		"ft": 32768,
-		"iS": 16596,
+		"iS": 142931,
 		"oA": 0,
 		"oAP": "\/competitive\/img\/i-b-bears-packers.png",
 		"oF": 0,
@@ -925,7 +958,7 @@
 		},
 	"\/competitive\/img\/i-b-bombers-riders.png": {
 		"ft": 32768,
-		"iS": 16608,
+		"iS": 107690,
 		"oA": 0,
 		"oAP": "\/competitive\/img\/i-b-bombers-riders.png",
 		"oF": 0,
@@ -936,7 +969,7 @@
 		},
 	"\/competitive\/img\/i-b-canadiens-maple-leafs.png": {
 		"ft": 32768,
-		"iS": 16608,
+		"iS": 137260,
 		"oA": 0,
 		"oAP": "\/competitive\/img\/i-b-canadiens-maple-leafs.png",
 		"oF": 0,
@@ -947,7 +980,7 @@
 		},
 	"\/competitive\/img\/i-b-celtic-lakers.png": {
 		"ft": 32768,
-		"iS": 16596,
+		"iS": 148223,
 		"oA": 0,
 		"oAP": "\/competitive\/img\/i-b-celtic-lakers.png",
 		"oF": 0,
@@ -958,7 +991,7 @@
 		},
 	"\/competitive\/img\/i-b-dodgers-giants.png": {
 		"ft": 32768,
-		"iS": 16596,
+		"iS": 123664,
 		"oA": 0,
 		"oAP": "\/competitive\/img\/i-b-dodgers-giants.png",
 		"oF": 0,
@@ -969,7 +1002,7 @@
 		},
 	"\/competitive\/img\/i-giants-dodgers-zoom5-01.png": {
 		"ft": 32768,
-		"iS": 16608,
+		"iS": 337888,
 		"oA": 0,
 		"oAP": "\/competitive\/img\/i-giants-dodgers-zoom5-01.png",
 		"oF": 0,
@@ -980,7 +1013,7 @@
 		},
 	"\/competitive\/img\/i-leafs-canadiens-zoom5-01-01.png": {
 		"ft": 32768,
-		"iS": 16596,
+		"iS": 240781,
 		"oA": 0,
 		"oAP": "\/competitive\/img\/i-leafs-canadiens-zoom5-01-01.png",
 		"oF": 0,
@@ -991,7 +1024,7 @@
 		},
 	"\/competitive\/img\/i-packers-bears-zoom5-01.png": {
 		"ft": 32768,
-		"iS": 16608,
+		"iS": 205332,
 		"oA": 0,
 		"oAP": "\/competitive\/img\/i-packers-bears-zoom5-01.png",
 		"oF": 0,
@@ -1002,7 +1035,7 @@
 		},
 	"\/competitive\/img\/i-riders-bombers-zoom5-01-01.png": {
 		"ft": 32768,
-		"iS": 16596,
+		"iS": 190935,
 		"oA": 0,
 		"oAP": "\/competitive\/img\/i-riders-bombers-zoom5-01-01.png",
 		"oF": 0,
@@ -1013,7 +1046,7 @@
 		},
 	"\/competitive\/img\/i-zoom1-01.png": {
 		"ft": 32768,
-		"iS": 16608,
+		"iS": 781114,
 		"oA": 0,
 		"oAP": "\/competitive\/img\/i-zoom1-01.png",
 		"oF": 0,
@@ -1024,7 +1057,7 @@
 		},
 	"\/competitive\/img\/i-zoom1-v2-01.png": {
 		"ft": 32768,
-		"iS": 16608,
+		"iS": 629153,
 		"oA": 0,
 		"oAP": "\/competitive\/img\/i-zoom1-v2-01.png",
 		"oF": 0,
@@ -1033,9 +1066,20 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/competitive\/img\/leafs-canadiens.png": {
+		"ft": 32768,
+		"iS": 1026463,
+		"oA": 0,
+		"oAP": "\/competitive\/img\/leafs-canadiens.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/competitive\/img\/legend-zoom9-01.png": {
 		"ft": 32768,
-		"iS": 16608,
+		"iS": 923586,
 		"oA": 0,
 		"oAP": "\/competitive\/img\/legend-zoom9-01.png",
 		"oF": 0,
@@ -1046,7 +1090,7 @@
 		},
 	"\/competitive\/img\/newyork-zoom5-01.png": {
 		"ft": 32768,
-		"iS": 16595,
+		"iS": 1367397,
 		"oA": 0,
 		"oAP": "\/competitive\/img\/newyork-zoom5-01.png",
 		"oF": 0,
@@ -1057,7 +1101,7 @@
 		},
 	"\/competitive\/img\/newyork-zoom9-01.png": {
 		"ft": 32768,
-		"iS": 16608,
+		"iS": 631689,
 		"oA": 0,
 		"oAP": "\/competitive\/img\/newyork-zoom9-01.png",
 		"oF": 0,
@@ -1066,9 +1110,20 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/competitive\/img\/packers-bears.png": {
+		"ft": 32768,
+		"iS": 1248936,
+		"oA": 0,
+		"oAP": "\/competitive\/img\/packers-bears.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/competitive\/img\/TheBiggestRivalriesInSports_v7-01.jpg": {
 		"ft": 16384,
-		"iS": 16605,
+		"iS": 28068471,
 		"oA": 0,
 		"oAP": "\/competitive\/img\/TheBiggestRivalriesInSports_v7-01.jpg",
 		"oF": 0,
@@ -1078,7 +1133,7 @@
 		},
 	"\/competitive\/img\/vancouver-zoom5-01.png": {
 		"ft": 32768,
-		"iS": 16596,
+		"iS": 911109,
 		"oA": 0,
 		"oAP": "\/competitive\/img\/vancouver-zoom5-01.png",
 		"oF": 0,
