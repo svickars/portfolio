@@ -1239,6 +1239,70 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/css\/style_backup.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/css\/style_backup-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/data\/BondJamesBond.xlsx": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/data\/BondJamesBond.xlsx",
+		"oF": 0
+		},
+	"\/data\/Data-AllofBoston.numbers": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/data\/Data-AllofBoston.numbers",
+		"oF": 0
+		},
+	"\/data\/Data-AllOfColorado.numbers": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/data\/Data-AllOfColorado.numbers",
+		"oF": 0
+		},
+	"\/data\/Data-AllOfToronto.numbers": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/data\/Data-AllOfToronto.numbers",
+		"oF": 0
+		},
+	"\/data\/Data-DonaldsonHitsRedSox.numbers": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/data\/Data-DonaldsonHitsRedSox.numbers",
+		"oF": 0
+		},
+	"\/data\/Data-DonaldsonHitsRockies.numbers": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/data\/Data-DonaldsonHitsRockies.numbers",
+		"oF": 0
+		},
+	"\/data\/Data-DonaldsonsHitsActual.numbers": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/data\/Data-DonaldsonsHitsActual.numbers",
+		"oF": 0
+		},
+	"\/data\/MarketsOfScotland.xlsx": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/data\/MarketsOfScotland.xlsx",
+		"oF": 0
+		},
+	"\/data\/TheWorldOfJamesBond.pdf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/data\/TheWorldOfJamesBond.pdf",
+		"oF": 0
+		},
 	"\/drinking\/css\/style.css": {
 		"aP": 1,
 		"bl": 0,
@@ -1390,6 +1454,24 @@
 		"oAP": "\/index.html",
 		"oF": 0
 		},
+	"\/js\/jquery.zoom.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/jquery.zoom-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/jquery.zoom.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/jquery.zoom.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/js\/main-min.js": {
 		"ft": 64,
 		"mi": 1,
@@ -1408,11 +1490,47 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/js\/main_backup.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/main_backup-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/main_backup2.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/main_backup2-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/modernizr.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/modernizr-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/js\/progress-min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/js\/progress-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/js\/progress.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/js\/progress-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1687,6 +1805,118 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/playingball\/js\/progress-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/readytochat\/css\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/readytochat\/css\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/readytochat\/css\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/readytochat\/css\/style.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/readytochat\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/readytochat\/index.html",
+		"oF": 0
+		},
+	"\/readytochat\/js\/main-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/readytochat\/js\/main-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/readytochat\/js\/main.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/readytochat\/js\/main-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/readytochat\/js\/progress-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/readytochat\/js\/progress-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/tellingstories\/css\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/tellingstories\/css\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/tellingstories\/css\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/tellingstories\/css\/style.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/tellingstories\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/tellingstories\/index.html",
+		"oF": 0
+		},
+	"\/tellingstories\/js\/main-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/tellingstories\/js\/main-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/tellingstories\/js\/main.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/tellingstories\/js\/main-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/tellingstories\/js\/progress-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/tellingstories\/js\/progress-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
