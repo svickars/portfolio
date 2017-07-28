@@ -1,10 +1,11 @@
-$('.grid').masonry({
-  itemSelector: '.grid-item',
-  columnWidth: '.grid-sizer',
-  percentPosition: true
-});
-
 jQuery(document).ready(function($) {
+
+  $('.grid').masonry({
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    percentPosition: true
+  });
+
   //move nav element position according to window width
   moveNavigation();
   $(window).on('resize', function() {
