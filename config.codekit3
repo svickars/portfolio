@@ -544,6 +544,12 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/CNAME": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/CNAME",
+		"oF": 0
+		},
 	"\/comparinggreats\/css\/style.css": {
 		"aP": 1,
 		"bl": 0,
