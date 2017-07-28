@@ -738,6 +738,17 @@
 		"oT": 1,
 		"q": 100
 		},
+	"\/comparinggreats\/img\/featured.png": {
+		"ft": 32768,
+		"iS": 278870,
+		"oA": 0,
+		"oAP": "\/comparinggreats\/img\/featured.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/comparinggreats\/img\/HowQuickly\/Art-Ross_howquickly.jpg": {
 		"ft": 16384,
 		"iS": 434890,
@@ -1307,6 +1318,12 @@
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/index.html",
+		"oF": 0
 		},
 	"\/LICENSE": {
 		"ft": 8192,
