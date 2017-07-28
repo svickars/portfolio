@@ -2216,6 +2216,12 @@
 		"oF": 0,
 		"oO": 0,
 		"oS": 1
+		},
+	"\/working\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/working\/index.html",
+		"oF": 0
 		}
 	},
 "hooks": [
