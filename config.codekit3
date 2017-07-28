@@ -1382,6 +1382,14 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/playingball\/img\/featured.gif": {
+		"ft": 4194304,
+		"iS": 350829,
+		"oA": 0,
+		"oAP": "\/playingball\/img\/featured.gif",
+		"oF": 0,
+		"opt": 0
+		},
 	"\/playingball\/img\/field_overlay-07.jpg": {
 		"ft": 16384,
 		"iS": 584681,
