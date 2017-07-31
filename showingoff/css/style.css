@@ -22,11 +22,11 @@ a {
   text-decoration: inherit !important; }
 
 a:hover {
-  color: #E5D5AD; }
+  color: #F00000; }
 
 .color-strip {
   display: none;
-  background-color: #E5D5AD !important;
+  background-color: #F00000 !important;
   position: fixed;
   top: 0;
   left: 0;
@@ -38,7 +38,7 @@ h1 {
   font-weight: 600;
   font-style: normal;
   font-size: 7vw;
-  color: #E5D5AD; }
+  color: #F00000; }
 
 @media (max-width: 768px) {
   h1 {
@@ -130,7 +130,7 @@ p {
   text-align: left; }
 
 .lineBlock label {
-  color: #E5D5AD;
+  color: #F00000;
   margin-bottom: 0px;
   display: block; }
 
@@ -176,11 +176,11 @@ footer {
   line-height: 100px; }
 
 footer a {
-  color: #E5D5AD !important;
+  color: #F00000 !important;
   border-bottom: 1px solid #333333 !important; }
 
 footer a:hover {
-  border-bottom: 1px solid #E5D5AD !important; }
+  border-bottom: 1px solid #F00000 !important; }
 
 .footer-left {
   float: left;
@@ -211,7 +211,7 @@ footer a:hover {
   margin: 50px 0 50px 0; }
 
 .caption {
-  color: #E5D5AD;
+  color: #F00000;
   font-family: "Overpass", Arial, sans-serif;
   font-weight: 400;
   font-size: .6em;
@@ -279,16 +279,16 @@ progress {
   appearance: none;
   border: none;
   background-color: transparent;
-  color: #E5D5AD !important; }
+  color: #F00000 !important; }
 
 progress::-webkit-progress-bar {
   background-color: transparent; }
 
 progress::-webkit-progress-value {
-  background-color: #E5D5AD !important; }
+  background-color: #F00000 !important; }
 
 progress::-moz-progress-bar {
-  background-color: #E5D5AD !important; }
+  background-color: #F00000 !important; }
 
 header {
   position: fixed;
@@ -440,7 +440,7 @@ header {
   color: #333333; }
 
 #menulink {
-  border-bottom: 1px solid #E5D5AD; }
+  border-bottom: 1px solid #F00000; }
 
 #menulink:hover {
   border-bottom: 1px solid #333333; }
@@ -471,7 +471,7 @@ header {
   left: 0;
   width: 100%;
   height: 60px;
-  background-color: #E5D5AD;
+  background-color: #F00000;
   padding: 0 5% 0 15px;
   -webkit-transform: translateY(-60px);
   -moz-transform: translateY(-60px);
