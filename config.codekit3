@@ -1889,6 +1889,132 @@
 		"sC": 1,
 		"tS": 0
 		},
+	"\/showingoff\/css\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/showingoff\/css\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/showingoff\/css\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/showingoff\/css\/style.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/showingoff\/img\/S07_scotland.jpg": {
+		"ft": 16384,
+		"iS": 2661404,
+		"oA": 0,
+		"oAP": "\/showingoff\/img\/S07_scotland.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/showingoff\/img\/SO1_couch.jpg": {
+		"ft": 16384,
+		"iS": 7364161,
+		"oA": 0,
+		"oAP": "\/showingoff\/img\/SO1_couch.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/showingoff\/img\/SO2_earthquakes.jpg": {
+		"ft": 16384,
+		"iS": 965275,
+		"oA": 0,
+		"oAP": "\/showingoff\/img\/SO2_earthquakes.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/showingoff\/img\/SO3_colours.jpg": {
+		"ft": 16384,
+		"iS": 844532,
+		"oA": 0,
+		"oAP": "\/showingoff\/img\/SO3_colours.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/showingoff\/img\/SO4_wordmap1.jpg": {
+		"ft": 16384,
+		"iS": 1199139,
+		"oA": 0,
+		"oAP": "\/showingoff\/img\/SO4_wordmap1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/showingoff\/img\/So5_wordmap2.jpg": {
+		"ft": 16384,
+		"iS": 928000,
+		"oA": 0,
+		"oAP": "\/showingoff\/img\/So5_wordmap2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/showingoff\/img\/So6_wordmap3.jpg": {
+		"ft": 16384,
+		"iS": 507794,
+		"oA": 0,
+		"oAP": "\/showingoff\/img\/So6_wordmap3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/showingoff\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/showingoff\/index.html",
+		"oF": 0
+		},
+	"\/showingoff\/js\/main-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/showingoff\/js\/main-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/showingoff\/js\/main.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/showingoff\/js\/main-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/showingoff\/js\/progress-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/showingoff\/js\/progress-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
 	"\/tellingstories\/css\/style.css": {
 		"aP": 1,
 		"bl": 0,
