@@ -538,9 +538,7 @@ header {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   font-family: "Rubik", Arial, sans-serif;
-  color: #333333;
-  letter-spacing: 5px;
-  text-transform: uppercase; }
+  color: #333333; }
 
 .logo-clicked {
   color: #333333; }
