@@ -8,7 +8,7 @@ html {
 
 body {
   font-size: 1.6rem !important;
-  font-family: "Libre Baskerville", Georgia, serif !important;
+  font-family: "Rubik", Arial, sans-serif !important;
   color: #333333 !important; }
 
 .color-strip {
@@ -50,7 +50,7 @@ h1 {
     font-size: 20vw; } }
 
 h2 {
-  font-family: "Libre Baskerville", Georgia, serif;
+  font-family: "Rubik", Arial, sans-serif;
   font-weight: normal;
   font-size: 18px;
   color: #666666; }
@@ -65,7 +65,7 @@ h4 {
   font-style: italic; }
 
 p {
-  font-family: "Libre Baskerville", Georgia, serif;
+  font-family: "Rubik", Arial, sans-serif;
   font-size: 1em; }
 
 .notes {
@@ -317,9 +317,7 @@ header {
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   font-family: "Rubik", Arial, sans-serif;
-  color: #333333;
-  letter-spacing: 5px;
-  text-transform: uppercase; }
+  color: #333333; }
 
 .logo-clicked {
   color: #333333; }
