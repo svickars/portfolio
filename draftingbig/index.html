@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js no-svg">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>NHL Draft Picks* &#8211; *By Sam Vickars.</title>
+
+    <meta name="description" content="Information artist, graphic designer, story teller." />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@samvickars">
+    <meta name="twitter:title" content="The Value of a Draft Pick*">
+    <meta name="twitter:description" content="*Analyzing 6265 NHL draft picks.">
+    <meta name="twitter:creator" content="@samvickars">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/svickars/portfolio/master/draftingbig/img/screen1.png">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="The Value of a Draft Pick*" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://www.samvickars.is/draftingbig/" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/svickars/portfolio/master/draftingbig/img/screen1.png" />
+    <meta property="og:description" content="*Analyzing 6265 NHL draft picks." />
+    <meta property="og:site_name" content="Sam Vickars" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Rubik:300,400,400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Playfair+Display:700|Roboto:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/fontawesome-pro-core.css">
+    <link rel="stylesheet" href="css/fontawesome-pro-regular.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+
+    <script src="../js/modernizr.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+      ga('create', 'UA-72865926-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+  </head>
+
+  <body>
+    <progress value="0"></progress>
+    <div class="color-strip"></div>
+    <header>
+      <div class="cd-logo">
+        <a href="http://samvickars.is">
+							Sam Vickars*
+						</a>
+      </div>
+
+      <nav class="cd-main-nav-wrapper">
+        <ul class="cd-main-nav" id="mainnav">
+          <li>
+            <a href="#0" class="cd-subnav-trigger"><span id="menulink">Menu</span></a>
+
+            <ul class="mainnavlinks" id="navlinks">
+              <li class="go-back"><a id="menulink" href="#0">Menu</a></li>
+              <li id="slidermenu"><a href="http://samvickars.is/">Work</a></li>
+              <li id="slidermenu"><a href="/tellingstories">About</a></li>
+              <li id="slidermenu"><a href="/readytochat">Contact &nbsp;</a></li>
+              <li id="slidermenu"><a href="#0" class="placeholder">Placeholder</a></li>
+            </ul>
+          </li>
+        </ul>
+        <!-- .cd-main-nav -->
+      </nav>
+      <!-- .cd-main-nav-wrapper -->
+
+      <a href="#0" class="cd-nav-trigger"><span></span></a>
+
+    </header>
+
+    <div class="container-fluid title">
+      <div class="row ch">
+        <div class="hidden-xs hidden-sm hidden-md col-lg-1"></div>
+        <div class="col-xs-12 col-sm-11">
+          <h1>The Value of a Draft Pick</h1>
+          <div class="sub-headline">
+            <h2>Analyzing the value of every NHL draft pick since 1992.</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row ch">
+        <div class="hidden-xs hidden-sm hidden-md col-lg-1"></div>
+        <div class="col-xs-12 col-sm-8 col-md-6">
+          <p style="color: #666666">November 2017. With...</p>
+          <p>The NHL Entry Draft takes place every June, when 31 general managers get together and take turns selecting the rights to young hockey players. Some of them work out, some of them don&rsquo;t. But every year, also in June, somebody always brings
+            up the question of how we value draft picks. When Elliotte Friedman, a journalist for Sportsnet, brought it up this past summer, it got me thinking. How <em>do</em> we put a value on a draft pick? Friedman&rsquo;s <a href="http://www.sportsnet.ca/hockey/nhl/30-thoughts-trade-value-first-round-pick/">article</a>            linked to another report, this one by <a href="http://www.sportsnet.ca/hockey/nhl/analyzing-value-nhl-draft-picks/">Stephen Burtch</a>, containing a few graphs and insights that confirmed it: first round picks generally produce better results.
+            He also pointed out that teams exhcnage draft picks &ldquo;with alarming frequency&rdquo;, something I had never really thought about before. Which of these trades worked out? Which didn&rsquo;t? How can we tell?</p>
+
+          <p>While the data to support these insights is available in abundance, it generally comes in tables full of statistics and occassionally an Excel spreadsheet packed with numbers and percentages. While a wall of numbers might get my heartrate up
+            a few notches, I can imagine it has the opposite effect for most. So I set about turning it into something visual, a tool we can have fun with and maybe gain some insights from. I combined data from <a href="https://www.hockey-reference.com/">hockey-reference.com</a>            with the magic of Python and R to analyze every draft pick since 1992 and compare them across the board.</p>
+
+          <p>While some metrics lend themselves quite well to this sort of visual, others really don&rsquo;t. Dom Luszczyszyn&rsquo;s <a href="https://hockey-graphs.com/2016/07/13/measuring-single-game-productivity-an-introduction-to-game-score/">Game Score</a>,
+            for instance, lets us compare players across all positions quickly and simply. Other stats, like goals, aren&rsquo;t so simple (i.e. a defenceman is likely going to have scored fewer goals than a centre, so in a visualization like this, he&rsquo;ll
+            look like a less productive player). I&rsquo;ve converted these stats to something I call Stat Share, meaning a player&rsquo;s share of each stat (e.g. goals) relative to his position, and that&rsquo;s what&rsquo;s presented here.</p>
+
+          <p>Feel free to jump right in, or continue to scroll and we&rsquo;ll tell you all about it.</p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row ch">
+        <div class="hidden-xs hidden-sm hidden-md col-lg-1"></div>
+        <div class="col-xs-12 col-sm-8 col-md-6">
+          <h3>Analyzing NHL Draft Picks</h3>
+          <p>Below are all <span class="number">6265</span> players drafted into the NHL since <span class="number">1992</span>, when the league expanded from <span class="number">22</span> teams to <span class="number">24</span> and the draft moved from
+            <span class="number">12</span> rounds to <span class="number">11</span>. Select a <span class="number highlight">VIEW</span> to see players sorted by year and round, by team rank, or by value. Each circle represents a player, sized by the
+            selected metric. Players who never played a game in the NHL are represented by dots at 25% opacity. Hover or tap on a player to see their stats, both over their entire career and through the first five years after their draft year. Click or
+            tap on a
+            <span class="number  highlight">ROUND</span> to expand. <span class="glosLink highlight">Glossary.</span></p>
+        </div>
+      </div>
+      <div id="lockthis">
+        <div class="row ch st ch2">
+          <div class="hidden-xs hidden-sm hidden-md col-lg-1"></div>
+          <div class="col-xs-12 col-sm-10 col-md-8 stl">
+            <div class="btn-group hiddenmobile" style="margin-right: 2px;">
+              <label class="btn btn-primary active">
+                <input type="radio" name="viewselect" class="viewselect" id="viewselect1" value="view1" checked>View By Year
+            </label>
+              <label class="btn btn-primary">
+                <input type="radio" name="viewselect" class="viewselect" id="viewselect2" value="view2"> By Team Rank
+            </label>
+              <label class="btn btn-primary">
+                <input type="radio" name="viewselect" class="viewselect" id="viewselect3" value="view3"> By Value
+            </label>
+            </div>
+            <select class="btn form-control positionselect" id="positionselect" style="width: 100px;">
+            <option value=""></option>
+            <option value="pos-G">G</option>
+            <option value="pos-D">D</option>
+            <option value="pos-C">C</option>
+            <option value="pos-LW">LW</option>
+            <option value="pos-RW">RW</option>
+          </select>
+            <span>
+            <select class="playersearch" id="playersearch" style="width: 150px;">
+            </select>
+          </span>
+          </div>
+        </div>
+        <div class="row ch st">
+          <div class="hidden-xs hidden-sm hidden-md col-lg-1"></div>
+          <div class="stl chB">
+            <div class="chA">
+              <div class="chAt">Size by</div>
+              <div class="chAb">
+                <div class="str-size">
+                  <select class="btn form-control statselect" id="statselect" style="width: 100px;">
+                  <optgroup label="All Positions">
+                    <option value="avg_GS" definition="Average Game Score">Average Game Score</option>
+                    <option value="GP_ss" definition="Games Played (as a percentage of GP by position)">Games Played</option>
+                    <option value="G_ss" definition="Goals (as a percentage of G by position)">Goals</option>
+                    <option value="A_ss" definition="Assists (as a percentage of A by position)">Assists</option>
+                    <option value="A_ss" definition="Points (as a percentage of PTS by position)">Points</option>
+                    <option value="SOG_ss" definition="Shots on goal (as a percentage of SOG by position)">SOG</option>
+                    <option value="Blocks_ss" definition="Blocks (as a percentage of blocks by position)">Blocks</option>
+                    <option value="Hits_ss" definition="Hits (as a percentage of hits by position)">Hits</option>
+                    <option value="PIM_ss" definition="Penalties in Minutes (as a percentage of PIM by position)">PIM</option>
+                    <option value="TOI_ss" definition="Time on Ice (as a percentage of TOI by position)">TOI</option>
+                    <option value="PlusMinus_ss" definition="Plus/Minus">+/-</option>
+                    <option value="CF_ss" definition="Corsi For">Corsi For</option>
+                    <option value="CA_ss" definition="Corsi Against">Corsi Against</option>
+                  </optgroup>
+                  <optgroup label="Goalies">
+                    <option value="gGS_ss" definition="Games Started (as a percentage of GS by all goalies)">Games Started</option>
+                    <option value="gW_ss" definition="Wins (as a percentage of W by all goalies)">Wins</option>
+                    <option value="gL_ss" definition="Losses (as a percentage of L by all goalies)">Losses</option>
+                    <option value="gTOgSO_ss" definition="Ties + OT/SO Losses (as a percentage of T+OT/SO L by all goalies)">Ties + OT/SO Losses</option>
+                    <option value="gSVper_ss" definition="Save Percentage">SV%</option>
+                    <option value="gGAA_ss" definition="Goals Against Average (lowest first)">GAA</option>
+                    <option value="gSO_ss" definition="Shutouts (as a percentage of SO by all goalies)">Shutouts</option>
+                  </optgroup>
+                </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chA hiddenmobile">
+            <div class="chAt">Based on</div>
+            <div class="chAb">
+              <div class="str-time hiddenmobile">
+                <form role="form">
+                  <div class="radio radio-inline">
+                    <input type="radio" class="timeselect" name="radio2" id="radio_c" value="_c" checked>
+                    <label for="radio3">
+                    Player&rsquo;s entire career
+                  </label>
+                  </div>
+                  <div class="radio radio-inline">
+                    <input type="radio" class="timeselect" name="radio2" id="radio_f" value="_f">
+                    <label for="radio3">
+                    First five years after their draft
+                  </label>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row s1">
+          <div class="hidden-xs hidden-sm hidden-md col-lg-1"></div>
+          <div class="col-xs-12 col-lg-10 chart sb">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modaloverlay">
+      <div id="modal">
+        <div id="gClose"><i class="far fa-times-circle"></i></div>
+        <div class="row">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-10 gTitle">
+            <h3>Glossary</h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-8 gDef"><strong>Advanced</strong></div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">Avg Game Score</div>
+          <div class="col-xs-8 gDef">A metric created by Dom of <em>The Athletic</em> to measure a player&rsquo;s strength per game and averaged over their career. Read more <a href="https://hockey-graphs.com/2016/07/13/measuring-single-game-productivity-an-introduction-to-game-score/">here</a>.
+            Denoted as <strong>AGS</strong>.</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm"></div>
+          <div class="col-xs-8 gDef">...<em>insert more</em></div>
+        </div>
+
+        <div class="row header">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-8 gDef"><strong>Skaters</strong></div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">GP</div>
+          <div class="col-xs-8 gDef">Games played</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">G</div>
+          <div class="col-xs-8 gDef">Goals</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">A</div>
+          <div class="col-xs-8 gDef">Assists</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">PTS</div>
+          <div class="col-xs-8 gDef">Points</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">SOG</div>
+          <div class="col-xs-8 gDef">Shots on goal</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">Blks</div>
+          <div class="col-xs-8 gDef">Blocks at even strength</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">Hits</div>
+          <div class="col-xs-8 gDef">Hits at even strength</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">PIM</div>
+          <div class="col-xs-8 gDef">Penalties in minutes</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">TOI</div>
+          <div class="col-xs-8 gDef">Total time on ice, in minutes</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">+/-</div>
+          <div class="col-xs-8 gDef">Plus/Minus</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">Corsi For</div>
+          <div class="col-xs-8 gDef">Shits + Blocks + Misses at even strength</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">Corsi Against</div>
+          <div class="col-xs-8 gDef">Shits + Blocks + Misses (against) at even strength</div>
+        </div>
+
+        <div class="row header">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-8 gDef"><strong>Goalies</strong></div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">GS</div>
+          <div class="col-xs-8 gDef">Games Started</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">W</div>
+          <div class="col-xs-8 gDef">Wins</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">L</div>
+          <div class="col-xs-8 gDef">Losses</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">T+OT/SO Losses</div>
+          <div class="col-xs-8 gDef">Ties + Overtime/Shootout Losses</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">SV%</div>
+          <div class="col-xs-8 gDef">Save percentage</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">GAA</div>
+          <div class="col-xs-8 gDef">Goals Against Average</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">SO</div>
+          <div class="col-xs-8 gDef">Shutouts</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row chapter" id="chapter1">
+        <div class="hidden-xs hidden-sm hidden-md col-lg-1"></div>
+        <div class="col-xs-12 col-sm-8 col-md-8 chapterContainer">
+          <h4>Career vs First Five</h4>
+          <p>This is an example of something we can do on scroll, like changing the size of the circles to be based on a player&rsquo;s first five years, as opposed to their entire career.</p>
+        </div>
+      </div>
+      <div class="row chapter" id="chapter2">
+        <div class="hidden-xs hidden-sm hidden-md col-lg-1"></div>
+        <div class="col-xs-12 col-sm-8 col-md-8 chapterContainer">
+          <h4>Game Score</h4>
+          <p>This is just an example of how we can show metrics like Game Score for every player drafter since 1992. Each player is sized by their average game score (minimum GP is 25), and we&rsquo;re back to the full career.</p>
+          <p>I&rsquo;m imagining here a quick bit about how Game Score (followed by one or two similar ideas) works and it&rsquo;s pros and cons, especially when presented like this. We can highlight certain players or change views, whatever helps get the
+            point across.
+        </div>
+      </div>
+      <div class="row chapter" id="chapter3">
+        <div class="hidden-xs hidden-sm hidden-md col-lg-1"></div>
+        <div class="col-xs-12 col-sm-8 col-md-8 chapterContainer">
+          <h4>Other Stats</h4>
+          <p>We can then show other stats, like GP...</p>
+          <p>These stats are shown as a share of the total stat for each position (i.e. a player&rsquo;s total GP divided by all the GP by players of the same position so we don&rsquo;t get mismatched sizes, like giant circles for forwards when it comes
+            to goals)
+        </div>
+      </div>
+      <div class="row chapter" id="chapter4">
+        <div class="hidden-xs hidden-sm hidden-md col-lg-1"></div>
+        <div class="col-xs-12 col-sm-8 col-md-8 chapterContainer">
+          <div class="row">
+            <div class="col-xs-12">
+              <p>...or goalie wins</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row chapter" id="chapter5">
+        <div class="hidden-xs hidden-sm hidden-md col-lg-1"></div>
+        <div class="col-xs-12 col-sm-8 col-md-8 chapterContainer">
+          <h4>This guy!</h4>
+          <p>We can highlight certain players too.</p>
+        </div>
+      </div>
+      <div class="row chapter" id="chapter6">
+        <div class="hidden-xs hidden-sm hidden-md col-lg-1"></div>
+        <div class="col-xs-12 col-sm-8 col-md-8 chapterContainer">
+          <h4>These guys!</h4>
+          <p>We can even highlight a specific position, like defencemen.</p>
+        </div>
+      </div>
+      <div class="row chapter" id="chapter7">
+        <div class="hidden-xs hidden-sm hidden-md col-lg-1"></div>
+        <div class="col-xs-12 col-sm-8 col-md-8 chapterContainer">
+          <h4>Round 2</h4>
+          <p>We can also expand each round. We can do that based on a scroll or just click "ROUND 1", "ROUND 2", etc. to do it yourself. Hit the little (x) to excape it.</p>
+        </div>
+      </div>
+      <div class="row chapter" id="chapter8">
+        <div class="hidden-xs hidden-sm hidden-md col-lg-1"></div>
+        <div class="col-xs-12 col-sm-8 col-md-8 chapterContainer">
+          <h4>Insights</h4>
+          <p>Or talk about some other insights, like how <span class="number">60.4%</span> of draft picks since 1992 have never played a game in the chel. They&rsquo;re highlighted now. I am working on a little something else to follow this chart, comparing
+            each teams&rsquo; number of picks (by round?), number of games played by respective picks, and number of picks that have never played a game.</p>
+          <!-- <img src="img/dp.png" /><img src="img/GP.png" /><img src="img/noGP.png" /> -->
+        </div>
+      </div>
+      <div class="row chapter" id="chapter9">
+        <div class="hidden-xs hidden-sm hidden-md col-lg-1"></div>
+        <div class="col-xs-12 col-sm-8 col-md-8 chapterContainer">
+          <h4>Check it.</h4>
+          <p>There&rsquo;s also two other views to look at. This one shows every player ranked </p>
+          <!-- <img src="img/dp.png" /><img src="img/GP.png" /><img src="img/noGP.png" /> -->
+        </div>
+      </div>
+      <div class="row chapter" id="chapter10">
+        <div class="hidden-xs hidden-sm hidden-md col-lg-1"></div>
+        <div class="col-xs-12 col-sm-8 col-md-8 chapterContainer">
+          <p>And this one is a scatterplot comparing the selected metric to the pick number. Use the controls above to adjust!</p>
+          <!-- <img src="img/dp.png" /><img src="img/GP.png" /><img src="img/noGP.png" /> -->
+        </div>
+      </div>
+    </div>
+
+
+    <footer>
+      <div class="footer-left">Like this?
+        <a href="http://twitter.com/home?status=@samvickars bit.ly/2zqmaoP">Let me know</a>.
+      </div>
+      <div class="footer-right">
+        <a href="http://sam-vickars.squarespace.com/">Archive</a>&nbsp;&nbsp;//&nbsp;
+
+        <a href="https://twitter.com/samvickars">Twitter</a>
+
+        <a href="https://www.behance.net/sam-i-am">Behance</a>
+
+        <a href="http://typographyturnsmeon.com">Tumblr</a>
+
+        <a href="https://github.com/svickars">Github</a>
+      </div>
+    </footer>
+
+
+
+    <script src=" //ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js "></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js " integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.min.js"></script>
+
+    <script src="js/main-min.js "></script>
+    <script src="../js/progress.js "></script>
+  </body>
+
+</html>
