@@ -4,12 +4,14 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 62.5% !important; }
+  font-size: 62.5% !important;
+  height: 100%; }
 
 body {
   font-size: 1.6rem !important;
   font-family: "Rubik", Arial, sans-serif !important;
-  color: #333333 !important; }
+  color: #333333 !important;
+  min-height: 100%; }
 
 .color-strip {
   background-color: #e00000 !important; }
@@ -63,6 +65,68 @@ h4 {
   font-family: "Libre Baskerville", Georgia, serif;
   font-size: 14px;
   font-style: italic; }
+
+.home-container {
+  display: block;
+  margin: 100px 0 0 15px;
+  min-height: 1vh; }
+
+@media only screen and (min-width: 1024px) {
+  .home-container {
+    z-index: 2;
+    margin-left: 5%; } }
+
+.toc {
+  font-size: 12px;
+  color: #b5b5b5;
+  font-family: "Libre Baskerville", Georgia, serif;
+  font-weight: 300;
+  line-height: 50px; }
+
+.toc li span {
+  font-size: 35px; }
+
+.subtoc {
+  font-style: italic;
+  margin-left: 10px;
+  font-size: 16px !important; }
+
+.trumped {
+  font-family: 'Overpass', sans-serif;
+  font-weight: 700;
+  color: #A31621; }
+
+.greats {
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 500;
+  color: #008C53; }
+
+.outfields {
+  font-family: 'Roboto Slab', serif;
+  color: #E5D5AD; }
+
+.africa {
+  font-family: 'Arial', sans-serif;
+  color: #fcc30b; }
+
+.bond {
+  font-family: "museo-slab", serif;
+  font-weight: 700;
+  color: black; }
+
+.irs {
+  font-family: 'Libre Baskerville', serif;
+  color: #f15a24; }
+
+.rives {
+  font-family: "skolar-sans-latin", sans-serif;
+  font-weight: 600; }
+
+.drinking {
+  font-family: 'Roboto Slab', serif; }
+
+.other {
+  font-family: 'Rubik', sans-serif; }
 
 p {
   font-family: "Rubik", Arial, sans-serif;
