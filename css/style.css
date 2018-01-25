@@ -57,7 +57,7 @@ h3 {
   font-size: .9em; }
 
 .number {
-  font-size: .75em;
+  font-size: .65em;
   margin-right: 5px;
   opacity: .5; }
 
@@ -85,7 +85,7 @@ p {
   margin-top: 80px; }
 
 .item {
-  height: 300px;
+  height: 200px;
   padding: 15px; }
 
 .iteminner {
@@ -107,6 +107,24 @@ p {
 .overlay:hover {
   opacity: 0;
   transition: opacity 0.25s ease; }
+
+@media only screen and (max-width: 1280px) {
+  h2 {
+    font-size: .9em; }
+  h3 {
+    top: 40px;
+    font-size: .75em; }
+  .item {
+    height: 200px; } }
+
+@media only screen and (min-width: 1280px) {
+  h2 {
+    font-size: .9em; }
+  h3 {
+    top: 40px;
+    font-size: .75em; }
+  .item {
+    height: 200px; } }
 
 footer {
   margin-top: 100px;
