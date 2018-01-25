@@ -1,468 +1,440 @@
 <!DOCTYPE html>
 <html lang="en-US" class="no-js no-svg">
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>The Irregular Outfields of Baseball* &#8211; *By Sam Vickars.</title>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Irregular Outfields of Baseball &#8211; By Sam Vickars.</title>
 
-  <meta name="description" content="Information artist, graphic designer, story teller." />
+    <meta name="description" content="Information artist, graphic designer, story teller." />
 
-  <!-- Twitter Card data -->
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:site" content="@samvickars">
-  <meta name="twitter:title" content="The Irregular Outfields of Baseball*">
-  <meta name="twitter:description" content="*How would a standard size affect the game?">
-  <meta name="twitter:creator" content="@samvickars">
-  <meta name="twitter:image" content="https://raw.githubusercontent.com/svickars/portfolio/master/playingball/img/featured.gif">
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@samvickars">
+    <meta name="twitter:title" content="The Irregular Outfields of Baseball">
+    <meta name="twitter:description" content="How would a standard size affect the game?">
+    <meta name="twitter:creator" content="@samvickars">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/svickars/portfolio/master/playingball/img/featured.gif">
 
-  <!-- Open Graph data -->
-  <meta property="og:title" content="The Irregular Outfields of Baseball*" />
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="http://www.samvickars.is/playingball/" />
-  <meta property="og:image" content="https://raw.githubusercontent.com/svickars/portfolio/master/playingball/img/featured.gif" />
-  <meta property="og:description" content="*How would a standard size affect the game?" />
-  <meta property="og:site_name" content="Sam Vickars" />
+    <!-- Open Graph data -->
+    <meta property="og:title" content="The Irregular Outfields of Baseball" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://www.samvickars.is/playingball/" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/svickars/portfolio/master/playingball/img/featured.gif" />
+    <meta property="og:description" content="How would a standard size affect the game?" />
+    <meta property="og:site_name" content="Sam Vickars" />
 
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-  <link rel="stylesheet" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Rubik:300,400,400i" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Overpass:400,400i|Roboto+Slab" rel="stylesheet">
-  <script src="/js/modernizr.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Roboto:500,400,400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass:400,400i|Roboto+Slab" rel="stylesheet">
+    <script src="../js/modernizr.js"></script>
 
-  <script>
-    try {
-      Typekit.load({
-        async: true
-      });
-    } catch (e) {}
-  </script>
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
-  <script>
-    (function(i, s, o, g, r, a, m) {
-      i['GoogleAnalyticsObject'] = r;
-      i[r] = i[r] || function() {
-        (i[r].q = i[r].q || []).push(arguments)
-      }, i[r].l = 1 * new Date();
-      a = s.createElement(o),
-        m = s.getElementsByTagName(o)[0];
-      a.async = 1;
-      a.src = g;
-      m.parentNode.insertBefore(a, m)
-    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+      ga('create', 'UA-72865926-2', 'auto');
+      ga('send', 'pageview');
+    </script>
 
-    ga('create', 'UA-72865926-2', 'auto');
-    ga('send', 'pageview');
-  </script>
+  </head>
 
-</head>
-
-<body>
-  <progress value="0"></progress>
-  <div class="color-strip"></div>
-  <header>
-    <div class="cd-logo">
-      <a href="http://samvickars.is">
-							Sam Vickars*
+  <body>
+    <progress value="0"></progress>
+    <div class="color-strip"></div>
+    <header>
+      <div class="cd-logo">
+        <a href="http://samvickars.is">
+							Sam Vickars
 						</a>
-    </div>
-
-    <nav class="cd-main-nav-wrapper">
-      <ul class="cd-main-nav" id="mainnav">
-        <li>
-          <a href="#0" class="cd-subnav-trigger"><span id="menulink">Menu</span></a>
-
-          <ul class="mainnavlinks" id="navlinks">
-            <li class="go-back"><a id="menulink" href="#0">Menu</a></li>
-            <li id="slidermenu"><a href="http://samvickars.is/">Work</a></li>
-            <li id="slidermenu"><a href="/tellingstories">About</a></li>
-            <li id="slidermenu"><a href="/readytochat">Contact &nbsp;</a></li>
-            <li id="slidermenu"><a href="#0" class="placeholder">Placeholder</a></li>
-          </ul>
-        </li>
-      </ul>
-      <!-- .cd-main-nav -->
-    </nav>
-    <!-- .cd-main-nav-wrapper -->
-
-    <a href="#0" class="cd-nav-trigger"><span></span></a>
-
-  </header>
-
-  <div class="title">
-    <div class="project-intro">
-      <div class="headline">
-        <h1>The Irregular Outfields of Baseball</h1>
       </div>
-      <div class="sub-headline">
-        <h2>How do the varying sizes of MLB stadiums affect the game?</h2>
-      </div>
-      <div class="sub">
-        <p class="notes">Author&rsquo;s note: this piece is on its way to becoming a fully interactive editorial on how the irregular outfields of baseball impact the game, both for fans and for players. For now though, scroll on to read about the project as is.</p>
-        <p>If there’s one thing that fascinates and frustrates the hell out of me about baseball, it’s the lack of regulation when it comes to outfield sizes and wall heights. Baseball is a game rooted in rules, regulations, and meticulous planning and record-
-          keeping. But none of that applies to the parks the boys of summer play in. There are 30 MLB stadiums. No two of them are alike.</p>
-      </div>
+    </header>
 
-    </div>
-  </div>
+    <div class="title">
+      <div class="project-intro">
+        <div class="headline">
+          <h1>The Irregular Outfields of Baseball</h1>
+        </div>
+        <div class="sub-headline">
+          <h2>How do the varying sizes of MLB stadiums affect the game?</h2>
+        </div>
+        <div class="sub">
+          <p class="notes">Author&rsquo;s note: this piece is on its way to becoming a fully interactive editorial on how the irregular outfields of baseball impact the game, both for fans and for players. For now though, scroll on to read about the project as is.</p>
+          <p>If there’s one thing that fascinates and frustrates the hell out of me about baseball, it’s the lack of regulation when it comes to outfield sizes and wall heights. Baseball is a game rooted in rules, regulations, and meticulous planning and
+            record- keeping. But none of that applies to the parks the boys of summer play in. There are 30 MLB stadiums. No two of them are alike.</p>
+        </div>
 
-  <div class="project-info">
-    <div class="meta">
-
-      <div class="lineBlock lineBlock-tohide-xs">
-        <label>Editorial</label>
-        <span class="value">Baseball's Irregular Outfields</span>
-      </div>
-
-      <div class="lineBlock lineBlock-tohide-sm lineBlock-tohide-xs">
-        <label>Date</label>
-        <span class="value">January 2016</span>
-      </div>
-
-    </div>
-  </div>
-
-  <div class="container-fluid">
-
-    <div class="row image-row">
-      <div class="col-xs-12 col-sm-1 col-md-2"></div>
-      <div class="col-xs-12 col-sm-10 col-md-8">
-        <img src="https://svickars.github.io/portfolio/playingball/img/field_overlay-07.jpg" width="100%" height="auto" />
-        <div class="caption">The varying shapes and sizes of the cathedrals of baseball.</div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-xs-12 col-sm-3 col-md-3"></div>
-      <div class="col-xs-12 col-sm-6 col-md-6">
-        <p><span class="firstcharacter">H</span>ockey nets are 178 feet apart. Basketball hoops are 10 feet above the hardwood. And American football fields are 100 yards long. In any professional sport, the playing surface and goal size is the same everywhere
-          you play. Any professional sport, but baseball, that is. Sure, the MLB has rules about sizing: the pitcher’s mound is 10 inches high and 60 and a half feet from home plate, and home plate is 90 feet from first base, but once you leave the infield
-          it’s a bit of gong show. Take a look at the overlay of every Major League stadium above – there’s thirty of them, and none of them are the same.</p>
-        <p>This isn’t really an issue for most fans; in fact, it’s part of the charm. You see, baseball stadiums are so different because the eras in which they were built were so different. The game was quickly increasing in popularity when the old parks
-          were built in the early 1900s. They were stuffed in wherever they could fit, amongst busy transportation networks, commercial districts, and residential areas. Each slot was different and the fields just kind of had to fit. There’s only three
-          of these relics still in use, and not surprisingly, two of them have the smallest outfields in the majors, while the third (Yankee Stadium) is not exactly huge. Have a look at this graph showing outfield sizes in acres:</p>
+    <div class="project-info">
+      <div class="meta">
+
+        <div class="lineBlock lineBlock-tohide-xs">
+          <label>Editorial</label>
+          <span class="value">Baseball's Irregular Outfields</span>
+        </div>
+
+        <div class="lineBlock lineBlock-tohide-sm lineBlock-tohide-xs">
+          <label>Date</label>
+          <span class="value">January 2016</span>
+        </div>
+
       </div>
     </div>
 
-    <div class="row image-row">
-      <div class="col-xs-12 col-sm-1 col-md-2"></div>
-      <div class="col-xs-12 col-sm-10 col-md-8">
-        <img src="https://svickars.github.io/portfolio/playingball/img/BarChartSizes-03.jpg" width="100%" height="auto" />
-        <div class="caption">The title for smallest playable territory in the big leagues belongs to Fenway Park while Coors Field is home the largest outfield.</div>
+    <div class="container-fluid">
+
+      <div class="row image-row">
+        <div class="col-xs-12 col-sm-1 col-md-2"></div>
+        <div class="col-xs-12 col-sm-10 col-md-8">
+          <img src="https://svickars.github.io/portfolio/playingball/img/field_overlay-07.jpg" width="100%" height="auto" />
+          <div class="caption">The varying shapes and sizes of the cathedrals of baseball.</div>
+        </div>
       </div>
-    </div>
 
-    <div class="row image-row">
-      <div class="col-xs-12 col-sm-1 col-md-2"></div>
-      <div class="col-xs-12 col-sm-10 col-md-8">
-        <img src="https://svickars.github.io/portfolio/playingball/img/BarChartSizes-04.jpg" width="100%" height="auto" />
-        <div class="caption">There isn’t exactly a correlation, but we do see the most hits at the largest field.</div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-3"></div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <p><span class="firstcharacter">H</span>ockey nets are 178 feet apart. Basketball hoops are 10 feet above the hardwood. And American football fields are 100 yards long. In any professional sport, the playing surface and goal size is the same everywhere
+            you play. Any professional sport, but baseball, that is. Sure, the MLB has rules about sizing: the pitcher’s mound is 10 inches high and 60 and a half feet from home plate, and home plate is 90 feet from first base, but once you leave the
+            infield it’s a bit of gong show. Take a look at the overlay of every Major League stadium above – there’s thirty of them, and none of them are the same.</p>
+          <p>This isn’t really an issue for most fans; in fact, it’s part of the charm. You see, baseball stadiums are so different because the eras in which they were built were so different. The game was quickly increasing in popularity when the old parks
+            were built in the early 1900s. They were stuffed in wherever they could fit, amongst busy transportation networks, commercial districts, and residential areas. Each slot was different and the fields just kind of had to fit. There’s only three
+            of these relics still in use, and not surprisingly, two of them have the smallest outfields in the majors, while the third (Yankee Stadium) is not exactly huge. Have a look at this graph showing outfield sizes in acres:</p>
+        </div>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-xs-12 col-sm-3 col-md-3"></div>
-      <div class="col-xs-12 col-sm-6 col-md-6">
-        <p>After World War II, careful urban planning began to shape the American city. Combined with suburban sprawl, this meant that professional ballparks were pushed to the burbs, build on vast land parcels with plenty of room for parking. The resulting
-          stadiums lacked the character and charm of the ones that came before them. Large concrete, multi-purpose, bowls like the Rogers Centre in Toronto and Tropicana Field in Florida removed any semblance of tradition.</p>
-        <p>It’s this tradition that baseball prides itself in maintaining, and it’s what modern parks like Baltimore’s Camden Yards and San Diego’s Petco Park acknowledge. Although the design quirks are artificial, they give the fans that feeling of nostalgia
-          that comes with watching your boys play in the middle of summer.</p>
-        <p>It’s not just outfield sizes that vary, though. Wall heights change from park to park too. Some will argue that this is based on the home team’s strengths (fewer power hitters means fewer home runs while a lower wall means a higher chance the
-          ball will reach the crowd), and some say it’s just aesthetics. I don’t know why there’s no standard wall height, but I can tell you the difference between stadiums is huge. Look at Fenway Park, for example, home to both the highest wall and
-          the shortest wall – the 37-foot Green Monster in left field towers over the mere 5’ wall to the right. Then there are parks like Safeco, Kauffman, U.S. Cellular, and the Rogers Centre that maintain a standard height all the way across.</p>
-        <p>The following graphs chart the outfield wall height and distance from home, from the third baseline to the first baseline, in each stadium, where 135° is third base and 45° is first. 90°, in this case, would be straight down centre field.</p>
+      <div class="row image-row">
+        <div class="col-xs-12 col-sm-1 col-md-2"></div>
+        <div class="col-xs-12 col-sm-10 col-md-8">
+          <img src="https://svickars.github.io/portfolio/playingball/img/BarChartSizes-03.jpg" width="100%" height="auto" />
+          <div class="caption">The title for smallest playable territory in the big leagues belongs to Fenway Park while Coors Field is home the largest outfield.</div>
+        </div>
       </div>
-    </div>
 
-    <div class="row image-row">
-      <div class="col-xs-12 col-sm-1 col-md-2"></div>
-      <div class="col-xs-12 col-sm-10 col-md-8">
-        <img src="https://svickars.github.io/portfolio/playingball/img/OutfieldHeights-05.jpg" width="100%" height="auto" />
-        <div class="caption">Every park overlayed. Outfield walls from left- to right-field are shown as solid, while outfield sizes, again from left- to right-field are shown as a thin line across the top, coloured by team.</div>
+      <div class="row image-row">
+        <div class="col-xs-12 col-sm-1 col-md-2"></div>
+        <div class="col-xs-12 col-sm-10 col-md-8">
+          <img src="https://svickars.github.io/portfolio/playingball/img/BarChartSizes-04.jpg" width="100%" height="auto" />
+          <div class="caption">There isn’t exactly a correlation, but we do see the most hits at the largest field.</div>
+        </div>
       </div>
-    </div>
 
-    <div class="row image-row">
-      <div class="col-xs-12 col-sm-1 col-md-2"></div>
-      <div class="col-xs-12 col-sm-10 col-md-8">
-        <img src="https://svickars.github.io/portfolio/playingball/img/OutfieldHeights-29.jpg" width="100%" height="auto" />
-        <div class="caption">Fenway Park, home to the smallest playable territory, and both the tallest and shortest outfield wall.</div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-3"></div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <p>After World War II, careful urban planning began to shape the American city. Combined with suburban sprawl, this meant that professional ballparks were pushed to the burbs, build on vast land parcels with plenty of room for parking. The resulting
+            stadiums lacked the character and charm of the ones that came before them. Large concrete, multi-purpose, bowls like the Rogers Centre in Toronto and Tropicana Field in Florida removed any semblance of tradition.</p>
+          <p>It’s this tradition that baseball prides itself in maintaining, and it’s what modern parks like Baltimore’s Camden Yards and San Diego’s Petco Park acknowledge. Although the design quirks are artificial, they give the fans that feeling of nostalgia
+            that comes with watching your boys play in the middle of summer.</p>
+          <p>It’s not just outfield sizes that vary, though. Wall heights change from park to park too. Some will argue that this is based on the home team’s strengths (fewer power hitters means fewer home runs while a lower wall means a higher chance the
+            ball will reach the crowd), and some say it’s just aesthetics. I don’t know why there’s no standard wall height, but I can tell you the difference between stadiums is huge. Look at Fenway Park, for example, home to both the highest wall and
+            the shortest wall – the 37-foot Green Monster in left field towers over the mere 5’ wall to the right. Then there are parks like Safeco, Kauffman, U.S. Cellular, and the Rogers Centre that maintain a standard height all the way across.</p>
+          <p>The following graphs chart the outfield wall height and distance from home, from the third baseline to the first baseline, in each stadium, where 135° is third base and 45° is first. 90°, in this case, would be straight down centre field.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="row image-row">
-      <div class="col-xs-12 col-sm-1 col-md-2"></div>
-      <div class="col-xs-12 col-sm-10 col-md-8">
-        <img src="https://svickars.github.io/portfolio/playingball/img/OutfieldHeights-23.jpg" width="100%" height="auto" />
-        <div class="caption">Nationals Park in Washington, along with Petco Park in San Diego, is home to the average outfield size at 2.49 acres and a fairly average outfield wall height.</div>
+      <div class="row image-row">
+        <div class="col-xs-12 col-sm-1 col-md-2"></div>
+        <div class="col-xs-12 col-sm-10 col-md-8">
+          <img src="https://svickars.github.io/portfolio/playingball/img/OutfieldHeights-05.jpg" width="100%" height="auto" />
+          <div class="caption">Every park overlayed. Outfield walls from left- to right-field are shown as solid, while outfield sizes, again from left- to right-field are shown as a thin line across the top, coloured by team.</div>
+        </div>
       </div>
-    </div>
 
-    <div class="row image-row">
-      <div class="col-xs-12 col-sm-1 col-md-2"></div>
-      <div class="col-xs-12 col-sm-10 col-md-8">
-        <img src="https://svickars.github.io/portfolio/playingball/img/OutfieldHeights-15.jpg" width="100%" height="auto" />
-        <div class="caption">Coors Field in Denver is by far the largest stadium, at 2.67 acres of fair territory.</div>
+      <div class="row image-row">
+        <div class="col-xs-12 col-sm-1 col-md-2"></div>
+        <div class="col-xs-12 col-sm-10 col-md-8">
+          <img src="https://svickars.github.io/portfolio/playingball/img/OutfieldHeights-29.jpg" width="100%" height="auto" />
+          <div class="caption">Fenway Park, home to the smallest playable territory, and both the tallest and shortest outfield wall.</div>
+        </div>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-xs-12 col-sm-3 col-md-3"></div>
-      <div class="col-xs-12 col-sm-6 col-md-6">
-        <p>So what does this mean for offensive statistics? Well, I’ll show you. In 2015 there were 203 home runs at the Rogers Centre – we’re talking Toronto because the Blue Jays are my boys. If Rogers Centre was the same size and shape as Coors Field,
-          home to the Colorado Rockies, we’re looking at just 118. 33 of the 85 lost homers wouldn’t reach the outfield wall while the rest would hit it – and Colorado’s outfield walls aren’t particularly tall at 8 feet almost all the way around. If the
-          boys played in Fenway, the number of HRs is lowered to 192, mostly due to the Green Monster.</p>
-        <p>If we say that, theoretically, all MLB parks were standardized, using the average dimensions as our standard, there would have been only 163 home runs at the Skydome (the original name of the Rogers Centre for those non-Torontonians). 6 wouldn’t
-          reach the wall while 34 would hit it. Take a look:</p>
+      <div class="row image-row">
+        <div class="col-xs-12 col-sm-1 col-md-2"></div>
+        <div class="col-xs-12 col-sm-10 col-md-8">
+          <img src="https://svickars.github.io/portfolio/playingball/img/OutfieldHeights-23.jpg" width="100%" height="auto" />
+          <div class="caption">Nationals Park in Washington, along with Petco Park in San Diego, is home to the average outfield size at 2.49 acres and a fairly average outfield wall height.</div>
+        </div>
       </div>
-    </div>
 
-    <div class="row image-row">
-      <div class="col-xs-12 col-sm-1 col-md-2"></div>
-      <div class="col-xs-12 col-sm-10 col-md-8">
-        <img src="https://svickars.github.io/portfolio/playingball/img/hits-04.jpg" width="100%" height="auto" />
-        <div class="caption">Rogers Centre home run placement over a standardized field size: LF 335ft, LCF 363ft, CF 396ft, RCF 364 ft, RF 330ft, with wall heights between 9.3ft and 11ft.</div>
+      <div class="row image-row">
+        <div class="col-xs-12 col-sm-1 col-md-2"></div>
+        <div class="col-xs-12 col-sm-10 col-md-8">
+          <img src="https://svickars.github.io/portfolio/playingball/img/OutfieldHeights-15.jpg" width="100%" height="auto" />
+          <div class="caption">Coors Field in Denver is by far the largest stadium, at 2.67 acres of fair territory.</div>
+        </div>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-xs-12 col-sm-3 col-md-3"></div>
-      <div class="col-xs-12 col-sm-6 col-md-6">
-        <p>The 167 balls knocked out of the park at Fenway would decrease to 102 – 31 not reaching the wall and 34 hitting it. The 204 at Coors Field would become 187, a difference of 17, only one of which wouldn’t reach. This is taking into account the
-          change in altitude, but not other atmospheric data that would affect hit distance as it’s not readily available. I’m also only tracking actual home runs, as HITf/x data isn’t publicly available for anything but (i.e. singles, doubles, and triples
-          that could conceivably have become home runs on a standardized field).</p>
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-3"></div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <p>So what does this mean for offensive statistics? Well, I’ll show you. In 2015 there were 203 home runs at the Rogers Centre – we’re talking Toronto because the Blue Jays are my boys. If Rogers Centre was the same size and shape as Coors Field,
+            home to the Colorado Rockies, we’re looking at just 118. 33 of the 85 lost homers wouldn’t reach the outfield wall while the rest would hit it – and Colorado’s outfield walls aren’t particularly tall at 8 feet almost all the way around. If
+            the boys played in Fenway, the number of HRs is lowered to 192, mostly due to the Green Monster.</p>
+          <p>If we say that, theoretically, all MLB parks were standardized, using the average dimensions as our standard, there would have been only 163 home runs at the Skydome (the original name of the Rogers Centre for those non-Torontonians). 6 wouldn’t
+            reach the wall while 34 would hit it. Take a look:</p>
+        </div>
       </div>
-    </div>
 
-    <div class="row image-row">
-      <div class="col-xs-12 col-sm-1 col-md-2"></div>
-      <div class="col-xs-12 col-sm-10 col-md-8">
-        <img src="https://svickars.github.io/portfolio/playingball/img/hits-05.jpg" width="100%" height="auto" />
+      <div class="row image-row">
+        <div class="col-xs-12 col-sm-1 col-md-2"></div>
+        <div class="col-xs-12 col-sm-10 col-md-8">
+          <img src="https://svickars.github.io/portfolio/playingball/img/hits-04.jpg" width="100%" height="auto" />
+          <div class="caption">Rogers Centre home run placement over a standardized field size: LF 335ft, LCF 363ft, CF 396ft, RCF 364 ft, RF 330ft, with wall heights between 9.3ft and 11ft.</div>
+        </div>
       </div>
-    </div>
 
-    <div class="row image-row">
-      <div class="col-xs-12 col-sm-1 col-md-2"></div>
-      <div class="col-xs-12 col-sm-10 col-md-8">
-        <img src="https://svickars.github.io/portfolio/playingball/img/hits-06.jpg" width="100%" height="auto" />
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-3"></div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <p>The 167 balls knocked out of the park at Fenway would decrease to 102 – 31 not reaching the wall and 34 hitting it. The 204 at Coors Field would become 187, a difference of 17, only one of which wouldn’t reach. This is taking into account the
+            change in altitude, but not other atmospheric data that would affect hit distance as it’s not readily available. I’m also only tracking actual home runs, as HITf/x data isn’t publicly available for anything but (i.e. singles, doubles, and
+            triples that could conceivably have become home runs on a standardized field).</p>
+        </div>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-xs-12 col-sm-3 col-md-3"></div>
-      <div class="col-xs-12 col-sm-6 col-md-6">
-        <p>Here’s the thing, though, I’m sure most fans would be 100% opposed to the idea of standardizing the field – remember that whole charm and tradition thing? Yeah, me too. It’s pretty safe to say that’s not going to happen. It’s fun to think about,
-          though. And you have to admit that guys playing for the Red Sox have a clear advantage when it comes to home run potential, compared to the fellows on, say, the Mets, where the outfield is huge, the walls are pretty high, and they’re missing
-          the mile-high air of Colorado. What if we gave someone from the Jays, whose field is fairly average sized, the advantage of Fenway’s short outfield or the disadvantage of the Rockies’ huge fair territory? Let’s see:</p>
+      <div class="row image-row">
+        <div class="col-xs-12 col-sm-1 col-md-2"></div>
+        <div class="col-xs-12 col-sm-10 col-md-8">
+          <img src="https://svickars.github.io/portfolio/playingball/img/hits-05.jpg" width="100%" height="auto" />
+        </div>
       </div>
-    </div>
 
-    <div class="row image-row">
-      <div class="col-xs-12 col-sm-1 col-md-2"></div>
-      <div class="col-xs-12 col-sm-10 col-md-8">
-        <img src="https://svickars.github.io/portfolio/playingball/img/hits-01.jpg" width="100%" height="auto" />
+      <div class="row image-row">
+        <div class="col-xs-12 col-sm-1 col-md-2"></div>
+        <div class="col-xs-12 col-sm-10 col-md-8">
+          <img src="https://svickars.github.io/portfolio/playingball/img/hits-06.jpg" width="100%" height="auto" />
+        </div>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-xs-12 col-sm-3 col-md-3"></div>
-      <div class="col-xs-12 col-sm-6 col-md-6">
-        <p>Above is every one of AL MVP Josh Donaldson’s hits in 2015. 41 homers, 2 triples, 41 doubles, and 100 singles. The thick blue line is a scale drawing of his home turf (literally) at the Rogers Centre while the 29 other parks are overlaid behind.
-          If he played on that standardized field we created earlier, he would only have knocked it out of the park 33 times. Not surprisingly, it’s his homers from smaller parks that are no longer homers.</p>
-        <p>Look again at that map. See the two thin lines in left field, closest to home plate, one red and one blue? That’s Boston and Houston, respectively, and it looks like there 4 or 5 balls in there. So if he played for Boston, each game converted
-          for the Red Sox schedule, he’d gain a few dingers, right? Nope. He’d actually get 5 fewer. 3 wouldn’t make it to the wall and 2 would hit it. None, however, would hit the Monster -surprising until you notice that most of his round-trippers at
-          less than 37 feet high in left field happened on the road.</p>
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-3"></div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <p>Here’s the thing, though, I’m sure most fans would be 100% opposed to the idea of standardizing the field – remember that whole charm and tradition thing? Yeah, me too. It’s pretty safe to say that’s not going to happen. It’s fun to think about,
+            though. And you have to admit that guys playing for the Red Sox have a clear advantage when it comes to home run potential, compared to the fellows on, say, the Mets, where the outfield is huge, the walls are pretty high, and they’re missing
+            the mile-high air of Colorado. What if we gave someone from the Jays, whose field is fairly average sized, the advantage of Fenway’s short outfield or the disadvantage of the Rockies’ huge fair territory? Let’s see:</p>
+        </div>
       </div>
-    </div>
 
-    <div class="row image-row">
-      <div class="col-xs-12 col-sm-1 col-md-2"></div>
-      <div class="col-xs-12 col-sm-10 col-md-8">
-        <img src="https://svickars.github.io/portfolio/playingball/img/hits-02.jpg" width="100%" height="auto" />
+      <div class="row image-row">
+        <div class="col-xs-12 col-sm-1 col-md-2"></div>
+        <div class="col-xs-12 col-sm-10 col-md-8">
+          <img src="https://svickars.github.io/portfolio/playingball/img/hits-01.jpg" width="100%" height="auto" />
+        </div>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-xs-12 col-sm-3 col-md-3"></div>
-      <div class="col-xs-12 col-sm-6 col-md-6">
-        <p>Let’s pretend for a moment he played for the Rockies, with their schedule. Just as you probably expected, he’d have even fewer quadruples. 28 to be exact, and that even factors in that rocky mountain air (when data allowed).</p>
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-3"></div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <p>Above is every one of AL MVP Josh Donaldson’s hits in 2015. 41 homers, 2 triples, 41 doubles, and 100 singles. The thick blue line is a scale drawing of his home turf (literally) at the Rogers Centre while the 29 other parks are overlaid behind.
+            If he played on that standardized field we created earlier, he would only have knocked it out of the park 33 times. Not surprisingly, it’s his homers from smaller parks that are no longer homers.</p>
+          <p>Look again at that map. See the two thin lines in left field, closest to home plate, one red and one blue? That’s Boston and Houston, respectively, and it looks like there 4 or 5 balls in there. So if he played for Boston, each game converted
+            for the Red Sox schedule, he’d gain a few dingers, right? Nope. He’d actually get 5 fewer. 3 wouldn’t make it to the wall and 2 would hit it. None, however, would hit the Monster -surprising until you notice that most of his round-trippers
+            at less than 37 feet high in left field happened on the road.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="row image-row">
-      <div class="col-xs-12 col-sm-1 col-md-2"></div>
-      <div class="col-xs-12 col-sm-10 col-md-8">
-        <img src="https://svickars.github.io/portfolio/playingball/img/hits-03.jpg" width="100%" height="auto" />
+      <div class="row image-row">
+        <div class="col-xs-12 col-sm-1 col-md-2"></div>
+        <div class="col-xs-12 col-sm-10 col-md-8">
+          <img src="https://svickars.github.io/portfolio/playingball/img/hits-02.jpg" width="100%" height="auto" />
+        </div>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-xs-12 col-sm-3 col-md-3"></div>
-      <div class="col-xs-12 col-sm-6 col-md-6">
-        <p>Hopefully, we won’t get a chance to see how the bringer of rain would do on any other team – <a href="http://www.sportsnet.ca/baseball/mlb/blue-jays-officially-sign-josh-donaldson-to-two-year-contract/">we won’t for two more years anyway</a>,
-          – but it’s fun to look at how the irregular outfields of major league baseball affect offensive production. There’s a whole lot more to it of course and I won’t pretend to be any sort of expert on the matter, but the data available makes for
-          some sweet visualizations.</p>
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-3"></div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <p>Let’s pretend for a moment he played for the Rockies, with their schedule. Just as you probably expected, he’d have even fewer quadruples. 28 to be exact, and that even factors in that rocky mountain air (when data allowed).</p>
+        </div>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-xs-12 col-sm-3 col-md-3"></div>
-      <div class="col-xs-12 col-sm-6 col-md-6">
-        <h3 style="text-align: center; margin: 100px 0 100px 0">Now for the fun part.</h3>
+      <div class="row image-row">
+        <div class="col-xs-12 col-sm-1 col-md-2"></div>
+        <div class="col-xs-12 col-sm-10 col-md-8">
+          <img src="https://svickars.github.io/portfolio/playingball/img/hits-03.jpg" width="100%" height="auto" />
+        </div>
       </div>
-    </div>
 
-    <div class="row image-row">
-      <div class="col-xs-12 col-sm-1 col-md-2"></div>
-      <div class="col-xs-12 col-sm-10 col-md-8">
-        <img src="https://svickars.github.io/portfolio/playingball/img/numbers1.png" width="100%" height="auto" />
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-3"></div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <p>Hopefully, we won’t get a chance to see how the bringer of rain would do on any other team – <a href="http://www.sportsnet.ca/baseball/mlb/blue-jays-officially-sign-josh-donaldson-to-two-year-contract/">we won’t for two more years anyway</a>,
+            – but it’s fun to look at how the irregular outfields of major league baseball affect offensive production. There’s a whole lot more to it of course and I won’t pretend to be any sort of expert on the matter, but the data available makes for
+            some sweet visualizations.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-xs-12 col-sm-3 col-md-3"></div>
-      <div class="col-xs-12 col-sm-6 col-md-6">
-        <p>Here is where the math gets pretty intense, and honestly a little tedious. To find out if a homer at Rogers Centre is a homer at Fenway, we need to do a few things. The first is to find our given data, the first part of which involves the actual
-          stadium. Remember when I said that no two parks are alike? Well, that makes this a real bitch. For every stadium in the MLB, a measurement from home plate to left field, center field, and right field is provided. That’s great, but it’s not enough.
-          Each park is an odd shape, some with strange angles and others with protruding outfield walls. So I went ahead and digitally drew a scale plan of each park and then took measured from home plate to every point in the outfield where the wall
-          changes direction, as well as the angle of each section of the wall relative to the one before it. This means that we can find the distance from the plate to the wall, as well as the wall height, at any given horizontal angle using a bit of
-          Pythagoras and trigonometry. We also add in some details about field altitude, gravitational pull, and latitude/longitude, and we’re on our way. Perfect.</p>
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-3"></div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <h3 style="text-align: center; margin: 100px 0 100px 0">Now for the fun part.</h3>
+        </div>
       </div>
-    </div>
 
-    <div class="row image-row">
-      <div class="col-xs-12 col-sm-1 col-md-2"></div>
-      <div class="col-xs-12 col-sm-10 col-md-8">
-        <img src="https://svickars.github.io/portfolio/playingball/img/numbers5.png" width="100%" height="auto" />
+      <div class="row image-row">
+        <div class="col-xs-12 col-sm-1 col-md-2"></div>
+        <div class="col-xs-12 col-sm-10 col-md-8">
+          <img src="https://svickars.github.io/portfolio/playingball/img/numbers1.png" width="100%" height="auto" />
+        </div>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-xs-12 col-sm-3 col-md-3"></div>
-      <div class="col-xs-12 col-sm-6 col-md-6">
-        <p>Next, we gather data about the pitch and the hit. The Major Leagues track a ton of data about this stuff, and it’s known as PitchFX and HitFX. It’s not always readily and freely available, but websites like ESPN’s Homerun Tracker help a lot. Here’s
-          what we need: pitch type; pitch velocity; horizontal angle of the hit, telling us which direction the ball went; the distance the ball travels, or would have traveled had it not hit the seats; the vertical launch angle off the bat; the height
-          of the swing, the exit velocity, telling us how fast the ball is moving right after it leaves the bat; and the time the ball spends in the air. Not all of this is available for every homer, but if we know a couple of things, we can figure out
-          the rest.</p>
-        <p>Okay cool. We’ve told Excel the details of each park and the details of each hit. Now we let Excel tell us if it’s a homer or not. There are two things the ball needs to do. Most importantly, it needs to reach the edge of the outfield. Referencing
-          the scale drawings of each park and the measurements we took earlier, Excel can tell us the distance to the wall at the ball’s horizontal angle. The formula to do this first tells Excel to decide which section of the outfield wall it’s aimed
-          at and then does some Pythagoras to spit out the exact distance the ball needs to travel.</p>
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-3"></div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <p>Here is where the math gets pretty intense, and honestly a little tedious. To find out if a homer at Rogers Centre is a homer at Fenway, we need to do a few things. The first is to find our given data, the first part of which involves the actual
+            stadium. Remember when I said that no two parks are alike? Well, that makes this a real bitch. For every stadium in the MLB, a measurement from home plate to left field, center field, and right field is provided. That’s great, but it’s not
+            enough. Each park is an odd shape, some with strange angles and others with protruding outfield walls. So I went ahead and digitally drew a scale plan of each park and then took measured from home plate to every point in the outfield where
+            the wall changes direction, as well as the angle of each section of the wall relative to the one before it. This means that we can find the distance from the plate to the wall, as well as the wall height, at any given horizontal angle using
+            a bit of Pythagoras and trigonometry. We also add in some details about field altitude, gravitational pull, and latitude/longitude, and we’re on our way. Perfect.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="row image-row">
-      <div class="col-xs-12 col-sm-1 col-md-2"></div>
-      <div class="col-xs-12 col-sm-10 col-md-8">
-        <img src="https://svickars.github.io/portfolio/playingball/img/numbers4.png" width="100%" height="auto" />
+      <div class="row image-row">
+        <div class="col-xs-12 col-sm-1 col-md-2"></div>
+        <div class="col-xs-12 col-sm-10 col-md-8">
+          <img src="https://svickars.github.io/portfolio/playingball/img/numbers5.png" width="100%" height="auto" />
+        </div>
       </div>
-    </div>
 
-    <div class="row image-row">
-      <div class="col-xs-12 col-sm-1 col-md-2"></div>
-      <div class="col-xs-12 col-sm-10 col-md-8">
-        <img src="https://svickars.github.io/portfolio/playingball/img/numbers3.png" width="100%" height="auto" />
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-3"></div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <p>Next, we gather data about the pitch and the hit. The Major Leagues track a ton of data about this stuff, and it’s known as PitchFX and HitFX. It’s not always readily and freely available, but websites like ESPN’s Homerun Tracker help a lot.
+            Here’s what we need: pitch type; pitch velocity; horizontal angle of the hit, telling us which direction the ball went; the distance the ball travels, or would have traveled had it not hit the seats; the vertical launch angle off the bat;
+            the height of the swing, the exit velocity, telling us how fast the ball is moving right after it leaves the bat; and the time the ball spends in the air. Not all of this is available for every homer, but if we know a couple of things, we
+            can figure out the rest.</p>
+          <p>Okay cool. We’ve told Excel the details of each park and the details of each hit. Now we let Excel tell us if it’s a homer or not. There are two things the ball needs to do. Most importantly, it needs to reach the edge of the outfield. Referencing
+            the scale drawings of each park and the measurements we took earlier, Excel can tell us the distance to the wall at the ball’s horizontal angle. The formula to do this first tells Excel to decide which section of the outfield wall it’s aimed
+            at and then does some Pythagoras to spit out the exact distance the ball needs to travel.</p>
+        </div>
       </div>
-    </div>
 
-    <div class="row">
-      <div class="col-xs-12 col-sm-3 col-md-3"></div>
-      <div class="col-xs-12 col-sm-6 col-md-6">
-        <p>The ball also needs to be higher than the wall when it gets there. We can determine this in five steps. Firstly, we find the vertical launch angle, if it’s not provided <img src="//s0.wp.com/latex.php?latex=%7B%5B%7D%5Ctheta_i%3D%5Cfrac%7B1%7D%7B2%7Dsin%5E%7B-1%7D%7B%28%7D%5Cfrac%7Bd_x%5Ctimes%7Bg%7D%7D%7Bv_i%5E2%7D%7B%29%7D%7B%5D%7D&#038;bg=ffffff&#038;fg=172747&#038;s=0"
-            alt="{[}&#92;theta_i=&#92;frac{1}{2}sin^{-1}{(}&#92;frac{d_x&#92;times{g}}{v_i^2}{)}{]}" title="{[}&#92;theta_i=&#92;frac{1}{2}sin^{-1}{(}&#92;frac{d_x&#92;times{g}}{v_i^2}{)}{]}" class="latex" />. Then we factor in the vertical component of
-          the ball’s initial velocity <img src="//s0.wp.com/latex.php?latex=%7B%5B%7DV_%7Biy%7D%3DV_isin%5Ctheta%7B%5D%7D&#038;bg=ffffff&#038;fg=172747&#038;s=0" alt="{[}V_{iy}=V_isin&#92;theta{]}" title="{[}V_{iy}=V_isin&#92;theta{]}" class="latex" />          to find the total time the ball is in the air <img src="//s0.wp.com/latex.php?latex=%7B%5B%7Dt_T%3D%5Cfrac%7B-V_%7Biy%7D%5Cpm%5Csqrt%7BV_%7Biy%7D%5E2%2B2gh_i%7D%7D%7Bg%7D%7B%5D%7D&#038;bg=ffffff&#038;fg=172747&#038;s=0" alt="{[}t_T=&#92;frac{-V_{iy}&#92;pm&#92;sqrt{V_{iy}^2+2gh_i}}{g}{]}"
-            title="{[}t_T=&#92;frac{-V_{iy}&#92;pm&#92;sqrt{V_{iy}^2+2gh_i}}{g}{]}" class="latex" />, where g is equal to gravity and h is the height of the swing). Thirdly, we calculate the horizontal acceleration using <img src="//s0.wp.com/latex.php?latex=x%3DV_%7Bix%7Dt%2B%5Cfrac%7B1%7D%7B2%7Da_xt%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0"
-            alt="x=V_{ix}t+&#92;frac{1}{2}a_xt^2" title="x=V_{ix}t+&#92;frac{1}{2}a_xt^2" class="latex" /> <img src="//s0.wp.com/latex.php?latex=%7B%5B%7Da_x%3D-%5Cfrac%7B2V_%7Bix%7D%7D%7Bt_T%7D%2B%5Cfrac%7B2x_h%7D%7Bt_T%5E2%7D%7B%5D%7D&#038;bg=ffffff&#038;fg=172747&#038;s=0"
-            alt="{[}a_x=-&#92;frac{2V_{ix}}{t_T}+&#92;frac{2x_h}{t_T^2}{]}" title="{[}a_x=-&#92;frac{2V_{ix}}{t_T}+&#92;frac{2x_h}{t_T^2}{]}" class="latex" />, where <img src="//s0.wp.com/latex.php?latex=x_h%3D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x_h="
-            title="x_h=" class="latex" />hit distance. Next, we find the time it takes the ball to reach the wall <img src="//s0.wp.com/latex.php?latex=%7B%5B%7Dt_w%3D%5Cfrac%7B-V_%7Bix%7D%5Cpm%5Csqrt%7BV_%7Bix%7D%5E2%2B2a_xx_w%7D%7D%7Ba_x%7D%7B%5D%7D&#038;bg=ffffff&#038;fg=172747&#038;s=0"
-            alt="{[}t_w=&#92;frac{-V_{ix}&#92;pm&#92;sqrt{V_{ix}^2+2a_xx_w}}{a_x}{]}" title="{[}t_w=&#92;frac{-V_{ix}&#92;pm&#92;sqrt{V_{ix}^2+2a_xx_w}}{a_x}{]}" class="latex" />, where <img src="//s0.wp.com/latex.php?latex=x_w&#038;bg=ffffff&#038;fg=000&#038;s=0"
-            alt="x_w" title="x_w" class="latex" />=distance to the wall.. Lastly, we use all of the above to find the vertical displacement at the time to the wall <img src="//s0.wp.com/latex.php?latex=%7B%5B%7Dd_y%3DV_%7Biy%7Dt_w%2B%5Cfrac%7B1%7D%7B2%7Dgt_w%5E2%7B%5D%7D&#038;bg=ffffff&#038;fg=172747&#038;s=0"
-            alt="{[}d_y=V_{iy}t_w+&#92;frac{1}{2}gt_w^2{]}" title="{[}d_y=V_{iy}t_w+&#92;frac{1}{2}gt_w^2{]}" class="latex" />.</p>
-        <p>I could go on and on about this, but I think you get the point. Check out my data here [coming soon]…</p>
+      <div class="row image-row">
+        <div class="col-xs-12 col-sm-1 col-md-2"></div>
+        <div class="col-xs-12 col-sm-10 col-md-8">
+          <img src="https://svickars.github.io/portfolio/playingball/img/numbers4.png" width="100%" height="auto" />
+        </div>
       </div>
-    </div>
 
-    <div class="row image-row">
-      <div class="col-xs-12 col-sm-1 col-md-2"></div>
-      <div class="col-xs-12 col-sm-10 col-md-8">
-        <img src="https://svickars.github.io/portfolio/playingball/img/notebook1.JPG" width="100%" height="auto" />
+      <div class="row image-row">
+        <div class="col-xs-12 col-sm-1 col-md-2"></div>
+        <div class="col-xs-12 col-sm-10 col-md-8">
+          <img src="https://svickars.github.io/portfolio/playingball/img/numbers3.png" width="100%" height="auto" />
+        </div>
       </div>
-    </div>
 
-    <div class="row image-row">
-      <div class="col-xs-12 col-sm-1 col-md-2"></div>
-      <div class="col-xs-12 col-sm-10 col-md-8">
-        <img src="https://svickars.github.io/portfolio/playingball/img/notebook2copy.jpeg" width="100%" height="auto" />
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-3"></div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <p>The ball also needs to be higher than the wall when it gets there. We can determine this in five steps. Firstly, we find the vertical launch angle, if it’s not provided <img src="//s0.wp.com/latex.php?latex=%7B%5B%7D%5Ctheta_i%3D%5Cfrac%7B1%7D%7B2%7Dsin%5E%7B-1%7D%7B%28%7D%5Cfrac%7Bd_x%5Ctimes%7Bg%7D%7D%7Bv_i%5E2%7D%7B%29%7D%7B%5D%7D&#038;bg=ffffff&#038;fg=172747&#038;s=0"
+              alt="{[}&#92;theta_i=&#92;frac{1}{2}sin^{-1}{(}&#92;frac{d_x&#92;times{g}}{v_i^2}{)}{]}" title="{[}&#92;theta_i=&#92;frac{1}{2}sin^{-1}{(}&#92;frac{d_x&#92;times{g}}{v_i^2}{)}{]}" class="latex" />. Then we factor in the vertical component
+            of the ball’s initial velocity <img src="//s0.wp.com/latex.php?latex=%7B%5B%7DV_%7Biy%7D%3DV_isin%5Ctheta%7B%5D%7D&#038;bg=ffffff&#038;fg=172747&#038;s=0" alt="{[}V_{iy}=V_isin&#92;theta{]}" title="{[}V_{iy}=V_isin&#92;theta{]}" class="latex"
+            /> to find the total time the ball is in the air <img src="//s0.wp.com/latex.php?latex=%7B%5B%7Dt_T%3D%5Cfrac%7B-V_%7Biy%7D%5Cpm%5Csqrt%7BV_%7Biy%7D%5E2%2B2gh_i%7D%7D%7Bg%7D%7B%5D%7D&#038;bg=ffffff&#038;fg=172747&#038;s=0" alt="{[}t_T=&#92;frac{-V_{iy}&#92;pm&#92;sqrt{V_{iy}^2+2gh_i}}{g}{]}"
+              title="{[}t_T=&#92;frac{-V_{iy}&#92;pm&#92;sqrt{V_{iy}^2+2gh_i}}{g}{]}" class="latex" />, where g is equal to gravity and h is the height of the swing). Thirdly, we calculate the horizontal acceleration using <img src="//s0.wp.com/latex.php?latex=x%3DV_%7Bix%7Dt%2B%5Cfrac%7B1%7D%7B2%7Da_xt%5E2&#038;bg=ffffff&#038;fg=000&#038;s=0"
+              alt="x=V_{ix}t+&#92;frac{1}{2}a_xt^2" title="x=V_{ix}t+&#92;frac{1}{2}a_xt^2" class="latex" /> <img src="//s0.wp.com/latex.php?latex=%7B%5B%7Da_x%3D-%5Cfrac%7B2V_%7Bix%7D%7D%7Bt_T%7D%2B%5Cfrac%7B2x_h%7D%7Bt_T%5E2%7D%7B%5D%7D&#038;bg=ffffff&#038;fg=172747&#038;s=0"
+              alt="{[}a_x=-&#92;frac{2V_{ix}}{t_T}+&#92;frac{2x_h}{t_T^2}{]}" title="{[}a_x=-&#92;frac{2V_{ix}}{t_T}+&#92;frac{2x_h}{t_T^2}{]}" class="latex" />, where <img src="//s0.wp.com/latex.php?latex=x_h%3D&#038;bg=ffffff&#038;fg=000&#038;s=0" alt="x_h="
+              title="x_h=" class="latex" />hit distance. Next, we find the time it takes the ball to reach the wall <img src="//s0.wp.com/latex.php?latex=%7B%5B%7Dt_w%3D%5Cfrac%7B-V_%7Bix%7D%5Cpm%5Csqrt%7BV_%7Bix%7D%5E2%2B2a_xx_w%7D%7D%7Ba_x%7D%7B%5D%7D&#038;bg=ffffff&#038;fg=172747&#038;s=0"
+              alt="{[}t_w=&#92;frac{-V_{ix}&#92;pm&#92;sqrt{V_{ix}^2+2a_xx_w}}{a_x}{]}" title="{[}t_w=&#92;frac{-V_{ix}&#92;pm&#92;sqrt{V_{ix}^2+2a_xx_w}}{a_x}{]}" class="latex" />, where <img src="//s0.wp.com/latex.php?latex=x_w&#038;bg=ffffff&#038;fg=000&#038;s=0"
+              alt="x_w" title="x_w" class="latex" />=distance to the wall.. Lastly, we use all of the above to find the vertical displacement at the time to the wall <img src="//s0.wp.com/latex.php?latex=%7B%5B%7Dd_y%3DV_%7Biy%7Dt_w%2B%5Cfrac%7B1%7D%7B2%7Dgt_w%5E2%7B%5D%7D&#038;bg=ffffff&#038;fg=172747&#038;s=0"
+              alt="{[}d_y=V_{iy}t_w+&#92;frac{1}{2}gt_w^2{]}" title="{[}d_y=V_{iy}t_w+&#92;frac{1}{2}gt_w^2{]}" class="latex" />.</p>
+          <p>I could go on and on about this, but I think you get the point. Check out my data here [coming soon]…</p>
+        </div>
       </div>
-    </div>
 
-    <div class="row image-row">
-      <div class="col-xs-12 col-sm-1 col-md-2"></div>
-      <div class="col-xs-12 col-sm-10 col-md-8">
-        <img src="https://svickars.github.io/portfolio/playingball/img/notebook3.JPG" width="100%" height="auto" />
+      <div class="row image-row">
+        <div class="col-xs-12 col-sm-1 col-md-2"></div>
+        <div class="col-xs-12 col-sm-10 col-md-8">
+          <img src="https://svickars.github.io/portfolio/playingball/img/notebook1.JPG" width="100%" height="auto" />
+        </div>
       </div>
-    </div>
 
-
-
-
-
-
-    <div class="row">
-      <div class="col-xs-12 col-sm-3 col-md-3"></div>
-      <div class="col-xs-12 col-sm-6 col-md-6">
-        <p class="footnotes"><strong>Footnotes</strong></p>
-        <p class="footnotes">Created with
-          <font color="e00000">&hearts;</font> by Sam Vickars.</br> &copy; 2015. All rights reserved. All trademarks property of their respective owners.</br>
-        </p>
-        <p class="footnotes">Sources include:</p>
-        <p class="footnotes">
-          <a href="http://www.hittrackeronline.com/">http://www.hittrackeronline.com/</a></br>
-          <a href="http://mlb.mlb.com/">http://mlb.mlb.com/</a></br>
-          <a href="http://espn.go.com">http://espn.go.com</a></br>
-          <a href="http://www.baseball-reference.com/">http://www.baseball-reference.com/</a></br>
-          <a href="http://baseballsavant.com/">http://baseballsavant.com/</a></br>
-          <a href="http://sabr.org/">http://sabr.org/</a></br>
-          <a href="http://www.beyondtheboxscore.com/2013/4/29/4265662/examining-home-run-apex-by-horizontal-angle-by-park">http://www.beyondtheboxscore.com/2013/4/29/4265662/examining-home-run-apex-by-horizontal-angle-by-park</a></br>
-          <a href="http://www.beyondtheboxscore.com/2013/4/19/4221684/home-run-angle-parks">http://www.beyondtheboxscore.com/2013/4/19/4221684/home-run-angle-parks</a></br>
-          <a href="http://www.fangraphs.com/blogs/introducing-the-interactive-spray-chart-tool/">http://www.fangraphs.com/blogs/introducing-the-interactive-spray-chart-tool/</a></br>
-          <a href="http://www.banishedtothepen.com/updated-mlb-statcast-data-july-2015/">http://www.banishedtothepen.com/updated-mlb-statcast-data-july-2015/</a></br>
-          <a href="https://www.boundless.com/physics/textbooks/boundless-physics-textbook/two-dimensional-kinematics-3/projectile-motion-42/basic-equations-and-parabolic-path-226-10952/">https://www.boundless.com/physics/textbooks/boundless-physics-textbook/two-dimensional-kinematics-3/projectile-motion-42/basic-equations-and-parabolic-path-226-10952/</a></br>
-          <a href="https://en.wikipedia.org/wiki/Major_League_Baseball_schedule">https://en.wikipedia.org/wiki/Major_League_Baseball_schedule</a></br>
-          <a href="http://espn.go.com/mlb/player/_/id/29563/josh-donaldson">http://espn.go.com/mlb/player/_/id/29563/josh-donaldson</a></br>
-          <a href="http://www.businessinsider.com/chart-major-league-baseball-ballpark-sizes-2014-3">http://www.businessinsider.com/chart-major-league-baseball-ballpark-sizes-2014-3</a></br>
-          <a href="http://www.npr.org/templates/story/story.php?storyId=4675798">http://www.npr.org/templates/story/story.php?storyId=4675798</a></br>
-        </p>
+      <div class="row image-row">
+        <div class="col-xs-12 col-sm-1 col-md-2"></div>
+        <div class="col-xs-12 col-sm-10 col-md-8">
+          <img src="https://svickars.github.io/portfolio/playingball/img/notebook2copy.jpeg" width="100%" height="auto" />
+        </div>
       </div>
+
+      <div class="row image-row">
+        <div class="col-xs-12 col-sm-1 col-md-2"></div>
+        <div class="col-xs-12 col-sm-10 col-md-8">
+          <img src="https://svickars.github.io/portfolio/playingball/img/notebook3.JPG" width="100%" height="auto" />
+        </div>
+      </div>
+
+
+
+
+
+
+      <div class="row">
+        <div class="col-xs-12 col-sm-3 col-md-3"></div>
+        <div class="col-xs-12 col-sm-6 col-md-6">
+          <p class="footnotes"><strong>Footnotes</strong></p>
+          <p class="footnotes">Created with
+            <font color="e00000">&hearts;</font> by Sam Vickars.</br> &copy; 2015. All rights reserved. All trademarks property of their respective owners.</br>
+          </p>
+          <p class="footnotes">Sources include:</p>
+          <p class="footnotes">
+            <a href="http://www.hittrackeronline.com/">http://www.hittrackeronline.com/</a></br>
+            <a href="http://mlb.mlb.com/">http://mlb.mlb.com/</a></br>
+            <a href="http://espn.go.com">http://espn.go.com</a></br>
+            <a href="http://www.baseball-reference.com/">http://www.baseball-reference.com/</a></br>
+            <a href="http://baseballsavant.com/">http://baseballsavant.com/</a></br>
+            <a href="http://sabr.org/">http://sabr.org/</a></br>
+            <a href="http://www.beyondtheboxscore.com/2013/4/29/4265662/examining-home-run-apex-by-horizontal-angle-by-park">http://www.beyondtheboxscore.com/2013/4/29/4265662/examining-home-run-apex-by-horizontal-angle-by-park</a></br>
+            <a href="http://www.beyondtheboxscore.com/2013/4/19/4221684/home-run-angle-parks">http://www.beyondtheboxscore.com/2013/4/19/4221684/home-run-angle-parks</a></br>
+            <a href="http://www.fangraphs.com/blogs/introducing-the-interactive-spray-chart-tool/">http://www.fangraphs.com/blogs/introducing-the-interactive-spray-chart-tool/</a></br>
+            <a href="http://www.banishedtothepen.com/updated-mlb-statcast-data-july-2015/">http://www.banishedtothepen.com/updated-mlb-statcast-data-july-2015/</a></br>
+            <a href="https://www.boundless.com/physics/textbooks/boundless-physics-textbook/two-dimensional-kinematics-3/projectile-motion-42/basic-equations-and-parabolic-path-226-10952/">https://www.boundless.com/physics/textbooks/boundless-physics-textbook/two-dimensional-kinematics-3/projectile-motion-42/basic-equations-and-parabolic-path-226-10952/</a></br>
+            <a href="https://en.wikipedia.org/wiki/Major_League_Baseball_schedule">https://en.wikipedia.org/wiki/Major_League_Baseball_schedule</a></br>
+            <a href="http://espn.go.com/mlb/player/_/id/29563/josh-donaldson">http://espn.go.com/mlb/player/_/id/29563/josh-donaldson</a></br>
+            <a href="http://www.businessinsider.com/chart-major-league-baseball-ballpark-sizes-2014-3">http://www.businessinsider.com/chart-major-league-baseball-ballpark-sizes-2014-3</a></br>
+            <a href="http://www.npr.org/templates/story/story.php?storyId=4675798">http://www.npr.org/templates/story/story.php?storyId=4675798</a></br>
+          </p>
+        </div>
+      </div>
+
     </div>
 
-  </div>
 
+    <footer>
+      <div class="footer-left">Like this?
+        <a href="http://twitter.com/home?status=@samvickars bit.ly/tiofob">Let me know</a>.
+      </div>
+      <div class="footer-right">
+        <a href="http://sam-vickars.squarespace.com/">Archive</a>&nbsp;&nbsp;//&nbsp;
 
-  <footer>
-    <div class="footer-left">Like this?
-      <a href="http://twitter.com/home?status=@samvickars bit.ly/tiofob">Let me know</a>.
-    </div>
-    <div class="footer-right">
-      <a href="http://sam-vickars.squarespace.com/">Archive</a>&nbsp;&nbsp;//&nbsp;
+        <a href="https://twitter.com/samvickars">Twitter</a>
 
-      <a href="https://twitter.com/samvickars">Twitter</a>
+        <a href="https://www.behance.net/sam-i-am">Behance</a>
 
-      <a href="https://www.behance.net/sam-i-am">Behance</a>
+        <a href="http://typographyturnsmeon.com">Tumblr</a>
 
-      <a href="http://typographyturnsmeon.com">Tumblr</a>
-
-      <a href="https://github.com/svickars">Github</a>
-    </div>
-  </footer>
+        <a href="https://github.com/svickars">Github</a>
+      </div>
+    </footer>
 
 
 
-  <script src=" //ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js "></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js " integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa " crossorigin="anonymous "></script>
+    <script src=" //ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js "></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js " integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa " crossorigin="anonymous "></script>
 
-  <script src="js/main.js "></script>
-  <script src="/js/progress.js "></script>
-</body>
+    <script src="js/main.js "></script>
+    <script src="../js/progress.js "></script>
+  </body>
 
 </html>
