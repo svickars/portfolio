@@ -7,8 +7,8 @@ $mediumgray: #666666;
 $lightgray: #b5b5b5;
 $serif: 'Libre Baskerville', Georgia, serif;
 $pageserif: 'Libre Baskerville', Georgia, serif;
-$sansserif: 'Rubik', Arial, sans-serif;
-$pagesansserif: 'Rubik', Arial, sans-serif;
+$sansserif: 'Roboto', Arial, sans-serif;
+$pagesansserif: 'Roboto', Arial, sans-serif;
 $colorstrip: block;
 $progress: none;
 $metamargin: 350px;
@@ -77,7 +77,7 @@ h2 {
   left: 0px;
   padding: 5px 10px 5px 20px;
   font-family: $pagesansserif;
-  font-weight: 400;
+  font-weight: 700;
   font-size: 1.3em;
 }
 
