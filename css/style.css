@@ -38,6 +38,7 @@ h1 {
   color: #333333; }
 
 h2 {
+  background-color: #333333;
   position: absolute;
   top: 10px;
   left: 0px;
@@ -47,16 +48,18 @@ h2 {
   font-size: 1.3em; }
 
 h3 {
+  background-color: #333333;
   position: absolute;
-  top: 50px;
+  top: 35px;
   left: 0px;
-  padding: 5px 10px 5px 40px;
+  padding: 5px 10px 5px 38px;
   font-family: "Rubik", Arial, sans-serif;
   font-style: italic;
   font-weight: 400;
   font-size: .9em; }
 
 .number {
+  color: white;
   font-size: .65em;
   margin-right: 5px;
   opacity: .5; }
@@ -125,6 +128,46 @@ p {
     font-size: .75em; }
   .item {
     height: 200px; } }
+
+.trumped {
+  color: transparent;
+  background: -webkit-linear-gradient(transparent, transparent), url("../img/featured/trumped.gif");
+  -webkit-background-clip: text !important; }
+
+.irs {
+  color: transparent;
+  background: -webkit-linear-gradient(transparent, transparent), url("../img/featured/irs.gif");
+  -webkit-background-clip: text !important; }
+
+.comparinggreats {
+  color: transparent;
+  background: -webkit-linear-gradient(transparent, transparent), url("../img/featured/comparinggreats.gif");
+  -webkit-background-clip: text !important; }
+
+.playingball {
+  color: transparent;
+  background: -webkit-linear-gradient(transparent, transparent), url("../img/featured/playingball.gif");
+  -webkit-background-clip: text !important; }
+
+.bond {
+  color: transparent;
+  background: -webkit-linear-gradient(transparent, transparent), url("../img/featured/bond.gif");
+  -webkit-background-clip: text !important; }
+
+.competitive {
+  color: transparent;
+  background: -webkit-linear-gradient(transparent, transparent), url("../img/featured/competitive.gif");
+  -webkit-background-clip: text !important; }
+
+.africa {
+  color: transparent;
+  background: -webkit-linear-gradient(transparent, transparent), url("../img/featured/africa.gif");
+  -webkit-background-clip: text !important; }
+
+.other {
+  color: transparent;
+  background: -webkit-linear-gradient(transparent, transparent), url("../img/featured/other.jpg");
+  -webkit-background-clip: text !important; }
 
 footer {
   margin-top: 100px;
