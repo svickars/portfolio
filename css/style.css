@@ -129,6 +129,11 @@ p {
   .item {
     height: 200px; } }
 
+.draftingbig {
+  color: transparent;
+  background: -webkit-linear-gradient(transparent, transparent), url("../img/featured/draftingbig.gif");
+  -webkit-background-clip: text !important; }
+
 .trumped {
   color: transparent;
   background: -webkit-linear-gradient(transparent, transparent), url("../img/featured/trumped.gif");

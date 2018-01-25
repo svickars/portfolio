@@ -136,20 +136,42 @@ d3.csv("data/DRAFT-GAMESCORE.csv", function(error, data) {
     return d.GP_c > 0
   })
 
-  x.domain([1.1, 11.825]);
-  y.domain([1992, 2016]);
+  if (isMobile) {
+    plusGP = plusGP.filter(function(d) {
+      return d.roundPick < 5
+    })
+    plusGP = plusGP.filter(function(d) {
+      return d.year > 1997
+    })
+  }
+
+  if (isMobile) {
+    x.domain([1.1, 4.825]);
+  } else {
+    x.domain([1.1, 11.825]);
+  }
+  if (!isMobile) {
+    y.domain([1992, 2016]);
+  } else {
+    y.domain([1998, 2016]);
+  }
   roundpick.domain([.01, .30]);
 
-  var xAxisV1 = d3.axisTop(x)
-    .tickSize(-(height + margin.top / 2))
-    .tickFormat(function(d) {
-      if (isMobile) {
+  if (isMobile) {
+    var xAxisV1 = d3.axisTop(x)
+      .tickSize(-(height + margin.top / 2))
+      .tickFormat(function(d) {
         return numbered(parseInt(d.toString().split(".")[0]))
-      } else {
+      })
+      .tickValues([1.1, 2.1, 3.1, 4.1, 5.1, 6.1, 7.1]);
+  } else {
+    var xAxisV1 = d3.axisTop(x)
+      .tickSize(-(height + margin.top / 2))
+      .tickFormat(function(d) {
         return "Round " + d.toString().split(".")[0]
-      }
-    })
-    .tickValues([1.1, 2.1, 3.1, 4.1, 5.1, 6.1, 7.1, 8.1, 9.1, 10.1, 11.1]);
+      })
+      .tickValues([1.1, 2.1, 3.1, 4.1, 5.1, 6.1, 7.1, 8.1, 9.1, 10.1, 11.1]);
+  }
 
   var xAxisV2 = d3.axisTop(x2)
     .tickSize(0)
@@ -231,7 +253,11 @@ d3.csv("data/DRAFT-GAMESCORE.csv", function(error, data) {
     .data(plusGP)
     .enter().append("circle")
     .attr("class", function(d) {
-      return "circlesGP pos-" + d.pos + " team-" + d.teamNumber + " round-" + d.roundPick.toString().split(".")[0];
+      if (d.nat === "CA" || d.nat === "US" || d.nat === "RU") {
+        return "circlesGP pos-" + d.pos + " team-" + d.teamNumber + " round-" + d.roundPick.toString().split(".")[0] + " nat-" + d.nat;
+      } else {
+        return "circlesGP pos-" + d.pos + " team-" + d.teamNumber + " round-" + d.roundPick.toString().split(".")[0] + " nat-other";
+      }
     })
     .attr("id", function(d) {
       return d.playerCode;
@@ -252,39 +278,42 @@ d3.csv("data/DRAFT-GAMESCORE.csv", function(error, data) {
       return GPo;
     });
 
-  var circlesNoGP = svg.selectAll(".circlesNoGP")
-    .data(noGP)
-    .enter().append("circle")
-    .attr("class", function(d) {
-      return "circlesNoGP pos-" + d.pos + " team-" + d.teamNumber + " round-" + d.roundPick.toString().split(".")[0];
-    })
-    .attr("id", function(d) {
-      return d.playerCode;
-    })
-    .attr("r", 5)
-    .attr("cx", function(d) {
-      return x(parseInt(d.roundPick.toString().split(".")[0]) + roundpick(parseFloat("." + d.roundPick.toString().split(".")[1])));
-    })
-    .attr("cy", function(d) {
-      return y(d.year);
-    })
-    .attr("r", function(d) {
-      return 2
-    })
-    .style("fill", function(d) {
-      return d.colour;
-    })
-    .style("opacity", function(d) {
-      return noGPo;
-    });
+  // d3.selectAll(".nat-CA").style("opacity", .0)
+  // d3.selectAll(".nat-US").style("opacity", .0)
+  // d3.selectAll(".nat-RU").style("opacity", .0)
+
+  if (!isMobile) {
+    var circlesNoGP = svg.selectAll(".circlesNoGP")
+      .data(noGP)
+      .enter().append("circle")
+      .attr("class", function(d) {
+        return "circlesNoGP pos-" + d.pos + " team-" + d.teamNumber + " round-" + d.roundPick.toString().split(".")[0];
+      })
+      .attr("id", function(d) {
+        return d.playerCode;
+      })
+      .attr("r", 5)
+      .attr("cx", function(d) {
+        return x(parseInt(d.roundPick.toString().split(".")[0]) + roundpick(parseFloat("." + d.roundPick.toString().split(".")[1])));
+      })
+      .attr("cy", function(d) {
+        return y(d.year);
+      })
+      .attr("r", function(d) {
+        return 2
+      })
+      .style("fill", function(d) {
+        return d.colour;
+      })
+      .style("opacity", function(d) {
+        return noGPo;
+      });
+  }
 
   if (isMobile) {
     var poppedup = false;
     d3.select(".pt-meta").append("div").attr("class", "tipclose").html('<i class="far fa-times-circle"></i>')
     circlesGP.on("click", function(d) {
-      showtip(d);
-    });
-    circlesNoGP.on("click", function(d) {
       showtip(d);
     });
   } else {
@@ -331,7 +360,7 @@ d3.csv("data/DRAFT-GAMESCORE.csv", function(error, data) {
     .text("");
 
   select.selectAll(".searchoptions")
-    .data(data.sort(function(a, b) {
+    .data(plusGP.sort(function(a, b) {
       return d3.ascending(a.player, b.player);
     }))
     .enter()
@@ -446,11 +475,13 @@ d3.csv("data/DRAFT-GAMESCORE.csv", function(error, data) {
           return 2
         }
       })
-    circlesNoGP
-      .transition().duration(500)
-      .attr("r", function(d) {
-        return 2
-      })
+    if (!isMobile) {
+      circlesNoGP
+        .transition().duration(500)
+        .attr("r", function(d) {
+          return 2
+        })
+    }
 
 
 
@@ -473,25 +504,30 @@ d3.csv("data/DRAFT-GAMESCORE.csv", function(error, data) {
             return 2
           }
         });
-      circlesNoGP
-        .transition().duration(1000)
-        .ease(d3.easeExp)
-        .attr("cx", function(d) {
-          return x(d.teamNumber);
-        })
-        .attr("cy", function(d) {
-          return y(d[stat + time + "_rank"]);
-        })
-        .attr("r", function(d) {
-          return 2
-        });
+      if (!isMobile) {
+        circlesNoGP
+          .transition().duration(1000)
+          .ease(d3.easeExp)
+          .attr("cx", function(d) {
+            return x(d.teamNumber);
+          })
+          .attr("cy", function(d) {
+            return y(d[stat + time + "_rank"]);
+          })
+          .attr("r", function(d) {
+            return 2
+          });
+      }
     }
     if (view === "view3") {
       $(".yLabel").fadeOut(function() {
         $(this).html('<i class="far fa-long-arrow-left"></i> &nbsp;' + $(".statselect").find("option:selected").attr("definition"))
       }).fadeIn();
-
-      x.range([0, width]).domain([1.1, 11.825])
+      if (isMobile) {
+        x.range([0, width]).domain([1.1, 4.825])
+      } else {
+        x.range([0, width]).domain([1.1, 11.825])
+      }
 
       y3.domain([d3.max(data, function(d) {
         return d[stat + time]
@@ -544,12 +580,21 @@ d3.csv("data/DRAFT-GAMESCORE.csv", function(error, data) {
         $(this).html('<i class="far fa-long-arrow-left"></i> Year')
       }).fadeIn();
 
-      x.range([0, width]).domain([1.1, 11.825])
+      if (isMobile) {
+        x.range([0, width]).domain([1.1, 4.825])
+      } else {
+        x.range([0, width]).domain([1.1, 11.825])
+      }
+
 
       svg.select(".x1")
         .call(xAxisV1)
 
-      y.domain([1992, 2016]);
+      if (!isMobile) {
+        y.domain([1992, 2016]);
+      } else {
+        y.domain([1998, 2016]);
+      }
       roundpick.domain([.01, .35]);
       circlesGP
         .transition().duration(1000)
@@ -560,15 +605,17 @@ d3.csv("data/DRAFT-GAMESCORE.csv", function(error, data) {
         .attr("cy", function(d) {
           return y(d.year);
         });
-      circlesNoGP
-        .transition().duration(1000)
-        .ease(d3.easeExp)
-        .attr("cx", function(d) {
-          return x(parseInt(d.roundPick.toString().split(".")[0]) + roundpick(parseFloat("." + d.roundPick.toString().split(".")[1])));
-        })
-        .attr("cy", function(d) {
-          return y(d.year);
-        })
+      if (!isMobile) {
+        circlesNoGP
+          .transition().duration(1000)
+          .ease(d3.easeExp)
+          .attr("cx", function(d) {
+            return x(parseInt(d.roundPick.toString().split(".")[0]) + roundpick(parseFloat("." + d.roundPick.toString().split(".")[1])));
+          })
+          .attr("cy", function(d) {
+            return y(d.year);
+          })
+      }
     }
 
     if (view === "view2") {
@@ -600,18 +647,20 @@ d3.csv("data/DRAFT-GAMESCORE.csv", function(error, data) {
             return 2
           }
         });
-      circlesNoGP
-        .transition().duration(1000)
-        .ease(d3.easeExp)
-        .attr("cx", function(d) {
-          return x(d.teamNumber);
-        })
-        .attr("cy", function(d) {
-          return y(d[stat + time + "_rank"]);
-        })
-        .attr("r", function(d) {
-          return 2
-        });
+      if (!isMobile) {
+        circlesNoGP
+          .transition().duration(1000)
+          .ease(d3.easeExp)
+          .attr("cx", function(d) {
+            return x(d.teamNumber);
+          })
+          .attr("cy", function(d) {
+            return y(d[stat + time + "_rank"]);
+          })
+          .attr("r", function(d) {
+            return 2
+          });
+      }
     }
 
     if (view === "view3") {
@@ -625,7 +674,12 @@ d3.csv("data/DRAFT-GAMESCORE.csv", function(error, data) {
         $(this).html('<i class="far fa-long-arrow-left"></i> &nbsp;' + $(".statselect").find("option:selected").attr("definition"))
       }).fadeIn();
 
-      x.range([0, width]).domain([1.1, 11.825])
+      if (isMobile) {
+        x.range([0, width]).domain([1.1, 4.825])
+      } else {
+        x.range([0, width]).domain([1.1, 11.825])
+      }
+
       y3.domain([d3.max(data, function(d) {
         return d[stat + time]
       }), 0])
@@ -652,23 +706,24 @@ d3.csv("data/DRAFT-GAMESCORE.csv", function(error, data) {
             return 2
           }
         });
-
-      circlesNoGP
-        .transition().duration(1000)
-        .ease(d3.easeExp)
-        .attr("cx", function(d) {
-          return x(parseInt(d.roundPick.toString().split(".")[0]) + roundpick(parseFloat("." + d.roundPick.toString().split(".")[1])));
-        })
-        .attr("cy", function(d) {
-          return y3(d[stat + time])
-        })
-        .attr("r", function(d) {
-          if (d[stat + time] > 0) {
-            return radius(d[stat + time])
-          } else {
-            return 2
-          }
-        });
+      if (!isMobile) {
+        circlesNoGP
+          .transition().duration(1000)
+          .ease(d3.easeExp)
+          .attr("cx", function(d) {
+            return x(parseInt(d.roundPick.toString().split(".")[0]) + roundpick(parseFloat("." + d.roundPick.toString().split(".")[1])));
+          })
+          .attr("cy", function(d) {
+            return y3(d[stat + time])
+          })
+          .attr("r", function(d) {
+            if (d[stat + time] > 0) {
+              return radius(d[stat + time])
+            } else {
+              return 2
+            }
+          });
+      }
 
     }
   }
@@ -690,7 +745,11 @@ d3.csv("data/DRAFT-GAMESCORE.csv", function(error, data) {
     .addTo(controller)
     .on("progress", function(event) {
       if (event.scrollDirection === "REVERSE") {
-        x.range([0, width]).domain([1.1, 11.825])
+        if (!isMobile) {
+          x.range([0, width]).domain([1.1, 11.825])
+        } else {
+          x.range([0, width]).domain([1.1, 4.825])
+        }
         xAxisV1.tickFormat(function(d) {
           if (isMobile) {
             return numbered(parseInt(d.toString().split(".")[0]))
@@ -709,12 +768,14 @@ d3.csv("data/DRAFT-GAMESCORE.csv", function(error, data) {
           .attr("cx", function(d) {
             return x(parseInt(d.roundPick.toString().split(".")[0]) + roundpick(parseFloat("." + d.roundPick.toString().split(".")[1])));
           });
-        circlesNoGP
-          .transition().duration(300)
-          .ease(d3.easeExp)
-          .attr("cx", function(d) {
-            return x(parseInt(d.roundPick.toString().split(".")[0]) + roundpick(parseFloat("." + d.roundPick.toString().split(".")[1])));
-          })
+        if (!isMobile) {
+          circlesNoGP
+            .transition().duration(300)
+            .ease(d3.easeExp)
+            .attr("cx", function(d) {
+              return x(parseInt(d.roundPick.toString().split(".")[0]) + roundpick(parseFloat("." + d.roundPick.toString().split(".")[1])));
+            })
+        }
         d3.select(".roundclose").transition().duration(300).style("opacity", 0).style("display", "none")
       } else {
         expandround(1);
@@ -730,7 +791,9 @@ d3.csv("data/DRAFT-GAMESCORE.csv", function(error, data) {
       if (event.scrollDirection === "REVERSE") {
         expandround(1);
       } else {
-        expandround(6);
+        if (!isMobile) {
+          expandround(6);
+        }
       }
     });
 
@@ -741,7 +804,11 @@ d3.csv("data/DRAFT-GAMESCORE.csv", function(error, data) {
     .addTo(controller)
     .on("progress", function(event) {
       if (event.scrollDirection === "FORWARD") {
-        x.range([0, width]).domain([1.1, 11.825])
+        if (!isMobile) {
+          x.range([0, width]).domain([1.1, 11.825])
+        } else {
+          x.range([0, width]).domain([1.1, 4.825])
+        }
         xAxisV1.tickFormat(function(d) {
           if (isMobile) {
             return numbered(parseInt(d.toString().split(".")[0]))
@@ -760,15 +827,19 @@ d3.csv("data/DRAFT-GAMESCORE.csv", function(error, data) {
           .attr("cx", function(d) {
             return x(parseInt(d.roundPick.toString().split(".")[0]) + roundpick(parseFloat("." + d.roundPick.toString().split(".")[1])));
           });
-        circlesNoGP
-          .transition().duration(300)
-          .ease(d3.easeExp)
-          .attr("cx", function(d) {
-            return x(parseInt(d.roundPick.toString().split(".")[0]) + roundpick(parseFloat("." + d.roundPick.toString().split(".")[1])));
-          })
+        if (!isMobile) {
+          circlesNoGP
+            .transition().duration(300)
+            .ease(d3.easeExp)
+            .attr("cx", function(d) {
+              return x(parseInt(d.roundPick.toString().split(".")[0]) + roundpick(parseFloat("." + d.roundPick.toString().split(".")[1])));
+            })
+        }
         d3.select(".roundclose").transition().duration(300).style("opacity", 0).style("display", "none")
       } else {
-        expandround(6);
+        if (!isMobile) {
+          expandround(6);
+        }
       }
     });
 
@@ -776,10 +847,18 @@ d3.csv("data/DRAFT-GAMESCORE.csv", function(error, data) {
     var start = thisnumber + .1,
       end = thisnumber + .99;
 
-    if (thisnumber === 1) {
-      x.range([0, (width / 2), width]).domain([1.1, 1.99, 11.825])
+    if (!isMobile) {
+      if (thisnumber === 1) {
+        x.range([0, (width / 2), width]).domain([1.1, 1.99, 11.825])
+      } else {
+        x.range([0, thisnumber * ((width / 2) / 11), (width / 2) + (thisnumber * ((width / 2) / 11)), width]).domain([1.1, start, end, 11.825])
+      }
     } else {
-      x.range([0, thisnumber * ((width / 2) / 11), (width / 2) + (thisnumber * ((width / 2) / 11)), width]).domain([1.1, start, end, 11.825])
+      if (thisnumber === 1) {
+        x.range([0, (width / 2), width]).domain([1.1, 1.99, 4.825])
+      } else {
+        x.range([0, thisnumber * ((width / 2) / 4), (width / 2) + (thisnumber * ((width / 2) / 4)), width]).domain([1.1, start, end, 4.825])
+      }
     }
 
     xAxisV1.tickFormat(function(d) {
@@ -802,12 +881,14 @@ d3.csv("data/DRAFT-GAMESCORE.csv", function(error, data) {
       .attr("cx", function(d) {
         return x(parseInt(d.roundPick.toString().split(".")[0]) + roundpick(parseFloat("." + d.roundPick.toString().split(".")[1])));
       });
-    circlesNoGP
-      .transition().duration(300)
-      .ease(d3.easeExp)
-      .attr("cx", function(d) {
-        return x(parseInt(d.roundPick.toString().split(".")[0]) + roundpick(parseFloat("." + d.roundPick.toString().split(".")[1])));
-      })
+    if (!isMobile) {
+      circlesNoGP
+        .transition().duration(300)
+        .ease(d3.easeExp)
+        .attr("cx", function(d) {
+          return x(parseInt(d.roundPick.toString().split(".")[0]) + roundpick(parseFloat("." + d.roundPick.toString().split(".")[1])));
+        })
+    }
 
     if (isMobile) {
       d3.select(".roundclose").style("left", x(start) + 80 + "px").style("display", "block").transition().duration(300).style("opacity", 1)
@@ -816,7 +897,11 @@ d3.csv("data/DRAFT-GAMESCORE.csv", function(error, data) {
     }
 
     d3.select(".roundclose").on("click", function() {
-      x.range([0, width]).domain([1.1, 11.825])
+      if (!isMobile) {
+        x.range([0, width]).domain([1.1, 11.825])
+      } else {
+        x.range([0, width]).domain([1.1, 4.825])
+      }
 
       xAxisV1.tickFormat(function(d) {
         if (isMobile) {
@@ -838,12 +923,14 @@ d3.csv("data/DRAFT-GAMESCORE.csv", function(error, data) {
         .attr("cx", function(d) {
           return x(parseInt(d.roundPick.toString().split(".")[0]) + roundpick(parseFloat("." + d.roundPick.toString().split(".")[1])));
         })
-      circlesNoGP
-        .transition().duration(300)
-        .ease(d3.easeExp)
-        .attr("cx", function(d) {
-          return x(parseInt(d.roundPick.toString().split(".")[0]) + roundpick(parseFloat("." + d.roundPick.toString().split(".")[1])));
-        })
+      if (!isMobile) {
+        circlesNoGP
+          .transition().duration(300)
+          .ease(d3.easeExp)
+          .attr("cx", function(d) {
+            return x(parseInt(d.roundPick.toString().split(".")[0]) + roundpick(parseFloat("." + d.roundPick.toString().split(".")[1])));
+          })
+      }
       d3.select(this).transition().duration(300).style("opacity", 0).style("display", "none")
     })
   }
@@ -890,27 +977,45 @@ $(".glosLink").on("click", function() {
 // SCROLL MAGIC
 
 // positioning
-var topheight = document.getElementById("maintitle").offsetHeight + document.getElementById("chartintro").offsetHeight
+
+var topheight = document.getElementById("maintitle").offsetHeight + document.getElementById("chartintro").offsetHeight;
+if (!isMobile) {
+  var windowHeight = window.innerHeight;
+} else {
+  if (window.innerWidth < 450) {
+    topheight = window.innerHeight * 5;
+    var windowHeight = 1500;
+  } else {
+    topheight = window.innerHeight * 3;
+    var windowHeight = 1500;
+  }
+}
 $("#chapter1").css("top", topheight + "px");
-$("#chapter2").css("top", topheight + window.innerHeight + "px");
-$("#chapter3").css("top", topheight + window.innerHeight * 2 + "px");
-$("#chapter4").css("top", topheight + window.innerHeight * 3 + "px");
-$("#chapter5").css("top", topheight + window.innerHeight * 4 + "px");
-$("#chapter6").css("top", topheight + window.innerHeight * 5 + "px");
-$("#chapter7").css("top", topheight + window.innerHeight * 6 + "px");
-$("#chapter8").css("top", topheight + window.innerHeight * 7 + "px");
-$("#chapter9").css("top", topheight + window.innerHeight * 8 + "px");
-$("#chapter10").css("top", topheight + window.innerHeight * 9 + "px");
+$("#chapter2").css("top", document.getElementById("chapter1") + windowHeight + "px");
+$("#chapter3").css("top", document.getElementById("chapter2") + windowHeight + "px");
+$("#chapter4").css("top", document.getElementById("chapter3") + windowHeight + "px");
+$("#chapter5").css("top", document.getElementById("chapter4") + windowHeight + "px");
+$("#chapter6").css("top", document.getElementById("chapter5") + windowHeight + "px");
 
 var controller = new ScrollMagic.Controller();
 
-var scene = new ScrollMagic.Scene({
-    triggerElement: "#lockthis",
-    duration: window.innerHeight * 7,
-    triggerHook: 0
-  })
-  .setPin("#lockthis")
-  .addTo(controller);
+if (!isMobile) {
+  var scene = new ScrollMagic.Scene({
+      triggerElement: "#lockthis",
+      duration: window.innerHeight * 7,
+      triggerHook: 0
+    })
+    .setPin("#lockthis")
+    .addTo(controller);
+} else {
+  var scene = new ScrollMagic.Scene({
+      triggerElement: "#lockthis",
+      duration: window.innerHeight * 9,
+      triggerHook: 0
+    })
+    .setPin("#lockthis")
+    .addTo(controller);
+}
 
 var chapter2 = new ScrollMagic.Scene({
     triggerElement: "#chapter2"
@@ -931,12 +1036,16 @@ var chapter3 = new ScrollMagic.Scene({
   .addTo(controller)
   .on("progress", function(event) {
     if (event.scrollDirection === "REVERSE") {
-      d3.selectAll(".circlesNoGP").transition().duration(300).style("opacity", .25);
-      d3.selectAll(".circlesGP").transition().duration(300).style("opacity", .75);
+      if (!isMobile) {
+        d3.selectAll(".circlesNoGP").transition().duration(300).style("opacity", .25);
+        d3.selectAll(".circlesGP").transition().duration(300).style("opacity", .75);
+      }
       $("#radio_f").prop("checked", true).change();
     } else {
-      d3.selectAll(".circlesNoGP").transition().duration(300).style("opacity", .75);
-      d3.selectAll(".circlesGP").transition().duration(300).style("opacity", .05);
+      if (!isMobile) {
+        d3.selectAll(".circlesNoGP").transition().duration(300).style("opacity", .75);
+        d3.selectAll(".circlesGP").transition().duration(300).style("opacity", .05);
+      }
       $("#radio_c").prop("checked", true).change();
     }
   });
@@ -948,13 +1057,17 @@ var chapter3two = new ScrollMagic.Scene({
   .addTo(controller)
   .on("progress", function(event) {
     if (event.scrollDirection === "FORWARD") {
-      d3.selectAll(".circlesNoGP").transition().duration(300).style("opacity", .25);
-      d3.selectAll(".circlesGP").transition().duration(300).style("opacity", .75);
-      $("#radio_c").prop("checked", true).change();
+      if (!isMobile) {
+        d3.selectAll(".circlesNoGP").transition().duration(300).style("opacity", .25);
+        d3.selectAll(".circlesGP").transition().duration(300).style("opacity", .75);
+        $("#radio_c").prop("checked", true).change();
+      }
     } else {
-      d3.selectAll(".circlesNoGP").transition().duration(300).style("opacity", .75);
-      d3.selectAll(".circlesGP").transition().duration(300).style("opacity", .05);
-      $("#radio_f").prop("checked", true).change();
+      if (!isMobile) {
+        d3.selectAll(".circlesNoGP").transition().duration(300).style("opacity", .75);
+        d3.selectAll(".circlesGP").transition().duration(300).style("opacity", .05);
+        $("#radio_f").prop("checked", true).change();
+      }
     }
   });
 
@@ -965,41 +1078,17 @@ var chapter3three = new ScrollMagic.Scene({
   .addTo(controller)
   .on("progress", function(event) {
     if (event.scrollDirection === "FORWARD") {
-      d3.selectAll(".circlesNoGP").transition().duration(300).style("opacity", .25);
-      d3.selectAll(".circlesGP").transition().duration(300).style("opacity", .75);
+      if (!isMobile) {
+        d3.selectAll(".circlesNoGP").transition().duration(300).style("opacity", .25);
+        d3.selectAll(".circlesGP").transition().duration(300).style("opacity", .75);
+      }
     } else {
-      d3.selectAll(".circlesNoGP").transition().duration(300).style("opacity", .75);
-      d3.selectAll(".circlesGP").transition().duration(300).style("opacity", .05);
+      if (!isMobile) {
+        d3.selectAll(".circlesNoGP").transition().duration(300).style("opacity", .75);
+        d3.selectAll(".circlesGP").transition().duration(300).style("opacity", .05);
+      }
     }
   });
-
-// var chapter2 = new ScrollMagic.Scene({
-//     triggerElement: "#chapter2"
-//   })
-//   .addTo(controller)
-//   .on("progress", function(event) {
-//     if (event.scrollDirection === "FORWARD") {
-//       $("#radio_c").prop("checked", true).change();
-//     } else {
-//       $("#radio_f").prop("checked", true).change();
-//     }
-//   });
-
-// var chapter3 = new ScrollMagic.Scene({
-//     triggerElement: "#chapter3"
-//   })
-//   .addTo(controller)
-//   .on("progress", function(event) {
-//     if (event.scrollDirection === "REVERSE") {
-//       $('.statselect').val('avg_GS');
-//       $('.statselect').trigger('change');
-//       $('.statselect').trigger('select2:select');
-//     } else {
-//       $('.statselect').val('GP_ss');
-//       $('.statselect').trigger('change');
-//       $('.statselect').trigger('select2:select');
-//     }
-//   });
 
 d3.selectAll(".playerHighlight").on("mouseover", function(d) {
   var thisplayerid = d3.select(this).attr('id');
@@ -1013,154 +1102,73 @@ d3.selectAll(".playerHighlight").on("mouseover", function(d) {
   $(".playertip").css("display", "none")
 })
 
-// var chapter5 = new ScrollMagic.Scene({
-//     triggerElement: "#chapter5",
-//     triggerHook: 0
-//   })
-//   .addTo(controller)
-//   .on("progress", function(event) {
-//     if (event.scrollDirection === "FORWARD") {
-//       $('.playersearch').val(null);
-//       $('.playersearch').trigger('change');
-//       $('.playersearch').trigger('select2:unselect');
-//       $('.statselect').val('avg_GS');
-//       $('.statselect').trigger('change');
-//       $('.statselect').trigger('select2:select');
-//       $(".playertip").css("display", "none")
-//     } else {
-//       $('.playersearch').val('luongro01');
-//       $('.playersearch').trigger('change');
-//       $('.playersearch').trigger('select2:select');
-//       $('.statselect').val('gW_ss');
-//       $('.statselect').trigger('change');
-//       $('.statselect').trigger('select2:select');
-//     }
-//   });
-//
-// var chapter6 = new ScrollMagic.Scene({
-//     triggerElement: "#chapter6"
-//   })
-//   .addTo(controller)
-//   .on("progress", function(event) {
-//     if (event.scrollDirection === "REVERSE") {
-//       $('.positionselect').val(null);
-//       $('.positionselect').trigger('change');
-//       $('.positionselect').trigger('select2:unselect');
-//     } else {
-//       $('.positionselect').val('pos-D');
-//       $('.positionselect').trigger('change');
-//       $('.positionselect').trigger('select2:select');
-//     }
-//   });
-//
-// var chapter6 = new ScrollMagic.Scene({
-//     triggerElement: "#chapter6",
-//     triggerHook: 0
-//   })
-//   .addTo(controller)
-//   .on("progress", function(event) {
-//     if (event.scrollDirection === "FORWARD") {
-//       $('.positionselect').val(null);
-//       $('.positionselect').trigger('change');
-//       $('.positionselect').trigger('select2:unselect');
-//     } else {
-//       $('.positionselect').val('pos-D');
-//       $('.positionselect').trigger('change');
-//       $('.positionselect').trigger('select2:select');
-//     }
-//   });
-//
-// var chapter8 = new ScrollMagic.Scene({
-//     triggerElement: "#chapter8"
-//   })
-//   .addTo(controller)
-//   .on("progress", function(event) {
-//     if (event.scrollDirection === "REVERSE") {
-//       d3.selectAll(".circlesNoGP").transition().duration(300).style("opacity", .25);
-//       d3.selectAll(".circlesGP").transition().duration(300).style("opacity", .75);
-//     } else {
-//       d3.selectAll(".circlesNoGP").transition().duration(300).style("opacity", .75);
-//       d3.selectAll(".circlesGP").transition().duration(300).style("opacity", .05);
-//     }
-//   });
-//
-// var chapter8 = new ScrollMagic.Scene({
-//     triggerElement: "#chapter8",
-//     triggerHook: 0
-//   })
-//   .addTo(controller)
-//   .on("progress", function(event) {
-//     if (event.scrollDirection === "FORWARD") {
-//       d3.selectAll(".circlesNoGP").transition().duration(300).style("opacity", .25);
-//       d3.selectAll(".circlesGP").transition().duration(300).style("opacity", .75);
-//     } else {
-//       d3.selectAll(".circlesNoGP").transition().duration(300).style("opacity", .75);
-//       d3.selectAll(".circlesGP").transition().duration(300).style("opacity", .05);
-//     }
-//   });
+if (!isMobile) {
+  var chapter5 = new ScrollMagic.Scene({
+      triggerElement: "#chapter5"
+    })
+    .addTo(controller)
+    .on("progress", function(event) {
+      if (event.scrollDirection === "REVERSE") {
+        $("#viewselect1").prop("checked", true).change();
+        $("#byyearbutton").addClass("active")
+        $("#byteambutton").removeClass("active")
+        // $('.statselect').val('avg_GS');
+        // $('.statselect').trigger('change');
+        // $('.statselect').trigger('select2:select');
+      } else {
+        $("#viewselect2").prop("checked", true).change();
+        $("#byyearbutton").removeClass("active")
+        $("#byteambutton").addClass("active")
+        $('.statselect').val('PTS_ss');
+        $('.statselect').trigger('change');
+        $('.statselect').trigger('select2:select');
+      }
+    });
 
-var chapter5 = new ScrollMagic.Scene({
-    triggerElement: "#chapter5"
-  })
-  .addTo(controller)
-  .on("progress", function(event) {
-    if (event.scrollDirection === "REVERSE") {
-      $("#viewselect1").prop("checked", true).change();
-      $("#byyearbutton").addClass("active")
-      $("#byteambutton").removeClass("active")
-      // $('.statselect').val('avg_GS');
-      // $('.statselect').trigger('change');
-      // $('.statselect').trigger('select2:select');
-    } else {
-      $("#viewselect2").prop("checked", true).change();
-      $("#byyearbutton").removeClass("active")
-      $("#byteambutton").addClass("active")
-      $('.statselect').val('PTS_ss');
-      $('.statselect').trigger('change');
-      $('.statselect').trigger('select2:select');
-    }
-  });
+  var chapter6 = new ScrollMagic.Scene({
+      triggerElement: "#chapter6"
+    })
+    .addTo(controller)
+    .on("progress", function(event) {
+      if (event.scrollDirection === "REVERSE") {
+        // console.log("ch6-reverse")
+        $("#viewselect2").prop("checked", true).change();
+        $("#byteambutton").addClass("active")
+        $("#byvaluebutton").removeClass("active")
+      } else {
+        // console.log("ch6-forward")
+        $("#viewselect3").prop("checked", true).change();
+        $("#byteambutton").removeClass("active")
+        $("#byvaluebutton").addClass("active")
+      }
+    });
 
-var chapter6two = new ScrollMagic.Scene({
-    triggerElement: "#chapter6",
-    triggerHook: .5
-  })
-  .addTo(controller)
-  .on("progress", function(event) {
-    if (event.scrollDirection === "REVERSE") {
-      $('.statselect').val('PTS_ss');
-      $('.statselect').trigger('change');
-      $('.statselect').trigger('select2:select');
-      $('.positionselect').val('null');
-      $('.positionselect').trigger('change');
-      $('.positionselect').trigger('select2:unselect');
-      removeAverage();
-    } else {
-      $('.statselect').val('avg_GS');
-      $('.statselect').trigger('change');
-      $('.statselect').trigger('select2:select');
-      $('.positionselect').val('pos-RW');
-      $('.positionselect').trigger('change');
-      $('.positionselect').trigger('select2:select');
-      drawAverage();
-    }
-  });
+  var chapter6two = new ScrollMagic.Scene({
+      triggerElement: "#chapter6",
+      triggerHook: .6
+    })
+    .addTo(controller)
+    .on("progress", function(event) {
+      if (event.scrollDirection === "REVERSE") {
+        $('.statselect').val('PTS_ss');
+        $('.statselect').trigger('change');
+        $('.statselect').trigger('select2:select');
+        $('.positionselect').val('null');
+        $('.positionselect').trigger('change');
+        $('.positionselect').trigger('select2:unselect');
+        removeAverage();
+      } else {
+        $('.statselect').val('avg_GS');
+        $('.statselect').trigger('change');
+        $('.statselect').trigger('select2:select');
+        $('.positionselect').val('pos-RW');
+        $('.positionselect').trigger('change');
+        $('.positionselect').trigger('select2:select');
+        drawAverage();
+      }
+    });
 
-var chapter6 = new ScrollMagic.Scene({
-    triggerElement: "#chapter6"
-  })
-  .addTo(controller)
-  .on("progress", function(event) {
-    if (event.scrollDirection === "REVERSE") {
-      $("#viewselect2").prop("checked", true).change();
-      $("#byteambutton").addClass("active")
-      $("#byvaluebutton").removeClass("active")
-    } else {
-      $("#viewselect3").prop("checked", true).change();
-      $("#byteambutton").removeClass("active")
-      $("#byvaluebutton").addClass("active")
-    }
-  });
+}
 
 function drawAverage() {
   d3.csv("data/expectation.csv", function(error, data) {
@@ -1203,4 +1211,9 @@ function drawAverage() {
 
 function removeAverage() {
   d3.selectAll(".avgline").transition().duration(500).style("opacity", 0).style("display", "none").remove();
+}
+
+
+if (isMobile) {
+  $("#totalNumber").html("players drafted in the first four rounds every year since <span class='number'>1998</span>, and for the sake of speed, only includes players who actually played an NHL game. To see the full visualization, check it out on a larger screen.")
 }
