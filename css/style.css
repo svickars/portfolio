@@ -58,6 +58,15 @@ h3 {
   font-weight: 400;
   font-size: .9em; }
 
+h4 {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 700;
+  color: #666666; }
+
+.bullet {
+  margin-left: -25px;
+  margin-right: 15px; }
+
 .number {
   color: white;
   font-size: .65em;
@@ -91,6 +100,10 @@ p {
   height: 200px;
   padding: 15px; }
 
+.itemWIP {
+  height: 175px;
+  padding: 15px; }
+
 .iteminner {
   position: relative;
   height: 100%;
@@ -111,6 +124,21 @@ p {
   opacity: 0;
   transition: opacity 0.25s ease; }
 
+.overlayWIP {
+  -webkit-filter: grayscale(100%);
+  /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  transition: opacity 0.25s ease;
+  object-fit: cover;
+  width: 100%;
+  height: 100%; }
+
+.overlayWIP:hover {
+  -webkit-filter: none;
+  /* Safari 6.0 - 9.0 */
+  filter: none;
+  transition: opacity 0.25s ease; }
+
 @media only screen and (max-width: 1280px) {
   h2 {
     font-size: .9em; }
@@ -118,7 +146,9 @@ p {
     top: 35px;
     font-size: .75em; }
   .item {
-    height: 200px; } }
+    height: 200px; }
+  .itemWIP {
+    height: 175px; } }
 
 @media only screen and (min-width: 1280px) {
   h2 {
@@ -127,7 +157,9 @@ p {
     top: 35px;
     font-size: .75em; }
   .item {
-    height: 200px; } }
+    height: 200px; }
+  .itemWIP {
+    height: 175px; } }
 
 .draftingbig {
   color: transparent;
