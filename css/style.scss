@@ -94,9 +94,29 @@ h3 {
   font-size: .9em;
 }
 
+h4 {
+  font-family: $pagesansserif;
+  font-weight: 700;
+  color:black;
+  margin-bottom: -5px;
+}
+
+h5 {
+  font-family: $pagesansserif;
+  font-weight: 400;
+  font-style: italic;
+  color: $mediumgray
+}
+
+.bullet {
+  margin-left: -25px;
+  margin-right: 15px;
+}
+
 .number {
   color: white;
-  font-size: .65em;
+  font-size: .9em;
+  font-weight: 400;
   margin-right: 5px;
   opacity: .5;
 }
@@ -121,17 +141,126 @@ p {
   color: $mediumgray;
 }
 
+.listItem {
+  display: table;
+  margin-bottom: 5px;
+  margin-left: -28px;
+  height: auto;
+}
+
+.listNumber {
+  display: table-cell;
+  vertical-align:middle;
+  text-align:center;
+  padding-right: 10px;
+
+  font-family: "Inconsolata", "Roboto", Arial, sans-serif;
+  // font-size: .85em;
+  color: $lightgray;
+}
+
+.listContent {
+  display: inline-block;
+}
+
+#parentalleave h4 {
+  color: #fdae95;
+}
+
+#parentalleave:hover h4 {
+  color: $darkgray;
+}
+
+#draftingbig h4 {
+  color: #5D83AB;
+}
+
+#draftingbig:hover h4 {
+  color: $darkgray;
+}
+
+#trumped h4 {
+  color: #eb4b70;
+}
+
+#trumped:hover h4 {
+  color: $darkgray;
+}
+
+#residentialschools h4 {
+  color: #f15a24;
+}
+
+#residentialschools:hover h4 {
+  color: $darkgray;
+}
+
+#playingball h4 {
+  color: #E5D4AF;
+}
+
+#playingball:hover h4 {
+  color: $darkgray;
+}
+
+#comparinggreats h4 {
+  color: #1F8A55;
+}
+
+#comparinggreats:hover h4 {
+  color: $darkgray;
+}
+
+#allaboutthatbond h4 {
+  color: #000;
+}
+
+#allaboutthatbond:hover h4 {
+  color: $darkgray;
+}
+
+#competitive h4 {
+  color: #FCA429;
+}
+
+#competitive:hover h4 {
+  color: $darkgray;
+}
+
+#africa h4 {
+  color: #38BEE0;
+}
+
+#africa:hover h4 {
+  color: $darkgray;
+}
+
+#showingoff h4 {
+  color: #EB1219;
+}
+
+#showingoff:hover h4 {
+  color: $darkgray;
+}
+
+
 .lightergray {
   color: $lightgray;
 }
 
 .work {
-  margin-top: 80px;
+  margin-top: 25px;
 }
 
 .item {
   // background-color: $mediumgray;
   height: 200px;
+  padding: 15px;
+}
+
+.itemWIP {
+  // background-color: $mediumgray;
+  height: 175px;
   padding: 15px;
 }
 
@@ -150,11 +279,26 @@ p {
 .overlay {
   -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
     filter: grayscale(100%);
-    transition: opacity 0.25s ease;
+  transition: opacity 0.25s ease;
 }
 
 .overlay:hover {
   opacity: 0;
+  transition: opacity 0.25s ease;
+}
+
+.overlayWIP {
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    transition: opacity 0.25s ease;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.overlayWIP:hover {
+  -webkit-filter: none; /* Safari 6.0 - 9.0 */
+    filter: none;
   transition: opacity 0.25s ease;
 }
 
@@ -169,6 +313,9 @@ p {
     .item {
       height: 200px;
     }
+    .itemWIP {
+      height: 175px;
+    }
 }
 
 @media only screen and (min-width: 1280px) {
@@ -181,6 +328,9 @@ p {
     }
     .item {
       height: 200px;
+    }
+    .itemWIP {
+      height: 175px;
     }
 }
 

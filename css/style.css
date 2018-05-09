@@ -61,6 +61,13 @@ h3 {
 h4 {
   font-family: "Roboto", Arial, sans-serif;
   font-weight: 700;
+  color: black;
+  margin-bottom: -5px; }
+
+h5 {
+  font-family: "Roboto", Arial, sans-serif;
+  font-weight: 400;
+  font-style: italic;
   color: #666666; }
 
 .bullet {
@@ -91,11 +98,88 @@ p {
   line-height: 1.6em !important;
   color: #666666; }
 
+.listItem {
+  display: table;
+  margin-bottom: 5px;
+  margin-left: -28px;
+  height: auto; }
+
+.listNumber {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding-right: 10px;
+  font-family: "Inconsolata", "Roboto", Arial, sans-serif;
+  color: #b5b5b5; }
+
+.listContent {
+  display: inline-block; }
+
+#parentalleave h4 {
+  color: #fdae95; }
+
+#parentalleave:hover h4 {
+  color: #333333; }
+
+#draftingbig h4 {
+  color: #5D83AB; }
+
+#draftingbig:hover h4 {
+  color: #333333; }
+
+#trumped h4 {
+  color: #eb4b70; }
+
+#trumped:hover h4 {
+  color: #333333; }
+
+#residentialschools h4 {
+  color: #f15a24; }
+
+#residentialschools:hover h4 {
+  color: #333333; }
+
+#playingball h4 {
+  color: #E5D4AF; }
+
+#playingball:hover h4 {
+  color: #333333; }
+
+#comparinggreats h4 {
+  color: #1F8A55; }
+
+#comparinggreats:hover h4 {
+  color: #333333; }
+
+#allaboutthatbond h4 {
+  color: #000; }
+
+#allaboutthatbond:hover h4 {
+  color: #333333; }
+
+#competitive h4 {
+  color: #FCA429; }
+
+#competitive:hover h4 {
+  color: #333333; }
+
+#africa h4 {
+  color: #38BEE0; }
+
+#africa:hover h4 {
+  color: #333333; }
+
+#showingoff h4 {
+  color: #EB1219; }
+
+#showingoff:hover h4 {
+  color: #333333; }
+
 .lightergray {
   color: #b5b5b5; }
 
 .work {
-  margin-top: 80px; }
+  margin-top: 25px; }
 
 .item {
   height: 200px;
