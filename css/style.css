@@ -115,6 +115,12 @@ p {
 .listContent {
   display: inline-block; }
 
+#globalography h4 {
+  color: #2f145d; }
+
+#globalography:hover h4 {
+  color: #333333; }
+
 #parentalleave h4 {
   color: #fdae95; }
 
@@ -644,3 +650,6 @@ header {
 
 #dataface {
   background-color: #fdae95; }
+
+#amazon {
+  background-color: #2f145d; }
