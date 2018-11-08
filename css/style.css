@@ -115,6 +115,12 @@ p {
 .listContent {
   display: inline-block; }
 
+#titletowns h4 {
+  color: #6c7a89; }
+
+#titletowns:hover h4 {
+  color: #333333; }
+
 #globalography h4 {
   color: #2f145d; }
 
@@ -653,3 +659,6 @@ header {
 
 #amazon {
   background-color: #2f145d; }
+
+#pudding {
+  background-color: #6c7a89; }
