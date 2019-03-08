@@ -9,17 +9,33 @@
 	],
 "creatorBuild": "25849",
 "files": {
-	"\/allaboutthatbond\/css\/style.css": {
+	"\/.gitignore": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/.gitignore",
+		"oF": 0
+		},
+	"\/archive\/achampion\/css\/rangeslider.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/css\/style-min.css",
+		"oAP": "\/archive\/achampion\/css\/rangeslider-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"\/allaboutthatbond\/css\/style.scss": {
+	"\/archive\/achampion\/css\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/achampion\/css\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/archive\/achampion\/css\/style.scss": {
 		"aP": 0,
 		"bl": 0,
 		"dP": 10,
@@ -27,522 +43,4211 @@
 		"ft": 4,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/css\/style.css",
+		"oAP": "\/archive\/achampion\/css\/style.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
 		},
-	"\/allaboutthatbond\/img\/bond-background-01.png": {
+	"\/archive\/achampion\/data\/cities.csv": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/achampion\/data\/cities.csv",
+		"oF": 0
+		},
+	"\/archive\/achampion\/data\/data.csv": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/achampion\/data\/data.csv",
+		"oF": 0
+		},
+	"\/archive\/achampion\/data\/matrix.csv": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/achampion\/data\/matrix.csv",
+		"oF": 0
+		},
+	"\/archive\/achampion\/img\/baseball.png": {
+		"ft": 32768,
+		"iS": 8240,
+		"oA": 0,
+		"oAP": "\/archive\/achampion\/img\/baseball.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/achampion\/img\/basketball.png": {
+		"ft": 32768,
+		"iS": 6600,
+		"oA": 0,
+		"oAP": "\/archive\/achampion\/img\/basketball.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/achampion\/img\/football.png": {
+		"ft": 32768,
+		"iS": 7037,
+		"oA": 0,
+		"oAP": "\/archive\/achampion\/img\/football.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/achampion\/img\/icons\/baseball-m.png": {
+		"ft": 32768,
+		"iS": 17824,
+		"oA": 0,
+		"oAP": "\/archive\/achampion\/img\/icons\/baseball-m.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/achampion\/img\/icons\/basketball-m.png": {
+		"ft": 32768,
+		"iS": 17908,
+		"oA": 0,
+		"oAP": "\/archive\/achampion\/img\/icons\/basketball-m.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/achampion\/img\/icons\/basketball-w.png": {
+		"ft": 32768,
+		"iS": 17908,
+		"oA": 0,
+		"oAP": "\/archive\/achampion\/img\/icons\/basketball-w.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/achampion\/img\/icons\/black.png": {
+		"ft": 32768,
+		"iS": 262,
+		"oA": 0,
+		"oAP": "\/archive\/achampion\/img\/icons\/black.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/achampion\/img\/icons\/CFL.png": {
+		"ft": 32768,
+		"iS": 3360,
+		"oA": 0,
+		"oAP": "\/archive\/achampion\/img\/icons\/CFL.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/achampion\/img\/icons\/football-m.png": {
+		"ft": 32768,
+		"iS": 17869,
+		"oA": 0,
+		"oAP": "\/archive\/achampion\/img\/icons\/football-m.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/achampion\/img\/icons\/MLB.png": {
+		"ft": 32768,
+		"iS": 2646,
+		"oA": 0,
+		"oAP": "\/archive\/achampion\/img\/icons\/MLB.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/achampion\/img\/icons\/MLS.png": {
+		"ft": 32768,
+		"iS": 3308,
+		"oA": 0,
+		"oAP": "\/archive\/achampion\/img\/icons\/MLS.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/achampion\/img\/icons\/NBA.png": {
+		"ft": 32768,
+		"iS": 3220,
+		"oA": 0,
+		"oAP": "\/archive\/achampion\/img\/icons\/NBA.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/achampion\/img\/icons\/NFL.png": {
+		"ft": 32768,
+		"iS": 2936,
+		"oA": 0,
+		"oAP": "\/archive\/achampion\/img\/icons\/NFL.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/achampion\/img\/icons\/NHL.png": {
+		"ft": 32768,
+		"iS": 2709,
+		"oA": 0,
+		"oAP": "\/archive\/achampion\/img\/icons\/NHL.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/achampion\/img\/icons\/soccer-w.png": {
+		"ft": 32768,
+		"iS": 2097,
+		"oA": 0,
+		"oAP": "\/archive\/achampion\/img\/icons\/soccer-w.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/achampion\/img\/icons\/volleyball-w.png": {
+		"ft": 32768,
+		"iS": 1956,
+		"oA": 0,
+		"oAP": "\/archive\/achampion\/img\/icons\/volleyball-w.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/achampion\/img\/screenCap1.mov": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/achampion\/img\/screenCap1.mov",
+		"oF": 0
+		},
+	"\/archive\/achampion\/img\/soccer.png": {
+		"ft": 32768,
+		"iS": 8593,
+		"oA": 0,
+		"oAP": "\/archive\/achampion\/img\/soccer.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/achampion\/img\/trophies.ai": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/achampion\/img\/trophies.ai",
+		"oF": 0
+		},
+	"\/archive\/achampion\/img\/volleyball.png": {
+		"ft": 32768,
+		"iS": 6998,
+		"oA": 0,
+		"oAP": "\/archive\/achampion\/img\/volleyball.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/achampion\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/achampion\/index.html",
+		"oF": 0
+		},
+	"\/archive\/achampion\/js\/main-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/achampion\/js\/main-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/achampion\/js\/main.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/achampion\/js\/main-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/achampion\/js\/maps\/canada.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/archive\/achampion\/js\/maps\/canada-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/archive\/achampion\/js\/maps\/us.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/archive\/achampion\/js\/maps\/us-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/archive\/achampion\/js\/maps\/world-continents.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/archive\/achampion\/js\/maps\/world-continents-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/archive\/achampion\/js\/rangeslider.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/achampion\/js\/rangeslider.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/achampion\/js\/scrollama-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/achampion\/js\/scrollama-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/allaboutthatbond\/css\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/allaboutthatbond\/css\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/archive\/allaboutthatbond\/css\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/allaboutthatbond\/css\/style.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/archive\/allaboutthatbond\/img\/bond-background-01.png": {
 		"ft": 32768,
 		"iS": 93888,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/bond-background-01.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/bond-background-01.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/7.jpg": {
+	"\/archive\/allaboutthatbond\/img\/images\/7.jpg": {
 		"ft": 16384,
 		"iS": 743317,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/7.jpg",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/7.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/CasinoRoyale-01.png": {
+	"\/archive\/allaboutthatbond\/img\/images\/CasinoRoyale-01.png": {
 		"ft": 32768,
 		"iS": 706511,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/CasinoRoyale-01.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/CasinoRoyale-01.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/films\/ALL-gif.gif": {
+	"\/archive\/allaboutthatbond\/img\/images\/films\/ALL-gif.gif": {
 		"ft": 4194304,
 		"iS": 446482,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/films\/ALL-gif.gif",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/films\/ALL-gif.gif",
 		"oF": 0,
 		"opt": 0
 		},
-	"\/allaboutthatbond\/img\/images\/films\/ALL-gif.psd": {
+	"\/archive\/allaboutthatbond\/img\/images\/films\/ALL-gif.psd": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/allaboutthatbond\/img\/images\/films\/ALL-gif.psd",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/films\/ALL-gif.psd",
 		"oF": 0
 		},
-	"\/allaboutthatbond\/img\/images\/films\/aviewtoakill.png": {
+	"\/archive\/allaboutthatbond\/img\/images\/films\/aviewtoakill.png": {
 		"ft": 32768,
 		"iS": 48356,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/films\/aviewtoakill.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/films\/aviewtoakill.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/films\/casinoroyale.png": {
+	"\/archive\/allaboutthatbond\/img\/images\/films\/casinoroyale.png": {
 		"ft": 32768,
 		"iS": 50200,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/films\/casinoroyale.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/films\/casinoroyale.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/films\/diamonds.png": {
+	"\/archive\/allaboutthatbond\/img\/images\/films\/diamonds.png": {
 		"ft": 32768,
 		"iS": 44131,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/films\/diamonds.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/films\/diamonds.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/films\/dieanotherday.png": {
+	"\/archive\/allaboutthatbond\/img\/images\/films\/dieanotherday.png": {
 		"ft": 32768,
 		"iS": 45757,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/films\/dieanotherday.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/films\/dieanotherday.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/films\/drno.png": {
+	"\/archive\/allaboutthatbond\/img\/images\/films\/drno.png": {
 		"ft": 32768,
 		"iS": 45376,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/films\/drno.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/films\/drno.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/films\/foryoureyesonly.png": {
+	"\/archive\/allaboutthatbond\/img\/images\/films\/foryoureyesonly.png": {
 		"ft": 32768,
 		"iS": 47258,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/films\/foryoureyesonly.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/films\/foryoureyesonly.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/films\/fromrussia.png": {
+	"\/archive\/allaboutthatbond\/img\/images\/films\/fromrussia.png": {
 		"ft": 32768,
 		"iS": 45963,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/films\/fromrussia.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/films\/fromrussia.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/films\/goldeneye.png": {
+	"\/archive\/allaboutthatbond\/img\/images\/films\/goldeneye.png": {
 		"ft": 32768,
 		"iS": 44805,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/films\/goldeneye.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/films\/goldeneye.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/films\/goldengun.png": {
+	"\/archive\/allaboutthatbond\/img\/images\/films\/goldengun.png": {
 		"ft": 32768,
 		"iS": 44427,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/films\/goldengun.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/films\/goldengun.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/films\/goldfinger.png": {
+	"\/archive\/allaboutthatbond\/img\/images\/films\/goldfinger.png": {
 		"ft": 32768,
 		"iS": 44459,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/films\/goldfinger.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/films\/goldfinger.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/films\/licencetokill.png": {
+	"\/archive\/allaboutthatbond\/img\/images\/films\/licencetokill.png": {
 		"ft": 32768,
 		"iS": 38198,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/films\/licencetokill.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/films\/licencetokill.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/films\/liveandletdie.png": {
+	"\/archive\/allaboutthatbond\/img\/images\/films\/liveandletdie.png": {
 		"ft": 32768,
 		"iS": 47728,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/films\/liveandletdie.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/films\/liveandletdie.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/films\/livingdaylights.png": {
+	"\/archive\/allaboutthatbond\/img\/images\/films\/livingdaylights.png": {
 		"ft": 32768,
 		"iS": 41742,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/films\/livingdaylights.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/films\/livingdaylights.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/films\/moonraker.png": {
+	"\/archive\/allaboutthatbond\/img\/images\/films\/moonraker.png": {
 		"ft": 32768,
 		"iS": 42384,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/films\/moonraker.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/films\/moonraker.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/films\/neversayneveragain.png": {
+	"\/archive\/allaboutthatbond\/img\/images\/films\/neversayneveragain.png": {
 		"ft": 32768,
 		"iS": 51939,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/films\/neversayneveragain.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/films\/neversayneveragain.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/films\/octopussy.png": {
+	"\/archive\/allaboutthatbond\/img\/images\/films\/octopussy.png": {
 		"ft": 32768,
 		"iS": 50495,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/films\/octopussy.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/films\/octopussy.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/films\/quantum.png": {
+	"\/archive\/allaboutthatbond\/img\/images\/films\/quantum.png": {
 		"ft": 32768,
 		"iS": 43277,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/films\/quantum.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/films\/quantum.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/films\/secretservice.png": {
+	"\/archive\/allaboutthatbond\/img\/images\/films\/secretservice.png": {
 		"ft": 32768,
 		"iS": 52547,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/films\/secretservice.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/films\/secretservice.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/films\/skyfall.png": {
+	"\/archive\/allaboutthatbond\/img\/images\/films\/skyfall.png": {
 		"ft": 32768,
 		"iS": 49158,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/films\/skyfall.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/films\/skyfall.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/films\/spectre.png": {
+	"\/archive\/allaboutthatbond\/img\/images\/films\/spectre.png": {
 		"ft": 32768,
 		"iS": 50694,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/films\/spectre.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/films\/spectre.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/films\/spywholovedme.png": {
+	"\/archive\/allaboutthatbond\/img\/images\/films\/spywholovedme.png": {
 		"ft": 32768,
 		"iS": 44931,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/films\/spywholovedme.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/films\/spywholovedme.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/films\/thunderball.png": {
+	"\/archive\/allaboutthatbond\/img\/images\/films\/thunderball.png": {
 		"ft": 32768,
 		"iS": 51413,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/films\/thunderball.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/films\/thunderball.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/films\/tomorrowneverdies.png": {
+	"\/archive\/allaboutthatbond\/img\/images\/films\/tomorrowneverdies.png": {
 		"ft": 32768,
 		"iS": 48653,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/films\/tomorrowneverdies.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/films\/tomorrowneverdies.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/films\/totals.png": {
+	"\/archive\/allaboutthatbond\/img\/images\/films\/totals.png": {
 		"ft": 32768,
 		"iS": 54846,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/films\/totals.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/films\/totals.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/films\/Untitled-2.ai": {
+	"\/archive\/allaboutthatbond\/img\/images\/films\/Untitled-2.ai": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/allaboutthatbond\/img\/images\/films\/Untitled-2.ai",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/films\/Untitled-2.ai",
 		"oF": 0
 		},
-	"\/allaboutthatbond\/img\/images\/films\/worldisnotenough.png": {
+	"\/archive\/allaboutthatbond\/img\/images\/films\/worldisnotenough.png": {
 		"ft": 32768,
 		"iS": 46937,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/films\/worldisnotenough.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/films\/worldisnotenough.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/films\/youonlylivetwice.png": {
+	"\/archive\/allaboutthatbond\/img\/images\/films\/youonlylivetwice.png": {
 		"ft": 32768,
 		"iS": 47028,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/films\/youonlylivetwice.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/films\/youonlylivetwice.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/OuterSpace.png": {
+	"\/archive\/allaboutthatbond\/img\/images\/OuterSpace.png": {
 		"ft": 32768,
 		"iS": 710635,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/OuterSpace.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/OuterSpace.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/Q.png": {
+	"\/archive\/allaboutthatbond\/img\/images\/Q.png": {
 		"ft": 32768,
 		"iS": 1233770,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/Q.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/Q.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/Qbranch.png": {
+	"\/archive\/allaboutthatbond\/img\/images\/Qbranch.png": {
 		"ft": 32768,
 		"iS": 1419426,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/Qbranch.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/Qbranch.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/TheWorldOfJamesBond_large.jpg": {
+	"\/archive\/allaboutthatbond\/img\/images\/TheWorldOfJamesBond_large.jpg": {
 		"ft": 16384,
 		"iS": 4681568,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/TheWorldOfJamesBond_large.jpg",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/TheWorldOfJamesBond_large.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/TheWorldOfJamesBond_large.png": {
+	"\/archive\/allaboutthatbond\/img\/images\/TheWorldOfJamesBond_large.png": {
 		"ft": 32768,
 		"iS": 5840751,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/TheWorldOfJamesBond_large.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/TheWorldOfJamesBond_large.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/TheWorldOfJamesBond_small.jpg": {
+	"\/archive\/allaboutthatbond\/img\/images\/TheWorldOfJamesBond_small.jpg": {
 		"ft": 16384,
 		"iS": 1161291,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/TheWorldOfJamesBond_small.jpg",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/TheWorldOfJamesBond_small.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/TheWorldOfJamesBond_small.png": {
+	"\/archive\/allaboutthatbond\/img\/images\/TheWorldOfJamesBond_small.png": {
 		"ft": 32768,
 		"iS": 2222122,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/TheWorldOfJamesBond_small.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/TheWorldOfJamesBond_small.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/images\/Thunderball-01.png": {
+	"\/archive\/allaboutthatbond\/img\/images\/Thunderball-01.png": {
 		"ft": 32768,
 		"iS": 792001,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/images\/Thunderball-01.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/images\/Thunderball-01.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/ondrinking-img1-01.png": {
+	"\/archive\/allaboutthatbond\/img\/ondrinking-img1-01.png": {
 		"ft": 32768,
 		"iS": 5181585,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/ondrinking-img1-01.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/ondrinking-img1-01.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/ondrinking-img1.png": {
+	"\/archive\/allaboutthatbond\/img\/ondrinking-img1.png": {
 		"ft": 32768,
 		"iS": 1795695,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/ondrinking-img1.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/ondrinking-img1.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/ondrinking-img2-01.png": {
+	"\/archive\/allaboutthatbond\/img\/ondrinking-img2-01.png": {
 		"ft": 32768,
 		"iS": 90918,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/ondrinking-img2-01.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/ondrinking-img2-01.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/ondrinking-img3-01.png": {
+	"\/archive\/allaboutthatbond\/img\/ondrinking-img3-01.png": {
 		"ft": 32768,
 		"iS": 98158,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/ondrinking-img3-01.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/ondrinking-img3-01.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/img\/ondrinking_bg-01.png": {
+	"\/archive\/allaboutthatbond\/img\/ondrinking_bg-01.png": {
 		"ft": 32768,
 		"iS": 393393,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/img\/ondrinking_bg-01.png",
+		"oAP": "\/archive\/allaboutthatbond\/img\/ondrinking_bg-01.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
 		"oT": 1,
 		"q": 100
 		},
-	"\/allaboutthatbond\/index.html": {
+	"\/archive\/allaboutthatbond\/index.html": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/allaboutthatbond\/index.html",
+		"oAP": "\/archive\/allaboutthatbond\/index.html",
 		"oF": 0
 		},
-	"\/allaboutthatbond\/js\/main-min.js": {
+	"\/archive\/allaboutthatbond\/js\/main-min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/js\/main-min-min.js",
+		"oAP": "\/archive\/allaboutthatbond\/js\/main-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
-	"\/allaboutthatbond\/js\/main.js": {
+	"\/archive\/allaboutthatbond\/js\/main.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/js\/main-min.js",
+		"oAP": "\/archive\/allaboutthatbond\/js\/main-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
 		},
-	"\/allaboutthatbond\/js\/progress-min.js": {
+	"\/archive\/allaboutthatbond\/js\/progress-min.js": {
 		"ft": 64,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/allaboutthatbond\/js\/progress-min-min.js",
+		"oAP": "\/archive\/allaboutthatbond\/js\/progress-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
+		},
+	"\/archive\/comparinggreats\/css\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/comparinggreats\/css\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/archive\/comparinggreats\/css\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/comparinggreats\/css\/style.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/archive\/comparinggreats\/img\/Art-Ross-Actual-01.jpg": {
+		"ft": 16384,
+		"iS": 6942180,
+		"oA": 0,
+		"oAP": "\/archive\/comparinggreats\/img\/Art-Ross-Actual-01.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/comparinggreats\/img\/Art-Ross-All-01-01.jpg": {
+		"ft": 16384,
+		"iS": 6941892,
+		"oA": 0,
+		"oAP": "\/archive\/comparinggreats\/img\/Art-Ross-All-01-01.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/comparinggreats\/img\/Art-Ross-All-01.jpg": {
+		"ft": 16384,
+		"iS": 7128364,
+		"oA": 0,
+		"oAP": "\/archive\/comparinggreats\/img\/Art-Ross-All-01.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/comparinggreats\/img\/Art-Ross_Actual.jpg": {
+		"ft": 16384,
+		"iS": 1503628,
+		"oA": 0,
+		"oAP": "\/archive\/comparinggreats\/img\/Art-Ross_Actual.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/comparinggreats\/img\/Art-Ross_All.jpg": {
+		"ft": 16384,
+		"iS": 1563992,
+		"oA": 0,
+		"oAP": "\/archive\/comparinggreats\/img\/Art-Ross_All.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/comparinggreats\/img\/Art-Ross_Large.jpg": {
+		"ft": 16384,
+		"iS": 2578179,
+		"oA": 0,
+		"oAP": "\/archive\/comparinggreats\/img\/Art-Ross_Large.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/comparinggreats\/img\/Art-Ross_toptens.jpg": {
+		"ft": 16384,
+		"iS": 553500,
+		"oA": 0,
+		"oAP": "\/archive\/comparinggreats\/img\/Art-Ross_toptens.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/comparinggreats\/img\/calculations_Era-A.jpg": {
+		"ft": 16384,
+		"iS": 137921,
+		"oA": 0,
+		"oAP": "\/archive\/comparinggreats\/img\/calculations_Era-A.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/comparinggreats\/img\/calculations_Era-A.png": {
+		"ft": 32768,
+		"iS": 4737,
+		"oA": 0,
+		"oAP": "\/archive\/comparinggreats\/img\/calculations_Era-A.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/comparinggreats\/img\/calculations_Era-G.jpg": {
+		"ft": 16384,
+		"iS": 149217,
+		"oA": 0,
+		"oAP": "\/archive\/comparinggreats\/img\/calculations_Era-G.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/comparinggreats\/img\/calculations_Era-G.png": {
+		"ft": 32768,
+		"iS": 5324,
+		"oA": 0,
+		"oAP": "\/archive\/comparinggreats\/img\/calculations_Era-G.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/comparinggreats\/img\/calculations_Roster": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/comparinggreats\/img\/calculations_Roster",
+		"oF": 0
+		},
+	"\/archive\/comparinggreats\/img\/calculations_Roster.jpg": {
+		"ft": 16384,
+		"iS": 110993,
+		"oA": 0,
+		"oAP": "\/archive\/comparinggreats\/img\/calculations_Roster.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/comparinggreats\/img\/calculations_Roster.png": {
+		"ft": 32768,
+		"iS": 3676,
+		"oA": 0,
+		"oAP": "\/archive\/comparinggreats\/img\/calculations_Roster.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/comparinggreats\/img\/calculations_Schedule.jpg": {
+		"ft": 16384,
+		"iS": 97125,
+		"oA": 0,
+		"oAP": "\/archive\/comparinggreats\/img\/calculations_Schedule.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/comparinggreats\/img\/calculations_Schedule.png": {
+		"ft": 32768,
+		"iS": 3834,
+		"oA": 0,
+		"oAP": "\/archive\/comparinggreats\/img\/calculations_Schedule.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/comparinggreats\/img\/calculations_SOS.png": {
+		"ft": 32768,
+		"iS": 403,
+		"oA": 0,
+		"oAP": "\/archive\/comparinggreats\/img\/calculations_SOS.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/comparinggreats\/img\/featured.png": {
+		"ft": 32768,
+		"iS": 278870,
+		"oA": 0,
+		"oAP": "\/archive\/comparinggreats\/img\/featured.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/comparinggreats\/img\/HowQuickly\/Art-Ross_howquickly.jpg": {
+		"ft": 16384,
+		"iS": 434890,
+		"oA": 0,
+		"oAP": "\/archive\/comparinggreats\/img\/HowQuickly\/Art-Ross_howquickly.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/comparinggreats\/img\/HowQuickly\/Art-Ross_howquickly.psd": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/comparinggreats\/img\/HowQuickly\/Art-Ross_howquickly.psd",
+		"oF": 0
+		},
+	"\/archive\/comparinggreats\/img\/HowQuickly\/background.jpg": {
+		"ft": 16384,
+		"iS": 2519324,
+		"oA": 0,
+		"oAP": "\/archive\/comparinggreats\/img\/HowQuickly\/background.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/comparinggreats\/img\/HowQuickly\/Rocket-Richard_howquickly.jpg": {
+		"ft": 16384,
+		"iS": 622922,
+		"oA": 0,
+		"oAP": "\/archive\/comparinggreats\/img\/HowQuickly\/Rocket-Richard_howquickly.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/comparinggreats\/img\/Rocket-Richard-All-02.jpg": {
+		"ft": 16384,
+		"iS": 11244610,
+		"oA": 0,
+		"oAP": "\/archive\/comparinggreats\/img\/Rocket-Richard-All-02.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/comparinggreats\/img\/Rocket-Richard_All.jpg": {
+		"ft": 16384,
+		"iS": 1368826,
+		"oA": 0,
+		"oAP": "\/archive\/comparinggreats\/img\/Rocket-Richard_All.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/comparinggreats\/img\/Rocket-Richard_Large.jpg": {
+		"ft": 16384,
+		"iS": 2361831,
+		"oA": 0,
+		"oAP": "\/archive\/comparinggreats\/img\/Rocket-Richard_Large.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/comparinggreats\/img\/Rocket-Richard_toptens.jpg": {
+		"ft": 16384,
+		"iS": 541714,
+		"oA": 0,
+		"oAP": "\/archive\/comparinggreats\/img\/Rocket-Richard_toptens.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/comparinggreats\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/comparinggreats\/index.html",
+		"oF": 0
+		},
+	"\/archive\/comparinggreats\/js\/main-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/comparinggreats\/js\/main-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/comparinggreats\/js\/main.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/comparinggreats\/js\/main-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/comparinggreats\/js\/progress-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/comparinggreats\/js\/progress-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/competitive\/css\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/competitive\/css\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/archive\/competitive\/css\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/competitive\/css\/style.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/archive\/competitive\/img\/all_large.jpg": {
+		"ft": 16384,
+		"iS": 1917158,
+		"oA": 0,
+		"oAP": "\/archive\/competitive\/img\/all_large.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/competitive\/img\/all_small.jpg": {
+		"ft": 16384,
+		"iS": 620636,
+		"oA": 0,
+		"oAP": "\/archive\/competitive\/img\/all_small.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/competitive\/img\/all_zoom2.png": {
+		"ft": 32768,
+		"iS": 2850461,
+		"oA": 0,
+		"oAP": "\/archive\/competitive\/img\/all_zoom2.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/competitive\/img\/bombers-riders.png": {
+		"ft": 32768,
+		"iS": 914066,
+		"oA": 0,
+		"oAP": "\/archive\/competitive\/img\/bombers-riders.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/competitive\/img\/celtics-lakers.png": {
+		"ft": 32768,
+		"iS": 1938370,
+		"oA": 0,
+		"oAP": "\/archive\/competitive\/img\/celtics-lakers.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/competitive\/img\/cleveland-zoom5-01.png": {
+		"ft": 32768,
+		"iS": 1344408,
+		"oA": 0,
+		"oAP": "\/archive\/competitive\/img\/cleveland-zoom5-01.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/competitive\/img\/featured.gif": {
+		"ft": 4194304,
+		"iS": 2574008,
+		"oA": 0,
+		"oAP": "\/archive\/competitive\/img\/featured.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/archive\/competitive\/img\/giants_dodgers.png": {
+		"ft": 32768,
+		"iS": 2108059,
+		"oA": 0,
+		"oAP": "\/archive\/competitive\/img\/giants_dodgers.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/competitive\/img\/i-b-bears-packers.png": {
+		"ft": 32768,
+		"iS": 142931,
+		"oA": 0,
+		"oAP": "\/archive\/competitive\/img\/i-b-bears-packers.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/competitive\/img\/i-b-bombers-riders.png": {
+		"ft": 32768,
+		"iS": 107690,
+		"oA": 0,
+		"oAP": "\/archive\/competitive\/img\/i-b-bombers-riders.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/competitive\/img\/i-b-canadiens-maple-leafs.png": {
+		"ft": 32768,
+		"iS": 137260,
+		"oA": 0,
+		"oAP": "\/archive\/competitive\/img\/i-b-canadiens-maple-leafs.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/competitive\/img\/i-b-celtic-lakers.png": {
+		"ft": 32768,
+		"iS": 148223,
+		"oA": 0,
+		"oAP": "\/archive\/competitive\/img\/i-b-celtic-lakers.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/competitive\/img\/i-b-dodgers-giants.png": {
+		"ft": 32768,
+		"iS": 123664,
+		"oA": 0,
+		"oAP": "\/archive\/competitive\/img\/i-b-dodgers-giants.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/competitive\/img\/i-giants-dodgers-zoom5-01.png": {
+		"ft": 32768,
+		"iS": 337888,
+		"oA": 0,
+		"oAP": "\/archive\/competitive\/img\/i-giants-dodgers-zoom5-01.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/competitive\/img\/i-leafs-canadiens-zoom5-01-01.png": {
+		"ft": 32768,
+		"iS": 240781,
+		"oA": 0,
+		"oAP": "\/archive\/competitive\/img\/i-leafs-canadiens-zoom5-01-01.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/competitive\/img\/i-packers-bears-zoom5-01.png": {
+		"ft": 32768,
+		"iS": 205332,
+		"oA": 0,
+		"oAP": "\/archive\/competitive\/img\/i-packers-bears-zoom5-01.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/competitive\/img\/i-riders-bombers-zoom5-01-01.png": {
+		"ft": 32768,
+		"iS": 190935,
+		"oA": 0,
+		"oAP": "\/archive\/competitive\/img\/i-riders-bombers-zoom5-01-01.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/competitive\/img\/i-zoom1-01.png": {
+		"ft": 32768,
+		"iS": 781114,
+		"oA": 0,
+		"oAP": "\/archive\/competitive\/img\/i-zoom1-01.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/competitive\/img\/i-zoom1-v2-01.png": {
+		"ft": 32768,
+		"iS": 629153,
+		"oA": 0,
+		"oAP": "\/archive\/competitive\/img\/i-zoom1-v2-01.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/competitive\/img\/leafs-canadiens.png": {
+		"ft": 32768,
+		"iS": 1026463,
+		"oA": 0,
+		"oAP": "\/archive\/competitive\/img\/leafs-canadiens.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/competitive\/img\/legend-zoom9-01.png": {
+		"ft": 32768,
+		"iS": 923586,
+		"oA": 0,
+		"oAP": "\/archive\/competitive\/img\/legend-zoom9-01.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/competitive\/img\/newyork-zoom5-01.png": {
+		"ft": 32768,
+		"iS": 1367397,
+		"oA": 0,
+		"oAP": "\/archive\/competitive\/img\/newyork-zoom5-01.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/competitive\/img\/newyork-zoom9-01.png": {
+		"ft": 32768,
+		"iS": 631689,
+		"oA": 0,
+		"oAP": "\/archive\/competitive\/img\/newyork-zoom9-01.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/competitive\/img\/packers-bears.png": {
+		"ft": 32768,
+		"iS": 1248936,
+		"oA": 0,
+		"oAP": "\/archive\/competitive\/img\/packers-bears.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/competitive\/img\/TheBiggestRivalriesInSports_v7-01.jpg": {
+		"ft": 16384,
+		"iS": 28068471,
+		"oA": 0,
+		"oAP": "\/archive\/competitive\/img\/TheBiggestRivalriesInSports_v7-01.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/competitive\/img\/vancouver-zoom5-01.png": {
+		"ft": 32768,
+		"iS": 911109,
+		"oA": 0,
+		"oAP": "\/archive\/competitive\/img\/vancouver-zoom5-01.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/competitive\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/competitive\/index.html",
+		"oF": 0
+		},
+	"\/archive\/competitive\/js\/main-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/competitive\/js\/main-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/competitive\/js\/main.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/competitive\/js\/main-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/competitive\/js\/progress-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/competitive\/js\/progress-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/competitive\/js\/progress.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/competitive\/js\/progress-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/competitive\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/competitive\/style.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/archive\/css\/bootstrap.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/css\/bootstrap.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/archive\/css\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/css\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/archive\/css\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/css\/style.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/archive\/css\/style_backup.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/css\/style_backup-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/archive\/data\/BondJamesBond.xlsx": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/data\/BondJamesBond.xlsx",
+		"oF": 0
+		},
+	"\/archive\/data\/Data-AllofBoston.numbers": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/data\/Data-AllofBoston.numbers",
+		"oF": 0
+		},
+	"\/archive\/data\/Data-AllOfColorado.numbers": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/data\/Data-AllOfColorado.numbers",
+		"oF": 0
+		},
+	"\/archive\/data\/Data-AllOfToronto.numbers": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/data\/Data-AllOfToronto.numbers",
+		"oF": 0
+		},
+	"\/archive\/data\/Data-DonaldsonHitsRedSox.numbers": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/data\/Data-DonaldsonHitsRedSox.numbers",
+		"oF": 0
+		},
+	"\/archive\/data\/Data-DonaldsonHitsRockies.numbers": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/data\/Data-DonaldsonHitsRockies.numbers",
+		"oF": 0
+		},
+	"\/archive\/data\/Data-DonaldsonsHitsActual.numbers": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/data\/Data-DonaldsonsHitsActual.numbers",
+		"oF": 0
+		},
+	"\/archive\/data\/MarketsOfScotland.xlsx": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/data\/MarketsOfScotland.xlsx",
+		"oF": 0
+		},
+	"\/archive\/data\/TheWorldOfJamesBond.pdf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/data\/TheWorldOfJamesBond.pdf",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/css\/awesome-bootstrap-checkbox-min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/draftingbig\/css\/awesome-bootstrap-checkbox-min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/archive\/draftingbig\/css\/awesome-bootstrap-checkbox.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/draftingbig\/css\/awesome-bootstrap-checkbox-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/archive\/draftingbig\/css\/fontawesome-pro-core.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/draftingbig\/css\/fontawesome-pro-core-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/archive\/draftingbig\/css\/fontawesome-pro-regular.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/draftingbig\/css\/fontawesome-pro-regular-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/archive\/draftingbig\/css\/jquery-ui.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/draftingbig\/css\/jquery-ui.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/archive\/draftingbig\/css\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/draftingbig\/css\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/archive\/draftingbig\/css\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/draftingbig\/css\/style.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/archive\/draftingbig\/data\/DRAFT-GAMESCORE.csv": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/data\/DRAFT-GAMESCORE.csv",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/data\/DRAFT-GAMESCORE.xlsx": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/data\/DRAFT-GAMESCORE.xlsx",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/data\/DRAFT-GAMESCORE2.csv": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/data\/DRAFT-GAMESCORE2.csv",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/data\/DRAFT-GAMESCORE3.csv": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/data\/DRAFT-GAMESCORE3.csv",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/data\/DRAFT-GAMESCORE_averages.xlsx": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/data\/DRAFT-GAMESCORE_averages.xlsx",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/data\/DRAFT-GAMESCORE_wFormulae.xlsx": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/data\/DRAFT-GAMESCORE_wFormulae.xlsx",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/data\/DRAFT-o.csv": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/data\/DRAFT-o.csv",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/data\/DRAFT-test.csv": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/data\/DRAFT-test.csv",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/data\/DRAFT.csv": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/data\/DRAFT.csv",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/data\/DRAFT.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/archive\/draftingbig\/data\/DRAFT-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/archive\/draftingbig\/data\/DRAFT.xlsx": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/data\/DRAFT.xlsx",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/data\/expectation.csv": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/data\/expectation.csv",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/img\/Artboard 1@2x.png": {
+		"ft": 32768,
+		"iS": 23892,
+		"oA": 0,
+		"oAP": "\/archive\/draftingbig\/img\/Artboard 1@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/draftingbig\/img\/dp.png": {
+		"ft": 32768,
+		"iS": 15971,
+		"oA": 0,
+		"oAP": "\/archive\/draftingbig\/img\/dp.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/draftingbig\/img\/GP.png": {
+		"ft": 32768,
+		"iS": 19875,
+		"oA": 0,
+		"oAP": "\/archive\/draftingbig\/img\/GP.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/draftingbig\/img\/GP_charts.png": {
+		"ft": 32768,
+		"iS": 48194,
+		"oA": 0,
+		"oAP": "\/archive\/draftingbig\/img\/GP_charts.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/draftingbig\/img\/noGP.png": {
+		"ft": 32768,
+		"iS": 16172,
+		"oA": 0,
+		"oAP": "\/archive\/draftingbig\/img\/noGP.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/draftingbig\/img\/screen1.png": {
+		"ft": 32768,
+		"iS": 151370,
+		"oA": 0,
+		"oAP": "\/archive\/draftingbig\/img\/screen1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/draftingbig\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/index.html",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/js\/d3-tip-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/draftingbig\/js\/d3-tip-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/draftingbig\/js\/d3-tip.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/draftingbig\/js\/d3-tip-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/draftingbig\/js\/fontawesome.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/draftingbig\/js\/fontawesome-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/draftingbig\/js\/jquery-ui.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/draftingbig\/js\/jquery-ui.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/draftingbig\/js\/main-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/draftingbig\/js\/main-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/draftingbig\/js\/main.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/draftingbig\/js\/main-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/draftingbig\/js\/packs\/solid.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/draftingbig\/js\/packs\/solid-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/draftingbig\/js\/progress-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/draftingbig\/js\/progress-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/draftingbig\/test.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/test.html",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/testing\/data.csv": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/testing\/data.csv",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/testing\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/testing\/index.html",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/testing\/main-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/draftingbig\/testing\/main-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/draftingbig\/testing\/main.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/draftingbig\/testing\/main-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/draftingbig\/testing\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/draftingbig\/testing\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/archive\/draftingbig\/webfonts\/fontawesome-pro-brands-900.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/webfonts\/fontawesome-pro-brands-900.eot",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/webfonts\/fontawesome-pro-brands-900.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/webfonts\/fontawesome-pro-brands-900.otf",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/webfonts\/fontawesome-pro-brands-900.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/webfonts\/fontawesome-pro-brands-900.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/archive\/draftingbig\/webfonts\/fontawesome-pro-brands-900.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/webfonts\/fontawesome-pro-brands-900.ttf",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/webfonts\/fontawesome-pro-brands-900.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/webfonts\/fontawesome-pro-brands-900.woff",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/webfonts\/fontawesome-pro-brands-900.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/webfonts\/fontawesome-pro-brands-900.woff2",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/webfonts\/fontawesome-pro-light-300.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/webfonts\/fontawesome-pro-light-300.eot",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/webfonts\/fontawesome-pro-light-300.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/webfonts\/fontawesome-pro-light-300.otf",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/webfonts\/fontawesome-pro-light-300.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/webfonts\/fontawesome-pro-light-300.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/archive\/draftingbig\/webfonts\/fontawesome-pro-light-300.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/webfonts\/fontawesome-pro-light-300.ttf",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/webfonts\/fontawesome-pro-light-300.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/webfonts\/fontawesome-pro-light-300.woff",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/webfonts\/fontawesome-pro-light-300.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/webfonts\/fontawesome-pro-light-300.woff2",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/webfonts\/fontawesome-pro-regular-400.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/webfonts\/fontawesome-pro-regular-400.eot",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/webfonts\/fontawesome-pro-regular-400.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/webfonts\/fontawesome-pro-regular-400.otf",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/webfonts\/fontawesome-pro-regular-400.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/webfonts\/fontawesome-pro-regular-400.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/archive\/draftingbig\/webfonts\/fontawesome-pro-regular-400.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/webfonts\/fontawesome-pro-regular-400.ttf",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/webfonts\/fontawesome-pro-regular-400.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/webfonts\/fontawesome-pro-regular-400.woff",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/webfonts\/fontawesome-pro-regular-400.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/webfonts\/fontawesome-pro-regular-400.woff2",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/webfonts\/fontawesome-pro-solid-900.eot": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/webfonts\/fontawesome-pro-solid-900.eot",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/webfonts\/fontawesome-pro-solid-900.otf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/webfonts\/fontawesome-pro-solid-900.otf",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/webfonts\/fontawesome-pro-solid-900.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/webfonts\/fontawesome-pro-solid-900.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/archive\/draftingbig\/webfonts\/fontawesome-pro-solid-900.ttf": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/webfonts\/fontawesome-pro-solid-900.ttf",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/webfonts\/fontawesome-pro-solid-900.woff": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/webfonts\/fontawesome-pro-solid-900.woff",
+		"oF": 0
+		},
+	"\/archive\/draftingbig\/webfonts\/fontawesome-pro-solid-900.woff2": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftingbig\/webfonts\/fontawesome-pro-solid-900.woff2",
+		"oF": 0
+		},
+	"\/archive\/draftkit.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/draftkit.html",
+		"oF": 0
+		},
+	"\/archive\/drinking\/css\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/drinking\/css\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/archive\/drinking\/css\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/drinking\/css\/style.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/archive\/drinking\/img\/ondrinking-img1-01.png": {
+		"ft": 32768,
+		"iS": 5181585,
+		"oA": 0,
+		"oAP": "\/archive\/drinking\/img\/ondrinking-img1-01.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/drinking\/img\/ondrinking-img1.png": {
+		"ft": 32768,
+		"iS": 1795695,
+		"oA": 0,
+		"oAP": "\/archive\/drinking\/img\/ondrinking-img1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/drinking\/img\/ondrinking-img2-01.png": {
+		"ft": 32768,
+		"iS": 90918,
+		"oA": 0,
+		"oAP": "\/archive\/drinking\/img\/ondrinking-img2-01.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/drinking\/img\/ondrinking-img3-01.png": {
+		"ft": 32768,
+		"iS": 98158,
+		"oA": 0,
+		"oAP": "\/archive\/drinking\/img\/ondrinking-img3-01.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/drinking\/img\/ondrinking_bg-01.png": {
+		"ft": 32768,
+		"iS": 393393,
+		"oA": 0,
+		"oAP": "\/archive\/drinking\/img\/ondrinking_bg-01.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/drinking\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/drinking\/index.html",
+		"oF": 0
+		},
+	"\/archive\/drinking\/js\/main-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/drinking\/js\/main-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/drinking\/js\/main.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/drinking\/js\/main-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/drinking\/js\/progress-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/drinking\/js\/progress-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/drinking\/main.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/drinking\/main-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/drinking\/progress-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/drinking\/progress-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/img\/dogs\/australianshepherd.gif": {
+		"ft": 4194304,
+		"iS": 1783877,
+		"oA": 0,
+		"oAP": "\/archive\/img\/dogs\/australianshepherd.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/archive\/img\/dogs\/australianshepherd.jpg": {
+		"ft": 16384,
+		"iS": 36464,
+		"oA": 0,
+		"oAP": "\/archive\/img\/dogs\/australianshepherd.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/img\/dogs\/australianshepherd2.gif": {
+		"ft": 4194304,
+		"iS": 21145,
+		"oA": 0,
+		"oAP": "\/archive\/img\/dogs\/australianshepherd2.gif",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/archive\/img\/dogs\/bordercollie.gif": {
+		"ft": 4194304,
+		"iS": 1418570,
+		"oA": 0,
+		"oAP": "\/archive\/img\/dogs\/bordercollie.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/archive\/img\/dogs\/cockerspaniel.gif": {
+		"ft": 4194304,
+		"iS": 2398548,
+		"oA": 0,
+		"oAP": "\/archive\/img\/dogs\/cockerspaniel.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/archive\/img\/dogs\/cockerspaniel.jpg": {
+		"ft": 16384,
+		"iS": 8534,
+		"oA": 0,
+		"oAP": "\/archive\/img\/dogs\/cockerspaniel.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/img\/dogs\/finnishspitz.png": {
+		"ft": 32768,
+		"iS": 130881,
+		"oA": 0,
+		"oAP": "\/archive\/img\/dogs\/finnishspitz.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/img\/dogs\/otterhound.png": {
+		"ft": 32768,
+		"iS": 104198,
+		"oA": 0,
+		"oAP": "\/archive\/img\/dogs\/otterhound.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/img\/dogs\/swedishvallhund.png": {
+		"ft": 32768,
+		"iS": 44354,
+		"oA": 0,
+		"oAP": "\/archive\/img\/dogs\/swedishvallhund.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/img\/dogs\/tibetanmastiff.png": {
+		"ft": 32768,
+		"iS": 110106,
+		"oA": 0,
+		"oAP": "\/archive\/img\/dogs\/tibetanmastiff.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/img\/dogs\/wienerdog.png": {
+		"ft": 32768,
+		"iS": 119618,
+		"oA": 0,
+		"oAP": "\/archive\/img\/dogs\/wienerdog.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/img\/featured\/africa.gif": {
+		"ft": 4194304,
+		"iS": 536840,
+		"oA": 0,
+		"oAP": "\/archive\/img\/featured\/africa.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/archive\/img\/featured\/africa.jpg": {
+		"ft": 16384,
+		"iS": 44201,
+		"oA": 0,
+		"oAP": "\/archive\/img\/featured\/africa.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/img\/featured\/bond.gif": {
+		"ft": 4194304,
+		"iS": 7655512,
+		"oA": 0,
+		"oAP": "\/archive\/img\/featured\/bond.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/archive\/img\/featured\/bond.jpg": {
+		"ft": 16384,
+		"iS": 137166,
+		"oA": 0,
+		"oAP": "\/archive\/img\/featured\/bond.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/img\/featured\/comparinggreats.gif": {
+		"ft": 4194304,
+		"iS": 2017720,
+		"oA": 0,
+		"oAP": "\/archive\/img\/featured\/comparinggreats.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/archive\/img\/featured\/comparinggreats.jpg": {
+		"ft": 16384,
+		"iS": 85743,
+		"oA": 0,
+		"oAP": "\/archive\/img\/featured\/comparinggreats.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/img\/featured\/competitive.gif": {
+		"ft": 4194304,
+		"iS": 1697433,
+		"oA": 0,
+		"oAP": "\/archive\/img\/featured\/competitive.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/archive\/img\/featured\/competitive.jpg": {
+		"ft": 16384,
+		"iS": 112366,
+		"oA": 0,
+		"oAP": "\/archive\/img\/featured\/competitive.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/img\/featured\/draftingbig.gif": {
+		"ft": 4194304,
+		"iS": 1418570,
+		"oA": 0,
+		"oAP": "\/archive\/img\/featured\/draftingbig.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/archive\/img\/featured\/draftingbig.jpg": {
+		"ft": 16384,
+		"iS": 166991,
+		"oA": 0,
+		"oAP": "\/archive\/img\/featured\/draftingbig.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/img\/featured\/irs.gif": {
+		"ft": 4194304,
+		"iS": 1764751,
+		"oA": 0,
+		"oAP": "\/archive\/img\/featured\/irs.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/archive\/img\/featured\/irs.jpg": {
+		"ft": 16384,
+		"iS": 35830,
+		"oA": 0,
+		"oAP": "\/archive\/img\/featured\/irs.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/img\/featured\/other.jpg": {
+		"ft": 16384,
+		"iS": 389669,
+		"oA": 0,
+		"oAP": "\/archive\/img\/featured\/other.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/img\/featured\/playingball.gif": {
+		"ft": 4194304,
+		"iS": 350829,
+		"oA": 0,
+		"oAP": "\/archive\/img\/featured\/playingball.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/archive\/img\/featured\/playingball.jpg": {
+		"ft": 16384,
+		"iS": 95522,
+		"oA": 0,
+		"oAP": "\/archive\/img\/featured\/playingball.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/img\/featured\/trumped.gif": {
+		"ft": 4194304,
+		"iS": 4989511,
+		"oA": 0,
+		"oAP": "\/archive\/img\/featured\/trumped.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/archive\/img\/featured\/trumped.jpg": {
+		"ft": 16384,
+		"iS": 80935,
+		"oA": 0,
+		"oAP": "\/archive\/img\/featured\/trumped.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/img\/gini.gif": {
+		"ft": 4194304,
+		"iS": 536840,
+		"oA": 0,
+		"oAP": "\/archive\/img\/gini.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/archive\/img\/irs_new.gif": {
+		"ft": 4194304,
+		"iS": 1764751,
+		"oA": 0,
+		"oAP": "\/archive\/img\/irs_new.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/archive\/img\/wip\/genders.gif": {
+		"ft": 4194304,
+		"iS": 1452685,
+		"oA": 0,
+		"oAP": "\/archive\/img\/wip\/genders.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/archive\/img\/wip\/outfields.gif": {
+		"ft": 4194304,
+		"iS": 2473565,
+		"oA": 0,
+		"oAP": "\/archive\/img\/wip\/outfields.gif",
+		"oF": 0,
+		"opt": 1
+		},
+	"\/archive\/img\/wip\/outfields.mov": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/img\/wip\/outfields.mov",
+		"oF": 0
+		},
+	"\/archive\/img\/wip\/sizematters.gif": {
+		"ft": 4194304,
+		"iS": 3846122,
+		"oA": 0,
+		"oAP": "\/archive\/img\/wip\/sizematters.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/archive\/img\/wip\/sizematters.mov": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/img\/wip\/sizematters.mov",
+		"oF": 0
+		},
+	"\/archive\/img\/wip\/titles.gif": {
+		"ft": 4194304,
+		"iS": 2290170,
+		"oA": 0,
+		"oAP": "\/archive\/img\/wip\/titles.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/archive\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/index.html",
+		"oF": 0
+		},
+	"\/archive\/index2.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/index2.html",
+		"oF": 0
+		},
+	"\/archive\/js\/bootstrap.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/js\/bootstrap.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/js\/jquery.zoom.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/js\/jquery.zoom-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/js\/jquery.zoom.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/js\/jquery.zoom.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/js\/main-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/js\/main-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/js\/main.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/js\/main-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/js\/main_backup.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/js\/main_backup-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/js\/main_backup2.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/js\/main_backup2-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/js\/modernizr.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/js\/modernizr-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/js\/progress-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/js\/progress-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/js\/progress.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/js\/progress-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/playingball\/css\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/playingball\/css\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/archive\/playingball\/css\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/playingball\/css\/style.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/archive\/playingball\/img\/BarChartSizes-03.jpg": {
+		"ft": 16384,
+		"iS": 562430,
+		"oA": 0,
+		"oAP": "\/archive\/playingball\/img\/BarChartSizes-03.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/playingball\/img\/BarChartSizes-04.jpg": {
+		"ft": 16384,
+		"iS": 659730,
+		"oA": 0,
+		"oAP": "\/archive\/playingball\/img\/BarChartSizes-04.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/playingball\/img\/featured.gif": {
+		"ft": 4194304,
+		"iS": 350829,
+		"oA": 0,
+		"oAP": "\/archive\/playingball\/img\/featured.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/archive\/playingball\/img\/field_overlay-07.jpg": {
+		"ft": 16384,
+		"iS": 584681,
+		"oA": 0,
+		"oAP": "\/archive\/playingball\/img\/field_overlay-07.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/playingball\/img\/hits-01.jpg": {
+		"ft": 16384,
+		"iS": 1279394,
+		"oA": 0,
+		"oAP": "\/archive\/playingball\/img\/hits-01.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/playingball\/img\/hits-02.jpg": {
+		"ft": 16384,
+		"iS": 1321435,
+		"oA": 0,
+		"oAP": "\/archive\/playingball\/img\/hits-02.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/playingball\/img\/hits-03.jpg": {
+		"ft": 16384,
+		"iS": 1298960,
+		"oA": 0,
+		"oAP": "\/archive\/playingball\/img\/hits-03.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/playingball\/img\/hits-04.jpg": {
+		"ft": 16384,
+		"iS": 1216760,
+		"oA": 0,
+		"oAP": "\/archive\/playingball\/img\/hits-04.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/playingball\/img\/hits-05.jpg": {
+		"ft": 16384,
+		"iS": 1165068,
+		"oA": 0,
+		"oAP": "\/archive\/playingball\/img\/hits-05.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/playingball\/img\/hits-06.jpg": {
+		"ft": 16384,
+		"iS": 1225650,
+		"oA": 0,
+		"oAP": "\/archive\/playingball\/img\/hits-06.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/playingball\/img\/notebook1.JPG": {
+		"ft": 16384,
+		"iS": 1843660,
+		"oA": 0,
+		"oAP": "\/archive\/playingball\/img\/notebook1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/playingball\/img\/notebook2copy.jpeg": {
+		"ft": 16384,
+		"iS": 1980593,
+		"oA": 0,
+		"oAP": "\/archive\/playingball\/img\/notebook2copy.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/playingball\/img\/notebook3.JPG": {
+		"ft": 16384,
+		"iS": 1931097,
+		"oA": 0,
+		"oAP": "\/archive\/playingball\/img\/notebook3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/playingball\/img\/numbers1.png": {
+		"ft": 32768,
+		"iS": 1909898,
+		"oA": 0,
+		"oAP": "\/archive\/playingball\/img\/numbers1.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/playingball\/img\/numbers3.png": {
+		"ft": 32768,
+		"iS": 676578,
+		"oA": 0,
+		"oAP": "\/archive\/playingball\/img\/numbers3.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/playingball\/img\/numbers4.png": {
+		"ft": 32768,
+		"iS": 59785,
+		"oA": 0,
+		"oAP": "\/archive\/playingball\/img\/numbers4.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/playingball\/img\/numbers5.png": {
+		"ft": 32768,
+		"iS": 188558,
+		"oA": 0,
+		"oAP": "\/archive\/playingball\/img\/numbers5.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/playingball\/img\/OutfieldHeights-05.jpg": {
+		"ft": 16384,
+		"iS": 813503,
+		"oA": 0,
+		"oAP": "\/archive\/playingball\/img\/OutfieldHeights-05.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/playingball\/img\/OutfieldHeights-15.jpg": {
+		"ft": 16384,
+		"iS": 418051,
+		"oA": 0,
+		"oAP": "\/archive\/playingball\/img\/OutfieldHeights-15.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/playingball\/img\/OutfieldHeights-23.jpg": {
+		"ft": 16384,
+		"iS": 500919,
+		"oA": 0,
+		"oAP": "\/archive\/playingball\/img\/OutfieldHeights-23.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/playingball\/img\/OutfieldHeights-29.jpg": {
+		"ft": 16384,
+		"iS": 514834,
+		"oA": 0,
+		"oAP": "\/archive\/playingball\/img\/OutfieldHeights-29.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/playingball\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/playingball\/index.html",
+		"oF": 0
+		},
+	"\/archive\/playingball\/js\/main-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/playingball\/js\/main-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/playingball\/js\/main.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/playingball\/js\/main-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/playingball\/js\/progress-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/playingball\/js\/progress-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/readytochat\/css\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/readytochat\/css\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/archive\/readytochat\/css\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/readytochat\/css\/style.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/archive\/readytochat\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/readytochat\/index.html",
+		"oF": 0
+		},
+	"\/archive\/readytochat\/js\/main-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/readytochat\/js\/main-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/readytochat\/js\/main.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/readytochat\/js\/main-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/readytochat\/js\/progress-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/readytochat\/js\/progress-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/showingoff\/css\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/showingoff\/css\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/archive\/showingoff\/css\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/showingoff\/css\/style.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/archive\/showingoff\/img\/S07_scotland.jpg": {
+		"ft": 16384,
+		"iS": 2661404,
+		"oA": 0,
+		"oAP": "\/archive\/showingoff\/img\/S07_scotland.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/showingoff\/img\/SO1_couch.jpg": {
+		"ft": 16384,
+		"iS": 7364161,
+		"oA": 0,
+		"oAP": "\/archive\/showingoff\/img\/SO1_couch.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/archive\/showingoff\/img\/SO2_earthquakes.jpg": {
+		"ft": 16384,
+		"iS": 965275,
+		"oA": 0,
+		"oAP": "\/archive\/showingoff\/img\/SO2_earthquakes.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/archive\/showingoff\/img\/SO3_colours.jpg": {
+		"ft": 16384,
+		"iS": 844532,
+		"oA": 0,
+		"oAP": "\/archive\/showingoff\/img\/SO3_colours.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/archive\/showingoff\/img\/SO4_wordmap1.jpg": {
+		"ft": 16384,
+		"iS": 1199139,
+		"oA": 0,
+		"oAP": "\/archive\/showingoff\/img\/SO4_wordmap1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/showingoff\/img\/So5_wordmap2.jpg": {
+		"ft": 16384,
+		"iS": 928000,
+		"oA": 0,
+		"oAP": "\/archive\/showingoff\/img\/So5_wordmap2.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/showingoff\/img\/So6_wordmap3.jpg": {
+		"ft": 16384,
+		"iS": 507794,
+		"oA": 0,
+		"oAP": "\/archive\/showingoff\/img\/So6_wordmap3.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/archive\/showingoff\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/showingoff\/index.html",
+		"oF": 0
+		},
+	"\/archive\/showingoff\/js\/main-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/showingoff\/js\/main-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/showingoff\/js\/main.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/showingoff\/js\/main-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/showingoff\/js\/progress-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/showingoff\/js\/progress-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/singingalong\/css\/jquery-ui.min.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/singingalong\/css\/jquery-ui.min-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/archive\/singingalong\/css\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/singingalong\/css\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/archive\/singingalong\/css\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/singingalong\/css\/style.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/archive\/singingalong\/data\/genres.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/archive\/singingalong\/data\/genres-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/archive\/singingalong\/data\/radars-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/singingalong\/data\/radars-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/singingalong\/data\/radars.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/singingalong\/data\/radars-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/singingalong\/data\/s1.csv": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/singingalong\/data\/s1.csv",
+		"oF": 0
+		},
+	"\/archive\/singingalong\/data\/s4a.csv": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/singingalong\/data\/s4a.csv",
+		"oF": 0
+		},
+	"\/archive\/singingalong\/data\/s4b.csv": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/singingalong\/data\/s4b.csv",
+		"oF": 0
+		},
+	"\/archive\/singingalong\/data\/s4c.csv": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/singingalong\/data\/s4c.csv",
+		"oF": 0
+		},
+	"\/archive\/singingalong\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/singingalong\/index.html",
+		"oF": 0
+		},
+	"\/archive\/singingalong\/js\/jquery-ui.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/singingalong\/js\/jquery-ui.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/singingalong\/js\/main-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/singingalong\/js\/main-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/singingalong\/js\/main.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/singingalong\/js\/main-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/singingalong\/js\/progress-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/singingalong\/js\/progress-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/singingalong\/js\/radarChart-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/singingalong\/js\/radarChart-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/singingalong\/js\/radarChart.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/singingalong\/js\/radarChart-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/singingalong\/test.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/singingalong\/test.html",
+		"oF": 0
+		},
+	"\/archive\/tellingstories\/css\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/tellingstories\/css\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/archive\/tellingstories\/css\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/tellingstories\/css\/style.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/archive\/tellingstories\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/tellingstories\/index.html",
+		"oF": 0
+		},
+	"\/archive\/tellingstories\/js\/main-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/tellingstories\/js\/main-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/tellingstories\/js\/main.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/tellingstories\/js\/main-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/tellingstories\/js\/progress-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/tellingstories\/js\/progress-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/trumped\/css\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/trumped\/css\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/archive\/trumped\/css\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/trumped\/css\/style.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/archive\/trumped\/data\/data_100days.csv": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/trumped\/data\/data_100days.csv",
+		"oF": 0
+		},
+	"\/archive\/trumped\/documentation\/DismalGloriousGosling.gif": {
+		"ft": 4194304,
+		"iS": 733777,
+		"oA": 0,
+		"oAP": "\/archive\/trumped\/documentation\/DismalGloriousGosling.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/archive\/trumped\/documentation\/GloriousApprehensiveGermanspaniel.gif": {
+		"ft": 4194304,
+		"iS": 4989511,
+		"oA": 0,
+		"oAP": "\/archive\/trumped\/documentation\/GloriousApprehensiveGermanspaniel.gif",
+		"oF": 0,
+		"opt": 0
+		},
+	"\/archive\/trumped\/documentation\/Screen Shot 2017-07-24 at 3.20.55 PM.png": {
+		"ft": 32768,
+		"iS": 4556071,
+		"oA": 0,
+		"oAP": "\/archive\/trumped\/documentation\/Screen Shot 2017-07-24 at 3.20.55 PM.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/trumped\/documentation\/Screen Shot 2017-07-24 at 3.21.26 PM.png": {
+		"ft": 32768,
+		"iS": 466555,
+		"oA": 0,
+		"oAP": "\/archive\/trumped\/documentation\/Screen Shot 2017-07-24 at 3.21.26 PM.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/trumped\/documentation\/Screen Shot 2017-07-24 at 3.21.39 PM.png": {
+		"ft": 32768,
+		"iS": 537625,
+		"oA": 0,
+		"oAP": "\/archive\/trumped\/documentation\/Screen Shot 2017-07-24 at 3.21.39 PM.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/trumped\/documentation\/Screen Shot 2017-07-24 at 3.22.38 PM.png": {
+		"ft": 32768,
+		"iS": 705039,
+		"oA": 0,
+		"oAP": "\/archive\/trumped\/documentation\/Screen Shot 2017-07-24 at 3.22.38 PM.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/trumped\/documentation\/Screen Shot 2017-07-24 at 3.22.52 PM.png": {
+		"ft": 32768,
+		"iS": 702224,
+		"oA": 0,
+		"oAP": "\/archive\/trumped\/documentation\/Screen Shot 2017-07-24 at 3.22.52 PM.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/trumped\/documentation\/Screen Shot 2017-07-24 at 3.22.58 PM.png": {
+		"ft": 32768,
+		"iS": 568237,
+		"oA": 0,
+		"oAP": "\/archive\/trumped\/documentation\/Screen Shot 2017-07-24 at 3.22.58 PM.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/trumped\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/trumped\/index.html",
+		"oF": 0
+		},
+	"\/archive\/trumped\/js\/d3-tip.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/trumped\/js\/d3-tip-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/trumped\/js\/data\/100days.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/archive\/trumped\/js\/data\/100days-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/archive\/trumped\/js\/data\/100days_events.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/archive\/trumped\/js\/data\/100days_events-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/archive\/trumped\/js\/data\/cats.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/archive\/trumped\/js\/data\/cats-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/archive\/trumped\/js\/data\/master_2017.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/archive\/trumped\/js\/data\/master_2017-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/archive\/trumped\/js\/data\/tweets_100.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/archive\/trumped\/js\/data\/tweets_100-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/archive\/trumped\/js\/data\/tweets_100_data.json.sb-868218d3-s8L4k9": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/trumped\/js\/data\/tweets_100_data.json.sb-868218d3-s8L4k9",
+		"oF": 0
+		},
+	"\/archive\/trumped\/js\/data\/tweets_100days.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/archive\/trumped\/js\/data\/tweets_100days-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/archive\/trumped\/js\/jquery.textfill.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/trumped\/js\/jquery.textfill.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/trumped\/js\/main-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/trumped\/js\/main-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/trumped\/js\/main.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/trumped\/js\/main-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/trumped\/js\/progress-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/trumped\/js\/progress-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/trumped\/python\/.ipynb_checkpoints\/01_tweets_archive-checkpoint.ipynb": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/trumped\/python\/.ipynb_checkpoints\/01_tweets_archive-checkpoint.ipynb",
+		"oF": 0
+		},
+	"\/archive\/trumped\/python\/.ipynb_checkpoints\/02_100-days-checkpoint.ipynb": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/trumped\/python\/.ipynb_checkpoints\/02_100-days-checkpoint.ipynb",
+		"oF": 0
+		},
+	"\/archive\/trumped\/python\/01_tweets_archive.ipynb": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/trumped\/python\/01_tweets_archive.ipynb",
+		"oF": 0
+		},
+	"\/archive\/trumped\/python\/02_100-days.ipynb": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/trumped\/python\/02_100-days.ipynb",
+		"oF": 0
+		},
+	"\/archive\/trumped\/python\/data\/data.csv": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/trumped\/python\/data\/data.csv",
+		"oF": 0
+		},
+	"\/archive\/trumped\/python\/data\/data_100days.csv": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/trumped\/python\/data\/data_100days.csv",
+		"oF": 0
+		},
+	"\/archive\/trumped\/python\/data\/data_100days_tobetagged.csv": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/trumped\/python\/data\/data_100days_tobetagged.csv",
+		"oF": 0
+		},
+	"\/archive\/trumped\/python\/data\/data_100days_topics.csv": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/trumped\/python\/data\/data_100days_topics.csv",
+		"oF": 0
+		},
+	"\/archive\/trumped\/python\/data\/master_2017.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/archive\/trumped\/python\/data\/master_2017-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/archive\/winning\/css\/fontawesome-pro-core.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/winning\/css\/fontawesome-pro-core-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/archive\/winning\/css\/fontawesome-pro-regular.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/winning\/css\/fontawesome-pro-regular-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/archive\/winning\/css\/style.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/winning\/css\/style-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/archive\/winning\/css\/style.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/archive\/winning\/css\/style.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/archive\/winning\/data\/cities.csv": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/winning\/data\/cities.csv",
+		"oF": 0
+		},
+	"\/archive\/winning\/data\/data.csv": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/winning\/data\/data.csv",
+		"oF": 0
+		},
+	"\/archive\/winning\/data\/data.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/archive\/winning\/data\/data-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/archive\/winning\/data\/matrix.csv": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/winning\/data\/matrix.csv",
+		"oF": 0
+		},
+	"\/archive\/winning\/img\/baseball.png": {
+		"ft": 32768,
+		"iS": 8240,
+		"oA": 0,
+		"oAP": "\/archive\/winning\/img\/baseball.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/winning\/img\/basketball.png": {
+		"ft": 32768,
+		"iS": 6600,
+		"oA": 0,
+		"oAP": "\/archive\/winning\/img\/basketball.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/winning\/img\/football.png": {
+		"ft": 32768,
+		"iS": 7037,
+		"oA": 0,
+		"oAP": "\/archive\/winning\/img\/football.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/winning\/img\/icons\/baseball-m.png": {
+		"ft": 32768,
+		"iS": 17824,
+		"oA": 0,
+		"oAP": "\/archive\/winning\/img\/icons\/baseball-m.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/winning\/img\/icons\/basketball-m.png": {
+		"ft": 32768,
+		"iS": 17908,
+		"oA": 0,
+		"oAP": "\/archive\/winning\/img\/icons\/basketball-m.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/winning\/img\/icons\/basketball-w.png": {
+		"ft": 32768,
+		"iS": 17908,
+		"oA": 0,
+		"oAP": "\/archive\/winning\/img\/icons\/basketball-w.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/winning\/img\/icons\/black.png": {
+		"ft": 32768,
+		"iS": 262,
+		"oA": 0,
+		"oAP": "\/archive\/winning\/img\/icons\/black.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/winning\/img\/icons\/CFL.png": {
+		"ft": 32768,
+		"iS": 3360,
+		"oA": 0,
+		"oAP": "\/archive\/winning\/img\/icons\/CFL.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/winning\/img\/icons\/football-m.png": {
+		"ft": 32768,
+		"iS": 17869,
+		"oA": 0,
+		"oAP": "\/archive\/winning\/img\/icons\/football-m.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/winning\/img\/icons\/MLB.png": {
+		"ft": 32768,
+		"iS": 2646,
+		"oA": 0,
+		"oAP": "\/archive\/winning\/img\/icons\/MLB.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/winning\/img\/icons\/MLS.png": {
+		"ft": 32768,
+		"iS": 3308,
+		"oA": 0,
+		"oAP": "\/archive\/winning\/img\/icons\/MLS.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/winning\/img\/icons\/NBA.png": {
+		"ft": 32768,
+		"iS": 3220,
+		"oA": 0,
+		"oAP": "\/archive\/winning\/img\/icons\/NBA.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/winning\/img\/icons\/NFL.png": {
+		"ft": 32768,
+		"iS": 2936,
+		"oA": 0,
+		"oAP": "\/archive\/winning\/img\/icons\/NFL.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/winning\/img\/icons\/NHL.png": {
+		"ft": 32768,
+		"iS": 2709,
+		"oA": 0,
+		"oAP": "\/archive\/winning\/img\/icons\/NHL.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/winning\/img\/icons\/soccer-w.png": {
+		"ft": 32768,
+		"iS": 2097,
+		"oA": 0,
+		"oAP": "\/archive\/winning\/img\/icons\/soccer-w.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/winning\/img\/icons\/volleyball-w.png": {
+		"ft": 32768,
+		"iS": 1956,
+		"oA": 0,
+		"oAP": "\/archive\/winning\/img\/icons\/volleyball-w.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/winning\/img\/screenCap1.mov": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/winning\/img\/screenCap1.mov",
+		"oF": 0
+		},
+	"\/archive\/winning\/img\/soccer.png": {
+		"ft": 32768,
+		"iS": 8593,
+		"oA": 0,
+		"oAP": "\/archive\/winning\/img\/soccer.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/winning\/img\/trophies.ai": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/winning\/img\/trophies.ai",
+		"oF": 0
+		},
+	"\/archive\/winning\/img\/volleyball.png": {
+		"ft": 32768,
+		"iS": 6998,
+		"oA": 0,
+		"oAP": "\/archive\/winning\/img\/volleyball.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
+	"\/archive\/winning\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/winning\/index.html",
+		"oF": 0
+		},
+	"\/archive\/winning\/js\/canada-provinces.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/archive\/winning\/js\/canada-provinces-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/archive\/winning\/js\/canada0.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/archive\/winning\/js\/canada0-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/archive\/winning\/js\/fontawesome.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/winning\/js\/fontawesome-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/winning\/js\/main-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/winning\/js\/main-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/winning\/js\/main.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/winning\/js\/main-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/winning\/js\/north-america.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/archive\/winning\/js\/north-america-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/archive\/winning\/js\/packs\/solid.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/winning\/js\/packs\/solid-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/winning\/js\/script-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/winning\/js\/script-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/winning\/js\/script.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/winning\/js\/script-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/winning\/js\/scrollama-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/winning\/js\/scrollama-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/winning\/js\/scrollama.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/winning\/js\/scrollama-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/winning\/js\/stickyfill.min-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/winning\/js\/stickyfill.min-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/winning\/js\/stickyfill.min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/winning\/js\/stickyfill.min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/winning\/js\/test-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/winning\/js\/test-min-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/winning\/js\/test.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/archive\/winning\/js\/test-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/archive\/winning\/js\/us-states.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/archive\/winning\/js\/us-states-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/archive\/winning\/js\/us.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/archive\/winning\/js\/us-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/archive\/winning\/js\/world-10m.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/archive\/winning\/js\/world-10m-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/archive\/winning\/js\/world-continents.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/archive\/winning\/js\/world-continents-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/archive\/winning\/r\/r\/.RData": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/winning\/r\/r\/.RData",
+		"oF": 0
+		},
+	"\/archive\/winning\/r\/r\/.Rhistory": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/winning\/r\/r\/.Rhistory",
+		"oF": 0
+		},
+	"\/archive\/winning\/r\/r\/.Rproj.user\/AEB89302\/pcs\/files-pane.pper": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/winning\/r\/r\/.Rproj.user\/AEB89302\/pcs\/files-pane.pper",
+		"oF": 0
+		},
+	"\/archive\/winning\/r\/r\/.Rproj.user\/AEB89302\/pcs\/source-pane.pper": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/winning\/r\/r\/.Rproj.user\/AEB89302\/pcs\/source-pane.pper",
+		"oF": 0
+		},
+	"\/archive\/winning\/r\/r\/.Rproj.user\/AEB89302\/pcs\/windowlayoutstate.pper": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/winning\/r\/r\/.Rproj.user\/AEB89302\/pcs\/windowlayoutstate.pper",
+		"oF": 0
+		},
+	"\/archive\/winning\/r\/r\/.Rproj.user\/AEB89302\/pcs\/workbench-pane.pper": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/winning\/r\/r\/.Rproj.user\/AEB89302\/pcs\/workbench-pane.pper",
+		"oF": 0
+		},
+	"\/archive\/winning\/r\/r\/.Rproj.user\/AEB89302\/rmd-outputs": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/winning\/r\/r\/.Rproj.user\/AEB89302\/rmd-outputs",
+		"oF": 0
+		},
+	"\/archive\/winning\/r\/r\/.Rproj.user\/AEB89302\/saved_source_markers": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/winning\/r\/r\/.Rproj.user\/AEB89302\/saved_source_markers",
+		"oF": 0
+		},
+	"\/archive\/winning\/r\/r\/.Rproj.user\/AEB89302\/sdb\/per\/t\/14720EB9": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/winning\/r\/r\/.Rproj.user\/AEB89302\/sdb\/per\/t\/14720EB9",
+		"oF": 0
+		},
+	"\/archive\/winning\/r\/r\/.Rproj.user\/AEB89302\/sdb\/per\/t\/3B604D68": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/winning\/r\/r\/.Rproj.user\/AEB89302\/sdb\/per\/t\/3B604D68",
+		"oF": 0
+		},
+	"\/archive\/winning\/r\/r\/.Rproj.user\/AEB89302\/sdb\/per\/t\/80C50136": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/winning\/r\/r\/.Rproj.user\/AEB89302\/sdb\/per\/t\/80C50136",
+		"oF": 0
+		},
+	"\/archive\/winning\/r\/r\/.Rproj.user\/AEB89302\/sdb\/prop\/F365E139": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/winning\/r\/r\/.Rproj.user\/AEB89302\/sdb\/prop\/F365E139",
+		"oF": 0
+		},
+	"\/archive\/winning\/r\/r\/.Rproj.user\/AEB89302\/sdb\/prop\/INDEX": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/winning\/r\/r\/.Rproj.user\/AEB89302\/sdb\/prop\/INDEX",
+		"oF": 0
+		},
+	"\/archive\/winning\/r\/r\/.Rproj.user\/AEB89302\/session-persistent-state": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/winning\/r\/r\/.Rproj.user\/AEB89302\/session-persistent-state",
+		"oF": 0
+		},
+	"\/archive\/winning\/r\/r\/.Rproj.user\/AEB89302\/viewer-cache\/1D047DAB.Rdata": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/winning\/r\/r\/.Rproj.user\/AEB89302\/viewer-cache\/1D047DAB.Rdata",
+		"oF": 0
+		},
+	"\/archive\/winning\/r\/r\/.Rproj.user\/AEB89302\/viewer-cache\/430358FD.Rdata": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/winning\/r\/r\/.Rproj.user\/AEB89302\/viewer-cache\/430358FD.Rdata",
+		"oF": 0
+		},
+	"\/archive\/winning\/r\/r\/.Rproj.user\/shared\/notebooks\/E167FD9B-analysis1\/1\/AEB89302\/chunks.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/archive\/winning\/r\/r\/.Rproj.user\/shared\/notebooks\/E167FD9B-analysis1\/1\/AEB89302\/chunks-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/archive\/winning\/r\/r\/.Rproj.user\/shared\/notebooks\/E167FD9B-analysis1\/1\/s\/chunks.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/archive\/winning\/r\/r\/.Rproj.user\/shared\/notebooks\/E167FD9B-analysis1\/1\/s\/chunks-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/archive\/winning\/r\/r\/.Rproj.user\/shared\/notebooks\/E167FD9B-analysis1\/1\/s\/ckun8f2ixodzn\/000004.csv": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/winning\/r\/r\/.Rproj.user\/shared\/notebooks\/E167FD9B-analysis1\/1\/s\/ckun8f2ixodzn\/000004.csv",
+		"oF": 0
+		},
+	"\/archive\/winning\/r\/r\/.Rproj.user\/shared\/notebooks\/E167FD9B-analysis1\/1\/s\/crsf322ae6cqg\/000004.csv": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/winning\/r\/r\/.Rproj.user\/shared\/notebooks\/E167FD9B-analysis1\/1\/s\/crsf322ae6cqg\/000004.csv",
+		"oF": 0
+		},
+	"\/archive\/winning\/r\/r\/.Rproj.user\/shared\/notebooks\/paths": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/winning\/r\/r\/.Rproj.user\/shared\/notebooks\/paths",
+		"oF": 0
+		},
+	"\/archive\/winning\/r\/r\/analysis1.nb.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/winning\/r\/r\/analysis1.nb.html",
+		"oF": 0
+		},
+	"\/archive\/winning\/r\/r\/analysis1.Rmd": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/winning\/r\/r\/analysis1.Rmd",
+		"oF": 0
+		},
+	"\/archive\/winning\/r\/r\/cities.csv": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/winning\/r\/r\/cities.csv",
+		"oF": 0
+		},
+	"\/archive\/winning\/r\/r\/r.Rproj": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/winning\/r\/r\/r.Rproj",
+		"oF": 0
+		},
+	"\/archive\/winning\/r\/r\/titles.csv": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/winning\/r\/r\/titles.csv",
+		"oF": 0
+		},
+	"\/archive\/winning\/test.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/winning\/test.html",
+		"oF": 0
+		},
+	"\/archive\/working\/index.html": {
+		"ft": 8192,
+		"oA": 2,
+		"oAP": "\/archive\/working\/index.html",
+		"oF": 0
 		},
 	"\/CNAME": {
 		"ft": 8192,
@@ -550,1270 +4255,17 @@
 		"oAP": "\/CNAME",
 		"oF": 0
 		},
-	"\/comparinggreats\/css\/style.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/comparinggreats\/css\/style-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/comparinggreats\/css\/style.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/comparinggreats\/css\/style.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/comparinggreats\/img\/Art-Ross-Actual-01.jpg": {
-		"ft": 16384,
-		"iS": 6942180,
-		"oA": 0,
-		"oAP": "\/comparinggreats\/img\/Art-Ross-Actual-01.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/comparinggreats\/img\/Art-Ross-All-01-01.jpg": {
-		"ft": 16384,
-		"iS": 6941892,
-		"oA": 0,
-		"oAP": "\/comparinggreats\/img\/Art-Ross-All-01-01.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/comparinggreats\/img\/Art-Ross-All-01.jpg": {
-		"ft": 16384,
-		"iS": 7128364,
-		"oA": 0,
-		"oAP": "\/comparinggreats\/img\/Art-Ross-All-01.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/comparinggreats\/img\/Art-Ross_Actual.jpg": {
-		"ft": 16384,
-		"iS": 1503628,
-		"oA": 0,
-		"oAP": "\/comparinggreats\/img\/Art-Ross_Actual.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/comparinggreats\/img\/Art-Ross_All.jpg": {
-		"ft": 16384,
-		"iS": 1563992,
-		"oA": 0,
-		"oAP": "\/comparinggreats\/img\/Art-Ross_All.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/comparinggreats\/img\/Art-Ross_Large.jpg": {
-		"ft": 16384,
-		"iS": 2578179,
-		"oA": 0,
-		"oAP": "\/comparinggreats\/img\/Art-Ross_Large.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/comparinggreats\/img\/Art-Ross_toptens.jpg": {
-		"ft": 16384,
-		"iS": 553500,
-		"oA": 0,
-		"oAP": "\/comparinggreats\/img\/Art-Ross_toptens.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/comparinggreats\/img\/calculations_Era-A.jpg": {
-		"ft": 16384,
-		"iS": 137921,
-		"oA": 0,
-		"oAP": "\/comparinggreats\/img\/calculations_Era-A.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/comparinggreats\/img\/calculations_Era-A.png": {
-		"ft": 32768,
-		"iS": 4737,
-		"oA": 0,
-		"oAP": "\/comparinggreats\/img\/calculations_Era-A.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/comparinggreats\/img\/calculations_Era-G.jpg": {
-		"ft": 16384,
-		"iS": 149217,
-		"oA": 0,
-		"oAP": "\/comparinggreats\/img\/calculations_Era-G.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/comparinggreats\/img\/calculations_Era-G.png": {
-		"ft": 32768,
-		"iS": 5324,
-		"oA": 0,
-		"oAP": "\/comparinggreats\/img\/calculations_Era-G.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/comparinggreats\/img\/calculations_Roster": {
+	"\/favicon.ico": {
 		"ft": 8192,
 		"oA": 2,
-		"oAP": "\/comparinggreats\/img\/calculations_Roster",
+		"oAP": "\/favicon.ico",
 		"oF": 0
-		},
-	"\/comparinggreats\/img\/calculations_Roster.jpg": {
-		"ft": 16384,
-		"iS": 110993,
-		"oA": 0,
-		"oAP": "\/comparinggreats\/img\/calculations_Roster.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/comparinggreats\/img\/calculations_Roster.png": {
-		"ft": 32768,
-		"iS": 3676,
-		"oA": 0,
-		"oAP": "\/comparinggreats\/img\/calculations_Roster.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/comparinggreats\/img\/calculations_Schedule.jpg": {
-		"ft": 16384,
-		"iS": 97125,
-		"oA": 0,
-		"oAP": "\/comparinggreats\/img\/calculations_Schedule.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/comparinggreats\/img\/calculations_Schedule.png": {
-		"ft": 32768,
-		"iS": 3834,
-		"oA": 0,
-		"oAP": "\/comparinggreats\/img\/calculations_Schedule.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/comparinggreats\/img\/calculations_SOS.png": {
-		"ft": 32768,
-		"iS": 403,
-		"oA": 0,
-		"oAP": "\/comparinggreats\/img\/calculations_SOS.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/comparinggreats\/img\/featured.png": {
-		"ft": 32768,
-		"iS": 278870,
-		"oA": 0,
-		"oAP": "\/comparinggreats\/img\/featured.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/comparinggreats\/img\/HowQuickly\/Art-Ross_howquickly.jpg": {
-		"ft": 16384,
-		"iS": 434890,
-		"oA": 0,
-		"oAP": "\/comparinggreats\/img\/HowQuickly\/Art-Ross_howquickly.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/comparinggreats\/img\/HowQuickly\/Art-Ross_howquickly.psd": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/comparinggreats\/img\/HowQuickly\/Art-Ross_howquickly.psd",
-		"oF": 0
-		},
-	"\/comparinggreats\/img\/HowQuickly\/background.jpg": {
-		"ft": 16384,
-		"iS": 2519324,
-		"oA": 0,
-		"oAP": "\/comparinggreats\/img\/HowQuickly\/background.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/comparinggreats\/img\/HowQuickly\/Rocket-Richard_howquickly.jpg": {
-		"ft": 16384,
-		"iS": 622922,
-		"oA": 0,
-		"oAP": "\/comparinggreats\/img\/HowQuickly\/Rocket-Richard_howquickly.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/comparinggreats\/img\/Rocket-Richard-All-02.jpg": {
-		"ft": 16384,
-		"iS": 11244610,
-		"oA": 0,
-		"oAP": "\/comparinggreats\/img\/Rocket-Richard-All-02.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/comparinggreats\/img\/Rocket-Richard_All.jpg": {
-		"ft": 16384,
-		"iS": 1368826,
-		"oA": 0,
-		"oAP": "\/comparinggreats\/img\/Rocket-Richard_All.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/comparinggreats\/img\/Rocket-Richard_Large.jpg": {
-		"ft": 16384,
-		"iS": 2361831,
-		"oA": 0,
-		"oAP": "\/comparinggreats\/img\/Rocket-Richard_Large.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/comparinggreats\/img\/Rocket-Richard_toptens.jpg": {
-		"ft": 16384,
-		"iS": 541714,
-		"oA": 0,
-		"oAP": "\/comparinggreats\/img\/Rocket-Richard_toptens.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/comparinggreats\/index.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/comparinggreats\/index.html",
-		"oF": 0
-		},
-	"\/comparinggreats\/js\/main-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/comparinggreats\/js\/main-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/comparinggreats\/js\/main.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/comparinggreats\/js\/main-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/comparinggreats\/js\/progress-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/comparinggreats\/js\/progress-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/competitive\/css\/style.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/competitive\/css\/style-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/competitive\/css\/style.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/competitive\/css\/style.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/competitive\/img\/all_large.jpg": {
-		"ft": 16384,
-		"iS": 1917158,
-		"oA": 0,
-		"oAP": "\/competitive\/img\/all_large.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/competitive\/img\/all_small.jpg": {
-		"ft": 16384,
-		"iS": 620636,
-		"oA": 0,
-		"oAP": "\/competitive\/img\/all_small.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/competitive\/img\/all_zoom2.png": {
-		"ft": 32768,
-		"iS": 2850461,
-		"oA": 0,
-		"oAP": "\/competitive\/img\/all_zoom2.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/competitive\/img\/bombers-riders.png": {
-		"ft": 32768,
-		"iS": 914066,
-		"oA": 0,
-		"oAP": "\/competitive\/img\/bombers-riders.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/competitive\/img\/celtics-lakers.png": {
-		"ft": 32768,
-		"iS": 1938370,
-		"oA": 0,
-		"oAP": "\/competitive\/img\/celtics-lakers.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/competitive\/img\/cleveland-zoom5-01.png": {
-		"ft": 32768,
-		"iS": 1344408,
-		"oA": 0,
-		"oAP": "\/competitive\/img\/cleveland-zoom5-01.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/competitive\/img\/featured.gif": {
-		"ft": 4194304,
-		"iS": 2574008,
-		"oA": 0,
-		"oAP": "\/competitive\/img\/featured.gif",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/competitive\/img\/giants_dodgers.png": {
-		"ft": 32768,
-		"iS": 2108059,
-		"oA": 0,
-		"oAP": "\/competitive\/img\/giants_dodgers.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/competitive\/img\/i-b-bears-packers.png": {
-		"ft": 32768,
-		"iS": 142931,
-		"oA": 0,
-		"oAP": "\/competitive\/img\/i-b-bears-packers.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/competitive\/img\/i-b-bombers-riders.png": {
-		"ft": 32768,
-		"iS": 107690,
-		"oA": 0,
-		"oAP": "\/competitive\/img\/i-b-bombers-riders.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/competitive\/img\/i-b-canadiens-maple-leafs.png": {
-		"ft": 32768,
-		"iS": 137260,
-		"oA": 0,
-		"oAP": "\/competitive\/img\/i-b-canadiens-maple-leafs.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/competitive\/img\/i-b-celtic-lakers.png": {
-		"ft": 32768,
-		"iS": 148223,
-		"oA": 0,
-		"oAP": "\/competitive\/img\/i-b-celtic-lakers.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/competitive\/img\/i-b-dodgers-giants.png": {
-		"ft": 32768,
-		"iS": 123664,
-		"oA": 0,
-		"oAP": "\/competitive\/img\/i-b-dodgers-giants.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/competitive\/img\/i-giants-dodgers-zoom5-01.png": {
-		"ft": 32768,
-		"iS": 337888,
-		"oA": 0,
-		"oAP": "\/competitive\/img\/i-giants-dodgers-zoom5-01.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/competitive\/img\/i-leafs-canadiens-zoom5-01-01.png": {
-		"ft": 32768,
-		"iS": 240781,
-		"oA": 0,
-		"oAP": "\/competitive\/img\/i-leafs-canadiens-zoom5-01-01.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/competitive\/img\/i-packers-bears-zoom5-01.png": {
-		"ft": 32768,
-		"iS": 205332,
-		"oA": 0,
-		"oAP": "\/competitive\/img\/i-packers-bears-zoom5-01.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/competitive\/img\/i-riders-bombers-zoom5-01-01.png": {
-		"ft": 32768,
-		"iS": 190935,
-		"oA": 0,
-		"oAP": "\/competitive\/img\/i-riders-bombers-zoom5-01-01.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/competitive\/img\/i-zoom1-01.png": {
-		"ft": 32768,
-		"iS": 781114,
-		"oA": 0,
-		"oAP": "\/competitive\/img\/i-zoom1-01.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/competitive\/img\/i-zoom1-v2-01.png": {
-		"ft": 32768,
-		"iS": 629153,
-		"oA": 0,
-		"oAP": "\/competitive\/img\/i-zoom1-v2-01.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/competitive\/img\/leafs-canadiens.png": {
-		"ft": 32768,
-		"iS": 1026463,
-		"oA": 0,
-		"oAP": "\/competitive\/img\/leafs-canadiens.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/competitive\/img\/legend-zoom9-01.png": {
-		"ft": 32768,
-		"iS": 923586,
-		"oA": 0,
-		"oAP": "\/competitive\/img\/legend-zoom9-01.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/competitive\/img\/newyork-zoom5-01.png": {
-		"ft": 32768,
-		"iS": 1367397,
-		"oA": 0,
-		"oAP": "\/competitive\/img\/newyork-zoom5-01.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/competitive\/img\/newyork-zoom9-01.png": {
-		"ft": 32768,
-		"iS": 631689,
-		"oA": 0,
-		"oAP": "\/competitive\/img\/newyork-zoom9-01.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/competitive\/img\/packers-bears.png": {
-		"ft": 32768,
-		"iS": 1248936,
-		"oA": 0,
-		"oAP": "\/competitive\/img\/packers-bears.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/competitive\/img\/TheBiggestRivalriesInSports_v7-01.jpg": {
-		"ft": 16384,
-		"iS": 28068471,
-		"oA": 0,
-		"oAP": "\/competitive\/img\/TheBiggestRivalriesInSports_v7-01.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/competitive\/img\/vancouver-zoom5-01.png": {
-		"ft": 32768,
-		"iS": 911109,
-		"oA": 0,
-		"oAP": "\/competitive\/img\/vancouver-zoom5-01.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/competitive\/index.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/competitive\/index.html",
-		"oF": 0
-		},
-	"\/competitive\/js\/main-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/competitive\/js\/main-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/competitive\/js\/main.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/competitive\/js\/main-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/competitive\/js\/progress-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/competitive\/js\/progress-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/competitive\/js\/progress.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/competitive\/js\/progress-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/competitive\/style.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/competitive\/style.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/css\/style.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/css\/style-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/css\/style.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/css\/style.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/css\/style_backup.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/css\/style_backup-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/data\/BondJamesBond.xlsx": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/data\/BondJamesBond.xlsx",
-		"oF": 0
-		},
-	"\/data\/Data-AllofBoston.numbers": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/data\/Data-AllofBoston.numbers",
-		"oF": 0
-		},
-	"\/data\/Data-AllOfColorado.numbers": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/data\/Data-AllOfColorado.numbers",
-		"oF": 0
-		},
-	"\/data\/Data-AllOfToronto.numbers": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/data\/Data-AllOfToronto.numbers",
-		"oF": 0
-		},
-	"\/data\/Data-DonaldsonHitsRedSox.numbers": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/data\/Data-DonaldsonHitsRedSox.numbers",
-		"oF": 0
-		},
-	"\/data\/Data-DonaldsonHitsRockies.numbers": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/data\/Data-DonaldsonHitsRockies.numbers",
-		"oF": 0
-		},
-	"\/data\/Data-DonaldsonsHitsActual.numbers": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/data\/Data-DonaldsonsHitsActual.numbers",
-		"oF": 0
-		},
-	"\/data\/MarketsOfScotland.xlsx": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/data\/MarketsOfScotland.xlsx",
-		"oF": 0
-		},
-	"\/data\/TheWorldOfJamesBond.pdf": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/data\/TheWorldOfJamesBond.pdf",
-		"oF": 0
-		},
-	"\/drinking\/css\/style.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/drinking\/css\/style-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/drinking\/css\/style.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/drinking\/css\/style.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/drinking\/img\/ondrinking-img1-01.png": {
-		"ft": 32768,
-		"iS": 5181585,
-		"oA": 0,
-		"oAP": "\/drinking\/img\/ondrinking-img1-01.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/drinking\/img\/ondrinking-img1.png": {
-		"ft": 32768,
-		"iS": 1795695,
-		"oA": 0,
-		"oAP": "\/drinking\/img\/ondrinking-img1.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/drinking\/img\/ondrinking-img2-01.png": {
-		"ft": 32768,
-		"iS": 90918,
-		"oA": 0,
-		"oAP": "\/drinking\/img\/ondrinking-img2-01.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/drinking\/img\/ondrinking-img3-01.png": {
-		"ft": 32768,
-		"iS": 98158,
-		"oA": 0,
-		"oAP": "\/drinking\/img\/ondrinking-img3-01.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/drinking\/img\/ondrinking_bg-01.png": {
-		"ft": 32768,
-		"iS": 393393,
-		"oA": 0,
-		"oAP": "\/drinking\/img\/ondrinking_bg-01.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/drinking\/index.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/drinking\/index.html",
-		"oF": 0
-		},
-	"\/drinking\/js\/main-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/drinking\/js\/main-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/drinking\/js\/main.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/drinking\/js\/main-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/drinking\/js\/progress-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/drinking\/js\/progress-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/drinking\/main.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/drinking\/main-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/drinking\/progress-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/drinking\/progress-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/img\/gini.gif": {
-		"ft": 4194304,
-		"iS": 536840,
-		"oA": 0,
-		"oAP": "\/img\/gini.gif",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/img\/irs_new.gif": {
-		"ft": 4194304,
-		"iS": 1764751,
-		"oA": 0,
-		"oAP": "\/img\/irs_new.gif",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/index.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/index.html",
-		"oF": 0
-		},
-	"\/js\/jquery.zoom.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/jquery.zoom-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/jquery.zoom.min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/jquery.zoom.min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/main-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/main-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/main.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/main-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/main_backup.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/main_backup-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/main_backup2.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/main_backup2-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/modernizr.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/modernizr-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/progress-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/progress-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/js\/progress.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/js\/progress-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
 		},
 	"\/LICENSE": {
 		"ft": 8192,
 		"oA": 2,
 		"oAP": "\/LICENSE",
 		"oF": 0
-		},
-	"\/playingball\/css\/style.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/playingball\/css\/style-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/playingball\/css\/style.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/playingball\/css\/style.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/playingball\/img\/BarChartSizes-03.jpg": {
-		"ft": 16384,
-		"iS": 562430,
-		"oA": 0,
-		"oAP": "\/playingball\/img\/BarChartSizes-03.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/playingball\/img\/BarChartSizes-04.jpg": {
-		"ft": 16384,
-		"iS": 659730,
-		"oA": 0,
-		"oAP": "\/playingball\/img\/BarChartSizes-04.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/playingball\/img\/featured.gif": {
-		"ft": 4194304,
-		"iS": 350829,
-		"oA": 0,
-		"oAP": "\/playingball\/img\/featured.gif",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/playingball\/img\/field_overlay-07.jpg": {
-		"ft": 16384,
-		"iS": 584681,
-		"oA": 0,
-		"oAP": "\/playingball\/img\/field_overlay-07.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/playingball\/img\/hits-01.jpg": {
-		"ft": 16384,
-		"iS": 1279394,
-		"oA": 0,
-		"oAP": "\/playingball\/img\/hits-01.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/playingball\/img\/hits-02.jpg": {
-		"ft": 16384,
-		"iS": 1321435,
-		"oA": 0,
-		"oAP": "\/playingball\/img\/hits-02.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/playingball\/img\/hits-03.jpg": {
-		"ft": 16384,
-		"iS": 1298960,
-		"oA": 0,
-		"oAP": "\/playingball\/img\/hits-03.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/playingball\/img\/hits-04.jpg": {
-		"ft": 16384,
-		"iS": 1216760,
-		"oA": 0,
-		"oAP": "\/playingball\/img\/hits-04.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/playingball\/img\/hits-05.jpg": {
-		"ft": 16384,
-		"iS": 1165068,
-		"oA": 0,
-		"oAP": "\/playingball\/img\/hits-05.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/playingball\/img\/hits-06.jpg": {
-		"ft": 16384,
-		"iS": 1225650,
-		"oA": 0,
-		"oAP": "\/playingball\/img\/hits-06.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/playingball\/img\/notebook1.JPG": {
-		"ft": 16384,
-		"iS": 1843660,
-		"oA": 0,
-		"oAP": "\/playingball\/img\/notebook1.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/playingball\/img\/notebook2copy.jpeg": {
-		"ft": 16384,
-		"iS": 1980593,
-		"oA": 0,
-		"oAP": "\/playingball\/img\/notebook2copy.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/playingball\/img\/notebook3.JPG": {
-		"ft": 16384,
-		"iS": 1931097,
-		"oA": 0,
-		"oAP": "\/playingball\/img\/notebook3.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/playingball\/img\/numbers1.png": {
-		"ft": 32768,
-		"iS": 1909898,
-		"oA": 0,
-		"oAP": "\/playingball\/img\/numbers1.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/playingball\/img\/numbers3.png": {
-		"ft": 32768,
-		"iS": 676578,
-		"oA": 0,
-		"oAP": "\/playingball\/img\/numbers3.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/playingball\/img\/numbers4.png": {
-		"ft": 32768,
-		"iS": 59785,
-		"oA": 0,
-		"oAP": "\/playingball\/img\/numbers4.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/playingball\/img\/numbers5.png": {
-		"ft": 32768,
-		"iS": 188558,
-		"oA": 0,
-		"oAP": "\/playingball\/img\/numbers5.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/playingball\/img\/OutfieldHeights-05.jpg": {
-		"ft": 16384,
-		"iS": 813503,
-		"oA": 0,
-		"oAP": "\/playingball\/img\/OutfieldHeights-05.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/playingball\/img\/OutfieldHeights-15.jpg": {
-		"ft": 16384,
-		"iS": 418051,
-		"oA": 0,
-		"oAP": "\/playingball\/img\/OutfieldHeights-15.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/playingball\/img\/OutfieldHeights-23.jpg": {
-		"ft": 16384,
-		"iS": 500919,
-		"oA": 0,
-		"oAP": "\/playingball\/img\/OutfieldHeights-23.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/playingball\/img\/OutfieldHeights-29.jpg": {
-		"ft": 16384,
-		"iS": 514834,
-		"oA": 0,
-		"oAP": "\/playingball\/img\/OutfieldHeights-29.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/playingball\/index.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/playingball\/index.html",
-		"oF": 0
-		},
-	"\/playingball\/js\/main-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/playingball\/js\/main-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/playingball\/js\/main.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/playingball\/js\/main-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/playingball\/js\/progress-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/playingball\/js\/progress-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
 		},
 	"\/README.md": {
 		"cS": 0,
@@ -1832,522 +4284,6 @@
 		"pME": 1,
 		"rFN": 0,
 		"uCM": 0
-		},
-	"\/readytochat\/css\/style.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/readytochat\/css\/style-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/readytochat\/css\/style.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/readytochat\/css\/style.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/readytochat\/index.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/readytochat\/index.html",
-		"oF": 0
-		},
-	"\/readytochat\/js\/main-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/readytochat\/js\/main-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/readytochat\/js\/main.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/readytochat\/js\/main-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/readytochat\/js\/progress-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/readytochat\/js\/progress-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/showingoff\/css\/style.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/showingoff\/css\/style-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/showingoff\/css\/style.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/showingoff\/css\/style.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/showingoff\/img\/S07_scotland.jpg": {
-		"ft": 16384,
-		"iS": 2661404,
-		"oA": 0,
-		"oAP": "\/showingoff\/img\/S07_scotland.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/showingoff\/img\/SO1_couch.jpg": {
-		"ft": 16384,
-		"iS": 7364161,
-		"oA": 0,
-		"oAP": "\/showingoff\/img\/SO1_couch.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"\/showingoff\/img\/SO2_earthquakes.jpg": {
-		"ft": 16384,
-		"iS": 965275,
-		"oA": 0,
-		"oAP": "\/showingoff\/img\/SO2_earthquakes.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"\/showingoff\/img\/SO3_colours.jpg": {
-		"ft": 16384,
-		"iS": 844532,
-		"oA": 0,
-		"oAP": "\/showingoff\/img\/SO3_colours.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 1,
-		"q": 100
-		},
-	"\/showingoff\/img\/SO4_wordmap1.jpg": {
-		"ft": 16384,
-		"iS": 1199139,
-		"oA": 0,
-		"oAP": "\/showingoff\/img\/SO4_wordmap1.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/showingoff\/img\/So5_wordmap2.jpg": {
-		"ft": 16384,
-		"iS": 928000,
-		"oA": 0,
-		"oAP": "\/showingoff\/img\/So5_wordmap2.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/showingoff\/img\/So6_wordmap3.jpg": {
-		"ft": 16384,
-		"iS": 507794,
-		"oA": 0,
-		"oAP": "\/showingoff\/img\/So6_wordmap3.jpg",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"q": 100
-		},
-	"\/showingoff\/index.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/showingoff\/index.html",
-		"oF": 0
-		},
-	"\/showingoff\/js\/main-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/showingoff\/js\/main-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/showingoff\/js\/main.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/showingoff\/js\/main-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/showingoff\/js\/progress-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/showingoff\/js\/progress-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/tellingstories\/css\/style.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/tellingstories\/css\/style-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/tellingstories\/css\/style.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/tellingstories\/css\/style.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/tellingstories\/index.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/tellingstories\/index.html",
-		"oF": 0
-		},
-	"\/tellingstories\/js\/main-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/tellingstories\/js\/main-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/tellingstories\/js\/main.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/tellingstories\/js\/main-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/tellingstories\/js\/progress-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/tellingstories\/js\/progress-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/trumped\/css\/style.css": {
-		"aP": 1,
-		"bl": 0,
-		"ft": 16,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/trumped\/css\/style-min.css",
-		"oF": 0,
-		"oS": 3
-		},
-	"\/trumped\/css\/style.scss": {
-		"aP": 0,
-		"bl": 0,
-		"dP": 10,
-		"dS": 0,
-		"ft": 4,
-		"ma": 0,
-		"oA": 0,
-		"oAP": "\/trumped\/css\/style.css",
-		"oF": 0,
-		"oS": 0,
-		"uL": 1
-		},
-	"\/trumped\/data\/data_100days.csv": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/trumped\/data\/data_100days.csv",
-		"oF": 0
-		},
-	"\/trumped\/documentation\/DismalGloriousGosling.gif": {
-		"ft": 4194304,
-		"iS": 733777,
-		"oA": 0,
-		"oAP": "\/trumped\/documentation\/DismalGloriousGosling.gif",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/trumped\/documentation\/GloriousApprehensiveGermanspaniel.gif": {
-		"ft": 4194304,
-		"iS": 4989511,
-		"oA": 0,
-		"oAP": "\/trumped\/documentation\/GloriousApprehensiveGermanspaniel.gif",
-		"oF": 0,
-		"opt": 0
-		},
-	"\/trumped\/documentation\/Screen Shot 2017-07-24 at 3.20.55 PM.png": {
-		"ft": 32768,
-		"iS": 4556071,
-		"oA": 0,
-		"oAP": "\/trumped\/documentation\/Screen Shot 2017-07-24 at 3.20.55 PM.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/trumped\/documentation\/Screen Shot 2017-07-24 at 3.21.26 PM.png": {
-		"ft": 32768,
-		"iS": 466555,
-		"oA": 0,
-		"oAP": "\/trumped\/documentation\/Screen Shot 2017-07-24 at 3.21.26 PM.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/trumped\/documentation\/Screen Shot 2017-07-24 at 3.21.39 PM.png": {
-		"ft": 32768,
-		"iS": 537625,
-		"oA": 0,
-		"oAP": "\/trumped\/documentation\/Screen Shot 2017-07-24 at 3.21.39 PM.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/trumped\/documentation\/Screen Shot 2017-07-24 at 3.22.38 PM.png": {
-		"ft": 32768,
-		"iS": 705039,
-		"oA": 0,
-		"oAP": "\/trumped\/documentation\/Screen Shot 2017-07-24 at 3.22.38 PM.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/trumped\/documentation\/Screen Shot 2017-07-24 at 3.22.52 PM.png": {
-		"ft": 32768,
-		"iS": 702224,
-		"oA": 0,
-		"oAP": "\/trumped\/documentation\/Screen Shot 2017-07-24 at 3.22.52 PM.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/trumped\/documentation\/Screen Shot 2017-07-24 at 3.22.58 PM.png": {
-		"ft": 32768,
-		"iS": 568237,
-		"oA": 0,
-		"oAP": "\/trumped\/documentation\/Screen Shot 2017-07-24 at 3.22.58 PM.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/trumped\/index.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/trumped\/index.html",
-		"oF": 0
-		},
-	"\/trumped\/js\/d3-tip.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/trumped\/js\/d3-tip-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/trumped\/js\/data\/100days.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/trumped\/js\/data\/100days-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/trumped\/js\/data\/100days_events.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/trumped\/js\/data\/100days_events-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/trumped\/js\/data\/cats.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/trumped\/js\/data\/cats-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/trumped\/js\/data\/master_2017.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/trumped\/js\/data\/master_2017-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/trumped\/js\/data\/tweets_100.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/trumped\/js\/data\/tweets_100-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/trumped\/js\/data\/tweets_100_data.json.sb-868218d3-s8L4k9": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/trumped\/js\/data\/tweets_100_data.json.sb-868218d3-s8L4k9",
-		"oF": 0
-		},
-	"\/trumped\/js\/data\/tweets_100days.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/trumped\/js\/data\/tweets_100days-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/trumped\/js\/jquery.textfill.min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/trumped\/js\/jquery.textfill.min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/trumped\/js\/main-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/trumped\/js\/main-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/trumped\/js\/main.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/trumped\/js\/main-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/trumped\/js\/progress-min.js": {
-		"ft": 64,
-		"mi": 1,
-		"oA": 0,
-		"oAP": "\/trumped\/js\/progress-min-min.js",
-		"oF": 0,
-		"sC": 1,
-		"tS": 0
-		},
-	"\/trumped\/python\/.ipynb_checkpoints\/01_tweets_archive-checkpoint.ipynb": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/trumped\/python\/.ipynb_checkpoints\/01_tweets_archive-checkpoint.ipynb",
-		"oF": 0
-		},
-	"\/trumped\/python\/.ipynb_checkpoints\/02_100-days-checkpoint.ipynb": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/trumped\/python\/.ipynb_checkpoints\/02_100-days-checkpoint.ipynb",
-		"oF": 0
-		},
-	"\/trumped\/python\/01_tweets_archive.ipynb": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/trumped\/python\/01_tweets_archive.ipynb",
-		"oF": 0
-		},
-	"\/trumped\/python\/02_100-days.ipynb": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/trumped\/python\/02_100-days.ipynb",
-		"oF": 0
-		},
-	"\/trumped\/python\/data\/data.csv": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/trumped\/python\/data\/data.csv",
-		"oF": 0
-		},
-	"\/trumped\/python\/data\/data_100days.csv": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/trumped\/python\/data\/data_100days.csv",
-		"oF": 0
-		},
-	"\/trumped\/python\/data\/data_100days_tobetagged.csv": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/trumped\/python\/data\/data_100days_tobetagged.csv",
-		"oF": 0
-		},
-	"\/trumped\/python\/data\/data_100days_topics.csv": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/trumped\/python\/data\/data_100days_topics.csv",
-		"oF": 0
-		},
-	"\/trumped\/python\/data\/master_2017.json": {
-		"ft": 524288,
-		"oA": 1,
-		"oAP": "\/trumped\/python\/data\/master_2017-min.json",
-		"oF": 0,
-		"oO": 0,
-		"oS": 1
-		},
-	"\/working\/index.html": {
-		"ft": 8192,
-		"oA": 2,
-		"oAP": "\/working\/index.html",
-		"oF": 0
 		}
 	},
 "hooks": [
