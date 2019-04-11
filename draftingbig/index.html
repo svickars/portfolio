@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en-US" class="no-js no-svg">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+    <title>The Value of a Draft Pick &#8211; By Sam Vickars.</title>
+
+    <meta name="description" content="Information artist, graphic designer, story teller." />
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@samvickars">
+    <meta name="twitter:title" content="The Value of a Draft Pick">
+    <meta name="twitter:description" content="Analyzing 6265 NHL draft picks.">
+    <meta name="twitter:creator" content="@samvickars">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/svickars/portfolio/master/draftingbig/img/screen1.png">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="The Value of a Draft Pick" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="http://www.samvickars.is/draftingbig/" />
+    <meta property="og:image" content="https://raw.githubusercontent.com/svickars/portfolio/master/draftingbig/img/screen1.png" />
+    <meta property="og:description" content="Analyzing 6265 NHL draft picks." />
+    <meta property="og:site_name" content="Sam Vickars" />
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/awesome-bootstrap-checkbox.css">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Playfair+Display:700|Roboto:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="css/jquery-ui.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/css/select2.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/fontawesome-pro-core.css">
+    <link rel="stylesheet" href="css/fontawesome-pro-regular.css">
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+
+    <script src="../js/modernizr.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+
+
+    <script>
+      (function(i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function() {
+          (i[r].q = i[r].q || []).push(arguments)
+        }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+          m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+      })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+      ga('create', 'UA-72865926-2', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+  </head>
+
+  <body>
+    <progress value="0"></progress>
+    <div class="color-strip"></div>
+    <header>
+      <div class="cd-logo">
+        <a href="http://samvickars.is">
+							Sam Vickars
+						</a>
+      </div>
+
+    </header>
+
+    <div class="container-fluid title" id="maintitle">
+      <div class="row ch">
+        <div class="hidden-xs hidden-sm hidden-md col-lg-1"></div>
+        <div class="col-xs-12 col-sm-11">
+          <h1>The Value of a Draft Pick</h1>
+          <div class="sub-headline">
+            <h2>Analyzing the value of every NHL draft pick since 1992.</h2>
+          </div>
+        </div>
+      </div>
+      <div class="row ch">
+        <div class="hidden-xs hidden-sm hidden-md col-lg-1"></div>
+        <div class="col-xs-12 col-sm-8 col-md-6">
+          <p style="color: #666666"><strong>6m30s.</strong> January, 2018. Data correct as of October, 2017.</p>
+
+          <p>The NHL Entry Draft takes place every June, when 31 general managers get together and take turns selecting the rights to young hockey players. Some of them work out, and some of them don&rsquo;t. But every year, also in June, somebody always
+            brings u the question of how we value draft picks. When Elliotte Friedman, a journalist for Rogers Sportsnet and Hockey Night in Canada, brought it up this past summer, it got me thinking. How <em>do</em> we put a value on a draft pick? Friedman&rsquo;s
+            <a href="http://www.sportsnet.ca/hockey/nhl/30-thoughts-trade-value-first-round-pick/">article</a> linked to another report, this one by <a href="http://www.sportsnet.ca/hockey/nhl/analyzing-value-nhl-draft-picks/">Stephen Burtch</a>, containing
+            a few graphs and insights that confirmed it: first round picks generally (read: almost always) produce better results. He also pointed out that teams exchange draft picks with &ldquo;alarming frequency&rdquo;, something I had never really
+            thought about before. Which of these trades worked out? Which didn&rsquo;t? How can we tell?</p>
+
+          <p>While the data to support these insights is available in abundance, it generally comes in tables full of statistics, or spreadsheets packed with numbers and percentages. This might get my heart rate up a few notches, I can imagine it has the
+            opposite effect for many. So I set about turning it into something visual, a tool we can have fun with and maybe gain some insights from. I combined data from <a href="https://www.hockey-reference.com/">hockey-reference.com</a> with the magic
+            of Python and R Studio to analyze every draft pick since 1992 and compare them across the board.</p>
+
+          <p>While some metrics lend themselves quite well to this sort of visual, others really don&rsquo;t. Dom Luszczyszyn&rsquo;s <a href="https://hockey-graphs.com/2016/07/13/measuring-single-game-productivity-an-introduction-to-game-score/">Game Score</a>,
+            for instance, lets us compare players across all positions quickly and simple. Other stats, like goals or assists, aren&rsquo;t so simple (i.e. a defenceman is likely going to have score fewer goals than a left winger, so he&rsquo;ll look
+            like a less valuable player). I&rsquo;ve converted these into something I call stat share, meaning a player&rsquo;s share of each stat (e.g. goals or assists) relative to his position, and that&rsquo;s what&rsquo;s presented here.</p>
+
+          <p>Feel free to jump right in, or continue to scroll and I&rsquo;ll tell you all about it.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="chartintro">
+      <div class="row ch">
+        <div class="hidden-xs hidden-sm hidden-md col-lg-1"></div>
+        <div class="col-xs-12 col-sm-8 col-md-6">
+          <h3>Analyzing NHL Draft Picks</h3>
+          <p>Below are all <span id="totalNumber"><span class="number">6265</span> players drafted into the NHL</span> since <span class="number">1992</span>, when the league expanded to <span class="number">24</span> teams and the draft moved from
+            <span class="number">12</span> rounds to <span class="number">11</span>. Select a <span class="number highlight">VIEW</span> to see players sorted by year and round, by team rank, or by value. Each circle represents a player, sized by the
+            selected metric. Players who have never played a game in the NHL are represented by dots at 25% opacity. Hover or tap on a player to see their stats, both over the entire career and through the first five years after their draft year. Click
+            or tap on a <span class="number highlight">ROUND</span> to expand.</p> <span class="glosLink highlight">Glossary.</span></p>
+        </div>
+      </div>
+      <div id="lockthis">
+        <div class="row ch st ch2">
+          <div class="hidden-xs hidden-sm hidden-md col-lg-1"></div>
+          <div class="col-xs-12 col-sm-10 col-md-8 stl">
+            <div class="btn-group hiddenmobile" style="margin-right: 2px;">
+              <label class="btn btn-primary active" id="byyearbutton">
+                <input type="radio" name="viewselect" class="viewselect" id="viewselect1" value="view1" checked>View By Year
+            </label>
+              <label class="btn btn-primary" id="byteambutton">
+                <input type="radio" name="viewselect" class="viewselect" id="viewselect2" value="view2"> By Team Rank
+            </label>
+              <label class="btn btn-primary" id="byvaluebutton">
+                <input type="radio" name="viewselect" class="viewselect" id="viewselect3" value="view3"> By Value
+            </label>
+            </div>
+            <select class="btn form-control positionselect" id="positionselect" style="width: 100px;">
+            <option value=""></option>
+            <option value="pos-G">G</option>
+            <option value="pos-D">D</option>
+            <option value="pos-C">C</option>
+            <option value="pos-LW">LW</option>
+            <option value="pos-RW">RW</option>
+          </select>
+            <span>
+              <form class="search-container">
+      <input type="text" id="search-bar" placeholder="What can I help you with today?">
+      <a href="#"><img class="search-icon" src="http://www.endlessicons.com/wp-content/uploads/2012/12/search-icon.png"></a>
+    </form>
+            </select>
+          </span>
+          </div>
+        </div>
+        <div class="row ch st">
+          <div class="hidden-xs hidden-sm hidden-md col-lg-1"></div>
+          <div class="stl chB">
+            <div class="chA">
+              <div class="chAt">Size by</div>
+              <div class="chAb">
+                <div class="str-size">
+                  <select class="btn form-control statselect" id="statselect" style="width: 100px;">
+                  <optgroup label="All Positions">
+                    <option value="avg_GS" definition="Average Game Score">Average Game Score</option>
+                    <option value="GP_ss" definition="Games Played (as a percentage of GP by position)">Games Played</option>
+                    <option value="G_ss" definition="Goals (as a percentage of G by position)">Goals</option>
+                    <option value="A_ss" definition="Assists (as a percentage of A by position)">Assists</option>
+                    <option value="PTS_ss" definition="Points (as a percentage of PTS by position)">Points</option>
+                    <option value="SOG_ss" definition="Shots on goal (as a percentage of SOG by position)">SOG</option>
+                    <option value="Blocks_ss" definition="Blocks (as a percentage of blocks by position)">Blocks</option>
+                    <option value="Hits_ss" definition="Hits (as a percentage of hits by position)">Hits</option>
+                    <option value="PIM_ss" definition="Penalties in Minutes (as a percentage of PIM by position)">PIM</option>
+                    <option value="TOI_ss" definition="Time on Ice (as a percentage of TOI by position)">TOI</option>
+                    <option value="PlusMinus_ss" definition="Plus/Minus">+/-</option>
+                    <option value="CF_ss" definition="Corsi For">Corsi For</option>
+                    <option value="CA_ss" definition="Corsi Against">Corsi Against</option>
+                  </optgroup>
+                  <optgroup label="Goalies">
+                    <option value="gGS_ss" definition="Games Started (as a percentage of GS by all goalies)">Games Started</option>
+                    <option value="gW_ss" definition="Wins (as a percentage of W by all goalies)">Wins</option>
+                    <option value="gL_ss" definition="Losses (as a percentage of L by all goalies)">Losses</option>
+                    <option value="gTOgSO_ss" definition="Ties + OT/SO Losses (as a percentage of T+OT/SO L by all goalies)">Ties + OT/SO Losses</option>
+                    <option value="gSVper_ss" definition="Save Percentage">SV%</option>
+                    <option value="gGAA_ss" definition="Goals Against Average (lowest first)">GAA</option>
+                    <option value="gSO_ss" definition="Shutouts (as a percentage of SO by all goalies)">Shutouts</option>
+                  </optgroup>
+                </select>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="chA hiddenmobile">
+            <div class="chAt">Based on</div>
+            <div class="chAb">
+              <div class="str-time hiddenmobile">
+                <form role="form">
+                  <div class="radio radio-inline">
+                    <input type="radio" class="timeselect" name="radio2" id="radio_c" value="_c" checked>
+                    <label for="radio3">
+                    Player&rsquo;s entire career
+                  </label>
+                  </div>
+                  <div class="radio radio-inline">
+                    <input type="radio" class="timeselect" name="radio2" id="radio_f" value="_f">
+                    <label for="radio3">
+                    First five years after their draft
+                  </label>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row s1">
+          <div class="hidden-xs hidden-sm hidden-md col-lg-1"></div>
+          <div class="col-xs-12 col-lg-10 chart sb">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="modaloverlay">
+      <div id="modal">
+        <div id="gClose"><i class="far fa-times-circle"></i></div>
+        <div class="row">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-10 gTitle">
+            <h3>Glossary</h3>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-8 gDef"><strong>Advanced</strong></div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">Avg Game Score</div>
+          <div class="col-xs-8 gDef">A metric created by Dom of <em>The Athletic</em> to measure a player&rsquo;s strength per game and averaged over their career. Read more <a href="https://hockey-graphs.com/2016/07/13/measuring-single-game-productivity-an-introduction-to-game-score/">here</a>.
+            Denoted as <strong>AGS</strong>.</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm"></div>
+          <div class="col-xs-8 gDef">...<em>insert more</em></div>
+        </div>
+
+        <div class="row header">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-8 gDef"><strong>Skaters</strong></div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">GP</div>
+          <div class="col-xs-8 gDef">Games played</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">G</div>
+          <div class="col-xs-8 gDef">Goals</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">A</div>
+          <div class="col-xs-8 gDef">Assists</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">PTS</div>
+          <div class="col-xs-8 gDef">Points</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">SOG</div>
+          <div class="col-xs-8 gDef">Shots on goal</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">Blks</div>
+          <div class="col-xs-8 gDef">Blocks at even strength</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">Hits</div>
+          <div class="col-xs-8 gDef">Hits at even strength</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">PIM</div>
+          <div class="col-xs-8 gDef">Penalties in minutes</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">TOI</div>
+          <div class="col-xs-8 gDef">Total time on ice, in minutes</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">+/-</div>
+          <div class="col-xs-8 gDef">Plus/Minus</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">Corsi For</div>
+          <div class="col-xs-8 gDef">Shits + Blocks + Misses at even strength</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">Corsi Against</div>
+          <div class="col-xs-8 gDef">Shits + Blocks + Misses (against) at even strength</div>
+        </div>
+
+        <div class="row header">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-8 gDef"><strong>Goalies</strong></div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">GS</div>
+          <div class="col-xs-8 gDef">Games Started</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">W</div>
+          <div class="col-xs-8 gDef">Wins</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">L</div>
+          <div class="col-xs-8 gDef">Losses</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">T+OT/SO Losses</div>
+          <div class="col-xs-8 gDef">Ties + Overtime/Shootout Losses</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">SV%</div>
+          <div class="col-xs-8 gDef">Save percentage</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">GAA</div>
+          <div class="col-xs-8 gDef">Goals Against Average</div>
+        </div>
+
+        <div class="row term">
+          <div class="col-xs-1"></div>
+          <div class="col-xs-2 gTerm">SO</div>
+          <div class="col-xs-8 gDef">Shutouts</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row chapter" id="chapter1">
+        <div class="hidden-xs hidden-sm hidden-md col-lg-1"></div>
+        <div class="col-xs-12 col-sm-8 col-md-8 chapterContainer">
+          <h4>The Metrics</h4>
+          <p>To really see how valuable a player is, we can&rsquo;t just look at the usual stats. Goals, assists, points, PIMs — it&rsquo;s all there, but to really measure how well a player performed, we need more. Just because a centreman scored twice
+            last night, doesn&rsquo;t mean he had a better game than his defenceman that blocked eight shots and was on the ice for twelve of his team&rsquo;s shots. It might, but we can&rsquo;t reasonably compare those guys because they play different
+            games. It&rsquo;s like apples and oranges. To see what I mean, use the dropdown above to change the statistic we&rsquo;re sizing by from Average Game Score to something else.
+          </p>
+
+          <p>This is where Dom Luszczyszyn&rsquo;s Game Score comes in. Based on what was originally a baseball metric and then a basketball stat, Game Score looks at nine different stats for skaters and two for goalies. You can read more about it <a href="https://hockey-graphs.com/2016/07/13/measuring-single-game-productivity-an-introduction-to-game-score/.">here</a>.
+            This is what we&rsquo;re looking at here, where each circle represents a player, sized by their average game score over their entire career. </p>
+
+          <p>That means we can compare guys like <span class="playerHighlight caps" id="ovechal01">Alex Ovechkin</span> (the highest avg. game score, at <span class="number">1.46</span>) to <span class="playerHighlight caps" id="gonchse01">Sergei Gonchar</span>            (a defenceman, at <span class="number">.69</span>) to <span class="playerHighlight islanders" id="luongro01">Roberto Luongo</span> (an often overlooked goalie, at
+            <span class="number">.92</span>), getting a quick comparison in their value, even though they are all very different kinds of players.</p>
+        </div>
+      </div>
+      <div class="row chapter" id="chapter2">
+        <div class="hidden-xs hidden-sm hidden-md col-lg-1"></div>
+        <div class="col-xs-12 col-sm-8 col-md-8 chapterContainer">
+          <h4>First Five</h4>
+          <p>When we&rsquo;re analyzing a draft pick&rsquo;s value, we also have to consider how quickly he can break into the league. Some will tell you that if a player&rsquo;s not in the chel within a few years, he wasn&rsquo;t worth it. Or maybe it&rsquo;s
+            a question of how many games they need to play, a threshold <a href="https://www.thoughtco.com/nhl-draft-picks-2779293">Jamie Fitzpatrick</a> sets at <span class="number">200</span>. </p>
+
+          <p>Either way, the amount of time it takes a draft pick to be a legitimate force in the NHL should have an effect on his value. Some guys start strong and slump after a few years, like <span class="playerHighlight pens" id="lalimpa01">Patrick Lalime</span>,
+            who went from an AGS of almost <span class="number">.8</span> in his first five years to <span class="number">.48</span> over his entire career; others just keep getting better, like <span class="playerHighlight caps" id="ovechal01">Alex Ovechkin</span>,
+            going from an AGS of under <span class="number">.8</span> to almost <span class="number">1.5</span>. </p>
+        </div>
+      </div>
+      <div class="row chapter" id="chapter3">
+        <div class="hidden-xs hidden-sm hidden-md col-lg-1"></div>
+        <div class="col-xs-12 col-sm-8 col-md-8 chapterContainer">
+          <h4>Success Rate</h4>
+          <p>How many draft picks actually crack the big league? Less than half. Between 1992 and 2017, there were <span class="number">6265</span> players drafted. Of that, <span class="number">2484</span> have played an NHL game. That&rsquo;s <span class="number">39%</span>.
+            That means there&rsquo;s <span class="number">3781</span> players that just never made it, including 2001&rsquo;s first round pick, <span class="playerHighlight hurricanes" id="knyazig01">Igor Knyazev</span>. Nice one <span class="hurricanes">Carolina</span>.
+            The <span class="bruins">Boston Bruins</span>, on the other hand, are doing pretty well when it comes to drafting. <span class="number">48%</span> of their draft picks have made it to the NHL. That&rsquo;s in stark contrast to the <span class="redwings">Red Wings&rsquo;</span>
+            <span class="number">31%</span> success rate. Of course, the jury&rsquo;s still out on the most recent picks, so we&rsquo;ll see.</p>
+        </div>
+      </div>
+      <div class="row chapter" id="chapter4">
+        <div class="hidden-xs hidden-sm hidden-md col-lg-1"></div>
+        <div class="col-xs-12 col-sm-8 col-md-8 chapterContainer">
+          <div class="row">
+            <div class="col-xs-12">
+              <h4>The (Un)Expected</h4>
+              <p>First round picks, particularly the top five, are going to work out to be some of the most valuable players in the game, right? Yeah, pretty much. <span class="playerHighlight pens" id="crosbsi01">Sidney Crosby</span>, <span class="playerHighlight caps"
+                  id="ovechal01">Alex Ovechkin</span>, and <span class="playerHighlight oilers" id="mcdavco01">Conor McDavid</span> are proof. Each was easily the best in their draft year and they went first overall, as you&rsquo;d expect.</p>
+
+              <p class="mobileonly">Take a look at this visualization on a larger screen to look into the deeper rounds, where players like Pavel Datsyuk stand out. He&rsquo;s an incredible player, but many seem to forget that he was picked near the end of the sixth round,
+                171st overall. His circle is not only the largest in the round, but it&rsquo;s the largest for the whole year. Detroit saw something nobody else did and it paid off. In fact, it&rsquo;s comparable to <em>most</em> first rounders, no question.
+                His career AGS sits at <span class="number">1.1</span>, and McDavid is around <span class="number">1.2</span>.</p>
+
+              <p class="nomobile">But what happened in 1996? <span class="playerHighlight redwings" id="datsypa01">Pavel Datsyuk</span> happened. It&rsquo;s pretty well known that Datsyuk is an incredible player, but many seem to forget that he was picked near the end of
+                the sixth round, 171st overall. His circle is not only the largest in the round, but it&rsquo;s the largest for the whole year. Detroit saw something nobody else did and it paid off. In fact, it&rsquo;s comparable to <em>most</em> first
+                rounders, no question. His career AGS sits at <span class="number">1.1</span>, and McDavid is around <span class="number">1.2</span>.</p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row chapter" id="chapter5">
+        <div class="hidden-xs hidden-sm hidden-md col-lg-1"></div>
+        <div class="col-xs-12 col-sm-8 col-md-8 chapterContainer">
+          <h4 class="nomobile">Team-by-Team</h4>
+          <p class="mobileonly">Play around with the controls above to change the metric, position, or player shown, and see what you find!</p>
+          <p class="nomobile">Here we see every pick laid out by the team that chose them, sized by their share of the points scored by all players at their position. Clearly <span class="knights">Vegas</span> has some work to do. Either that, or this is their first year
+            in the league.</p>
+
+          <p class="nomobile">The longer the “tail”, the more picks the team has made, and the longer the “fat part of the tail”, the more draft value the team has come away with.</p>
+        </div>
+      </div>
+      <div class="row chapter nomobile" id="chapter6">
+        <div class="hidden-xs hidden-sm hidden-md col-lg-1"></div>
+        <div class="col-xs-12 col-sm-8 col-md-8 chapterContainer">
+          <h4>Value versus Expectation</h4>
+          <p>When we compare pick number to the selected stat, in this case average game score, it looks like our successful picks are more abundant to the left, or the earlier rounds. This is true, but it also looks like there are more early picks than
+            there are later, which is not the case. In reality, the further to the right, the more dots are placed along the bottom axis, meaning a huge chunk of later picks never played in the NHL.</p>
+
+          <p>This view also allows us to chart expectations, in this case, specifically for right wingers. For instance, we can expect a right winger drafted early in the first round (top five), like <span class="playerHighlight blackhawks" id="kanepa01">Patrick Kane</span>,
+            to score <span class="number">70</span> goals in the five years after he was drafted. He scored <span class="number">126</span>. The line in blue shows the expected values, or averages, for each position in the draft. As expected, it gets
+            closer to <span class="number">0</span> the deeper we get.</p>
+
+          <p>Play around with the controls above to change the metric, view, time period, position, or player shown.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid">
+      <div class="row chend">
+        <div class="hidden-xs hidden-sm hidden-md col-lg-1"></div>
+        <div class="col-xs-12 col-sm-8 col-md-6 endnote">
+          <p><strong>A note on the data:</strong></p>
+          <p>
+            <p>Data is current as of October, 2017, meaning that some stats for the current season are included, but not for everybody. There are more than 6000 players included, so it’s more than possible that I missed something. A cleaner, more complete,
+              more efficient dataset is on its way, but in the meantime, <a href="mailto:sam.vickars@gmail.com?subject='The Value of a Draft Pick'">let me know</a> of any problems or missing bits.</p>
+
+            <p>Data comes from individual player pages at <a href="https://www.hockey-reference.com">hockey-reference.com</a>. I compared basic and advanced stats within positions, meaning that players are compared to similar types of players (i.e. goalies
+              to goalies, defence to defence) to give every player a share of each statistic, as well as a rank amongst every draft pick their team has made since 1992.</p>
+        </div>
+      </div>
+    </div>
+
+
+    <footer>
+      <div class="footer-left">Like this?
+        <a href="http://twitter.com/home?status=@samvickars http://bit.ly/2zqmaoP">Let me know</a>.
+      </div>
+      <div class="footer-right">
+        <a href="http://sam-vickars.squarespace.com/">Archive</a>&nbsp;&nbsp;//&nbsp;
+
+        <a href="https://twitter.com/samvickars">Twitter</a>
+
+        <a href="https://www.behance.net/sam-i-am">Behance</a>
+
+        <a href="http://typographyturnsmeon.com">Tumblr</a>
+
+        <a href="https://github.com/svickars">Github</a>
+      </div>
+    </footer>
+
+
+
+    <script src=" //ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js "></script>
+    <script src="js/jquery-ui.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js " integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa " crossorigin="anonymous "></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.4/js/select2.min.js"></script>
+    <script src="js/d3-tip.js"></script>
+
+    <script src="js/main.js "></script>
+    <script src="../js/progress.js "></script>
+  </body>
+
+</html>
