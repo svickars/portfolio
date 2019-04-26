@@ -1,0 +1,81 @@
+@font-face {
+	font-family: 'Cormorant Garamond';
+	font-style: normal;
+	font-weight: 400;
+	font-display: auto;
+	src: local('Cormorant Garamond Regular'), local('CormorantGaramond-Regular'), url(Cormorant_Garamond-normal-400.woff) format('woff');
+	unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+	font-family: 'Cormorant Garamond';
+	font-style: normal;
+	font-weight: 500;
+	font-display: auto;
+	src: local('Cormorant Garamond Medium'), local('CormorantGaramond-Medium'), url(Cormorant_Garamond-normal-500.woff) format('woff');
+	unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+	font-family: 'Cormorant Garamond';
+	font-style: normal;
+	font-weight: 600;
+	font-display: auto;
+	src: local('Cormorant Garamond SemiBold'), local('CormorantGaramond-SemiBold'), url(Cormorant_Garamond-normal-600.woff) format('woff');
+	unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+	font-family: 'Heebo';
+	font-style: normal;
+	font-weight: 300;
+	font-display: auto;
+	src: local('Heebo Light'), local('Heebo-Light'), url(Heebo-normal-300.woff) format('woff');
+	unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+	font-family: 'Heebo';
+	font-style: normal;
+	font-weight: 400;
+	font-display: auto;
+	src: local('Heebo'), local('Heebo-Regular'), url(Heebo-normal-400.woff) format('woff');
+	unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+	font-family: 'Heebo';
+	font-style: normal;
+	font-weight: 700;
+	font-display: auto;
+	src: local('Heebo Bold'), local('Heebo-Bold'), url(Heebo-normal-700.woff) format('woff');
+	unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+	font-family: 'Roboto Mono';
+	font-style: normal;
+	font-weight: 300;
+	font-display: auto;
+	src: local('Roboto Mono Light'), local('RobotoMono-Light'), url(Roboto_Mono-normal-300.woff) format('woff');
+	unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+	font-family: 'Roboto Mono';
+	font-style: normal;
+	font-weight: 400;
+	font-display: auto;
+	src: local('Roboto Mono'), local('RobotoMono-Regular'), url(Roboto_Mono-normal-400.woff) format('woff');
+	unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+	font-family: 'Roboto Mono';
+	font-style: normal;
+	font-weight: 500;
+	font-display: auto;
+	src: local('Roboto Mono Medium'), local('RobotoMono-Medium'), url(Roboto_Mono-normal-500.woff) format('woff');
+	unicode-range: U+0-10FFFF;
+}
+
