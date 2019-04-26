@@ -1,0 +1,47 @@
+@import '_variables';
+
+h1 {
+  font-family: $display;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 1.2em !important;
+  color: $red;
+  @media (min-width: 375px) {
+    font-size: 3em;
+  }
+}
+
+h4 {
+  font-family: $display;
+  font-weight: 700;
+  color: black;
+  margin-bottom: -5px;
+}
+
+p {
+  color: $gray2;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+
+  &.light {
+    color: $gray4;
+  }
+
+  &.bold {
+    font-weight: 700;
+  }
+}
+
+a {
+  color: $red;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+
+  &:hover {
+    color: $gray2;
+    text-decoration: none;
+  }
+}

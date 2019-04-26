@@ -1,0 +1,16 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html {
+  font-size: 62.5% !important;
+  height: 100%; }
+
+body {
+  font-size: 1.6rem !important;
+  font-family: "Heebo", "Helvetica Neue", serif !important;
+  color: #191919 !important;
+  min-height: 100%; }

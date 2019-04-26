@@ -2,6 +2,12 @@
 .Rhistory
 .RData
 .Ruserdata
-/archive
-config.codekit3
 .DS_Store
+.tmp
+.vscode
+npm-debug.log
+node_modules
+package-lock.json
+config.codekit3
+/working
+/archive

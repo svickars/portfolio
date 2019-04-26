@@ -1,1 +1,0 @@
-$(document).on("ready",function(){var o=$(window).height(),n=$(document).height(),t=$("progress"),e,r;e=n-o,t.attr("max",e),$(document).on("scroll",function(){r=$(window).scrollTop(),t.attr("value",r)})});

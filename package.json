@@ -1,0 +1,47 @@
+{
+  "name": "template2019",
+  "version": "1.0.0",
+  "description": "For DF Template",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "archieml": "^0.4.2",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "browser-sync": "^2.26.3",
+    "d3-dsv": "^1.1.1",
+    "del": "^2.2.2",
+    "fs": "0.0.1-security",
+    "gulp": "^3.9.1",
+    "gulp-archieml": "^1.1.0",
+    "gulp-autoprefixer": "^3.1.1",
+    "gulp-babel": "^7.0.1",
+    "gulp-bundle-assets": "^2.29.0",
+    "gulp-cache": "^1.1.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-google-webfonts": "^2.1.0",
+    "gulp-hb": "^8.0.0",
+    "gulp-imagemin": "^5.0.3",
+    "gulp-purgecss": "^1.1.1",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^2.1.2",
+    "gulp-uglify-es": "^1.0.4",
+    "gulp-useref": "^3.1.6",
+    "node-gyp": "^3.8.0",
+    "request": "^2.88.0",
+    "require-dir": "^1.2.0",
+    "run-sequence": "^2.2.1"
+  },
+  "dependencies": {
+    "gulp-cssnano": "^2.1.3"
+  }
+}
