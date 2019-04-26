@@ -6,11 +6,11 @@
   box-sizing: border-box; }
 
 html {
-  font-size: 62.5% !important;
+  font-size: 62.5%;
   height: 100%; }
 
 body {
-  font-size: 1.6rem !important;
-  font-family: "Heebo", "Helvetica Neue", serif !important;
-  color: #191919 !important;
+  font-size: 1.6rem;
+  font-family: "Heebo", "Helvetica Neue", serif;
+  color: #191919;
   min-height: 100%; }

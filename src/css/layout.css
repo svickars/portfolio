@@ -1,14 +1,51 @@
-.intro {
-  margin: 25vh 0 2em; }
-  .intro h1 {
-    margin-bottom: 30px; }
-
 .main {
   position: relative;
   min-height: 100vh; }
 
 .content {
-  padding-bottom: 100px; }
+  width: 100%;
+  max-width: 60em;
+  margin: 0 auto;
+  padding: 2em 2em 100px; }
+
+.intro {
+  margin: 25vh auto 0; }
+  .intro h1 {
+    margin-bottom: 30px; }
+
+.work {
+  width: 100%;
+  margin-top: 64px; }
+  .work h4 {
+    margin-bottom: 24px;
+    color: #333; }
+  .work .project {
+    display: inline-block;
+    vertical-align: top;
+    width: 100%;
+    margin-left: 0;
+    -webkit-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease; }
+    @media (min-width: 35em) {
+      .work .project {
+        width: calc(33% - 20px);
+        margin-right: 10px; } }
+    .work .project:hover {
+      background-color: #f7f7f7;
+      border-radius: 2px; }
+      .work .project:hover .image {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%); }
+    .work .project .info {
+      min-height: 100px; }
+    .work .project .image {
+      width: 100%;
+      padding-bottom: 66%;
+      border-radius: 2px;
+      -webkit-transition: all 0.5s ease;
+      -o-transition: all 0.5s ease;
+      transition: all 0.5s ease; }
 
 footer {
   position: absolute;
@@ -16,9 +53,8 @@ footer {
   padding: 0 5%;
   height: 100px;
   width: 100%;
-  background-color: #efefef;
   font-family: "Heebo", "Helvetica Neue", serif;
-  font-size: 0.75em;
+  font-size: 0.8em;
   line-height: 100px; }
 
 .footer-left {
@@ -35,6 +71,8 @@ footer {
 .footer-right {
   width: 100%;
   text-align: center; }
+  .footer-right a {
+    margin-right: 5px; }
   @media (min-width: 375px) {
     .footer-right {
       float: right;
