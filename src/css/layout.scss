@@ -3,12 +3,13 @@
 .main {
   position: relative;
   min-height: 100vh;
-}
-
-.content {
   width: 100%;
   max-width: 60em;
   margin: 0 auto;
+}
+
+.content {
+
   padding: 2em 2em 100px;
 }
 
@@ -75,7 +76,7 @@
 footer {
   position: absolute;
   bottom: 0;
-  padding: 0 5%;
+  padding: 0 2em;
   height: 100px;
   width: 100%;
   // background-color: #efefef;
