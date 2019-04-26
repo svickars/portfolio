@@ -30,3 +30,8 @@ gulp.task('assets:data', function() {
   return gulp.src('src/assets/data/**/*')
     .pipe(gulp.dest('docs/assets/data'))
 })
+
+gulp.task('assets:cname', function() {
+  return gulp.src('CNAME')
+    .pipe(gulp.dest('docs/'))
+})
