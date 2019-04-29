@@ -32,7 +32,7 @@ gulp.task('clean:docs', function() {
 
 gulp.task('build', function(callback) {
   runSequence('clean:docs', 'html:dev',
-    ['bundle', 'css:compile', 'css:purge', 'opt:images', 'assets:fonts', 'assets:styles', 'assets:scripts', 'assets:data', 'assets:cname'],
+    ['bundle', 'css:compile', 'css:purge', 'opt:images', 'assets:fonts', 'assets:styles', 'assets:scripts', 'assets:data', 'assets:cname', 'projects'],
     callback
   )
 });
