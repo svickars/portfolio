@@ -70,12 +70,18 @@
   }
 }
 
+.conclusion {
+  margin-top: 64px;
+}
+
 footer {
   position: absolute;
+  left: 0;
   bottom: 0;
   padding: 0 2em;
   height: 100px;
   width: 100%;
+  // width: 100%;
   // background-color: #efefef;
   font-family: $sans;
   font-size: 0.8em;

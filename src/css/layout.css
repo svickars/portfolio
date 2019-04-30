@@ -48,8 +48,12 @@
       -o-transition: all 0.5s ease;
       transition: all 0.5s ease; }
 
+.conclusion {
+  margin-top: 64px; }
+
 footer {
   position: absolute;
+  left: 0;
   bottom: 0;
   padding: 0 2em;
   height: 100px;
