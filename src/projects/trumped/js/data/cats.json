@@ -1,0 +1,57 @@
+[{
+  "catName": "Making America great again",
+  "catClass": "makingAmericaGreatAgain",
+  "label": "MAGA"
+}, {
+  "catName": "Jobs",
+  "catClass": "jobs",
+  "label": "jobs"
+}, {
+  "catName": "official business",
+  "catClass": "officialBusiness",
+  "label": "official biz"
+}, {
+  "catName": "2016 election",
+  "catClass": "election",
+  "label": "2016 election"
+}, {
+  "catName": "media",
+  "catClass": "media",
+  "label": "media"
+}, {
+  "catName": "foreign affairs",
+  "catClass": "foreignAffairs",
+  "label": "foreign affairs"
+}, {
+  "catName": "immigration ban",
+  "catClass": "immigrationBan",
+  "label": "muslim ban"
+}, {
+  "catName": "fake news",
+  "catClass": "fakeNews",
+  "label": "fake news"
+}, {
+  "catName": "democratic party",
+  "catClass": "democraticParty",
+  "label": "dems"
+}, {
+  "catName": "republican party",
+  "catClass": "republicanParty",
+  "label": "GOP"
+}, {
+  "catName": "unofficial business",
+  "catClass": "unofficialBusiness",
+  "label": "unofficial biz"
+}, {
+  "catName": "russia",
+  "catClass": "russia",
+  "label": "russia"
+}, {
+  "catName": "healthcare",
+  "catClass": "healthcare",
+  "label": "healthcare"
+}, {
+  "catName": "foreign leader",
+  "catClass": "foreignLeader",
+  "label": "foreign leaders"
+}]
