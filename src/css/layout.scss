@@ -24,6 +24,17 @@
   width: 100%;
   margin-top: 64px;
 
+  &.otherwork {
+    a {
+      text-decoration: underline;
+      transition: 500ms;
+
+      &:hover {
+        color: $gray2 !important;
+      }
+    }
+  }
+
   h4 {
     margin-bottom: 24px;
     color: $gray2;

@@ -26,33 +26,6 @@
 }
 
 @font-face {
-	font-family: 'Heebo';
-	font-style: normal;
-	font-weight: 300;
-	font-display: auto;
-	src: local('Heebo Light'), local('Heebo-Light'), url(Heebo-normal-300.woff) format('woff');
-	unicode-range: U+0-10FFFF;
-}
-
-@font-face {
-	font-family: 'Heebo';
-	font-style: normal;
-	font-weight: 400;
-	font-display: auto;
-	src: local('Heebo'), local('Heebo-Regular'), url(Heebo-normal-400.woff) format('woff');
-	unicode-range: U+0-10FFFF;
-}
-
-@font-face {
-	font-family: 'Heebo';
-	font-style: normal;
-	font-weight: 700;
-	font-display: auto;
-	src: local('Heebo Bold'), local('Heebo-Bold'), url(Heebo-normal-700.woff) format('woff');
-	unicode-range: U+0-10FFFF;
-}
-
-@font-face {
 	font-family: 'Roboto Mono';
 	font-style: normal;
 	font-weight: 300;
@@ -76,6 +49,33 @@
 	font-weight: 500;
 	font-display: auto;
 	src: local('Roboto Mono Medium'), local('RobotoMono-Medium'), url(Roboto_Mono-normal-500.woff) format('woff');
+	unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 300;
+	font-display: auto;
+	src: local('Work Sans Light'), local('WorkSans-Light'), url(Work_Sans-normal-300.woff) format('woff');
+	unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 400;
+	font-display: auto;
+	src: local('Work Sans'), local('WorkSans-Regular'), url(Work_Sans-normal-400.woff) format('woff');
+	unicode-range: U+0-10FFFF;
+}
+
+@font-face {
+	font-family: 'Work Sans';
+	font-style: normal;
+	font-weight: 700;
+	font-display: auto;
+	src: local('Work Sans Bold'), local('WorkSans-Bold'), url(Work_Sans-normal-700.woff) format('woff');
 	unicode-range: U+0-10FFFF;
 }
 

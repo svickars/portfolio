@@ -84,6 +84,16 @@
             {{/each}}
       </section>
 
+      <section class="work otherwork">
+        <!-- <h4><span class="headline">{{{copy.otherstuffHeader}}}</span></h4> -->
+        <p>
+          <span>{{{copy.otherstuffHeader}}}</span>
+          {{#each copy.otherstuff}}
+            <span>{{{this.description}}}</span>
+          {{/each}}
+        </p>
+      </section>
+
       <section class="work">
         <h4><span class="headline">{{{copy.oldstuffH4}}}</span></h4>
         {{#each copy.oldstuff}}
