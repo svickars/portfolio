@@ -11,3 +11,4 @@ package-lock.json
 config.codekit3
 /working
 /archive
+.DS_Store

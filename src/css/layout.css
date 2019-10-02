@@ -6,7 +6,7 @@
   margin: 0 auto; }
 
 .content {
-  padding: 2em 2em 100px; }
+  padding: 32px 32px 100px; }
 
 .intro {
   margin: 25vh auto 0; }
@@ -25,6 +25,7 @@
     width: 100%;
     margin-left: 0;
     margin-bottom: 1.5rem;
+    padding: 8px;
     -webkit-transition: all 0.5s ease;
     -o-transition: all 0.5s ease;
     transition: all 0.5s ease; }
@@ -55,31 +56,9 @@ footer {
   position: absolute;
   left: 0;
   bottom: 0;
-  padding: 0 2em;
+  padding: 32px;
   height: 100px;
   width: 100%;
   font-family: "Work Sans", "Helvetica Neue", serif;
   font-size: 0.8em;
   line-height: 100px; }
-
-.footer-left {
-  width: 100%;
-  text-align: center;
-  display: none; }
-  @media (min-width: 375px) {
-    .footer-left {
-      display: inline-block;
-      float: left;
-      text-align: left;
-      width: auto; } }
-
-.footer-right {
-  width: 100%;
-  text-align: center; }
-  .footer-right a {
-    margin-right: 5px; }
-  @media (min-width: 375px) {
-    .footer-right {
-      float: right;
-      text-align: right;
-      width: auto; } }
