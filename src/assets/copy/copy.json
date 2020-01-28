@@ -1,1 +1,142 @@
-{"meta":{"title":"Sam Vickars","description":"It’s so nice to meet you.","news_keywords":"dataviz, data, visualization, graphics","url":"http://samvickars.com","site_name":"Sam Vickars","site_url":"http://samvickars.com","twitter_user":"samvickars","og-image":"/assets/social/facebook.jpg","twitter-image":"/assets/social/twitter.jpg"},"headline":"Hi, my name is <strong style=\"color: #e00000\">Sam</strong>. I like to tell visual stories using data, graphics, and interactivity.","intro":[{"type":"text","value":"You can see some of my work below and if you want to get in touch, you can email me at <a href=\"mailto:sam.vickars@gmail.com\">sam.vickars@gmail.com</a>—I'm almost always down for a chat. If you add me on Twitter, <a href=\"twitter.com/samvickars\">@samvickars</a>, I'll probably follow you back."},{"type":"text","value":"I have a bachelor's degree from the University of Waterloo School of Architecture and a Master's of Science in Data Visualization from Parsons in NYC."},{"type":"text","value":"I’m also an eight-time local pub trivia champion, along with my twin brother; the current scoring champion in one of the lowest-division adult hockey leagues in the city; a relatively accomplished wassailer; and an early pioneer of the Circle Line Pub Crawl."}],"followup":[{"type":"text","value":"I'm currently employed at <a href=\"http://thedataface.com\">The DataFace</a> and recently <a style=\"color: #cd7f32\" href=\"https://www.informationisbeautifulawards.com/news/492-the-winners-leisure-games-sport\">won a bronze at the 2019 Information is Beautiful Awards</a>. Get in touch if there's something you want to work on."}],"endline":"It’s so nice to meet you.","conclusion":"I made this site using <a href=\"http://archieml.org/\">ArchieML</a> and <a href=\"https://handlebarsjs.com/\">Handlebars</a>. The whole thing runs off this <a href=\"https://docs.google.com/document/d/1Fc_MJ3gXfAbheDJoRyxizf70XOo7JaJhIgC3seDxhG8/edit?usp=sharing\">Google Doc</a>. It's hosted on Github pages and uses Work Sans, a Google Font.","newstuffH4":"New work","newstuff":[{"project":"The No Doubter Report","image":"nodoubt.gif","colour":"#0c2340","url":"http://thedataface.com/2019/09/sports/no-doubter-report","description":"The homeruns hit hard enough to leave any MLB park","tags":"The DataFace, September 2019"},{"project":"The Irregular Outfields of Baseball","image":"irregular_outfields.gif","colour":"#53786C","url":"http://thedataface.com/2019/04/sports/baseballs-irregular-outfields","description":"The varying sizes, shapes, and types of MLB ballparks","tags":"The DataFace, April 2019"},{"project":"North America’s Winningest Cities","image":"titletowns.jpg","colour":"#154377","url":"https://pudding.cool/2018/11/titletowns/","description":"What makes a titletown?","tags":"The Pudding, November 2018"}],"otherstuffHeader":"I also recently","otherstuff":[{"colour":"#d32323","description":"designed and built <a style=\"color: #d32323\" href=\"https://www.yelp15.com/\">this microsite</a> celebrating 15 Years of Yelp, and <a style=\"color: #d32323\" href=\"https://www.yelpeconomicaverage.com/\">this one</a> for Yelp's Economic Average reports;"},{"colour":"#FF8500","description":"illustrated some rookie cards for this <a style=\"color: #FF8500\" href=\"http://thedataface.com/2019/06/sports/best-drafting-nba-teams\">project on the NBA draft</a>;"},{"colour":"#D6E067","description":"explored <a style=\"color: #D6E067\" href=\"https://www.glamour.com/story/most-popular-summer-cocktails-in-every-city\">America's favourite summer drinks</a>, according to Yelp;"},{"colour":"#0A3D62","description":"worked on HCCI's report on <a style=\"color: #0A3D62\" href=\"https://healthcostinstitute.org/research/hmi/hmi-interactive\">US Hospital Market Concentration</a>;"},{"colour":"#00843D","description":"worked on visualizations and design for B6's <a style=\"color: #00843D\" href=\"https://b6realestateadvisors.com/reports/block-by-block-1q19/\">first</a>, <a style=\"color: #00843D\" href=\"https://b6realestateadvisors.com/reports/block-by-block-1h19/\">second</a>, <a style=\"color: #00843D\" href=\"https://b6realestateadvisors.com/reports/block-by-block-3q19/\">third</a>, and <a style=\"color: #00843D\" href=\"https://b6realestateadvisors.com/reports/b6-2020-predictions/\">fourth</a> quarterly reports of 2019;"},{"colour":"#9FC1CB","description":"and contributed to this Pudding Piece on <a style=\"color: #9FC1CB\" href=\"https://pudding.cool/2019/03/pop-music/\">the Biggest Pop Star</a>."}],"oldstuffH4":"Old work","oldstuff":[{"project":"Globalography","image":"globalography.png","colour":"#68095a","url":"https://www.amazon.ca/Globalography-Interconnected-World-revealed-Maps/dp/1781317917","description":"Out interconnected world revealed in 50 maps","tags":"Amazon.ca, November 2018"},{"project":"Parental Leave in America","image":"parental_leave.png","colour":"#fdae95","url":"http://thedataface.com/2018/03/economy/parental-leave","description":"What’s the deal?","tags":"The DataFace, March 2018"},{"project":"Visualizing Canada’s Indian Residential Schools","image":"irs.png","colour":"#f15a24","url":"http://residentialschools.info/","description":"MSDV thesis on Canada’s Past","tags":"May 2017"},{"project":"#Trumped","image":"trumped.jpg","colour":"#eb4b70","url":"http://samvickars.com/trumped","description":"The First 100 Days of Tweets","tags":"June 2017"},{"project":"The Value of a Draft Pick","image":"draftingbig.jpg","colour":"#5D83AB","url":"http://samvickars.com/draftingbig","description":"Analyzing the value of every NHL draft pick since 1992","tags":"October 2017"},{"project":"The World of James Bond","image":"bond.jpg","colour":"#000000","url":"http://samvickars.com/allaboutthatbond","description":"Shaken, not stirred","tags":"November 2017"},{"project":"The Biggest Rivalries in Sports","image":"competitive.jpg","colour":"#FCA429","url":"http://sportsrivalri.es/","description":"121 teams, 128 connections, 6 pro sports","tags":"November 2017"},{"project":"Comparing Greats","image":"comparinggreats.jpg","colour":"#1F8A55","url":"http://samvickars.com/comparinggreats","description":"How much did the legends really score?","tags":"March 2017"}],"footer":"Say hi.","footerlinks":[{"text":"Twitter","link":"https://twitter.com/samvickars"},{"text":"Behance","link":"https://www.behance.net/sam-i-am"},{"text":"Github","link":"https://github.com/svickars"}]}
+{
+	"meta": {
+		"title": "Sam Vickars",
+		"description": "It’s so nice to meet you.",
+		"news_keywords": "dataviz, data, visualization, graphics",
+		"url": "http://samvickars.com",
+		"site_name": "Sam Vickars",
+		"site_url": "http://samvickars.com",
+		"twitter_user": "samvickars",
+		"og-image": "/assets/social/facebook.jpg",
+		"twitter-image": "/assets/social/twitter.jpg"
+	},
+	"headline": "Hi, my name is <strong style=\"color: #e00000\">Sam</strong>. I like to tell visual stories using data, graphics, and interactivity.",
+	"intro": [{
+		"type": "text",
+		"value": "You can see some of my work below and if you want to get in touch, you can email me at <a href=\"mailto:sam.vickars@gmail.com\">sam.vickars@gmail.com</a>—I'm almost always down for a chat. If you add me on Twitter, <a href=\"twitter.com/samvickars\">@samvickars</a>, I'll probably follow you back."
+	}, {
+		"type": "text",
+		"value": "I have a bachelor's degree from the University of Waterloo School of Architecture and a Master's of Science in Data Visualization from Parsons in NYC."
+	}, {
+		"type": "text",
+		"value": "I’m also an eight-time local pub trivia champion, along with my twin brother; the current scoring champion in one of the lowest-division adult hockey leagues in the city; a relatively accomplished wassailer; and an early pioneer of the Circle Line Pub Crawl."
+	}],
+	"followup": [{
+		"type": "text",
+		"value": "I'm currently employed at <a href=\"http://thedataface.com\">The DataFace</a> and recently <a style=\"color: #cd7f32\" href=\"https://www.informationisbeautifulawards.com/news/492-the-winners-leisure-games-sport\">won a bronze at the 2019 Information is Beautiful Awards</a>. Get in touch if there's something you want to work on."
+	}],
+	"endline": "It’s so nice to meet you.",
+	"conclusion": "I made this site using <a href=\"http://archieml.org/\">ArchieML</a> and <a href=\"https://handlebarsjs.com/\">Handlebars</a>. The whole thing runs off this <a href=\"https://docs.google.com/document/d/1Fc_MJ3gXfAbheDJoRyxizf70XOo7JaJhIgC3seDxhG8/edit?usp=sharing\">Google Doc</a>. It's hosted on Github pages and uses Work Sans, a Google Font.",
+	"newstuffH4": "New work",
+	"newstuff": [{
+		"project": "The No Doubter Report",
+		"image": "nodoubt.gif",
+		"colour": "#0c2340",
+		"url": "http://thedataface.com/2019/09/sports/no-doubter-report",
+		"description": "The homeruns hit hard enough to leave any MLB park",
+		"tags": "The DataFace, September 2019"
+	}, {
+		"project": "The Irregular Outfields of Baseball",
+		"image": "irregular_outfields.gif",
+		"colour": "#53786C",
+		"url": "http://thedataface.com/2019/04/sports/baseballs-irregular-outfields",
+		"description": "The varying sizes, shapes, and types of MLB ballparks",
+		"tags": "The DataFace, April 2019"
+	}, {
+		"project": "North America’s Winningest Cities",
+		"image": "titletowns.jpg",
+		"colour": "#154377",
+		"url": "https://pudding.cool/2018/11/titletowns/",
+		"description": "What makes a titletown?",
+		"tags": "The Pudding, November 2018"
+	}],
+	"otherstuffHeader": "I also recently",
+	"otherstuff": [{
+		"colour": "#d32323",
+		"description": "designed and built <a style=\"color: #d32323\" href=\"https://www.yelp15.com/\">this microsite</a> celebrating 15 Years of Yelp, and <a style=\"color: #d32323\" href=\"https://www.yelpeconomicaverage.com/\">this one</a> for Yelp's Economic Average reports;"
+	}, {
+		"colour": "#FF8500",
+		"description": "illustrated some rookie cards for this <a style=\"color: #FF8500\" href=\"http://thedataface.com/2019/06/sports/best-drafting-nba-teams\">project on the NBA draft</a>;"
+	}, {
+		"colour": "#D6E067",
+		"description": "explored <a style=\"color: #D6E067\" href=\"https://www.glamour.com/story/most-popular-summer-cocktails-in-every-city\">America's favourite summer drinks</a>, according to Yelp;"
+	}, {
+		"colour": "#0A3D62",
+		"description": "worked on HCCI's report on <a style=\"color: #0A3D62\" href=\"https://healthcostinstitute.org/research/hmi/hmi-interactive\">US Hospital Market Concentration</a>;"
+	}, {
+		"colour": "#00843D",
+		"description": "worked on visualizations and design for B6's <a style=\"color: #00843D\" href=\"https://b6realestateadvisors.com/reports/block-by-block-1q19/\">first</a>, <a style=\"color: #00843D\" href=\"https://b6realestateadvisors.com/reports/block-by-block-1h19/\">second</a>, <a style=\"color: #00843D\" href=\"https://b6realestateadvisors.com/reports/block-by-block-3q19/\">third</a>, and <a style=\"color: #00843D\" href=\"https://b6realestateadvisors.com/reports/b6-2020-predictions/\">fourth</a> quarterly reports of 2019;"
+	}, {
+		"colour": "#9FC1CB",
+		"description": "and contributed to this Pudding Piece on <a style=\"color: #9FC1CB\" href=\"https://pudding.cool/2019/03/pop-music/\">the Biggest Pop Star</a>."
+	}],
+	"oldstuffH4": "Old work",
+	"oldstuff": [{
+		"project": "Globalography",
+		"image": "globalography.png",
+		"colour": "#68095a",
+		"url": "https://www.amazon.ca/Globalography-Interconnected-World-revealed-Maps/dp/1781317917",
+		"description": "Out interconnected world revealed in 50 maps",
+		"tags": "Amazon.ca, November 2018"
+	}, {
+		"project": "Parental Leave in America",
+		"image": "parental_leave.png",
+		"colour": "#fdae95",
+		"url": "http://thedataface.com/2018/03/economy/parental-leave",
+		"description": "What’s the deal?",
+		"tags": "The DataFace, March 2018"
+	}, {
+		"project": "Visualizing Canada’s Indian Residential Schools",
+		"image": "irs.png",
+		"colour": "#f15a24",
+		"url": "http://residentialschools.info/",
+		"description": "MSDV thesis on Canada’s Past",
+		"tags": "May 2017"
+	}, {
+		"project": "#Trumped",
+		"image": "trumped.jpg",
+		"colour": "#eb4b70",
+		"url": "http://samvickars.com/trumped",
+		"description": "The First 100 Days of Tweets",
+		"tags": "June 2017"
+	}, {
+		"project": "The Value of a Draft Pick",
+		"image": "draftingbig.jpg",
+		"colour": "#5D83AB",
+		"url": "http://samvickars.com/draftingbig",
+		"description": "Analyzing the value of every NHL draft pick since 1992",
+		"tags": "October 2017"
+	}, {
+		"project": "The World of James Bond",
+		"image": "bond.jpg",
+		"colour": "#000000",
+		"url": "http://samvickars.com/allaboutthatbond",
+		"description": "Shaken, not stirred",
+		"tags": "November 2017"
+	}, {
+		"project": "The Biggest Rivalries in Sports",
+		"image": "competitive.jpg",
+		"colour": "#FCA429",
+		"url": "http://sportsrivalri.es/",
+		"description": "121 teams, 128 connections, 6 pro sports",
+		"tags": "November 2017"
+	}, {
+		"project": "Comparing Greats",
+		"image": "comparinggreats.jpg",
+		"colour": "#1F8A55",
+		"url": "http://samvickars.com/comparinggreats",
+		"description": "How much did the legends really score?",
+		"tags": "March 2017"
+	}],
+	"footer": "Say hi.",
+	"footerlinks": [{
+		"text": "Twitter",
+		"link": "https://twitter.com/samvickars"
+	}, {
+		"text": "Behance",
+		"link": "https://www.behance.net/sam-i-am"
+	}, {
+		"text": "Github",
+		"link": "https://github.com/svickars"
+	}]
+}
