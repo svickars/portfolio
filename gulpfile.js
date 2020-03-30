@@ -38,7 +38,8 @@ gulp.task('build', function(callback) {
 });
 
 gulp.task('default', function(callback) {
-	runSequence('google:fonts', ['html:dev', 'css:compile', 'browserSync', 'watch'],
+	runSequence(['html:dev', 'css:compile', 'browserSync', 'watch'],
 		callback
 	)
 });
+// 'google:fonts'
