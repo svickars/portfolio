@@ -1,22 +1,10 @@
 {
-  "google": {
-    "sheet": [],
-    "doc": [{
-      "id": "1Fc_MJ3gXfAbheDJoRyxizf70XOo7JaJhIgC3seDxhG8",
-      "filepath": "src/assets/copy/copy.json"
-    }]
-  },
-  "fonts": [{
-      "name": "Roboto Mono",
-      "weights": [300, 400, 500]
-    },
-    {
-      "name": "Cormorant Garamond",
-      "weights": [400, 500, 600]
-    },
-    {
-      "name": "Work Sans",
-      "weights": [300, 400, 700]
-    }
-  ]
+	"google": {
+		"sheet": [],
+		"doc": [{
+			"id": "1Fc_MJ3gXfAbheDJoRyxizf70XOo7JaJhIgC3seDxhG8",
+			"filepath": "src/assets/copy/copy.json"
+		}]
+	},
+	"fonts": []
 }

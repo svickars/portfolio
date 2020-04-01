@@ -1,89 +1,89 @@
 @import '_variables';
 
 h1 {
-  font-family: $display;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 2em;
-  line-height: 1.2em;
-  // color: $red;
-  @media (min-width: 375px) {
-    font-size: 3em;
-  }
+	font-family: $display;
+	font-weight: 400;
+	font-style: normal;
+	font-size: 2em;
+	line-height: 1.2em;
+	// color: $red;
+	@media (min-width: 375px) {
+		font-size: 3em;
+	}
 }
 
 h2 {
-  font-family: $display;
-  font-size: 1em;
-  font-weight: 700;
-  margin: 10px 0 0;
-  color: $gray1;
-  line-height: 1.25;
-  @media (min-width: 50em) {
-    // font-size: 1.25em;
-  }
+	font-family: $display;
+	font-size: 1em;
+	font-weight: 700;
+	margin: 10px 0 0;
+	color: $gray1;
+	line-height: 1.25;
+	@media (min-width: 50em) {
+		// font-size: 1.25em;
+	}
 }
 
 h3 {
-  font-family: $sans;
-  font-size: 0.8em;
-  font-weight: 400;
-  margin: 5px 0;
-  color: $gray3;
-  @media (min-width: 50em) {
-    // font-size: 1em;
-  }
+	font-family: $sans;
+	font-size: .8em;
+	font-weight: 400;
+	margin: 5px 0;
+	color: $gray3;
+	@media (min-width: 50em) {
+		// font-size: 1em;
+	}
 }
 
 h4 {
-  font-family: $display;
-  font-weight: 700;
-  color: black;
-  margin-bottom: -5px;
+	font-family: $display;
+	font-weight: 700;
+	color: black;
+	margin-bottom: -5px;
 }
 
 h5 {
-  font-family: $sans;
-  font-size: 0.8em;
-  font-weight: 500;
-  color: $gray4;
-  margin: 10px 0 0;
+	font-family: $sans;
+	font-size: .8em;
+	font-weight: 500;
+	color: $gray4;
+	margin: 10px 0 0;
 }
 
 p {
-  color: $gray2;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.5;
+	color: $gray2;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.75;
 
-  &.light {
-    color: $gray4;
-  }
+	&.light {
+		color: $gray4;
+	}
 
-  &.bold {
-    font-weight: 700;
-  }
+	&.bold {
+		font-weight: 700;
+	}
 }
 
 footer a,
 p a {
-  color: $red;
-  -webkit-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
-  transition: all 0.2s ease;
-  text-decoration: none;
+	color: $red;
+	-webkit-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+	text-decoration: none;
 
-  &:hover {
-    color: $gray2;
-  }
+	&:hover {
+		color: $gray2;
+	}
 }
 
 .work a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
 }
 
 .conclusion p {
-  font-size: 0.75em;
-  color: $gray4;
+	font-size: .75em;
+	color: $gray4;
 }
