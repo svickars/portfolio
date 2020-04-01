@@ -73,7 +73,7 @@
             {{#each copy.newstuff}}
               <a href="{{{this.url}}}" target="blank">
                 <div class="project">
-                  <div class="image" style="background: url('assets/img/feature/{{{this.image}}}'); background-size: cover; background-position: 50% 50%;"></div>
+                  <div class="image" style="background: url('assets/img/feature/{{{this.image}}}'); background-size: cover; background-position: {{{this.pos}}};"></div>
                   <div class="info">
                     <h2 style="color: {{{this.colour}}}">{{{this.project}}}</h2>
                     <h3>{{{this.description}}}</h3>
@@ -99,7 +99,7 @@
         {{#each copy.oldstuff}}
           <a href="{{{this.url}}}" target="blank">
             <div class="project">
-              <div class="image" style="background: url('assets/img/feature/{{{this.image}}}'); background-size: cover; background-position: 50% 50%;"></div>
+              <div class="image" style="background: url('assets/img/feature/{{{this.image}}}'); background-size: cover; background-position: {{{this.pos}}};"></div>
               <div class="info">
                 <h2 style="color: {{{this.colour}}}">{{{this.project}}}</h2>
                 <h3>{{{this.description}}}</h3>
