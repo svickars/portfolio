@@ -1,45 +1,56 @@
-var gulp = require('gulp');
-var browserSync = require('browser-sync').create();
-var runSequence = require('run-sequence');
-var requireDir = require('require-dir');
-var del = require('del');
+const gulp = require("gulp"),
+  browserSync = require("browser-sync"),
+  runSequence = require("run-sequence"),
+  requireDir = require("require-dir"),
+  del = require("del");
 
-requireDir('./gulp-tasks');
+requireDir("./gulp-tasks");
 
-gulp.task('watch', ['browserSync', 'css:compile'], function() {
-	gulp.watch('src/css/**/*.scss', ['css:compile', browserSync.reload]);
-	gulp.watch('src/*.hbs', ['html:dev', browserSync.reload]);
-	gulp.watch('src/assets/copy/*.json', ['html:dev', browserSync.reload]);
-	// gulp.watch('src/*.html', [browserSync.reload]);
-	gulp.watch('src/js/**/*.js', ['bundle', browserSync.reload]);
-})
-
-gulp.task('browserSync', function() {
-	browserSync.init({
-		server: {
-			baseDir: 'src'
-		},
-		port: 4000,
-		notify: false,
-		ghostMode: false,
-		online: true,
-	})
-})
-
-gulp.task('clean:docs', function() {
-	return del.sync('docs');
+gulp.task("watch", ["browserSync"], () => {
+  gulp.watch("src/css/**/*.scss", ["bundle:css:dev"]);
+  gulp.watch("src/css/**/*.css", ["bundle:css:dev"]);
+  gulp.watch("src/html/**/*.hbs", ["html:dev"]);
+  gulp.watch("src/assets/copy/*.json", ["html:dev"]);
+  gulp.watch("src/js/**/*.js", ["bundle:js:dev"]);
 });
 
-gulp.task('build', function(callback) {
-	runSequence('clean:docs', 'html:dev',
-		['bundle', 'css:compile', 'css:purge', 'opt:images', 'assets:fonts', 'assets:styles', 'assets:scripts', 'assets:data', 'assets:cname', 'projects'],
-		callback
-	)
+gulp.task("browserSync", () => {
+  browserSync({
+    server: {
+      baseDir: "src",
+    },
+    port: 4000,
+    notify: true,
+    ghostMode: false,
+    online: true,
+  });
 });
 
-gulp.task('default', function(callback) {
-	runSequence(['html:dev', 'css:compile', 'browserSync', 'watch'],
-		callback
-	)
+gulp.task("clean:docs", () => {
+  return del.sync("dist/");
 });
-// 'google:fonts'
+
+gulp.task("dev", (callback) => {
+  runSequence(["html:dev", "bundle:css:dev", "bundle:js:dev"], callback);
+});
+
+gulp.task("build", (callback) => {
+  runSequence(
+    "clean:docs",
+    "html:build",
+    [
+      "bundle:js:build",
+      "bundle:css:build",
+      "assets:styles",
+      "assets:scripts",
+      "assets:data",
+      "assets:images",
+      "assets:auth",
+    ],
+    callback
+  );
+});
+
+gulp.task("default", (callback) => {
+  runSequence("dev", "watch", callback);
+});

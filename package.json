@@ -10,11 +10,15 @@
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.4.3",
+    "@babel/plugin-transform-runtime": "^7.10.1",
     "@babel/preset-env": "^7.4.3",
     "archieml": "^0.4.2",
     "babel-core": "^6.26.3",
     "babel-preset-env": "^1.7.0",
+    "babelify": "^10.0.0",
     "browser-sync": "^2.26.3",
+    "browserify": "^16.5.1",
+    "d3": "^5.16.0",
     "d3-dsv": "^1.1.1",
     "del": "^2.2.2",
     "fs": "0.0.1-security",
@@ -39,7 +43,9 @@
     "node-gyp": "^3.8.0",
     "request": "^2.88.0",
     "require-dir": "^1.2.0",
-    "run-sequence": "^2.2.1"
+    "run-sequence": "^2.2.1",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-source-stream": "^2.0.0"
   },
   "dependencies": {
     "gulp-cssnano": "^2.1.3"

@@ -1,21 +1,31 @@
-@import '_variables';
-
-*,
-*::after,
-*::before {
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-}
+@import "_helpers";
+@import "_variables";
 
 html {
-  font-size: 62.5%;
   height: 100%;
 }
 
 body {
-  font-size: 1.6rem;
-  font-family: $sans;
-  color: $gray1;
-  min-height: 100%;
+  margin: 0;
+  background-color: $white;
+  height: 100%;
+  color: $black;
+  font-family: $content;
+  font-size: 16px;
+  overflow-x: hidden;
+}
+
+.df {
+  button,
+  input,
+  select,
+  textarea {
+    &:focus {
+      outline: none;
+    }
+  }
+}
+
+* {
+  box-sizing: border-box;
 }

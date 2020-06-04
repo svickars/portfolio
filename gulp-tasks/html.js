@@ -1,41 +1,43 @@
-var gulp = require('gulp');
-var browserSync = require('browser-sync').create();
-var rename = require('gulp-rename');
-var hb = require('gulp-hb');
+const gulp = require("gulp"),
+  browserSync = require("browser-sync"),
+  rename = require("gulp-rename"),
+  hb = require("gulp-hb");
 
-var htmlSrc = 'src/*.hbs';
+const htmlSrc = "src/html/index.hbs";
 
-gulp.task('html:dev', () => {
-  var hbStream = hb()
-    .data('src/assets/copy/**/*.{js,json}');
-
-  return (
-    gulp
-    .src(htmlSrc)
-    .pipe(hbStream)
-    .pipe(
-      rename(path => {
-        path.extname = '.html';
-      })
-    )
-    .pipe(gulp.dest('src'))
-    .pipe(browserSync.reload({
-      stream: true
-    }))
-  );
-});
-
-gulp.task('html:build', () => {
-  var hbStream = hb()
-    .data('src/assets/copy/**/*.{js,json}');
+gulp.task("html:dev", () => {
+  let hbStream = hb()
+    .partials("src/html/blocks/**/*.hbs")
+    .data("src/assets/copy/**/*.{js,json}");
 
   return gulp
     .src(htmlSrc)
     .pipe(hbStream)
     .pipe(
-      rename(path => {
-        path.extname = '.html';
+      rename((path) => {
+        path.extname = ".html";
       })
     )
-    .pipe(gulp.dest('docs'));
+    .pipe(gulp.dest("src"))
+    .pipe(
+      browserSync.reload({
+        stream: true,
+      })
+    );
+});
+
+gulp.task("html:build", () => {
+  let hbStream = hb()
+    .partials("src/html/blocks/**/*.hbs")
+    .data("src/assets/copy/**/*.{js,json}");
+
+  return gulp
+    .src(htmlSrc)
+    .pipe(hbStream)
+    .pipe(
+      rename((path) => {
+        path.extname = ".html";
+      })
+    )
+    .pipe(gulp.dest("dist/"));
 });

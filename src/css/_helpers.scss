@@ -1,0 +1,71 @@
+// BREAKPOINTS
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: #{map-get($breakpoints, $breakpoint)}) {
+      @content;
+    }
+  } @else {
+    @warn 'Unfortunately, no value could be retrieved from `#{$breakpoint}`. ' + 'Please make sure it is defined in `$breakpoints` map.';
+  }
+}
+
+// MARGINS
+$max: 160;
+$offset: 4;
+$unit: "px";
+
+@mixin mp-loop($class-name, $style-name) {
+  $i: 0;
+  @while $i <= $max {
+    #{$class-name + $i} {
+      #{$style-name}: #{$i + $unit} !important;
+    }
+    $i: $i + $offset;
+  }
+}
+
+@include mp-loop(".m-t-", "margin-top");
+@include mp-loop(".m-r-", "margin-right");
+@include mp-loop(".m-b-", "margin-bottom");
+@include mp-loop(".m-l-", "margin-left");
+@include mp-loop(".m-x-", "margin");
+
+@include mp-loop(".p-t-", "padding-top");
+@include mp-loop(".p-r-", "padding-right");
+@include mp-loop(".p-b-", "padding-bottom");
+@include mp-loop(".p-l-", "padding-left");
+@include mp-loop(".p-x-", "padding");
+
+// MAX-WIDTHS
+$max: 1280;
+$offset: 160;
+$unit: "px";
+
+@mixin width-loop($class-name, $style-name) {
+  $i: 320;
+  @while $i <= $max {
+    #{$class-name + $i} {
+      #{$style-name}: #{$i + $unit};
+    }
+    $i: $i + $offset;
+  }
+}
+
+@include width-loop(".mw-", "max-width");
+
+// MIN HEIGHTS
+$max: 1000;
+$offset: 50;
+$unit: px;
+
+@mixin height-loop($class-name, $style-name) {
+  $i: 50;
+  @while $i <= $max {
+    #{$class-name + $i} {
+      #{$style-name}: #{$i + $unit};
+    }
+    $i: $i + $offset;
+  }
+}
+
+@include height-loop(".mh-", "min-height");

@@ -1,81 +1,76 @@
-var gulp = require('gulp');
-var fs = require('fs');
-var request = require('request');
-var dsv = require('d3-dsv');
-var archieml = require('archieml');
-var runSequence = require('run-sequence');
+const gulp = require("gulp"),
+  fs = require("fs"),
+  request = require("request"),
+  dsv = require("d3-dsv"),
+  archieml = require("archieml");
+// runSequence = require('run-sequence');
 
-var configPath = `config.json`;
-var config = JSON.parse(fs.readFileSync(configPath, 'utf8'));
+const configPath = `config.json`,
+  config = JSON.parse(fs.readFileSync(configPath, "utf8"));
 
-var {
-  sheet
-} = config.google;
-var {
-  doc
-} = config.google;
+const { sheet } = config.google;
+const { doc } = config.google;
 
-gulp.task('google:sheet', cb => {
+gulp.task("google:sheet", (cb) => {
   let i = 0;
-  var next = () => {
-    var d = sheet[i]
-    if (d.id) requestSheet(d, () => {
-      i += 1
-      if (i < sheet.length) next();
-      else cb();
-    });
-  }
+  let next = () => {
+    let d = sheet[i];
+    if (d.id)
+      requestSheet(d, () => {
+        i += 1;
+        if (i < sheet.length) next();
+        else cb();
+      });
+  };
   next();
 });
 
-gulp.task('google:doc', cb => {
-  let i = 0;
-  var next = () => {
-    var d = doc[i]
-    if (d.id) requestDoc(d, () => {
-      i += 1
-      if (i < doc.length) next();
-      else cb();
-    });
+gulp.task("google:doc", (cb) => {
+  if (doc.length > 0) {
+    let i = 0;
+    let next = () => {
+      let d = doc[i];
+      if (d.id)
+        requestDoc(d, () => {
+          i += 1;
+          if (i < doc.length) next();
+          else cb();
+        });
+    };
+    next();
+  } else {
+    console.log("no copy doc");
   }
-  next();
 });
 
-// gulp.task('google:doc', function(callback) {
-//   runSequence('google:getdoc', 'html:dev',
-//     callback
-//   )
-// });
-
-var requestSheet = (opt, cb) => {
-  var base = 'https://docs.google.com/spreadsheets/u/1/d';
-  var url = `${base}/${opt.id}/export?format=csv&sheet=${opt.sheet}&gid=${opt.gid}`;
+const requestSheet = (opt, cb) => {
+  const url = `https://docs.google.com/spreadsheets/u/1/d/${opt.id}/export?format=csv&sheet=${opt.sheet}&gid=${opt.gid}`;
   request(url, (error, response, body) => {
-    var data = dsv.csvParse(body);
-    var file = `${opt.filepath}`
+    let data = dsv.csvParse(body);
+    let file = `${opt.filepath}`;
     if (opt.format === "json") {
-      var str = JSON.stringify(data);
-      fs.writeFile(file, str, err => {
+      let str = JSON.stringify(data);
+      fs.writeFile(file, str, (err) => {
         if (err) console.log(err);
-        cb()
+        cb();
       });
     } else {
-      fs.writeFile(file, body, err => {
+      fs.writeFile(file, body, (err) => {
         if (err) console.log(err);
-        cb()
+        cb();
       });
     }
   });
 };
 
-var requestDoc = (opt, cb) => {
-  var url = `https://docs.google.com/document/d/${opt.id}/export?format=txt`;
+const requestDoc = (opt, cb) => {
+  const url = `https://docs.google.com/document/d/${opt.id}/export?format=txt`;
   request(url, (error, response, body) => {
-    var parsed = archieml.load(body);
-    var str = JSON.stringify(parsed);
-    var basePath = process.cwd();
-    var file = `${basePath}/${opt.filepath || 'template-data/doc.json'}`;
-    fs.writeFile(file, str, err => {
+    let parsed = archieml.load(body);
+    let str = JSON.stringify(parsed);
+    let basePath = process.cwd();
+    let file = `${basePath}/${opt.filepath || "template-data/doc.json"}`;
+    fs.writeFile(file, str, (err) => {
       if (err) console.error(err);
       cb();
     });

@@ -1,0 +1,185 @@
+@import "_helpers";
+@import "_variables";
+
+// TEMPLATE STUFF
+.sam {
+}
+
+.sam-flex {
+  display: flex;
+
+  &--column {
+    flex-direction: column;
+  }
+
+  &--row {
+    flex-direction: row;
+  }
+
+  &__wrap {
+    flex-wrap: wrap;
+  }
+
+  &__align {
+    &--center {
+      align-items: center;
+    }
+
+    &--start {
+      align-items: flex-start;
+    }
+
+    &--end {
+      align-items: flex-end;
+    }
+  }
+
+  &__justify {
+    &--center {
+      justify-content: center;
+    }
+
+    &--start {
+      justify-content: flex-start;
+    }
+
+    &--space-between {
+      justify-content: space-between;
+    }
+  }
+
+  &__item {
+    &--grow {
+      &--1 {
+        flex-grow: 1;
+      }
+
+      &--2 {
+        flex-grow: 2;
+      }
+    }
+  }
+
+  .container-half {
+    width: 100%;
+    @include respond-to($mobile) {
+      width: calc((100% - 32px) / 2);
+    }
+  }
+}
+
+.h-full-viewport {
+  min-height: 100vh;
+}
+
+.h-full {
+  min-height: 100%;
+}
+
+.h-auto {
+  height: auto;
+}
+
+.w-full-viewport {
+  width: 100vw;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.bg-white {
+  background-color: $white;
+}
+
+.bg-black {
+  background-color: $black;
+}
+
+.bg-dark {
+  background-color: $asphalt;
+}
+
+.white {
+  color: $white;
+}
+
+.black {
+  color: $black;
+}
+
+.asphalt {
+  color: $asphalt;
+}
+
+.dust {
+  color: $dust;
+}
+
+.frost {
+  color: $frost;
+}
+
+.red {
+  color: $red;
+}
+
+.align {
+  &--left {
+    text-align: left;
+  }
+
+  &--center {
+    text-align: center;
+  }
+
+  &--right {
+    text-align: right;
+  }
+}
+
+.border {
+  &--top {
+    border-top: $border-active;
+  }
+
+  &--right {
+    border-right: $border-active;
+  }
+
+  &--bottom {
+    border-bottom: $border-active;
+  }
+
+  &--left {
+    border-left: $border-active;
+  }
+
+  &__frost {
+    border-color: $frost;
+  }
+}
+
+.click {
+  display: none;
+
+  @include respond-to($mobile) {
+    display: inline-block;
+
+    &.sam-flex {
+      display: flex;
+    }
+  }
+}
+
+.tap {
+  display: inline-block;
+
+  &.sam-flex {
+    display: flex;
+  }
+
+  @include respond-to($mobile) {
+    display: none;
+  }
+}

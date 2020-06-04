@@ -1,11 +1,48 @@
-$gray1: #191919;
-$gray2: #333;
-$gray3: #666;
-$gray4: #b5b5b5;
-$gray5: #f9f9fa;
-$gray6: #f2f2f2;
-$red: #E00000;
-$display: 'Inter', 'Helvetica Neue', serif;
-$serif: 'Cormorant Garamond', Georgia, serif;
-$sans: 'Inter', 'Helvetica Neue', serif;
-$mono: 'Roboto Mono', monospace;
+// BREAKPOINTS
+$breakpoints: (
+  bp2: 320px,
+  bp3: 480px,
+  bp4: 640px,
+  bp5: 800px,
+  bp6: 960px,
+  bp7: 1120px,
+  bp8: 1280px,
+);
+
+$mobile: bp4;
+$tablet: bp6;
+
+// FONTS
+$content: "Inter", "Helvetica Neue", Helvetica, sans-serif;
+
+// BASE COLOURS
+$black: #242428;
+$asphalt: #494950;
+$dust: #cfcfce;
+$frost: #dedede;
+$snow: #fafafa;
+$white: #fff;
+
+// SAM COLOURS
+$red: #e00000;
+
+// BORDERS
+$border-inactive: 1px solid $dust;
+$border-active: 1px solid $asphalt;
+
+@font-face {
+  font-family: "FontAwesome";
+  font-weight: normal;
+  font-style: normal;
+  src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?v=4.3.0");
+  src: url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.eot?#iefix&v=4.3.0")
+      format("embedded-opentype"),
+    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff2?v=4.3.0")
+      format("woff2"),
+    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.woff?v=4.3.0")
+      format("woff"),
+    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.ttf?v=4.3.0")
+      format("truetype"),
+    url("https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/fonts/fontawesome-webfont.svg?v=4.3.0#fontawesomeregular")
+      format("svg");
+}
