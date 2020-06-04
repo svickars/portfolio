@@ -41,6 +41,18 @@
         content: "0" counter(thiscounter);
       }
 
+      .project-meta {
+        transition: opacity 500ms;
+      }
+
+      &.expanded {
+        border-bottom: none;
+
+        .project-meta {
+          opacity: 0;
+        }
+      }
+
       h2 {
         transition: all 250ms;
         cursor: pointer;
@@ -94,6 +106,19 @@
       width: calc((100% - 32px) * (1 / 3));
     }
 
+    .details-inner {
+      border-top: $border-inactive;
+      padding-top: 8px;
+      width: 100%;
+
+      @include respond-to($tablet) {
+        border-top: none;
+        border-left: $border-inactive;
+        padding-top: 0;
+        padding-left: 16px;
+      }
+    }
+
     a {
       text-decoration: none !important;
       color: inherit;
@@ -107,6 +132,44 @@
     .link {
       &:hover {
         transform: translate(2px, 0);
+      }
+    }
+  }
+
+  .third {
+    width: 100%;
+    overflow-x: hidden;
+
+    @include respond-to($tablet) {
+      width: calc((100% - 32px) / 3);
+    }
+  }
+
+  .half {
+    width: 100%;
+    overflow-x: hidden;
+
+    @include respond-to($tablet) {
+      width: calc((100% - 16px) / 2);
+    }
+  }
+
+  .full {
+    width: 100%;
+    overflow-x: hidden;
+  }
+
+  .split-inner {
+    border-top: $border-inactive;
+    padding-top: 8px;
+    width: 100%;
+
+    @include respond-to($tablet) {
+      &:not(first-child) {
+        border-top: none;
+        border-left: $border-inactive;
+        padding-top: 0;
+        padding-left: 16px;
       }
     }
   }
