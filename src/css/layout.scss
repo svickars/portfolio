@@ -15,6 +15,7 @@
 
   ol {
     list-style: none;
+    // list-style-position: inside;
     counter-reset: thiscounter;
     margin-block-start: 0;
     margin-block-end: 0;
@@ -25,24 +26,31 @@
     li {
       position: relative;
       transition: all 500ms;
-      border-bottom: $border-inactive;
+      // border-bottom: $border-inactive;
       counter-increment: thiscounter;
 
       &::before {
         @extend h2;
 
-        display: none;
+        display: block;
         position: absolute;
-        top: 0;
+        top: 20px;
         left: -8px;
         transform: translate(-100%, 0);
         color: $frost;
-        font-weight: 300;
-        content: "0" counter(thiscounter);
+        font-family: $content;
+        font-size: 12px;
+        font-weight: 700;
+        content: counter(thiscounter) ".";
+      }
+
+      &.is-bg {
+        opacity: 0.25;
       }
 
       .project-meta {
         transition: opacity 500ms;
+        cursor: pointer;
       }
 
       &.expanded {
@@ -60,6 +68,54 @@
         &:hover {
           color: $black;
         }
+      }
+    }
+  }
+
+  .project-title {
+    &-left {
+      position: relative;
+
+      h2 {
+        &.is-bg {
+          opacity: 0.25;
+        }
+      }
+    }
+  }
+
+  .pass-container {
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    pointer-events: none;
+
+    &.is-visible {
+      opacity: 1;
+      pointer-events: all;
+    }
+
+    input {
+      @extend h2;
+
+      display: flex;
+      align-items: center;
+      border: none;
+      background-color: #242428;
+      padding: 0 8px;
+      width: 300px;
+      height: 29px;
+      color: #fff !important;
+      font-family: monospace;
+      font-size: 18px;
+
+      &:focus {
+        outline: none;
+      }
+
+      &::placeholder {
+        color: #000;
+        font-family: $content;
       }
     }
   }
@@ -136,40 +192,135 @@
     }
   }
 
-  .third {
+  .split {
     width: 100%;
     overflow-x: hidden;
 
-    @include respond-to($tablet) {
-      width: calc((100% - 32px) / 3);
+    &.third {
+      @include respond-to($tablet) {
+        width: calc((100% - 32px) / 3);
+      }
     }
-  }
 
-  .half {
-    width: 100%;
-    overflow-x: hidden;
-
-    @include respond-to($tablet) {
-      width: calc((100% - 16px) / 2);
+    &.two-thirds {
+      @include respond-to($tablet) {
+        width: calc((100% - 32px) * (2 / 3));
+      }
     }
-  }
 
-  .full {
-    width: 100%;
-    overflow-x: hidden;
-  }
+    &.half {
+      @include respond-to($tablet) {
+        width: calc((100% - 16px) / 2);
+      }
+    }
 
-  .split-inner {
-    border-top: $border-inactive;
-    padding-top: 8px;
-    width: 100%;
+    &.full {
+      .split-inner {
+        border-top: $border-inactive;
+        border-left: none;
+        padding-top: 8px;
+        padding-left: 0;
 
-    @include respond-to($tablet) {
-      &:not(first-child) {
+        @include respond-to($tablet) {
+          border-top: $border-inactive;
+          padding-top: 8px !important;
+          padding-left: 0 !important;
+        }
+      }
+    }
+
+    &:first-child {
+      .split-inner {
+        border-left: none;
+        padding-left: 0;
+      }
+    }
+
+    &-inner {
+      border-top: $border-inactive;
+      padding-top: 8px;
+      width: 100%;
+      height: 100%;
+
+      @include respond-to($tablet) {
         border-top: none;
         border-left: $border-inactive;
         padding-top: 0;
         padding-left: 16px;
+      }
+
+      .image {
+        background-position: 50% 50%;
+        background-size: cover;
+        width: 100%;
+        height: 100%;
+        // height: 150px;
+
+        &.h {
+          &-100 {
+            min-height: 100px;
+          }
+
+          &-200 {
+            min-height: 200px;
+          }
+
+          &-500 {
+            min-height: 500px;
+          }
+        }
+      }
+
+      p {
+        color: $asphalt;
+        font-size: 12px;
+        margin-block-start: 0;
+        margin-block-end: 0;
+
+        @include respond-to($tablet) {
+          font-size: 14px;
+        }
+      }
+
+      a {
+        text-decoration: none !important;
+        color: inherit;
+      }
+
+      .entry {
+        transition: all 250ms;
+        color: $dust;
+      }
+
+      .link {
+        &:hover {
+          transform: translate(2px, 0);
+        }
+      }
+    }
+  }
+
+  .case-study {
+    .split-inner {
+      border: none !important;
+    }
+
+    p {
+      margin-top: 16px;
+      color: $asphalt;
+      font-size: 12px;
+
+      @include respond-to($tablet) {
+        font-size: 14px;
+      }
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      a {
+        // color: $dust !important;
+        text-decoration: underline !important;
       }
     }
   }

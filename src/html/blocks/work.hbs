@@ -5,16 +5,27 @@
     </h3>
     <ol>
       {{#each copy.work}}
-        <li class="sam-flex sam-flex--column m-b-16 p-t-16 p-b-16 project">
-          <div class="sam-flex sam-flex__wrap sam-flex__align--center sam-flex__justify--space-between project-title">
-            <h2 class="p-b-16" style="color: {{colour}}">
-              {{{project}}}
-            </h2>
-            <div class="sam-flex p-b-16 sam-flex__align--center project-meta">
+        <li class="m-b-12 p-t-12 p-b-12 project" id="{{id}}-container">
+					{{#if censored}}
+						<div class="sam-flex sam-flex__wrap sam-flex__align--center sam-flex__justify--space-between censored-project" data-id="{{id}}">
+					{{else}}
+          	<div class="sam-flex sam-flex__wrap sam-flex__align--center sam-flex__justify--space-between project-title">
+					{{/if}}
+						<div class="project-title-left">
+            	<h2 class="p-b-12" style="color: {{colour}}">
+              	{{{project}}}
+            	</h2>
+							{{#if censored}}
+								<div class="pass-container">
+									<input type="text" id="{{id}}" placeholder="Secret Password?"/>
+								</div>
+							{{/if}}
+						</div>
+            <div class="sam-flex p-b-12 sam-flex__align--center project-meta">
               {{#if tags}}
                 {{#each tags}}
                   <h6 class="m-r-4 frost">
-                    {{text}}
+                    {{{text}}}
                   </h6>
                 {{/each}}
               {{/if}}
@@ -51,7 +62,7 @@
                         </div>
                       {{/if}}
                       {{#if tags}}
-                        <div class="m-b-12">
+                        <div class="m-b-12 tags">
                           {{#each tags}}
                             <div class="sam-flex sam-flex__align--center entry m-b-4">
                               {{#if icon}}
@@ -78,9 +89,11 @@
                             <div class="sam-flex sam-flex__align--center entry m-b-4">
                               <h6>
                                 {{{name}}}
-                                <span class="frost">
-                                  ({{{role}}})
-                                </span>
+																{{#if role}}
+																	<span class="frost">
+																		({{{role}}})
+																	</span>
+																{{/if}}
                               </h6>
                             </div>
                           {{/each}}
@@ -103,38 +116,141 @@
                           {{/each}}
                         </div>
                       {{/if}}
-                      {{#if link}}
-                        <div class="sam-flex sam-flex__align--center entry link">
-                          <a class="m-r-4" href="{{link}}" title="See Project">
-                            <h6 class="all-caps">
-                              {{{link-title}}}
-                            </h6>
-                          </a>
-                          <i class="fal fa-long-arrow-right"></i>
-                        </div>
+                      {{#if links}}
+												<div class="m-b-12 links">
+													{{#each links}}
+		                        <div class="sam-flex sam-flex__align--center entry link">
+		                          <a class="m-r-4" href="{{link}}" title="See Project">
+		                            <h6 class="all-caps">
+		                              {{{link-title}}}
+		                            </h6>
+		                          </a>
+		                          <i class="fal fa-long-arrow-right"></i>
+		                        </div>
+													{{/each}}
+												</div>
                       {{/if}}
                     </div>
                   </div>
                 </div>
               {{else}}
-                <div class="sam-flex sam-flex__wrap">
-                  <div class="half m-b-16 p-t-8 p-b-8">
+                <div class="sam-flex sam-flex__wrap sam-flex__justify--space-between">
+                  <div class="split half m-b-16 p-t-8 p-b-8">
+										<div class="split-inner">
+                    	<div class="image" style="background-image: url(/assets/img/cover/{{image}})"></div>
+										</div>
+                  </div>
+                  <div class="split half m-b-16 p-t-8 p-b-8">
                     <div class="split-inner">
-                      Hello
+											{{#each description}}
+	                      <p>
+	                        {{{value}}}
+	                      </p>
+	                    {{/each}}
                     </div>
                   </div>
-                  <div class="half m-b-16 p-t-8 p-b-8">
+                  <div class="split full p-t-8 p-b-8">
                     <div class="split-inner">
-                      Hello
-                    </div>
-                  </div>
-                  <div class="full p-t-8 p-b-8">
-                    <div class="split-inner">
-                      Hello
+                      <div class="sam-flex sam-flex__wrap sam-flex__align--start sam-flex__justify--space-between">
+												{{#if date}}
+	                        <div class="sam-flex sam-flex__align--center entry m-r-12">
+	                          <h6>
+	                            {{{date}}}
+	                          </h6>
+	                        </div>
+	                      {{/if}}
+	                      {{#if tags}}
+	                        <div class="m-r-12 tags">
+	                          {{#each tags}}
+	                            <div class="sam-flex sam-flex__align--center entry m-b-4">
+	                              {{#if icon}}
+	                                <i class="{{icon}} fa-xs m-r-8"></i>
+	                              {{/if}}
+	                              <h6>
+	                                {{{text}}}
+	                              </h6>
+	                            </div>
+	                          {{/each}}
+	                        </div>
+	                      {{/if}}
+	                      {{#if role}}
+	                        <div class="sam-flex sam-flex__align--center entry m-r-12">
+	                          <i class="fal fa-megaphone m-r-8 fa-xs"></i>
+	                          <h6>
+	                            {{{role}}}
+	                          </h6>
+	                        </div>
+	                      {{/if}}
+	                      {{#if partners}}
+	                        <div class="m-r-12">
+	                          {{#each partners}}
+	                            <div class="sam-flex sam-flex__align--center entry m-b-4">
+	                              <h6>
+	                                {{{name}}}
+																	{{#if role}}
+		                                <span class="frost">
+		                                  ({{{role}}})
+		                                </span>
+																	{{/if}}
+	                              </h6>
+	                            </div>
+	                          {{/each}}
+	                        </div>
+	                      {{/if}}
+	                      {{#if awards}}
+	                        <div class="m-r-12">
+	                          {{#each awards}}
+	                            <div class="sam-flex sam-flex__align--center entry m-b-4">
+	                              <i class="fal fa-star fa-xs m-r-8" style="color: {{colour}}"></i>
+	                              <div class="sam-flex sam-flex--column">
+	                                <h6>
+	                                  {{{text}}}
+	                                </h6>
+	                                <h6 class="frost">
+	                                  {{{follow-up}}}
+	                                </h6>
+	                              </div>
+	                            </div>
+	                          {{/each}}
+	                        </div>
+	                      {{/if}}
+												{{#if links}}
+													<div class="sam-flex sam-flex--column links">
+														{{#each links}}
+			                        <div class="sam-flex sam-flex__align--center entry link">
+			                          <a class="m-r-4" href="{{link}}" title="See Project">
+			                            <h6 class="all-caps">
+			                              {{{link-title}}}
+			                            </h6>
+			                          </a>
+			                          <i class="fal fa-long-arrow-right m-r-4"></i>
+			                        </div>
+														{{/each}}
+													</div>
+	                      {{/if}}
+											</div>
                     </div>
                   </div>
                 </div>
               {{/if}}
+							{{#if case-study}}
+								<div class="sam-flex sam-flex__wrap sam-flex__justify--space-between case-study border--top border__frost p-t-32">
+									{{#each case-study}}
+										<div class="split {{size}} m-b-16 p-t-8 p-b-8">
+											<div class="split-inner">
+												{{#if image}}
+	                    		<div class="image h-{{image-size}}" style="background-image: url(/assets/img/{{image}})"></div>
+												{{/if}}
+												{{#if text}}
+													{{#each text}}
+														<p>{{{value}}}</p>
+													{{/each}}
+												{{/if}}
+											</div>
+	                  </div>
+									{{/each}}
+								</div>
+							{{/if}}
             </div>
           </div>
         </li>
