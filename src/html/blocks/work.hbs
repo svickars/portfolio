@@ -1,8 +1,8 @@
 <section class="p-r-32 p-l-32 p-b-160">
-  <div class="prose mw-800 m-t-96">
-    <h3 class="dust m-b-32">
-      Selected Work
-    </h3>
+  <div class="prose mw-800 m-t-48">
+    <!-- <h3 class="dust m-b-32"> -->
+      <!-- Selected Work -->
+    <!-- </h3> -->
     <ol>
       {{#each copy.work}}
         <li class="m-b-12 p-t-12 p-b-12 project" id="{{id}}-container">
@@ -40,7 +40,7 @@
             <div class="inner">
               {{#if cover}}
                 <div class="cover p-t-16">
-                  <a href="{{link}}" title="{{link-title}}">
+                  <a href="{{links.[0].link}}" title="{{links.[0].link-title}}">
                     <img src="/assets/img/cover/{{cover}}" alt="alt" />
                   </a>
                 </div>
@@ -137,7 +137,9 @@
                 <div class="sam-flex sam-flex__wrap sam-flex__justify--space-between">
                   <div class="split half m-b-16 p-t-8 p-b-8">
 										<div class="split-inner">
-                    	<div class="image" style="background-image: url(/assets/img/cover/{{image}})"></div>
+											<a href="{{links.[0].link}}" title="{{links.[0].link-title}}">
+                    		<div class="image" style="background-image: url(/assets/img/cover/{{image}})"></div>
+											</a>
 										</div>
                   </div>
                   <div class="split half m-b-16 p-t-8 p-b-8">

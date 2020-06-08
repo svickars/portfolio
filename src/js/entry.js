@@ -1,4 +1,5 @@
 import * as d3 from "d3";
+import $ from "jquery";
 
 let previousWidth = 0,
   copy,
@@ -33,6 +34,8 @@ function init() {
     if (d3.selectAll(".expanded").node() == null) {
       d3.selectAll(".project").classed("is-bg", false);
     }
+
+    if (newHeight > 0) scroll(d3.select(this.parentNode).attr("id"));
   });
 
   d3.selectAll(".project .censored-project").on("click", function () {
@@ -94,6 +97,8 @@ function init() {
           d3.selectAll(".project").classed("is-bg", function () {
             return !d3.select(this).classed("expanded");
           });
+
+          if (newHeight > 0) scroll(id);
 
           loadNewContent(id);
         }
@@ -203,4 +208,17 @@ function removeContent(id) {
   }
 
   censored();
+}
+
+function scroll(id) {
+  const target = $(`#${id}`);
+  if (target.length) {
+    const scrollTo = target.offset().top;
+    $("body, html").animate(
+      {
+        scrollTop: `${scrollTo - 32}px`,
+      },
+      800
+    );
+  }
 }

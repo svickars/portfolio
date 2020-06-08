@@ -78,7 +78,7 @@
 
       h2 {
         &.is-bg {
-          opacity: 0.25;
+          opacity: 0;
         }
       }
     }
@@ -93,6 +93,10 @@
     &.is-visible {
       opacity: 1;
       pointer-events: all;
+
+      input {
+        width: 300px;
+      }
     }
 
     input {
@@ -103,7 +107,7 @@
       border: none;
       background-color: #242428;
       padding: 0 8px;
-      width: 300px;
+      width: 0;
       height: 29px;
       color: #fff !important;
       font-family: monospace;
