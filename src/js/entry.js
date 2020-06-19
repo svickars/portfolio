@@ -8,6 +8,7 @@ let previousWidth = 0,
 init();
 
 function init() {
+  goToContent();
   loadCopy();
   censored();
 
@@ -35,7 +36,10 @@ function init() {
       d3.selectAll(".project").classed("is-bg", false);
     }
 
-    if (newHeight > 0) scroll(d3.select(this.parentNode).attr("id"));
+    if (newHeight > 0) {
+      scroll(d3.select(this.parentNode).attr("id"));
+      replaceUrl(d3.select(this.parentNode).attr("id"));
+    }
   });
 
   d3.selectAll(".project .censored-project").on("click", function () {
@@ -156,7 +160,7 @@ function random(min, max) {
 
 function loadNewContent(id) {
   const thisCopy = copy.work.find((d) => d.id == id),
-    container = d3.select(`#${id}-container`);
+    container = d3.select(`#${id}`);
 
   container.select("h2").html(thisCopy.project0);
 
@@ -194,7 +198,7 @@ function loadNewContent(id) {
 
 function removeContent(id) {
   const thisCopy = copy.work.find((d) => d.id == id),
-    container = d3.select(`#${id}-container`);
+    container = d3.select(`#${id}`);
 
   container.select("h2").html(thisCopy.project);
 
@@ -221,4 +225,36 @@ function scroll(id) {
       800
     );
   }
+}
+
+function goToContent() {
+  const url = window.location.href;
+
+  if (url.includes("#")) {
+    const id = url.substring(url.lastIndexOf("#") + 1);
+    scroll(id);
+
+    const newHeight =
+      d3.select(`#${id}`).select(".inner-wrapper").select(".inner").node()
+        .offsetHeight + 37;
+
+    d3.select(`#${id}`)
+      .classed("expanded", true)
+      .select(".inner-wrapper")
+      .style("height", `${newHeight}px`);
+
+    d3.selectAll(".project").classed("is-bg", function () {
+      return !d3.select(this).classed("expanded");
+    });
+  }
+}
+
+function replaceUrl(id) {
+  const url = window.location.href,
+    old = url.split("#")[1];
+
+  // window.location = newUrl;
+  window.history.pushState({ foo: old }, "", `#${id}`);
+
+  console.log(old, id);
 }

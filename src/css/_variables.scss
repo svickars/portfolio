@@ -14,7 +14,7 @@ $tablet: bp6;
 
 // FONTS
 $content: "Inter", "Helvetica Neue", Helvetica, sans-serif;
-$ol: "Merriweather", serif;
+$mono: "Overpass Mono", monospace;
 
 // BASE COLOURS
 $black: #242428;
@@ -30,6 +30,25 @@ $red: #e00000;
 // BORDERS
 $border-inactive: 1px solid $dust;
 $border-active: 1px solid $asphalt;
+
+//GRADIENTS
+$bar-white: linear-gradient(to bottom, $white 5%, transparent 5%);
+$bar-light: linear-gradient(to bottom, $dust 5%, transparent 5%);
+$bar-dark: linear-gradient(to bottom, $asphalt 5%, transparent 5%);
+$bar-black: linear-gradient(to bottom, $black 5%, transparent 5%);
+$buttons-colour: radial-gradient(
+    circle at 12px 12px,
+    #fd635d 4px,
+    transparent 5px
+  ),
+  radial-gradient(circle at 26px 12px, #feac40 4px, transparent 5px),
+  radial-gradient(circle at 40px 12px, #30c947 4px, transparent 5px);
+$buttons-bw: radial-gradient(circle at 12px 12px, $black 4px, transparent 5px),
+  radial-gradient(circle at 26px 12px, $asphalt 4px, transparent 5px),
+  radial-gradient(circle at 40px 12px, $asphalt 4px, transparent 5px);
+$buttons-wb: radial-gradient(circle at 12px 12px, $white 4px, transparent 5px),
+  radial-gradient(circle at 26px 12px, $dust 4px, transparent 5px),
+  radial-gradient(circle at 40px 12px, $dust 4px, transparent 5px);
 
 @font-face {
   font-family: "FontAwesome";

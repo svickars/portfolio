@@ -1,0 +1,188 @@
+# Portfolio 2020
+
+ORIGINALS / CLIENT / ILLUSTRATION / OTHER
+1. X The No Doubter Report (June 2020)
+2. ~~Healthcare Spending in North Carolina~~ (June 2020)
+3. ~~Viacom Upfronts~~ (June 2020)
+4. ~~HCCI HMI Summary Report~~ (June 2020)
+5. ~~HCCI’s Health Marketplace Index~~ (June 2020)
+6. ~~BMW x AI Takerates Dashboard~~ (May 2020)
+7. Yelp Economic Average (April 2020)
+8. X Coronavirus by County (March 2020)
+9. X Yelp’s Coronavirus Impact Report (March 2020)
+10. ~~Why We Run~~ (January 2020)
+11. Block by Block (January 2020)
+12. Yelp 15 (September 2019)
+13. The NBA’s Best Drafting Teams (June 2019)
+14. America’s Favourite Summer Drinks (June 2019)
+15. The Irregular Outfields of Baseball (April 2019)
+16. Who is the Biggest Pop Star? (February 2019)
+17. Globalography (November 2018)
+18. The Winningest Cities in North America (November 2018)
+19. Parental Leave in North America (March 2018)
+20. Visualizing Canada’s Indian Residential Schools (2017)
+21. /#Trumped (2017)
+22. The World of James Bond (2017)
+23. The Biggest Rivalries in Sports (2017)
+24. Comparing Greats (2016)
+25. The One with the Couch (2016)
+26. Roma XXXVI (2014)
+27. A Chair for Dr. Seuss (2013)
+
+---
+
+## The No-Doubter Report
+- October 2019, updated June 2020
+- Original / The DataFace
+- Design + Development + Data + Copywriting
+- w/ Michael Hester (Data)
+- #0c2340
+- #the-no-doubter-report
+- [Check it out](http://thedataface.com/2019/09/sports/no-doubter-report)
+
+![Cover](./assets/img/cover/nodoubt.gif)
+
+###### Description
+Pro ballparks come in all shapes and sizes, sometimes due to the shape of the city block on which they were built, sometimes based on a team’s strengths (or weaknesses), and sometimes just to [add character](https://www.npr.org/templates/story/story.php?storyId=4675798). Because their shapes differ, a home run hit in one park might not be a home run in another.
+
+That’s what inspired the [No-Doubter Report](http://thedataface.com/2019/09/sports/no-doubter-report). In this project, I look at every home run hit this season to determine which can be called No-Doubters (hit hard enough, long enough, and high enough to leave any major league ballpark).
+
+###### Case Study
+![FULL](./assets/img/no-doubt/leaderboard.png)
+![HALF](./assets/img/no-doubt/hits.png)
+![HALF](./assets/img/no-doubt/all.png)
+
+[FULL]
+With Michael Hester’s help, we used Statcast data courtesy of MLB’s [Baseball Savant](https://baseballsavant.mlb.com/) to get the trajectory of every home run hit in 2019, a season that was defined by them. We combine that with outfield measurements and fence heights for every park to calculate if each HR was a no doubter or not.
+
+We took it one step further for this year’s delayed Opening Day and rebuilt this as a tool that updates every evening with that day’s home runs.
+
+Check out the project to see a quick leaderboard, a tracker for every home run hit this year (or last), and a sortable list of every player in the big leagues.
+
+---
+
+## Yelp Economic Average
+
+---
+
+## Coronavirus by County
+- March 2020
+- Original / The DataFace
+- Design + Development + Copywriting
+- w/ Michael Hester + Jack Beckwith
+- #f2994a
+- #coronavirus-by-county
+- [See project](http://thedataface.com/2020/03/public-health/coronavirus-by-county)
+
+![Cover](./assets/img/cover/county-coronavirus.gif)
+
+###### Description
+Millions of people have been diagnosed in the U.S. since the first case of COVID-19 was reported in Washington state on January 20. As the virus has spread across America, the resounding theme in the fight against it has been the need to flatten the curve. We created this tool to help readers track how coronavirus is impacting their community and answer the question, “what does the curve look like where I am?”
+
+###### Case Study
+![THIRD](./assets/img/coronavirus-county/nyc-new-cases.png)
+![THIRD](./assets/img/coronavirus-county/nyc-cum-cases.png)
+![THIRD](./assets/img/coronavirus-county/nyc-new-deaths.png)
+
+[FULL]
+We used publicly available county-level data from the New York Times to build this tracker, which updates daily. You can view daily new cases/deaths or cumulative case/deaths and search for your county.
+
+![TWO-THIRDS](./assets/img/coronavirus-county/nyc-nearby.png)
+
+[THIRD]
+You can view other counties in your selected state, comparing numbers there to the selected county above.
+
+---
+
+## Yelp’s Coronavirus Impact Report
+- March 2020
+- Yelp / The DataFace
+- Design + Development
+- w/ Michael Hester (Lead) + Jack Beckwith (Direction)
+- #F13D40
+- #yelps-coronavirus-impact-report
+- [Read the report](https://www.yelpeconomicaverage.com/yelp-coronavirus-economic-impact-report.html)
+
+![Image](./assets/img/cover/yelp-coronavirus.png)
+
+###### Description
+Coronavirus is quickly reshaping every corner of the U.S. local economy — and Yelp data is reflecting the upheaval in real time.
+
+We worked with Yelp’s PR and Data Science teams to create this twice-weekly updating report on the impact of coronavirus on local economies in the United States.
+
+---
+
+## The Irregular Outfields of Baseball
+- April 2019
+- Original / The DataFace
+- Design + Development + Data + Copywriting + Illustration
+- Information is Beautiful Awards / Bronze, 2019
+- #53786c
+- #the-irregular-outfields-of-baseball
+- [Read the essay](http://thedataface.com/2019/04/sports/baseballs-irregular-outfields)
+
+![Cover](./assets/img/cover/irregular_outfields.png)
+
+###### Description
+The inconsistencies and idiosyncrasies of pro baseball fields have fascinated me for years. In this piece, the first in a series on the irregular outfields of baseball and my first original for the DataFace, I look at the seven different types of MLB parks, what makes them distinct, and where the varying sizes in their outfields come from.
+
+###### Case Study
+![THIRD](./assets/img/outfields/outfields.gif)
+
+[TWO-THIRDS]
+Baseball is a sport rooted in rules and regulations. Everything in the game is standardized, planned, and coordinated, based on a guideline or precedent. Everything, but the park itself: outfield sizes and wall heights vary across the major leagues. There are 30 MLB stadiums. No two are alike.
+
+Once you leave the infield, where the pitcher's mound is always 10 inches high, and the bases are always 90 feet from each other, the major leagues have few [discernible rules](http://m.mlb.com/glossary/rules/field-dimensions) regarding field size or fence height. Pro ballparks come in all shapes and sizes, sometimes due to the shape of the city block on which they were built, sometimes just to [add character](https://www.npr.org/templates/story/story.php?storyId=4675798).
+
+![HALF](./assets/img/outfields/fenway.png)
+![HALF](./assets/img/outfields/oakland.png)
+
+
+[FULL]
+Each outfield fence has a story to tell. In older stadiums, higher fences were often built in shorter sections of the outfield to prevent easy home runs, and in some cases, owners adjusted outfield walls between seasons based on their [team’s strengths](https://www.npr.org/templates/story/story.php?storyId=4675798). In modern retro parks, artificial quirks are added to the outfield fence and boundary, sometimes to make room for features like [swimming pools](https://www.si.com/mlb/strike-zone/2014/04/11/ballpark-quirks-chase-field-swimming-pool-arizona-diamondbacks) or Coors Field's Rockpile, and sometimes purely for aesthetics.
+
+
+I traced field outlines from Google Earth, aerial imagery, and official MLB diagrams to compare the size and shape of every stadium in the Major Leagues. I supplemented this with historical drawings from Andrew Clem's <a href="http://www.andrewclem.com/Baseball/Stadium_lists.html">Clem's Baseball</a> and some nifty Adobe Illustrator/D3/JS work to create a walkthrough of seven major league stadiums to tell the stories of each type of ballpark.
+
+[FULL]
+This article is based on something I created in late 2015 with data from MLB, the now defunct HitTrackerOnline.com, and Baseball Savant. That piece focused on how the varying sizes of MLB stadiums affected offense, which will be the subject of a later part in this series. You can check it out [here](http://samvickars.com/playingball).
+
+The Irregular Outfields of Baseball [won a Bronze Information is Beautiful Award](https://www.instagram.com/p/B5XFX2AJ2YD/) in 2019.
+
+
+## North America’s Winningest Cities
+- November 2018
+- Original / The Pudding
+- Design + Development + Data + Copywriting
+- #154377
+- #north-americas-winningest-cities
+- [Read the essay](https://pudding.cool/2018/11/titletowns/)
+
+![Cover](https://github.com/svickars/portfolio/raw/master/src/assets/img/cover/titletowns.jpg)
+
+###### Description
+After the Warriors won their third NBA championship in four years in 2018, I started thinking… of all the cities to field a pro- or college-level team in the last 150 years, which is the winningest?
+
+Dig into the data yourself (and set your own definition for Titletowns) in this visual essay on the winningest cities in North America.
+
+###### Case Study
+![HALF](./assets/img/titletowns/case-1.png)
+![HALF](./assets/img/titletowns/case-2.png)
+![HALF](./assets/img/titletowns/case-3-1.png)
+![HALF](./assets/img/titletowns/case-3-2.png)
+
+[FULL]
+I dug through professional and college sports data, creating a database of championships, the winners, the runners-up, and the semi-finalists. I cross-referenced this with a list of every franchise to have existed for each of six major professional sports leagues and every college to compete in each of 6 NCAA disciplines (the 3 most popular for each sex) to come up with three ways to determine North America’s winningest city.
+
+That’s 458 pro sports teams from MLB, the NBA, the NFL, the NHL, the MLS, and the CFL, and 1,917 division 1 college teams in men’s baseball, basketball, and football, and women’s basketball, soccer, and volleyball. All told, these teams have represented 199 cities or metro areas and played for 996 sports championships since 1870.
+
+I set some of my own rules for defining a titletown, as detailed in the methodology, but you can set your own parameters throughout. The project also geolocates to the closest metro to your location. When it comes to what makes a titletown, you define it.
+
+![HALF](./assets/img/titletowns/case-3-3.png)
+![HALF](./assets/img/titletowns/final.png)
+![THIRD](./assets/img/titletowns/filter.png)
+
+[TWO-THIRDS]
+I pitched this idea to the Pudding in April of 2018, and with their direction and guidance, I wrote, designed, and developed this piece for their site. I developed all charts and vizzes using D3.js, with Susie Lu’s d3.annotations, Justin Palmer’s d3-tip, Font Awesome, and jQuery.
+
+All told, we found North America’s winningest cities to be the Greater Los Angeles Area, the New York Metro Area, and Princeton, NJ. I know not everybody agrees on the same ground rules though (we couldn’t even all settle on the same time period), so the debate continues.

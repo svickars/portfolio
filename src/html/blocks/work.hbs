@@ -5,7 +5,7 @@
     <!-- </h3> -->
     <ol>
       {{#each copy.work}}
-        <li class="m-b-12 p-t-12 p-b-12 project" id="{{id}}-container">
+        <li class="m-b-12 p-t-12 p-b-12 project" id="{{id}}">
 					{{#if censored}}
 						<div class="sam-flex sam-flex__wrap sam-flex__align--center sam-flex__justify--space-between censored-project" data-id="{{id}}">
 					{{else}}
@@ -29,6 +29,10 @@
                   </h6>
                 {{/each}}
               {{/if}}
+              <!-- {{#if date}}
+                <h6 class="frost m-r-4"><strong>&nbsp;/&nbsp;</strong></h6>
+                <h6 class="frost m-r-4">{{date}}</h6>
+              {{/if}} -->
               {{#if awards}}
                 {{#each awards}}
                   <i class="fal fa-star fa-xs m-r-4 frost" style="color: {{colour}}"></i>
@@ -36,7 +40,7 @@
               {{/if}}
             </div>
           </div>
-          <div class="inner-wrapper">
+          <div class="inner-wrapper {{class}}">
             <div class="inner">
               {{#if cover}}
                 <div class="cover p-t-16">
@@ -239,10 +243,15 @@
 								<div class="sam-flex sam-flex__wrap sam-flex__justify--space-between case-study border--top border__frost p-t-32">
 									{{#each case-study}}
 										<div class="split {{size}} m-b-16 p-t-8 p-b-8">
-											<div class="split-inner">
-												{{#if image}}
+											<div class="split-inner {{class}}">
+                        {{#if image}}
+                          <div class="image {{options}}" style="min-height: {{height}}px">
+                            <img src="/assets/img/{{image}}" alt={{alt}} />
+                          </div>
+                        {{/if}}
+												<!-- {{#if image}}
 	                    		<div class="image h-{{image-size}}" style="background-image: url(/assets/img/{{image}})"></div>
-												{{/if}}
+												{{/if}} -->
 												{{#if text}}
 													{{#each text}}
 														<p>{{{value}}}</p>

@@ -109,8 +109,9 @@
       padding: 0 8px;
       width: 0;
       height: 29px;
+      text-transform: uppercase;
       color: #fff !important;
-      font-family: monospace;
+      font-family: $mono;
       font-size: 18px;
 
       &:focus {
@@ -119,7 +120,7 @@
 
       &::placeholder {
         color: #000;
-        font-family: $content;
+        font-family: $mono;
       }
     }
   }
@@ -131,6 +132,21 @@
     padding: 0 9999px;
     height: 0;
     overflow: hidden;
+
+    &.dark {
+      background-color: $black;
+
+      .description,
+      .case-study {
+        p {
+          color: $snow;
+        }
+
+        a {
+          color: $dust;
+        }
+      }
+    }
   }
 
   .cover {
@@ -198,7 +214,7 @@
 
   .split {
     width: 100%;
-    overflow-x: hidden;
+    overflow: visible;
 
     &.third {
       @include respond-to($tablet) {
@@ -220,15 +236,15 @@
 
     &.full {
       .split-inner {
-        border-top: $border-inactive;
-        border-left: none;
-        padding-top: 8px;
-        padding-left: 0;
+        // border-top: $border-inactive;
+        // border-left: none;
+        // padding-top: 8px;
+        // padding-left: 0;
 
         @include respond-to($tablet) {
-          border-top: $border-inactive;
-          padding-top: 8px !important;
-          padding-left: 0 !important;
+          // border-top: $border-inactive;
+          // padding-top: 8px !important;
+          // padding-left: 0 !important;
         }
       }
     }
@@ -236,42 +252,32 @@
     &:first-child {
       .split-inner {
         border-left: none;
-        padding-left: 0;
+        // padding-left: 0;
       }
     }
 
     &-inner {
-      border-top: $border-inactive;
-      padding-top: 8px;
+      // border-top: $border-inactive;
+      // padding-top: 8px;
       width: 100%;
       height: 100%;
 
       @include respond-to($tablet) {
-        border-top: none;
-        border-left: $border-inactive;
-        padding-top: 0;
-        padding-left: 16px;
+        // border-top: none;
+        // border-left: $border-inactive;
+        // padding-top: 0;
+        // padding-left: 16px;
       }
 
       .image {
-        background-position: 50% 50%;
-        background-size: cover;
+        // background-position: 50% 50%;
+        // background-size: cover;
         width: 100%;
         height: 100%;
         // height: 150px;
 
-        &.h {
-          &-100 {
-            min-height: 100px;
-          }
-
-          &-200 {
-            min-height: 200px;
-          }
-
-          &-500 {
-            min-height: 500px;
-          }
+        img {
+          width: 100%;
         }
       }
 
@@ -323,8 +329,12 @@
       }
 
       a {
-        // color: $dust !important;
         text-decoration: underline !important;
+        color: $black;
+
+        &:hover {
+          color: $asphalt;
+        }
       }
     }
   }

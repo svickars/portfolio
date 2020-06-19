@@ -3,6 +3,133 @@
 
 // TEMPLATE STUFF
 .sam {
+  .f-browser {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 0;
+    border-radius: 6px;
+    background-color: $white;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    min-height: 100px;
+    overflow: hidden;
+
+    &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      border-top-left-radius: 6px;
+      border-top-right-radius: 6px;
+      background-color: rgba($white, 0);
+      background-repeat: no-repeat;
+      background-position: 0 0, 0 0, 0 0, 0 0, 100% 0, 0 0, 0 0;
+      background-size: 100%, 100%, 100%, 100%, 65%, 30%, 100%;
+      width: 100%;
+      height: 24px;
+      content: "";
+    }
+
+    img {
+      z-index: -1;
+    }
+
+    &.f {
+      &-shadow {
+        box-shadow: 0 0 30px rgba($black, 0.25);
+      }
+
+      &-shadow-dark {
+        box-shadow: 0 0 30px rgba($white, 0.1);
+      }
+
+      &-dark {
+        background-color: $black;
+
+        &::before {
+          background-color: rgba($black, 0);
+        }
+      }
+
+      &-bar {
+        &::before {
+          background-color: $dust;
+          background-image: $bar-light;
+        }
+      }
+
+      &-bar-white {
+        &::before {
+          background-color: $white;
+          background-image: $bar-white;
+        }
+      }
+
+      &-bar-dark {
+        &::before {
+          background-color: $asphalt;
+          background-image: $bar-dark;
+        }
+      }
+
+      &-bar-black {
+        &::before {
+          background-color: $black;
+          background-image: $bar-black;
+        }
+      }
+
+      &-bar.f-buttons {
+        &::before {
+          background-color: $dust;
+          background-image: $buttons-colour, $bar-light;
+        }
+      }
+
+      &-bar-white.f-buttons {
+        &::before {
+          background-color: $white;
+          background-image: $buttons-colour, $bar-white;
+        }
+      }
+
+      &-bar-dark.f-buttons {
+        &::before {
+          background-color: $asphalt;
+          background-image: $buttons-colour, $bar-dark;
+        }
+      }
+
+      &-bar-black.f-buttons {
+        &::before {
+          background-color: $black;
+          background-image: $buttons-colour, $bar-black;
+        }
+      }
+
+      &-buttons {
+        &::before {
+          background-image: $buttons-colour;
+        }
+      }
+
+      &-buttons-bw {
+        &::before {
+          background-image: $buttons-bw;
+        }
+      }
+
+      &-buttons-wb {
+        &::before {
+          background-image: $buttons-wb;
+        }
+      }
+    }
+  }
 }
 
 .sam-flex {
