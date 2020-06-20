@@ -45,7 +45,7 @@ gulp.task("build", (callback) => {
       "assets:scripts",
       "assets:data",
       "assets:images",
-      "assets:auth",
+      // "assets:auth",
     ],
     callback
   );
