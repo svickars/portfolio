@@ -83,29 +83,32 @@ function init() {
       const id = d3.select(this).attr("id");
       if (d3.event.keyCode == 13) {
         if (d3.select(this).node().value == id) {
-          const newHeight =
-            d3
-              .select(this.parentNode.parentNode.parentNode.parentNode)
-              .select(".inner")
-              .node().offsetHeight + 37;
+          loadNewContent(id);
 
-          d3.select(this.parentNode.parentNode.parentNode.parentNode)
+          setTimeout(() => {
+            const newHeight =
+            d3
+            .select(this.parentNode.parentNode.parentNode.parentNode)
+            .select(".inner")
+            .node().offsetHeight + 37;
+
+            d3.select(this.parentNode.parentNode.parentNode.parentNode)
             .classed("expanded", true)
             .select(".inner-wrapper")
             .style("height", `${newHeight}px`);
 
-          d3.select(this.parentNode).classed("is-visible", false);
-          d3.select(this.parentNode.parentNode)
+            d3.select(this.parentNode).classed("is-visible", false);
+            d3.select(this.parentNode.parentNode)
             .select("h2")
             .classed("is-bg", false);
 
-          d3.selectAll(".project").classed("is-bg", function () {
-            return !d3.select(this).classed("expanded");
-          });
+            d3.selectAll(".project").classed("is-bg", function () {
+              return !d3.select(this).classed("expanded");
+            });
 
-          if (newHeight > 0) scroll(id);
+            if (newHeight > 0) scroll(id);            
+          }, 500);
 
-          loadNewContent(id);
         }
       }
     });
