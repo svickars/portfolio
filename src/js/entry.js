@@ -56,6 +56,7 @@ function init() {
       d3.select(this).select(".pass-container").classed("is-visible", true);
 
       document.getElementById(id).focus();
+      replaceUrl("");
     } else {
       d3.select(this.parentNode)
         .classed("expanded", false)
@@ -165,7 +166,10 @@ function loadNewContent(id) {
   container.select("h2").html(thisCopy.project0);
 
   if (thisCopy.cover0) {
-    container.select(".cover").select("img").attr("src", thisCopy.cover0);
+    container
+      .select(".cover")
+      .select("img")
+      .attr("src", `/assets/img/cover/${thisCopy.cover0}`);
   }
 
   if (thisCopy.description0) {
@@ -232,20 +236,23 @@ function goToContent() {
 
   if (url.includes("#")) {
     const id = url.substring(url.lastIndexOf("#") + 1);
-    scroll(id);
 
-    const newHeight =
-      d3.select(`#${id}`).select(".inner-wrapper").select(".inner").node()
-        .offsetHeight + 37;
+    if (id !== "#" && id !== "") {
+      scroll(id);
 
-    d3.select(`#${id}`)
-      .classed("expanded", true)
-      .select(".inner-wrapper")
-      .style("height", `${newHeight}px`);
+      const newHeight =
+        d3.select(`#${id}`).select(".inner-wrapper").select(".inner").node()
+          .offsetHeight + 37;
 
-    d3.selectAll(".project").classed("is-bg", function () {
-      return !d3.select(this).classed("expanded");
-    });
+      d3.select(`#${id}`)
+        .classed("expanded", true)
+        .select(".inner-wrapper")
+        .style("height", `${newHeight}px`);
+
+      d3.selectAll(".project").classed("is-bg", function () {
+        return !d3.select(this).classed("expanded");
+      });
+    }
   }
 }
 
@@ -255,6 +262,4 @@ function replaceUrl(id) {
 
   // window.location = newUrl;
   window.history.pushState({ foo: old }, "", `#${id}`);
-
-  console.log(old, id);
 }

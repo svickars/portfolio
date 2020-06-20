@@ -36,6 +36,10 @@ $bar-white: linear-gradient(to bottom, $white 5%, transparent 5%);
 $bar-light: linear-gradient(to bottom, $dust 5%, transparent 5%);
 $bar-dark: linear-gradient(to bottom, $asphalt 5%, transparent 5%);
 $bar-black: linear-gradient(to bottom, $black 5%, transparent 5%);
+$bar-small-white: linear-gradient(to bottom, $white 5%, transparent 5%);
+$bar-small-light: linear-gradient(to bottom, $dust 5%, transparent 5%);
+$bar-small-dark: linear-gradient(to bottom, $asphalt 5%, transparent 5%);
+$bar-small-black: linear-gradient(to bottom, $black 5%, transparent 5%);
 $buttons-colour: radial-gradient(
     circle at 12px 12px,
     #fd635d 4px,
@@ -49,6 +53,28 @@ $buttons-bw: radial-gradient(circle at 12px 12px, $black 4px, transparent 5px),
 $buttons-wb: radial-gradient(circle at 12px 12px, $white 4px, transparent 5px),
   radial-gradient(circle at 26px 12px, $dust 4px, transparent 5px),
   radial-gradient(circle at 40px 12px, $dust 4px, transparent 5px);
+
+$buttons-small-colour: radial-gradient(
+    circle at 8px 8px,
+    #fd635d 3px,
+    transparent 4px
+  ),
+  radial-gradient(circle at 18px 8px, #feac40 3px, transparent 4px),
+  radial-gradient(circle at 28px 8px, #30c947 3px, transparent 4px);
+$buttons-small-bw: radial-gradient(
+    circle at 8px 8px,
+    $black 3px,
+    transparent 4px
+  ),
+  radial-gradient(circle at 18px 8px, $asphalt 3px, transparent 4px),
+  radial-gradient(circle at 28px 8px, $asphalt 3px, transparent 4px);
+$buttons-small-wb: radial-gradient(
+    circle at 8px 8px,
+    $white 3px,
+    transparent 4px
+  ),
+  radial-gradient(circle at 18px 8px, $dust 3px, transparent 4px),
+  radial-gradient(circle at 28px 8px, $dust 3px, transparent 4px);
 
 @font-face {
   font-family: "FontAwesome";

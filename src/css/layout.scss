@@ -222,6 +222,12 @@
       }
     }
 
+    &.quarter {
+      @include respond-to($tablet) {
+        width: calc((100% - 48px) / 4);
+      }
+    }
+
     &.two-thirds {
       @include respond-to($tablet) {
         width: calc((100% - 32px) * (2 / 3));
