@@ -27,7 +27,7 @@ gulp.task("browserSync", () => {
 });
 
 gulp.task("clean:docs", () => {
-  return del.sync("dist/");
+  return del.sync("docs/");
 });
 
 gulp.task("dev", (callback) => {

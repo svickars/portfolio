@@ -39,5 +39,5 @@ gulp.task("html:build", () => {
         path.extname = ".html";
       })
     )
-    .pipe(gulp.dest("dist/"));
+    .pipe(gulp.dest("docs"));
 });

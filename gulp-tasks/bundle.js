@@ -89,7 +89,7 @@ gulp.task("bundle:css:build", () => {
         suffix: ".min",
       })
     )
-    .pipe(gulp.dest("dist//tools"));
+    .pipe(gulp.dest("docs/tools"));
 });
 
 gulp.task("bundle:js:build", () => {
@@ -109,7 +109,7 @@ gulp.task("bundle:js:build", () => {
         suffix: ".min",
       })
     )
-    .pipe(gulp.dest("dist//tools"));
+    .pipe(gulp.dest("docs/tools"));
 });
 
 // purgecss
@@ -121,5 +121,5 @@ gulp.task("css:purge", () => {
         content: ["docs/**/*.html", "docs/**/*.js"],
       })
     )
-    .pipe(gulp.dest("dist/"));
+    .pipe(gulp.dest("docs"));
 });
